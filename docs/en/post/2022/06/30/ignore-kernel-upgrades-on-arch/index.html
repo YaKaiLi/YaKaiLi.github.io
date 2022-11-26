@@ -70,14 +70,14 @@ Ignore Temporarily Pacman&rsquo;s --ignore option is used to ignore package upgr
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.gnn.ac.cn/en/post/2022/06/30/ignore-kernel-upgrades-on-arch/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-06-30T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-11-27T02:53:03+08:00" /><meta property="og:site_name" content="Star5o&#39;s Blog" />
+<meta property="article:modified_time" content="2022-06-30T00:00:00+00:00" /><meta property="og:site_name" content="Star5o&#39;s Blog" />
 
 <meta itemprop="name" content="How to Ignore Kernel Upgrades on Arch Linux">
 <meta itemprop="description" content="Warning: Ignoring kernel upgrades makes the system more vulnerable due to the lack of the latest security fixes.
 Ignore Temporarily Pacman&rsquo;s --ignore option is used to ignore package upgrades. You can ignore multiple packages, separated by commas. This command upgrades the system but ignores three kernels.
 1 sudo pacman -Syu --ignore linux,linux-header,linux-lts,linux-lts-headers,linux-zen,linux-zen-headers Ignore Permanently Typing --ignore packages takes some time1. Sometimes, you might forget to type it. You can permanently ignore kernel upgrades by adding this to /etc/pacman.conf in the [options] section.
 1 IgnorePkg = linux linux-headers linux-lts linux-lts-headers linux-zen linux-zen-headers Note that packages in IgnorePkg are separated by spaces. If you want to upgrade kernels after configuring IgnorePkg, install them explicitly:"><meta itemprop="datePublished" content="2022-06-30T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-11-27T02:53:03+08:00" />
+<meta itemprop="dateModified" content="2022-06-30T00:00:00+00:00" />
 <meta itemprop="wordCount" content="446">
 <meta itemprop="keywords" content="Arch Linux,pacman," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to Ignore Kernel Upgrades on Arch Linux"/>
@@ -479,10 +479,7 @@ if (!doNotTrack) {
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-      2022-11-27
-      
-        
-        
+      2022-06-30
       
     </span>
   </p>
