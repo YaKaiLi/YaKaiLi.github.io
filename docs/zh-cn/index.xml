@@ -88,12 +88,10 @@
 &lt;h2 id=&#34;本站架构&#34;&gt;本站架构&lt;/h2&gt;
 &lt;p&gt;本站采用以下工具搭建。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;搭建：blogdown、Hugo&lt;/li&gt;
+&lt;li&gt;搭建：Hugo&lt;/li&gt;
 &lt;li&gt;主题：&lt;a href=&#34;https://github.com/xianmin/hugo-theme-jane&#34;&gt;hugo-theme-jane&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;代码托管：GitHub（&lt;a href=&#34;https://github.com/CyrusYip/cyrusyip-blog&#34;&gt;本站的源代码&lt;/a&gt;）&lt;/li&gt;
-&lt;li&gt;部署：Vercel&lt;/li&gt;
+&lt;li&gt;代码托管：GitHub（&lt;a href=&#34;https://github.com/YakaiLi/yakaili.github.io&#34;&gt;本站的源代码&lt;/a&gt;）&lt;/li&gt;
 &lt;li&gt;评论系统：Disqus、&lt;a href=&#34;https://github.com/utterance/utterances&#34;&gt;utterances&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;域名注册：&lt;a href=&#34;https://www.cloudflare.com/products/registrar/&#34;&gt;Cloudflare Registrar&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;主要参考了Cyrus Yip｜叶寻的博客&lt;/p&gt;
 &lt;ul&gt;
