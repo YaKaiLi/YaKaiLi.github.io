@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/python/</link>
+    <description>Recent content in Python on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Mon, 01 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>轻松安装 Python 和 Python 包</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/02/01/simple-method-of-installing-python-and-python-packages/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/02/01/simple-method-of-installing-python-and-python-packages/</guid>
+      <description>安装 Python 新手遇到的第一个问题就是安装 Python，我看好多教程都推荐到官网下载。这当然是正确的做法，不过还有更简单的方法。 Windows 在 Win 10 安装 Python 特别简单，直接在 Microsoft Store 搜索 Python 就可以安装最新版本。注意，软件开发者是 Python</description>
+    </item>
+    
+    <item>
+      <title>用 Python 计算水电费</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/01/29/python-calculate-utility-bills/</link>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/01/29/python-calculate-utility-bills/</guid>
+      <description>前段时间搬家了，在之前住的小区还有些费用没缴，包括水电费、物业费和公摊费。一开始用计算器和笔算，好几次算错。每次出错都要从头到尾算一遍，算得我很烦躁。我突然灵机一动，为什么不用 Python 算这笔麻烦帐呢？于是我</description>
+    </item>
+    
+  </channel>
+</rss>

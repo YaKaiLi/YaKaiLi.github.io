@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/hugo/</link>
+    <description>Recent content in Hugo on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Mon, 30 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 多语言博客折腾记</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/05/30/hugo-multilingual/</link>
+      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/05/30/hugo-multilingual/</guid>
+      <description>最近在统计之都看大家讨论博客，又激起了我的折腾之心，打算把一个大坑给填了：把中文博客改为双语博客。我先建立了一个新的 Git 分支来折腾，成功后才合并到主分支。以下是详细的折腾过程。 改用 jane 主题 我原来用的 even 主题</description>
+    </item>
+    
+  </channel>
+</rss>

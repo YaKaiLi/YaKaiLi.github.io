@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/windows/</link>
+    <description>Recent content in Windows on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Thu, 14 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows 10 简易安装教程</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/07/14/install-windows10/</link>
+      <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/07/14/install-windows10/</guid>
+      <description>安装系统有三个基本步骤：刻录系统映像、分区、安装。如果你要安装其他系统，也可以参考本文的步骤。 下载系统映像 在谷歌或必应搜「windows 10 下载」，可以找到微软官方的下载地址，选择合适的版本。如果你不知</description>
+    </item>
+    
+    <item>
+      <title>修复 BitLocker 错误：The system cannot find the file specified</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/11/09/repair-bitlocker/</link>
+      <pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/11/09/repair-bitlocker/</guid>
+      <description>用 BitLocker 给 Windows 10 加密时出现了错误信息：The system cannot find the file specified。这个提示信息简直是废话嘛，为什么不告诉我哪个文件有问题……提示信息还附上了 Win10 安装要求，一样是没用…… 谷歌之后找到了解决办法：把 C:\Windows\System32\Recovery\ReAgent.xml 重命</description>
+    </item>
+    
+    <item>
+      <title>在 Windows 下修复 U 盘错误</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/01/fix-usb-flash-drive-on-windows/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/01/fix-usb-flash-drive-on-windows/</guid>
+      <description>有时在 Windows 插入 U 盘会提示有错误需要修复，我一直都是忽略的，接着用 U 盘。今天用 U 盘的时候没办法打开一个文件夹，于是就乖乖地修复了 U 盘，修复完就好了。原来 Windows 的 U 盘修复那么有用。 修复方法：在文件资源管理器右击</description>
+    </item>
+    
+  </channel>
+</rss>

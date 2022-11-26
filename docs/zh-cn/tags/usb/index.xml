@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>USB on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/usb/</link>
+    <description>Recent content in USB on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/usb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 Windows 下修复 U 盘错误</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/01/fix-usb-flash-drive-on-windows/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/01/fix-usb-flash-drive-on-windows/</guid>
+      <description>有时在 Windows 插入 U 盘会提示有错误需要修复，我一直都是忽略的，接着用 U 盘。今天用 U 盘的时候没办法打开一个文件夹，于是就乖乖地修复了 U 盘，修复完就好了。原来 Windows 的 U 盘修复那么有用。 修复方法：在文件资源管理器右击</description>
+    </item>
+    
+  </channel>
+</rss>

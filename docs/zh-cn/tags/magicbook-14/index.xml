@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MagicBook 14 on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/magicbook-14/</link>
+    <description>Recent content in MagicBook 14 on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Wed, 06 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/magicbook-14/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>修复 MagicBook 14（Ryzen5 3500U）在 Arch Linux 下亮度突然变 0 的问题</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/10/06/fix-magicbook-zero-brightness/</link>
+      <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/10/06/fix-magicbook-zero-brightness/</guid>
+      <description>我的 MagicBook 14（Ryzen5 3500U）休眠/睡眠/插电/断电/开机后可能亮度降为 0。解决办法：启动时使用以下内核参数。 1 acpi_backlight=vendor 如果你用 GRUB，就修改 /etc/default/grub，在 GRUB_CMDLINE_LINUX_DEFAULT 加上内核参数，如</description>
+    </item>
+    
+  </channel>
+</rss>

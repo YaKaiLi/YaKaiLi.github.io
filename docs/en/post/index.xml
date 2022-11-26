@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Star5o&#39;s Blog</title>
+    <link>https://www.gnn.ac.cn/en/post/</link>
+    <description>Recent content in Posts on Star5o&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Fri, 23 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/en/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Removing Python 2 on Arch Linux</title>
+      <link>https://www.gnn.ac.cn/en/post/2022/09/23/remove-python2-on-arch/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/en/post/2022/09/23/remove-python2-on-arch/</guid>
+      <description>Python 2 was dropped from Arch Linux. It was lucky that there were only two python2 packages on my Arch.
+1 2 3 4 5 ❯ pacman -Qs python2 local/python2 2.7.18-5 A high-level scripting language local/python2-setuptools 2:44.1.1-2 Easily download, build, install, upgrade, and uninstall Python packages I removed them without hesitation.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 ❯ sudo pacman -Rscn python2 python2-setuptools checking dependencies... Package (2) Old Version Net Change python2 2.7.18-5 -76.84 MiB python2-setuptools 2:44.1.1-2 -3.81 MiB Total Removed Size: 80.65 MiB :: Do you want to remove these packages?</description>
+    </item>
+    
+    <item>
+      <title>How to Paste over Selected Text without Overwriting the Unnamed Register in Vim</title>
+      <link>https://www.gnn.ac.cn/en/post/2022/08/08/paste-over-selected-text-in-vim/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/en/post/2022/08/08/paste-over-selected-text-in-vim/</guid>
+      <description>Summary: paste with P in visual mode.
+It&amp;rsquo;s painful to paste over selected text in Vim, because the unnamed register is overwritten by the selected text. Thus, we can not paste the original yanked text twice.
+If you have a file:
+1 2 hello kitty You want to copy hello , paste it over kitty, and paste it again. You type these commands in Vim.
+1 2 3 4 5 gg &amp;#34; move to the top yy &amp;#34; copy current line jV &amp;#34; move to the next line and select it p &amp;#34; paste over the select line p &amp;#34; paste again You expect to get:</description>
+    </item>
+    
+    <item>
+      <title>How to Ignore Kernel Upgrades on Arch Linux</title>
+      <link>https://www.gnn.ac.cn/en/post/2022/06/30/ignore-kernel-upgrades-on-arch/</link>
+      <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/en/post/2022/06/30/ignore-kernel-upgrades-on-arch/</guid>
+      <description>Warning: Ignoring kernel upgrades makes the system more vulnerable due to the lack of the latest security fixes.
+Ignore Temporarily Pacman&amp;rsquo;s --ignore option is used to ignore package upgrades. You can ignore multiple packages, separated by commas. This command upgrades the system but ignores three kernels.
+1 sudo pacman -Syu --ignore linux,linux-header,linux-lts,linux-lts-headers,linux-zen,linux-zen-headers Ignore Permanently Typing --ignore packages takes some time1. Sometimes, you might forget to type it. You can permanently ignore kernel upgrades by adding this to /etc/pacman.conf in the [options] section.
+1 IgnorePkg = linux linux-headers linux-lts linux-lts-headers linux-zen linux-zen-headers Note that packages in IgnorePkg are separated by spaces. If you want to upgrade kernels after configuring IgnorePkg, install them explicitly:</description>
+    </item>
+    
+  </channel>
+</rss>

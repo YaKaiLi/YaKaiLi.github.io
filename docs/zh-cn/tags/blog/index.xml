@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/blog/</link>
+    <description>Recent content in blog on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Mon, 30 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 多语言博客折腾记</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/05/30/hugo-multilingual/</link>
+      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/05/30/hugo-multilingual/</guid>
+      <description>最近在统计之都看大家讨论博客，又激起了我的折腾之心，打算把一个大坑给填了：把中文博客改为双语博客。我先建立了一个新的 Git 分支来折腾，成功后才合并到主分支。以下是详细的折腾过程。 改用 jane 主题 我原来用的 even 主题</description>
+    </item>
+    
+    <item>
+      <title>不要注册 cn 域名</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/05/25/damn-cn-domain/</link>
+      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/05/25/damn-cn-domain/</guid>
+      <description>去年想学习搭建网站，当时啥也不懂，以为建站一定要有服务器、域名和备案。于是在腾讯云租了一年服务器，付费的时候看到 cn 域名才 17 块，就顺便买了一个。备案过程十分曲折，要填很多个人信息。备案后那段时间没空学建</description>
+    </item>
+    
+    <item>
+      <title>让 Hugo 自动给图片加上说明文字</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/03/11/automatically-caption-image-with-alt-in-hugo/</link>
+      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/03/11/automatically-caption-image-with-alt-in-hugo/</guid>
+      <description>开始写博客之后我发现了 Markdown 缺少一个重要功能：给图片加上说明文字。Markdown 插入图片的语法是这样的： 1 ![这是一张图片](图片链接) 我希望「这是一张图片」可以显示在图片底部。想修改网站样式的时候，我</description>
+    </item>
+    
+    <item>
+      <title>blog 的词源</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/01/01/blog-etymology/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/01/01/blog-etymology/</guid>
+      <description>Jorn Barger 在 1997 年 12 月发明了 weblog 这个词，weblog 由 web 和 log 组成，指的是用于写日记的个人网站。Peter Merholz 这人比较特别，把 weblog 念成 we blog，简称 blog，然后这个缩略词就流传下来了。blog 除了作名词，亦可做动</description>
+    </item>
+    
+    <item>
+      <title>GitHub 图床教程</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/05/host-images-on-github/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/05/host-images-on-github/</guid>
+      <description>新建公共仓库1 勾选 Add a README file，这样待会就可以直接克隆了 克隆仓库 1 git clone git@github.com:your-username/repo-name.git 使用 Bash 脚本自动上传 1 2 3 4 #!/bin/bash git add --all git commit -m &amp;#34;update&amp;#34; git push 安装所需软件 1 2 sudo apt install fzf xclip pip3 install pyperclip 使用 Python 脚本获取图片网址 1 2 3 4 5 6 7 8 9 10 11 12 13</description>
+    </item>
+    
+  </channel>
+</rss>

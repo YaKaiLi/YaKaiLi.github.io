@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Sun, 08 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 Debian/Ubuntu 安装旧版 WPS Linux</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/08/08/ubuntu-install-older-wps/</link>
+      <pubDate>Sun, 08 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/08/08/ubuntu-install-older-wps/</guid>
+      <description>最近把 WPS For Linux 更新到最新的 11.1.0.10702，打开就提示「系统DPI不对称，WPS可能存在显示问题」，果然 WPS 都是模糊的。打算去官网找上个版本，结果只有最新版，气死我了！在谷歌搜了几次也找不到历史版</description>
+    </item>
+    
+    <item>
+      <title>命令行实例</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/25/cli-examples/</link>
+      <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/25/cli-examples/</guid>
+      <description>本文用于收集我记不住的实用的命令行用法。 docker 1 2 3 # 启动已停止的容器 docker start f357e2faab77 # restart it in the background docker attach f357e2faab77 # reattach the terminal &amp;amp; stdin docker - I lose my data when the container exits - Stack Overflow 下载视频 1 2 3 4 5 6 # 安装工具 pip install you-get youtube-dl -U # 下载视频 you-get https://www.iqiyi.com/v_m72044yl88.html youtube-dl https://www.youtube.com/watch\?v\=9gfECJHQElo 去广告看视频 1</description>
+    </item>
+    
+    <item>
+      <title>用 BASH 脚本更新各类软件包</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/25/update-packages-script/</link>
+      <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/25/update-packages-script/</guid>
+      <description>刚用 Ubuntu 的时候，觉得用 apt 安装软件很方便，从此不再需要像用 Windows 一样要去官方下载软件。用久了也发现 Ubuntu 软件仓库有两个问题：软件不是最新版本、缺少某些软件。要解决这些问题，除了添加 PPA 以外，就只能用的其他包管理器作</description>
+    </item>
+    
+    <item>
+      <title>不指定路径运行自己写的软件</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/24/put-software-into-path/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/24/put-software-into-path/</guid>
+      <description>在 Linux 上运行自己写的软件必须指定路径才能运行。举个例子，我写了个 BASH 脚本，把代码保存到 hello_world 文件，放到 ~/Desktop，并赋予它运行权限。 1 2 #!/bin/bash echo &amp;#34;Hello, World!&amp;#34; 如果我们在终端执行 hello_world 会怎么样呢？ 1 2 3 4 $ hello_world Command &amp;#39;hello_world&amp;#39; not found, did you</description>
+    </item>
+    
+    <item>
+      <title>trash-cli 中文手册</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/12/trash-cli-manual/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/12/trash-cli-manual/</guid>
+      <description>rm 是常用的 BASH 命令，但是误删文件后比较难恢复。用 trash-cli 更安全，它只是把文件移动到回收站，这样误删文件也很容易恢复。我觉得这个软件挺好用的，就把官方文档翻译成中文了。 trash-cli——FreeDeskto</description>
+    </item>
+    
+    <item>
+      <title>在 Ubuntu 下配置 Fcitx5</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/11/06/configure-fcitx5-on-ubuntu/</link>
+      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/11/06/configure-fcitx5-on-ubuntu/</guid>
+      <description>安装 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 # 安装 Fcitx5 sudo apt install fcitx5 \ fcitx5-pinyin \ fcitx5-chinese-addons \ fcitx5-frontend-gtk2 \ fcitx5-frontend-gtk3 \ fcitx5-frontend-qt5 \ fcitx5-module-ibus \ fcitx5-module-cloudpinyin \ fcitx5-material-color # 把 Fcitx5 设置为默认输入法 im-config -n fcitx5 # 设置 Fcitx5 拼音输入法 fcitx5-configtool # 开机启动 cp /usr/share/applications/fcitx5.desktop ~/.config/autostart/ 配置 修改标点符号键位映射 Fcitx5 默认的标点符号键位为</description>
+    </item>
+    
+    <item>
+      <title>在 Ubuntu 编译 GoldenDict</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/10/02/ubuntu-compile-goldendict/</link>
+      <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/10/02/ubuntu-compile-goldendict/</guid>
+      <description>本文测试于 Ubuntu 21.04。 安装依赖 1 2 3 4 5 6 7 8 sudo apt-get update sudo apt-get install git pkg-config build-essential qt5-qmake \ libvorbis-dev zlib1g-dev libhunspell-dev x11proto-record-dev \ qtdeclarative5-dev libxtst-dev liblzo2-dev libbz2-dev \ libao-dev libavutil-dev libavformat-dev libtiff5-dev libeb16-dev \ libqt5webkit5-dev libqt5svg5-dev libqt5x11extras5-dev qttools5-dev \ qttools5-dev-tools qtmultimedia5-dev libqt5multimedia5-plugins \ libopencc-dev liblzma-dev libzstd-dev 编译 1 2 3 4 5 6 7 8 9 10 11 12 # 卸载源里面的 GoldenDict sudo apt remove goldendict # 克隆源代码 git clone https://github.com/goldendict/goldendict.git # 编</description>
+    </item>
+    
+  </channel>
+</rss>

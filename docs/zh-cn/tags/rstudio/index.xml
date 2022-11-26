@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RStudio on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/rstudio/</link>
+    <description>Recent content in RStudio on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/rstudio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 RStudio 中使用 Fcitx5（Kubuntu 20.10）</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/11/01/use-fcitx5-in-rstudio-on-kubuntu20.10/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/11/01/use-fcitx5-in-rstudio-on-kubuntu20.10/</guid>
+      <description>2022 年 7 月 16 日更新：Electron 版的 RStudio 可以正常使用 Fcitx5 了，位置也正常。 在 Kubuntu 20.10 使用 RStudio 的时候，发现它不支持 Fcitx。参考 RStudio 官方的方法，成功在 RStudio 里面用上了 Fcitx 5。里面部分内容已经过时，应该用下面这个命令才对</description>
+    </item>
+    
+  </channel>
+</rss>

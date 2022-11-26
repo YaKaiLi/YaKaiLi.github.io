@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hugo 多语言博客折腾记 - star5o的博客</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="star5o" />
+  <meta name="description" content="最近在统计之都看大家讨论博客，又激起了我的折腾之心，打算把一个大坑给填了：把中文博客改为双语博客。我先建立了一个新的 Git 分支来折腾，成功后才合并到主分支。以下是详细的折腾过程。 改用 jane 主题 我原来用的 even 主题" />
+
+  <meta name="keywords" content="Star5o, star5o" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.107.0" />
+
+
+<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/post/2022/05/30/hugo-multilingual/" />
+
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="Hugo 多语言博客折腾记" />
+<meta property="og:description" content="最近在统计之都看大家讨论博客，又激起了我的折腾之心，打算把一个大坑给填了：把中文博客改为双语博客。我先建立了一个新的 Git 分支来折腾，成功后才合并到主分支。以下是详细的折腾过程。 改用 jane 主题 我原来用的 even 主题" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2022/05/30/hugo-multilingual/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-05-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-05-30T00:00:00+00:00" /><meta property="og:site_name" content="star5o的博客" />
+
+<meta itemprop="name" content="Hugo 多语言博客折腾记">
+<meta itemprop="description" content="最近在统计之都看大家讨论博客，又激起了我的折腾之心，打算把一个大坑给填了：把中文博客改为双语博客。我先建立了一个新的 Git 分支来折腾，成功后才合并到主分支。以下是详细的折腾过程。 改用 jane 主题 我原来用的 even 主题"><meta itemprop="datePublished" content="2022-05-30T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-05-30T00:00:00+00:00" />
+<meta itemprop="wordCount" content="3103">
+<meta itemprop="keywords" content="blog,Hugo,blogdown," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo 多语言博客折腾记"/>
+<meta name="twitter:description" content="最近在统计之都看大家讨论博客，又激起了我的折腾之心，打算把一个大坑给填了：把中文博客改为双语博客。我先建立了一个新的 Git 分支来折腾，成功后才合并到主分支。以下是详细的折腾过程。 改用 jane 主题 我原来用的 even 主题"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-193139827-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/zh-cn/" class="logo">star5o的博客</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/">主页</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/post/">文章</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/tags/">标签</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/about/">关于</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/subscribe/">订阅</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/donate/">鼓励</a>
+          
+        
+      </li>
+    <li class="mobile-menu-item">
+        
+        <div class="mobile-menu-parent mobile-menu-item-lang">
+          <span class="mobile-submenu-open"></span>
+          <a href="#">
+            
+            <i class="iconfont">
+              <svg height="16" width="16" version="1.1" viewBox="0 0 128 128">
+  <path d="m 64.719501,1.4279814 c -34.694029,0 -62.8192028,28.1251726 -62.8192028,62.8192016 0,34.694036 28.1251738,62.819207 62.8192028,62.819207 4.245691,0 8.392744,-0.42239 12.402214,-1.2253 -1.616124,-0.77296 -1.792473,-6.57213 -0.194346,-9.87848 1.779059,-3.68082 7.361625,-13.00555 1.840404,-16.134231 -5.521221,-3.12869 -3.98755,-4.53968 -7.361625,-8.15914 -3.374083,-3.61947 -1.994181,-4.16357 -2.208492,-5.09179 -0.736158,-3.19004 3.251385,-7.975096 3.435429,-8.465866 0.184043,-0.490781 0.184043,-2.331182 0.122689,-2.883308 -0.06131,-0.552125 -2.515051,-2.024446 -3.12852,-2.085791 -0.613469,-0.06133 -0.920209,0.98154 -1.77906,1.042896 -0.858856,0.06133 -4.601018,-2.269838 -5.39853,-2.883308 -0.797504,-0.61346 -1.165591,-2.085792 -2.269828,-3.190033 -1.104247,-1.104252 -1.226945,-0.24539 -2.944651,-0.920206 -1.717714,-0.674812 -7.238935,-2.69926 -11.471867,-4.416975 -4.23294,-1.717714 -4.601019,-4.125615 -4.662365,-5.827954 -0.06131,-1.702333 -2.57657,-4.171587 -3.756227,-5.950646 -1.179335,-1.77906 -1.396914,-4.232932 -1.826339,-3.680809 -0.429425,0.552114 2.208484,6.993538 1.77906,7.177582 -0.429425,0.184043 -1.349635,-1.77906 -2.576572,-3.374083 -1.226936,-1.595016 1.28829,-0.736159 -2.637915,-8.465864 -3.926198,-7.729705 1.226944,-11.671284 1.472324,-15.704806 0.24539,-4.033514 3.312738,1.472325 1.717715,-1.104238 -1.595016,-2.576571 0.122697,-7.975094 -1.104246,-9.938197 -1.226936,-1.963102 -8.220475,2.208492 -8.220475,2.208492 0.184036,-1.901758 6.134682,-5.153142 10.428966,-8.1591366 4.294277,-3.005996 6.91682,-0.674813 10.367621,0.4294236 3.450803,1.104246 3.680817,0.736167 2.515226,-0.368079 -1.165591,-1.1042446 0.49077,-1.6563686 3.190031,-1.2269356 2.699269,0.429425 3.435428,3.6808086 7.545669,3.3740746 4.110242,-0.306735 0.429425,0.797511 0.981548,1.840412 0.552123,1.042892 -0.613468,0.920202 -3.312729,2.760607 -2.699262,1.840403 0.06131,1.840403 4.846407,5.337177 4.785055,3.496773 3.312729,-2.331183 2.821952,-4.907753 -0.490777,-2.576563 3.496773,-0.552115 3.496773,-0.552115 2.944651,1.963094 2.400546,0.107972 4.547684,0.782784 2.147139,0.674814 7.967076,5.597286 7.967076,5.597286 -7.300273,3.98755 -2.699261,4.416975 -1.472325,5.337178 1.226937,0.920202 -2.515218,2.699261 -2.515218,2.699261 -1.53367,-1.53367 -1.779059,0.06131 -2.760614,0.613476 -0.981548,0.552115 -0.06131,1.963095 -0.06131,1.963095 -5.076415,0.797512 -3.926198,6.13469 -3.864852,7.422971 0.06131,1.288289 -3.251385,3.251384 -4.110242,5.091796 -0.858857,1.840405 2.208491,5.827948 0.613468,6.073336 -1.595016,0.24539 -3.190031,-6.011991 -11.778601,-3.680808 -2.589322,0.702954 -8.343174,3.680808 -5.275824,9.754153 3.06734,6.073336 8.15913,-1.717714 9.876843,-0.858857 1.717714,0.858857 -0.490778,4.72371 -0.122691,4.785055 0.368079,0.06131 4.8464,0.168662 5.09179,5.398522 0.245388,5.229868 6.809502,4.785065 8.220482,4.907755 1.410972,0.12269 6.134682,-3.864859 6.809502,-4.048894 0.674815,-0.184034 3.374076,-2.453876 9.263377,0.920195 5.889301,3.374089 8.895296,2.883308 10.919743,4.294285 2.02445,1.410987 0.61347,4.232939 2.51523,5.153134 1.90175,0.920217 9.50876,-0.306736 11.41051,2.821966 1.90176,3.1287 -7.8524,18.833491 -10.91974,20.551201 -3.06734,1.71772 -4.478321,5.64392 -7.545665,8.15913 -3.067349,2.51523 -7.361625,5.62854 -11.410522,8.03646 -3.583968,2.1311 -4.228845,5.949 -5.825333,7.15419 28.11404,-6.24545 49.13623,-31.328971 49.13623,-61.323497 0,-34.694029 -28.125171,-62.8192016 -62.819206,-62.8192016 z M 79.442753,60.382331 c -0.858857,0.245389 -2.637917,1.840405 -6.993547,-0.736166 -4.35563,-2.576564 -7.361625,-2.085794 -7.729705,-2.515218 0,0 -0.368079,-1.0429 1.533671,-1.226937 3.905098,-0.378065 8.833951,3.619464 9.938196,3.680809 1.104246,0.06131 1.656361,-1.104245 3.619464,-0.471631 1.963103,0.631953 0.490777,1.023755 -0.368079,1.269143 z M 58.891546,7.6853614 c -0.427786,-0.311152 0.354344,-0.669418 0.82058,-1.288281 0.269103,-0.357613 0.0695,-0.951289 0.406356,-1.28829 0.92021,-0.920203 5.459876,-2.208485 4.572225,0.306734 -0.887321,2.515226 -5.12434,2.760614 -5.799161,2.269837 z m 10.98109,7.9750936 c -1.533672,-0.06131 -5.14381,-0.442837 -4.478321,-1.104246 2.591952,-2.576563 -0.981548,-3.312729 -3.190039,-3.496766 -2.208485,-0.184043 -3.128687,-1.4109786 -2.02444,-1.5336776 1.104237,-0.12269 5.521213,0.06139 6.257379,0.6748206 0.736158,0.613469 4.723709,2.208485 4.969099,3.374076 0.24538,1.16559 0,2.147138 -1.533678,2.085793 z M 83.184914,15.23103 c -1.226943,0.981547 -7.400887,-3.521968 -8.588569,-4.539674 -5.153134,-4.4169746 -7.913742,-2.9446486 -8.995903,-3.6808086 -1.082485,-0.736166 -0.696897,-1.717713 0.959464,-3.190039 1.656369,-1.472325 6.318732,0.490778 9.017994,0.797512 2.699262,0.306734 5.827955,2.392527 5.889301,4.871925 0.06131,2.4792256 2.944649,4.7595296 1.717713,5.7410846 z" />
+</svg>
+
+            </i>
+            语言
+          </a>
+        </div>
+        <ul class="mobile-submenu-list">
+          
+            <li>
+              
+                <a href="https://www.gnn.ac.cn/en/">English</a>
+              
+            </li>
+          
+            <li>
+              
+                <a href="https://www.gnn.ac.cn/zh-cn/"><strong>简体中文</strong></a>
+              
+            </li>
+          
+        </ul>
+      </li>
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/zh-cn/" class="logo">
+    
+      star5o的博客
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/">主页</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/post/">文章</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/tags/">标签</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/about/">关于</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/subscribe/">订阅</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/donate/">鼓励</a>
+          
+
+        
+
+      </li>
+    
+
+    
+    <li class="menu-item">
+        
+        <a class="menu-item-link menu-parent menu-item-lang" href="#">
+          
+          <i class="iconfont">
+            <svg height="16" width="16" version="1.1" viewBox="0 0 128 128">
+  <path d="m 64.719501,1.4279814 c -34.694029,0 -62.8192028,28.1251726 -62.8192028,62.8192016 0,34.694036 28.1251738,62.819207 62.8192028,62.819207 4.245691,0 8.392744,-0.42239 12.402214,-1.2253 -1.616124,-0.77296 -1.792473,-6.57213 -0.194346,-9.87848 1.779059,-3.68082 7.361625,-13.00555 1.840404,-16.134231 -5.521221,-3.12869 -3.98755,-4.53968 -7.361625,-8.15914 -3.374083,-3.61947 -1.994181,-4.16357 -2.208492,-5.09179 -0.736158,-3.19004 3.251385,-7.975096 3.435429,-8.465866 0.184043,-0.490781 0.184043,-2.331182 0.122689,-2.883308 -0.06131,-0.552125 -2.515051,-2.024446 -3.12852,-2.085791 -0.613469,-0.06133 -0.920209,0.98154 -1.77906,1.042896 -0.858856,0.06133 -4.601018,-2.269838 -5.39853,-2.883308 -0.797504,-0.61346 -1.165591,-2.085792 -2.269828,-3.190033 -1.104247,-1.104252 -1.226945,-0.24539 -2.944651,-0.920206 -1.717714,-0.674812 -7.238935,-2.69926 -11.471867,-4.416975 -4.23294,-1.717714 -4.601019,-4.125615 -4.662365,-5.827954 -0.06131,-1.702333 -2.57657,-4.171587 -3.756227,-5.950646 -1.179335,-1.77906 -1.396914,-4.232932 -1.826339,-3.680809 -0.429425,0.552114 2.208484,6.993538 1.77906,7.177582 -0.429425,0.184043 -1.349635,-1.77906 -2.576572,-3.374083 -1.226936,-1.595016 1.28829,-0.736159 -2.637915,-8.465864 -3.926198,-7.729705 1.226944,-11.671284 1.472324,-15.704806 0.24539,-4.033514 3.312738,1.472325 1.717715,-1.104238 -1.595016,-2.576571 0.122697,-7.975094 -1.104246,-9.938197 -1.226936,-1.963102 -8.220475,2.208492 -8.220475,2.208492 0.184036,-1.901758 6.134682,-5.153142 10.428966,-8.1591366 4.294277,-3.005996 6.91682,-0.674813 10.367621,0.4294236 3.450803,1.104246 3.680817,0.736167 2.515226,-0.368079 -1.165591,-1.1042446 0.49077,-1.6563686 3.190031,-1.2269356 2.699269,0.429425 3.435428,3.6808086 7.545669,3.3740746 4.110242,-0.306735 0.429425,0.797511 0.981548,1.840412 0.552123,1.042892 -0.613468,0.920202 -3.312729,2.760607 -2.699262,1.840403 0.06131,1.840403 4.846407,5.337177 4.785055,3.496773 3.312729,-2.331183 2.821952,-4.907753 -0.490777,-2.576563 3.496773,-0.552115 3.496773,-0.552115 2.944651,1.963094 2.400546,0.107972 4.547684,0.782784 2.147139,0.674814 7.967076,5.597286 7.967076,5.597286 -7.300273,3.98755 -2.699261,4.416975 -1.472325,5.337178 1.226937,0.920202 -2.515218,2.699261 -2.515218,2.699261 -1.53367,-1.53367 -1.779059,0.06131 -2.760614,0.613476 -0.981548,0.552115 -0.06131,1.963095 -0.06131,1.963095 -5.076415,0.797512 -3.926198,6.13469 -3.864852,7.422971 0.06131,1.288289 -3.251385,3.251384 -4.110242,5.091796 -0.858857,1.840405 2.208491,5.827948 0.613468,6.073336 -1.595016,0.24539 -3.190031,-6.011991 -11.778601,-3.680808 -2.589322,0.702954 -8.343174,3.680808 -5.275824,9.754153 3.06734,6.073336 8.15913,-1.717714 9.876843,-0.858857 1.717714,0.858857 -0.490778,4.72371 -0.122691,4.785055 0.368079,0.06131 4.8464,0.168662 5.09179,5.398522 0.245388,5.229868 6.809502,4.785065 8.220482,4.907755 1.410972,0.12269 6.134682,-3.864859 6.809502,-4.048894 0.674815,-0.184034 3.374076,-2.453876 9.263377,0.920195 5.889301,3.374089 8.895296,2.883308 10.919743,4.294285 2.02445,1.410987 0.61347,4.232939 2.51523,5.153134 1.90175,0.920217 9.50876,-0.306736 11.41051,2.821966 1.90176,3.1287 -7.8524,18.833491 -10.91974,20.551201 -3.06734,1.71772 -4.478321,5.64392 -7.545665,8.15913 -3.067349,2.51523 -7.361625,5.62854 -11.410522,8.03646 -3.583968,2.1311 -4.228845,5.949 -5.825333,7.15419 28.11404,-6.24545 49.13623,-31.328971 49.13623,-61.323497 0,-34.694029 -28.125171,-62.8192016 -62.819206,-62.8192016 z M 79.442753,60.382331 c -0.858857,0.245389 -2.637917,1.840405 -6.993547,-0.736166 -4.35563,-2.576564 -7.361625,-2.085794 -7.729705,-2.515218 0,0 -0.368079,-1.0429 1.533671,-1.226937 3.905098,-0.378065 8.833951,3.619464 9.938196,3.680809 1.104246,0.06131 1.656361,-1.104245 3.619464,-0.471631 1.963103,0.631953 0.490777,1.023755 -0.368079,1.269143 z M 58.891546,7.6853614 c -0.427786,-0.311152 0.354344,-0.669418 0.82058,-1.288281 0.269103,-0.357613 0.0695,-0.951289 0.406356,-1.28829 0.92021,-0.920203 5.459876,-2.208485 4.572225,0.306734 -0.887321,2.515226 -5.12434,2.760614 -5.799161,2.269837 z m 10.98109,7.9750936 c -1.533672,-0.06131 -5.14381,-0.442837 -4.478321,-1.104246 2.591952,-2.576563 -0.981548,-3.312729 -3.190039,-3.496766 -2.208485,-0.184043 -3.128687,-1.4109786 -2.02444,-1.5336776 1.104237,-0.12269 5.521213,0.06139 6.257379,0.6748206 0.736158,0.613469 4.723709,2.208485 4.969099,3.374076 0.24538,1.16559 0,2.147138 -1.533678,2.085793 z M 83.184914,15.23103 c -1.226943,0.981547 -7.400887,-3.521968 -8.588569,-4.539674 -5.153134,-4.4169746 -7.913742,-2.9446486 -8.995903,-3.6808086 -1.082485,-0.736166 -0.696897,-1.717713 0.959464,-3.190039 1.656369,-1.472325 6.318732,0.490778 9.017994,0.797512 2.699262,0.306734 5.827955,2.392527 5.889301,4.871925 0.06131,2.4792256 2.944649,4.7595296 1.717713,5.7410846 z" />
+</svg>
+
+          </i>
+          简体中文
+        </a>
+        <ul class="submenu">
+          
+            
+              <li>
+                <a href="https://www.gnn.ac.cn/en/">English</a>
+              </li>
+            
+          
+            
+          
+        </ul>
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Hugo 多语言博客折腾记</h1>
+      
+      <div class="post-meta">
+        <time datetime="2022-05-30" class="post-time">
+          2022-05-30
+        </time>
+        
+        <span class="more-meta"> 约 3103 字 </span>
+          <span class="more-meta"> 预计阅读 7 分钟 </span>
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#改用-jane-主题">改用 jane 主题</a></li>
+    <li><a href="#url-重定向">URL 重定向</a></li>
+    <li><a href="#改动内部链接">改动内部链接</a></li>
+    <li><a href="#更新博客列表的-rss-链接">更新博客列表的 RSS 链接</a></li>
+    <li><a href="#迁移评论">迁移评论</a>
+      <ul>
+        <li><a href="#disqus">Disqus</a></li>
+        <li><a href="#utterances">utterances</a></li>
+      </ul>
+    </li>
+    <li><a href="#增加标题级别">增加标题级别</a></li>
+    <li><a href="#添加-favicon">添加 favicon</a></li>
+    <li><a href="#jane-主题的问题">Jane 主题的问题</a></li>
+    <li><a href="#代办事项">代办事项</a></li>
+    <li><a href="#资料和工具">资料和工具</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>最近在统计之都看大家<a href="https://d.cosx.org/d/423166-frank-harrell-quarto/">讨论博客</a>，又激起了我的折腾之心，打算把一个大坑给填了：把中文博客改为双语博客。我先建立了一个新的 Git 分支来折腾，成功后才合并到主分支。以下是详细的折腾过程。</p>
+<h2 id="改用-jane-主题">改用 jane 主题</h2>
+<p>我原来用的 <a href="https://github.com/olOwOlo/hugo-theme-even">even 主题</a> 年久失修，作者超过一年没出来处理 Issue 和 Pull Request 了，这个主题的多语言配置也没有详细的说明和配置，于是我就改用 <a href="https://github.com/xianmin/hugo-theme-jane">jane 主题</a>，这个主题更新及时，要是出 bug 应该也容易解决。jane 主题有<a href="https://github.com/xianmin/hugo-theme-jane/blob/a5a3522fb08a4d85d34bdb02aa156dcdac2c9ac4/dev-config.toml#L28-L100">现成的多语言配置</a>可以抄，而且手机页面也有目录。</p>
+<p>这次改用 git submodule 添加主题，这样就不用把主题里的一堆文件加进 git 仓库了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-v" data-lang="v"><span class="line"><span class="cl"><span class="nv">git</span> <span class="nv">submodule</span> <span class="nv">add</span> <span class="nv">https</span><span class="p">:</span><span class="c1">//github.com/xianmin/hugo-theme-jane.git themes/jane
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>配置就抄这几个文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">./exampleSite/config.toml
+</span></span><span class="line"><span class="cl">./exampleSite/full-config.toml
+</span></span><span class="line"><span class="cl">./dev-config.toml
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>双语配置是这样的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">defaultContentLanguageInSubdir</span> <span class="p">=</span> <span class="s2">&#34;true&#34;</span> <span class="c"># Render English site under /en</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">permalinks</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">post</span> <span class="p">=</span> <span class="s2">&#34;/post/:year/:month/:day/:slug/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># language support # en / zh-cn / other... translations present in i18n/</span>
+</span></span><span class="line"><span class="cl"><span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>           <span class="c"># Default language to use</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">langusges</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Cyrus Yip&#39;s Blog&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">languageName</span> <span class="p">=</span> <span class="s2">&#34;English&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">contentDir</span> <span class="p">=</span> <span class="s1">&#39;content/en&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># languageCode = &#34;en&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># weight = 2</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">zh-cn</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;叶寻的博客&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">languageName</span> <span class="p">=</span> <span class="s2">&#34;简体中文&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">contentDir</span> <span class="p">=</span> <span class="s1">&#39;content/zh-cn&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># languageCode = &#34;zh-cn&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># weight = 1</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">author</span><span class="p">]</span>                  <span class="c"># essential                     # 必需</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Cyrus Yip 叶寻&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Home&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;home&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Archives&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">20</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;archives&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/post/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Tags&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">30</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;tags&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/tags/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Categories&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">40</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;categories&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/categories/&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">zh-cn</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;主页&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;home&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;zh-cn/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">zh-cn</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;归档&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">20</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;archives&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;zh-cn/post/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">zh-cn</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;标签&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">30</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;tags&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;zh-cn/tags/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">zh-cn</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;分类&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">40</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;categories&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;zh-cn/categories/&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>内容目录改成这样：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">❯ tree content
+</span></span><span class="line"><span class="cl">content
+</span></span><span class="line"><span class="cl">├── en
+</span></span><span class="line"><span class="cl">│   ├── abount.md
+</span></span><span class="line"><span class="cl">│   └── post
+</span></span><span class="line"><span class="cl">│       └── 2022-05-24-hello-world.md
+</span></span><span class="line"><span class="cl">└── zh-cn
+</span></span><span class="line"><span class="cl">    ├── about.md
+</span></span><span class="line"><span class="cl">    └── post
+</span></span><span class="line"><span class="cl">        └── 2020-10-02-ubuntu-compile-goldendict.md
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="url-重定向">URL 重定向</h2>
+<p>网站改为双语之后，网站链接和原来的不一样了，需要把旧链接重定向到新链接。中文博客链接现在多了 <code>zh-cn</code>，以前是这样的：<code>https://cyrusyip.org/post/2020/10/02/ubuntu-compile-goldendict/</code>，现在要改成 <code>https://cyrusyip.org/zh-cn/post/2020/10/02/ubuntu-compile-goldendict/</code>。RSS 链接也要改。我用 Vercel 部署网站，所以修改 <code>vercel.json</code>，使用正则表达式来重定向链接。改动链接和迁移评论前最好关闭网站，以免造成同一篇文章出现两份评论。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl">  <span class="s2">&#34;redirects&#34;</span><span class="err">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;source&#34;</span><span class="p">:</span> <span class="s2">&#34;/post/(index.xml)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;destination&#34;</span><span class="p">:</span> <span class="s2">&#34;/zh-cn/$1&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;source&#34;</span><span class="p">:</span> <span class="s2">&#34;/(about|subscribe|donate)(/?)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;destination&#34;</span><span class="p">:</span> <span class="s2">&#34;/zh-cn/$1$2&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;source&#34;</span><span class="p">:</span> <span class="s2">&#34;(/post/[0-9].*)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;destination&#34;</span><span class="p">:</span> <span class="s2">&#34;/zh-cn$1&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a href="https://vercel.com/docs/project-configuration#project-configuration/redirects">Vercel 重定向的官方文档</a> 也没介绍它支持哪种正则表达式，我就参照<a href="https://github.com/rbind/yihui/blob/master/vercel.json">益辉的配置</a>自己尝试了。如果你像我一样对正则表达式读写困难，可以用 regex visualizer 帮助理解。修改后的完整 <code>vercel.json</code> <a href="https://github.com/CyrusYip/cyrusyip-blog/blob/main/vercel.json">在这里</a>。弄好之后可以用 Google Search Console 再看看有没有错误链接。</p>
+<h2 id="改动内部链接">改动内部链接</h2>
+<p>网站源文件里面的链接也要更改，例如：<code>[本站的某文章](/post/2021/01/01/hi/)</code> 要改为 <code>[本站的某文章](/zh-cn/post/2021/01/01/hi/)</code>、<code>https://cyrusyip.org/post/xxx</code> 改为 <code>https://cyrusyip.org/zh-cn/post/xxx</code>。</p>
+<p>用 ripgrep 查找源文件里需要改的链接。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">rg &#39;\[.*\]\(/.*\)&#39; content --only-matching &gt;&gt; todo/internal-links
+</span></span><span class="line"><span class="cl">rg &#39;cyrusyip\.org&#39; content &gt;&gt; todo/internal-links
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>修正链接。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sed --regexp-extended -i <span class="s2">&#34;s|(\[.*\]\()(/.*\))|\1/zh-cn\2|g&#34;</span> content/zh-cn/post/*
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>剩下的漏网之鱼就自己手动改了。</p>
+<h2 id="更新博客列表的-rss-链接">更新博客列表的 RSS 链接</h2>
+<p>我的博客收录于下面这两个博客列表。</p>
+<ul>
+<li><a href="https://github.com/shidenggui/bloghub">shidenggui/bloghub: 一群自由而有趣的灵魂，终将在此相遇 | 独立个人博客推荐导航</a></li>
+<li><a href="https://github.com/timqian/chinese-independent-blogs/">timqian/chinese-independent-blogs: 中文独立博客列表</a></li>
+</ul>
+<p>于是过去提交了 pull request 改 RSS 链接。其实不改也没事，旧链接会重定向到新链接。</p>
+<h2 id="迁移评论">迁移评论</h2>
+<p>本站的评论是和文章链接绑定的，因为文章链接改变了，所以要将评论指向新的链接，不然就看不到已有的评论了。本站的评论系统是 Disqus 和 utterances。</p>
+<h3 id="disqus">Disqus</h3>
+<p>Disqus 评论使用 <a href="https://help.disqus.com/en/articles/1717129-url-mapper">URL Mapper</a> 修改。URL Mapper 使用 <code>.csv</code> 文件迁移评论，我先从 Disqus 那里拿到一个 <code>.csv</code> 文件。节选内容如下。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://cyrusyip.org/about/
+</span></span><span class="line"><span class="cl">https://cyrusyip.org/donate/
+</span></span><span class="line"><span class="cl">https://cyrusyip.org/subscribe/
+</span></span><span class="line"><span class="cl">https://cyrusyip.org/post/2020/11/15/mute-volume-plasma/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>将它加上逗号和新链接。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://cyrusyip.org/about/,https://cyrusyip.org/zh-cn/about/
+</span></span><span class="line"><span class="cl">https://cyrusyip.org/donate/,https://cyrusyip.org/zh-cn/donate/
+</span></span><span class="line"><span class="cl">https://cyrusyip.org/subscribe/,https://cyrusyip.org/zh-cn/subscribe/
+</span></span><span class="line"><span class="cl">https://cyrusyip.org/post/2020/11/15/mute-volume-plasma/,https://cyrusyip.org/zh-cn/post/2020/11/15/mute-volume-plasma/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后再上传到 Disqus 就可以迁移评论了，Disqus 会合并逗号两边的文章评论，并将评论移动到右边的链接。官方文档说可能需要 24 小时才完成迁移，实际上我迁移了 82 份评论，一瞬间就好了。修改 <code>.csv</code> 的每一行都是一样的操作：复制整行内容、加逗号、粘贴、加上 <code>zh-cn</code>，所以用 Vim 的 <code>q</code> 命令录制一次操作，然后就可以批量更改了。以下是操作视频，速度比较慢，可以调到 2 倍速观看。</p>
+<video controls style="width:100%; height:100%">
+  <source src="https://cdn.jsdelivr.net/gh/CyrusYip/blog-static/videos/2022-05-30_vim-disqus-csv.mp4"></source>
+</video>
+<p>视频 32 秒执行录制命令时特别慢，主要原因是 coc.nvim 和 fcitx.vim。用 Vim 默认配置（<code>vim --clean</code>）瞬间就完成了，看来录制命令最好在无插件下使用。<a href="https://github.com/CyrusYip/dotfiles/blob/c7189ee3f334a429e0463b5c98a7aa4c14fc45b0/dot_vimrc#L147-L148">我专门定义了命令来用 Vim 默认配置打开文件</a>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#34; Cv: clean vim, used for fast macro replaying
+</span></span><span class="line"><span class="cl">command Cv silent! w | wviminfo | !vim -c &#39;set rnu nuw=1&#39; -c &#39;file&#39; --clean -i ~/.viminfo %
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Disqus 还有<a href="https://help.disqus.com/en/articles/1717068-migration-tools">其他迁移方式</a>，不过我觉得还是 URL Mapper 最稳妥。</p>
+<h3 id="utterances">utterances</h3>
+<p><a href="https://github.com/utterance/utterances">utterances</a> 使用 GitHub Issue 保存评论。标题为「post/2021/10/11/build-aur-wps/」的 Issue 对应的文章链接为「<a href="https://cyrusyip.org/post/2021/10/11/build-aur-wps/">https://cyrusyip.org/post/2021/10/11/build-aur-wps/</a>」。使用 GitHub CLI 修改 Issue 标题就可以迁移评论。</p>
+<p>保存 Issue 标题与号码，并用 Vim 打开。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir todo
+</span></span><span class="line"><span class="cl">gh issue --repo CyrusYip/blog-comment list &gt; todo/utterances
+</span></span><span class="line"><span class="cl">vim todo/utterances
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Issue 信息是这样的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">3	OPEN	about/		2021-10-05 07:07:15 +0000 UTC
+</span></span><span class="line"><span class="cl">2	OPEN	post/2021/03/15/liangfen-shaoxiancao-guilinggao/		2021-04-30 06:53:25 +0000 UTC
+</span></span><span class="line"><span class="cl">1	OPEN	post/2021/03/08/girls-day-womens-day-and-goddesses-day/		2021-03-17 14:46:31 +0000 UTC
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这里用 Vim 的 <code>q</code> 命令批量处理上面的内容，使其变成：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">gh issue --repo CyrusYip/blog-comment edit 3 --title &#39;zh-cn/about/&#39;
+</span></span><span class="line"><span class="cl">gh issue --repo CyrusYip/blog-comment edit 2 --title &#39;zh-cn/post/2021/03/15/liangfen-shaoxiancao-guilinggao/&#39;
+</span></span><span class="line"><span class="cl">gh issue --repo CyrusYip/blog-comment edit 1 --title &#39;zh-cn/post/2021/03/08/girls-day-womens-day-and-goddesses-day/&#39;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后在 Vim 执行 <code>:%!bash</code>，用 BASH 执行上面的命令。utterances 只能移动评论，不能合并评论。移动前最好关闭网站，以免造成同一篇文章出现两份评论。</p>
+<h2 id="增加标题级别">增加标题级别</h2>
+<p>之前我写文章都是先用 Markdown 的一级标题，但根据 MDN 和 Bing Webmaster Tools，使用多个 <code>&lt;h1&gt;</code> 标题是错误的。</p>
+<blockquote>
+<p>Use only one <code>&lt;h1&gt;</code> per page or view. It should concisely describe the overall purpose of the content.</p>
+<p>Using more than one <code>&lt;h1&gt;</code> is allowed by the HTML specification, but is not considered a best practice. Using only one <code>&lt;h1&gt;</code> is beneficial for screenreader users.</p>
+<p>—<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#usage_notes">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#usage_notes</a></p>
+</blockquote>
+<blockquote>
+<p>These pages have more than one <code>&lt;h1&gt;</code> tag. Multiple <code>&lt;h1&gt;</code> header tags might confuse search engine bots and website&rsquo;s users. It is recommended to use only one <code>&lt;h1&gt;</code> tag per page.</p>
+<p>—SEO Reports from Bing Webmaster Tools</p>
+</blockquote>
+<p>这次难得折腾，就彻底整改吧。依然是用正则表达式解决：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">find content/ -type f -exec perl -0777 -i -pe &#39;s/(?&lt;=\n\n)(#.*)(?=\n\n)/#$1/g&#39; {} +
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>上面的正则表达式查找的是「以 <code>#</code> 开头的行，并且它上下都有 1 个空行」，然后在查找到的内容前面增加 <code>#</code>，也就是增加了 1 个标题级别。处理完之后用 VS Code 手动检查，没问题就提交 commit。可以用 VS Code 搜索 <code>^# </code>，看看有没有遗漏的。</p>
+<p><a href="https://github.com/preservim/vim-markdown">preservim/vim-markdown</a> 的 <code>:HeaderIncrease</code> 和 pandoc 的 <code>--shift-heading-level-by=1</code> 选项也可以用来增加标题级别。但是这两个工具都有问题，vim-markdown 会将 Markdown 文件 YAML 内容后两行当成标题，pandoc 会修改 YAML 内容。还是自己老老实实写的正则表达式好。</p>
+<h2 id="添加-favicon">添加 favicon</h2>
+<p>用 <a href="https://realfavicongenerator.net/">https://realfavicongenerator.net/</a> 将我的头像做成 favicon，放到 <code>/static</code> 文件夹。</p>
+<h2 id="jane-主题的问题">Jane 主题的问题</h2>
+<p>从 Even 主题切换到 Jane，还是遇到了一些小问题。</p>
+<ul>
+<li><input disabled="" type="checkbox"> 没有文章总数功能，Even 主题是有的（解决办法：在博客目录用 <code>tree content/</code> 命令查看文件数）。</li>
+<li><input disabled="" type="checkbox"> 不蒜子流量统计在英文博客下仍显示中文。</li>
+<li><input disabled="" type="checkbox"> 不能给不同语言设置不同作者名，例如：中文博客作者是「叶寻」，英文博客作者是「Cyrus Yip」（临时解决办法：中英名字都写入作者名，也就是「Cyrus Yip 叶寻」）。</li>
+<li><input disabled="" type="checkbox"> 用 Vercel 部署博客时 <a href="https://github.com/CyrusYip/cyrusyip-blog/commit/1e5c4a04813065a46f71b0183977f90cb363a6a7"><code>params.gitInfo</code> 功能会出错</a>，本地部署就没事，不知道咋回事。</li>
+</ul>
+<p>修改网站是永无止境的，这些小问题就忍忍吧，太纠结反而没时间写文章了。博客内容最重要，功能够用外观不丑就行。</p>
+<h2 id="代办事项">代办事项</h2>
+<p>这是我想做的一些事。先挖坑，<del>看看有没有人帮我埋</del>。</p>
+<ul>
+<li><input disabled="" type="checkbox"> 自动备份 utterances 评论</li>
+<li><input disabled="" type="checkbox"> 自动备份 Disqus 评论</li>
+</ul>
+<h2 id="资料和工具">资料和工具</h2>
+<ul>
+<li><a href="https://bookdown.org/yihui/blogdown/personal-experience.html">E Personal Experience | blogdown: Creating Websites with R Markdown</a>（谢益辉的博客写作经验）</li>
+<li><a href="https://github.com/iggredible/Learn-Vim">iggredible/Learn-Vim: Learn Vim (the Smart Way)</a>（Vim 教程，学完第九章 Macros 就能在迁移评论时批量处理）</li>
+<li><a href="https://github.com/ziishaned/learn-regex">ziishaned: Learn regex the easy way</a>（正则表达式入门教程）</li>
+<li>regex visualizer（正则表达式可视化工具，用于理解正则表达式，上谷歌能搜到很多）</li>
+<li>vimtutor（Vim 的官方教程，先学这个，再学 Learn-Vim）</li>
+</ul>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">star5o</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2022-05-30
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://www.gnn.ac.cn/zh-cn/tags/blog/">blog</a>
+          <a href="https://www.gnn.ac.cn/zh-cn/tags/hugo/">Hugo</a>
+          <a href="https://www.gnn.ac.cn/zh-cn/tags/blogdown/">blogdown</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/zh-cn/post/2022/07/14/install-windows10/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">Windows 10 简易安装教程</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/zh-cn/post/2022/05/29/dont-adapt-to-clothes/">
+            <span class="next-text nav-default">人不应适应衣服</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "Star5o/blog-comment"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  <div class="disqus-comment">
+  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
+    显示 Disqus 评论
+  </div>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_config = function () {
+      this.page.url = "https://www.gnn.ac.cn/zh-cn/post/2022/05/30/hugo-multilingual/";
+    };
+    function load_disqus() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'star5o';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+      $('#load_disqus').remove();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+  
+  </div>
+
+    
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="https://twitter.com/liyakai_iie" rel="me noopener" class="iconfont"
+      title="twitter"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1264 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M1229.8616 18.043658c0 0-117.852626 63.135335-164.151872 67.344358-105.225559-164.151872-505.082682-92.598492-437.738325 223.078185C278.622548 312.675223 89.216542 47.506814 89.216542 47.506814s-117.852626 189.406006 75.762402 345.139833C127.097743 396.85567 55.544363 371.601535 55.544363 371.601535S26.081207 535.753407 253.368414 615.724832c-21.045112 29.463156-113.643603 8.418045-113.643603 8.418045s25.254134 143.10676 231.496229 180.987961c-143.10676 130.479693-387.230056 92.598492-370.393967 105.225559 206.242095 189.406006 1119.599946 231.496229 1128.01799-643.98042C1179.353331 249.539887 1263.533778 123.269217 1263.533778 123.269217s-130.479693 37.881201-138.897738 33.672179C1225.652577 98.015083 1229.8616 18.043658 1229.8616 18.043658"></path>
+</svg>
+
+    </a>
+  
+    <a href="https://github.com/yakaili" rel="me noopener" class="iconfont"
+      title="github"  target="_blank"
+      >
+      <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M512 12.672c-282.88 0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667 0-12.16-0.426667-44.373333-0.64-87.04-142.421333 30.890667-172.458667-68.693333-172.458667-68.693333C188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333 0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333 0 0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52 0.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667 0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72 0 68.522667-0.64 123.562667-0.64 140.202666 0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"></path>
+</svg>
+
+    </a>
+
+
+<a href="https://www.gnn.ac.cn/zh-cn/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2020 -
+    2022
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        Star5o
+        
+      </span></span>
+
+  
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

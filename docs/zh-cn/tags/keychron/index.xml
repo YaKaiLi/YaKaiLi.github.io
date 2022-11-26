@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Keychron on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/keychron/</link>
+    <description>Recent content in Keychron on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Tue, 18 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/keychron/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 Linux 上使用京东京造（Keychron）K1 SE 的功能键（F1～F12）</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/01/18/k1se-function-keys-on-linux/</link>
+      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/01/18/k1se-function-keys-on-linux/</guid>
+      <description>K1 SE 的功能键在 Linux 上就永远是媒体键，按 F12 和 fn + F12 都是增加音量。解决办法： 1 echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode 现在按功能键就是功能键，按 fn + 功能键 就是媒体键，不过重启就失效了。下面是永久生效的方法： 1 2 echo options hid_apple fnmode=2 | sudo tee -a /etc/modprobe.d/hid_apple.conf sudo mkinitcpio --allpresets</description>
+    </item>
+    
+  </channel>
+</rss>

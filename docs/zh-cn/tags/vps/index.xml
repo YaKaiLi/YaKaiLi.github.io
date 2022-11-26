@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VPS on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/vps/</link>
+    <description>Recent content in VPS on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Tue, 10 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/vps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第一次租国外的服务器</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/08/10/rent-server/</link>
+      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/08/10/rent-server/</guid>
+      <description>最近想租个服务器玩玩，因为我讨厌手机号注册和提交身份信息，就不考虑国内厂商了。之前在知乎好几次看到有人推荐 Vultr，那就试试看吧。注册好就用 Paypal 充了 10 美元，结果就倒霉了。Vultr 提示我帐号审核可能要</description>
+    </item>
+    
+  </channel>
+</rss>

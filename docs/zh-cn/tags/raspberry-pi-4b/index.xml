@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raspberry Pi 4B on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/raspberry-pi-4b/</link>
+    <description>Recent content in Raspberry Pi 4B on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Mon, 20 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/raspberry-pi-4b/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>树莓派 4B 超频教程</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/09/20/raspberry-pi4-overclock/</link>
+      <pubDate>Mon, 20 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/09/20/raspberry-pi4-overclock/</guid>
+      <description>本文配套文章：在 OpenWrt 控制树莓派 Argon Mini Fan 准备散热器和充电器 树莓派 4B 温度达到 80°C 后 CPU 会降频，超过 85°C 后 CPU 和 GPU 都降频。所以超频前一定要给树莓派 4B 加上散热器以保证温度不超过 80°C。要是超频后达到 80°C</description>
+    </item>
+    
+    <item>
+      <title>在 OpenWrt 控制树莓派 Argon Mini Fan</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/09/15/openwrt-argon-mini-fan/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/09/15/openwrt-argon-mini-fan/</guid>
+      <description>本文配套文章：树莓派 4B 超频教程 本文测试于 SuLingGG/OpenWrt-Mini 固件，系统版本：ImmortalWrt 18.06-SNAPSHOT r0-b0fa0c9 / LuCI openwrt-18.06-k5.4 branch (git-21.247.81448-3061bdd)。 配置 把风扇的档位调至 PWM 连接 OpenWrt 1 2 # 请使用你树莓派的 IP</description>
+    </item>
+    
+    <item>
+      <title>树莓派 4B OpenWrt 旁路由教程</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/08/30/raspberry-pi-4b-openwrt/</link>
+      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/08/30/raspberry-pi-4b-openwrt/</guid>
+      <description>本文内容主要来自 SuLingGG 的 OpenWrt-Rpi 文档，感谢 SuLingGG 编译的 OpenWrt 并写了详细的文档。我的吃灰派树莓派 4B 在墓里躺了近两年，又复活了。欢迎大家捐赠 SuLingGG 编译的 OpenWrt。如果本文太难懂，请到 Youtube 或者哔哩哔哩搜索「树莓派安装 Open</description>
+    </item>
+    
+  </channel>
+</rss>

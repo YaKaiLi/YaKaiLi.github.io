@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>font on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/font/</link>
+    <description>Recent content in font on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/font/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>中文没有斜体</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/11/26/no-italic-chinese/</link>
+      <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/11/26/no-italic-chinese/</guid>
+      <description>在西文中，意大利体（italic type）是手写风格的字体，常用作强调内容。西文中还有另一种倾斜的字体是伪斜体（oblique type），它的形状和常规字体一样，只是向右倾斜了。伪斜体和意大利体一样用</description>
+    </item>
+    
+  </channel>
+</rss>

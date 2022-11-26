@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/git/</link>
+    <description>Recent content in Git on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Mon, 07 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git 笔记</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/06/07/git-notes/</link>
+      <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/06/07/git-notes/</guid>
+      <description>术语 工作区（Working Directory）：从某个版本独立提取出来的内容，也包括未被 Git 管理的文件。简单来说就是 .git 文件夹以外的内容。 暂存区（Staging Area）：记录了待提交信息的一个文件。 仓库</description>
+    </item>
+    
+    <item>
+      <title>完全删除 Git 仓库的文件</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/01/25/git-remove-sensitive-data/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/01/25/git-remove-sensitive-data/</guid>
+      <description>步骤 完全删除 Git 仓库的文件是我不常用的操作，但好像每年都得用几次。还是把方法摘抄于此作为备忘录，省得下次再去搜索。这个方法是从 GitHub 文档抄来的，操作比较危险，请先把本文看完再尝试。可以把整个仓库复制到另一个</description>
+    </item>
+    
+  </channel>
+</rss>

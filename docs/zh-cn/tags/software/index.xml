@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/software/</link>
+    <description>Recent content in software on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Thu, 24 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>密码管理器</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/06/24/password-manager/</link>
+      <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/06/24/password-manager/</guid>
+      <description>网上冲浪十余载，帐号越来越多。真的很难记得住每个网站的帐号密码，把帐号密码直接存在笔记软件也不安全。是时候用密码管理器了。我的需求是：跨平台（Linux、Windows、Android、浏览器）、便宜</description>
+    </item>
+    
+  </channel>
+</rss>

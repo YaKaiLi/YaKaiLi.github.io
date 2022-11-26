@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BIOS on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/bios/</link>
+    <description>Recent content in BIOS on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Tue, 08 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/bios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>增强计算机安全性的技巧</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/08/secure-computer/</link>
+      <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/08/secure-computer/</guid>
+      <description>关闭 BIOS 的 USB Boot 和 PXE Boot 选项 开启了 USB 启动后，用户可以绕过电脑里的操作系统，直接启动 U 盘里面的系统。PXE Boot 则是通过网络接口启动计算机。这样不需要知道原系统密码也可以读取硬盘里的文件了。我觉得这两个功能还挺危</description>
+    </item>
+    
+  </channel>
+</rss>

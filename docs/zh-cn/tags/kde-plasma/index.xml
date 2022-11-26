@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>KDE Plasma on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/kde-plasma/</link>
+    <description>Recent content in KDE Plasma on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Mon, 27 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/kde-plasma/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 KDE Plasma 将 Caps 键换成 Esc 键</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/12/27/kde-plasma-swap-caps-and-esc/</link>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/12/27/kde-plasma-swap-caps-and-esc/</guid>
+      <description>最近用 Vim 键位之后经常按 Esc 键，于是就打算将 Caps 键替换为 Esc 键，这样挪一下左小指就能按到。设置方法：打开设置，点击「Input Devices -&amp;gt; Keyboard -&amp;gt; Advanced -&amp;gt; Configure keyboard options -&amp;gt; Caps Lock behavior -&amp;gt; Swap Esc and Caps Lock -&amp;gt; Apply」。</description>
+    </item>
+    
+    <item>
+      <title>KDE Plasma 开机静音设置</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/11/15/mute-volume-plasma/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/11/15/mute-volume-plasma/</guid>
+      <description>Kubuntu 休眠之后开机总会报错： 1 2 3 4 5 6 7 Message from syslogd@my-pc at Nov 15 09:31:33 ... kernel:[ 319.150050] Do you have a strange power saving mode enabled? Message from syslogd@my-pc at Nov 15 09:31:33 ... kernel:[ 319.150050] Dazed and confused, but trying to continue Message from syslogd@my-pc at Nov 15 09:31:33 ... kernel:[ 319.150049] Uhhuh. NMI received for unknown reason 2d on CPU 0. 在 Stack Exchange 搜索了一下，没发现什么简单的解决方法，于是就</description>
+    </item>
+    
+  </channel>
+</rss>

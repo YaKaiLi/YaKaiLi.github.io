@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>domain name on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/domain-name/</link>
+    <description>Recent content in domain name on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/domain-name/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>不要注册 cn 域名</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/05/25/damn-cn-domain/</link>
+      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/05/25/damn-cn-domain/</guid>
+      <description>去年想学习搭建网站，当时啥也不懂，以为建站一定要有服务器、域名和备案。于是在腾讯云租了一年服务器，付费的时候看到 cn 域名才 17 块，就顺便买了一个。备案过程十分曲折，要填很多个人信息。备案后那段时间没空学建</description>
+    </item>
+    
+  </channel>
+</rss>

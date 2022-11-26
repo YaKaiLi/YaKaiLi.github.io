@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CLI on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/cli/</link>
+    <description>Recent content in CLI on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>完全删除 Git 仓库的文件</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/01/25/git-remove-sensitive-data/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/01/25/git-remove-sensitive-data/</guid>
+      <description>步骤 完全删除 Git 仓库的文件是我不常用的操作，但好像每年都得用几次。还是把方法摘抄于此作为备忘录，省得下次再去搜索。这个方法是从 GitHub 文档抄来的，操作比较危险，请先把本文看完再尝试。可以把整个仓库复制到另一个</description>
+    </item>
+    
+    <item>
+      <title>命令行实例</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/25/cli-examples/</link>
+      <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/25/cli-examples/</guid>
+      <description>本文用于收集我记不住的实用的命令行用法。 docker 1 2 3 # 启动已停止的容器 docker start f357e2faab77 # restart it in the background docker attach f357e2faab77 # reattach the terminal &amp;amp; stdin docker - I lose my data when the container exits - Stack Overflow 下载视频 1 2 3 4 5 6 # 安装工具 pip install you-get youtube-dl -U # 下载视频 you-get https://www.iqiyi.com/v_m72044yl88.html youtube-dl https://www.youtube.com/watch\?v\=9gfECJHQElo 去广告看视频 1</description>
+    </item>
+    
+    <item>
+      <title>用 BASH 脚本更新各类软件包</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/25/update-packages-script/</link>
+      <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/25/update-packages-script/</guid>
+      <description>刚用 Ubuntu 的时候，觉得用 apt 安装软件很方便，从此不再需要像用 Windows 一样要去官方下载软件。用久了也发现 Ubuntu 软件仓库有两个问题：软件不是最新版本、缺少某些软件。要解决这些问题，除了添加 PPA 以外，就只能用的其他包管理器作</description>
+    </item>
+    
+    <item>
+      <title>不指定路径运行自己写的软件</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/24/put-software-into-path/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/24/put-software-into-path/</guid>
+      <description>在 Linux 上运行自己写的软件必须指定路径才能运行。举个例子，我写了个 BASH 脚本，把代码保存到 hello_world 文件，放到 ~/Desktop，并赋予它运行权限。 1 2 #!/bin/bash echo &amp;#34;Hello, World!&amp;#34; 如果我们在终端执行 hello_world 会怎么样呢？ 1 2 3 4 $ hello_world Command &amp;#39;hello_world&amp;#39; not found, did you</description>
+    </item>
+    
+    <item>
+      <title>键盘使用技巧</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/21/keyboard-usage/</link>
+      <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/21/keyboard-usage/</guid>
+      <description>以前用 Windows 的时候用鼠标比较多，一直忽略键盘右边的按键。转到 Linux 之后才发现被我忽略的按键是多么好用。 缩写全称对照表 了解按键的全称有利于记忆按键的功能。 缩写 全称 符号 Tab Tabulator / Tabular ↹ Alt Alternate Ctrl Control Del Delete Shift ⇧ Backspace ← Enter ↵ PgUp PageUp PgDn PageDown Ins</description>
+    </item>
+    
+    <item>
+      <title>trash-cli 中文手册</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/12/trash-cli-manual/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/12/trash-cli-manual/</guid>
+      <description>rm 是常用的 BASH 命令，但是误删文件后比较难恢复。用 trash-cli 更安全，它只是把文件移动到回收站，这样误删文件也很容易恢复。我觉得这个软件挺好用的，就把官方文档翻译成中文了。 trash-cli——FreeDeskto</description>
+    </item>
+    
+  </channel>
+</rss>

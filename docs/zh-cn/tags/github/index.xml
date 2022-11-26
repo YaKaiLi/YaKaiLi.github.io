@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/github/</link>
+    <description>Recent content in Github on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Tue, 27 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>行李清单</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/04/27/baggage-checklist/</link>
+      <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/04/27/baggage-checklist/</guid>
+      <description>收拾行李对我来说一直是个大难题。每次出门都要收拾很久，还常常丢三落四。现在终于想到了个好办法——行李清单。出门前先写一份行李清单，然后把清单上的东西都拿出来，再逐一清点，有的东西就打个勾。就像这样： 衣</description>
+    </item>
+    
+    <item>
+      <title>GitHub 图床教程</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/05/host-images-on-github/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/05/host-images-on-github/</guid>
+      <description>新建公共仓库1 勾选 Add a README file，这样待会就可以直接克隆了 克隆仓库 1 git clone git@github.com:your-username/repo-name.git 使用 Bash 脚本自动上传 1 2 3 4 #!/bin/bash git add --all git commit -m &amp;#34;update&amp;#34; git push 安装所需软件 1 2 sudo apt install fzf xclip pip3 install pyperclip 使用 Python 脚本获取图片网址 1 2 3 4 5 6 7 8 9 10 11 12 13</description>
+    </item>
+    
+  </channel>
+</rss>

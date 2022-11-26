@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kubuntu on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/kubuntu/</link>
+    <description>Recent content in Kubuntu on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Sun, 08 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/kubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 Debian/Ubuntu 安装旧版 WPS Linux</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/08/08/ubuntu-install-older-wps/</link>
+      <pubDate>Sun, 08 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/08/08/ubuntu-install-older-wps/</guid>
+      <description>最近把 WPS For Linux 更新到最新的 11.1.0.10702，打开就提示「系统DPI不对称，WPS可能存在显示问题」，果然 WPS 都是模糊的。打算去官网找上个版本，结果只有最新版，气死我了！在谷歌搜了几次也找不到历史版</description>
+    </item>
+    
+    <item>
+      <title>修复 Kubuntu 无音频设备的问题</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/11/24/kubuntu-no-sound-device/</link>
+      <pubDate>Tue, 24 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/11/24/kubuntu-no-sound-device/</guid>
+      <description>执行命令： 1 2 3 4 #!/bin/bash -x sudo alsa force-reload pulseaudio -k start-pulseaudio-x11 进入 System Settings -&amp;gt; Hardware -&amp;gt; Audio -&amp;gt; Advanced -&amp;gt; Device Profiles，把 Profile 改成 Analog Stereo Duplex。 把重置音频的命令保存为脚本文件，以后使用更方便： 把开头的脚本保存为 reset-sound 添加执行权限 chmod +x reset-sound 把文件放到 $PATH1</description>
+    </item>
+    
+    <item>
+      <title>KDE Plasma 开机静音设置</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/11/15/mute-volume-plasma/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/11/15/mute-volume-plasma/</guid>
+      <description>Kubuntu 休眠之后开机总会报错： 1 2 3 4 5 6 7 Message from syslogd@my-pc at Nov 15 09:31:33 ... kernel:[ 319.150050] Do you have a strange power saving mode enabled? Message from syslogd@my-pc at Nov 15 09:31:33 ... kernel:[ 319.150050] Dazed and confused, but trying to continue Message from syslogd@my-pc at Nov 15 09:31:33 ... kernel:[ 319.150049] Uhhuh. NMI received for unknown reason 2d on CPU 0. 在 Stack Exchange 搜索了一下，没发现什么简单的解决方法，于是就</description>
+    </item>
+    
+  </channel>
+</rss>

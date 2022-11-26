@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fcitx5 on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/fcitx5/</link>
+    <description>Recent content in Fcitx5 on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Fri, 24 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/fcitx5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VSCodeVim 自动切换 Fcitx5</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/12/24/vscodevim-auto-switch-fcitx5/</link>
+      <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/12/24/vscodevim-auto-switch-fcitx5/</guid>
+      <description>在 $HOME/.config/Code/User/settings.json 加入以下内容： 1 2 3 4 5 6 { &amp;#34;vim.autoSwitchInputMethod.obtainIMCmd&amp;#34;: &amp;#34;/usr/bin/fcitx5-remote&amp;#34;, &amp;#34;vim.autoSwitchInputMethod.switchIMCmd&amp;#34;: &amp;#34;/usr/bin/fcitx5-remote -t {im}&amp;#34;, &amp;#34;vim.autoSwitchInputMethod.enable&amp;#34;: true, &amp;#34;vim.autoSwitchInputMethod.defaultIM&amp;#34;: &amp;#34;1&amp;#34;, } 或者按下 Ctrl + , 用图形界面设置对应选项。这样退出插入模式时会将 Fcitx5 切换为英文。 参考文章：在 VSCode 的 Vim keybinding 下自動切換 fcitx 模式 | by DanSnow | Medium</description>
+    </item>
+    
+    <item>
+      <title>在 Ubuntu 下配置 Fcitx5</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/11/06/configure-fcitx5-on-ubuntu/</link>
+      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/11/06/configure-fcitx5-on-ubuntu/</guid>
+      <description>安装 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 # 安装 Fcitx5 sudo apt install fcitx5 \ fcitx5-pinyin \ fcitx5-chinese-addons \ fcitx5-frontend-gtk2 \ fcitx5-frontend-gtk3 \ fcitx5-frontend-qt5 \ fcitx5-module-ibus \ fcitx5-module-cloudpinyin \ fcitx5-material-color # 把 Fcitx5 设置为默认输入法 im-config -n fcitx5 # 设置 Fcitx5 拼音输入法 fcitx5-configtool # 开机启动 cp /usr/share/applications/fcitx5.desktop ~/.config/autostart/ 配置 修改标点符号键位映射 Fcitx5 默认的标点符号键位为</description>
+    </item>
+    
+    <item>
+      <title>在 RStudio 中使用 Fcitx5（Kubuntu 20.10）</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/11/01/use-fcitx5-in-rstudio-on-kubuntu20.10/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/11/01/use-fcitx5-in-rstudio-on-kubuntu20.10/</guid>
+      <description>2022 年 7 月 16 日更新：Electron 版的 RStudio 可以正常使用 Fcitx5 了，位置也正常。 在 Kubuntu 20.10 使用 RStudio 的时候，发现它不支持 Fcitx。参考 RStudio 官方的方法，成功在 RStudio 里面用上了 Fcitx 5。里面部分内容已经过时，应该用下面这个命令才对</description>
+    </item>
+    
+  </channel>
+</rss>

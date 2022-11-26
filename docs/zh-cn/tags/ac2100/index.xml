@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AC2100 on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/ac2100/</link>
+    <description>Recent content in AC2100 on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Sat, 19 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/ac2100/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>红米 AC2100 刷入 OpenWrt 固件</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/06/19/ac2100-openwrt/</link>
+      <pubDate>Sat, 19 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/06/19/ac2100-openwrt/</guid>
+      <description>红米 AC2100 刷机的主要步骤：获取 SSH 访问权限、刷入 bootloader（Breed）、刷入固件。 工具 红米 AC2100 牙签或卡针 2 条网线1 带网线插口的电脑（没有就买 USB 网口） 配置网络 AC 2100 WAN 口连接调制解调器或者原路由器 LAN 口，</description>
+    </item>
+    
+  </channel>
+</rss>

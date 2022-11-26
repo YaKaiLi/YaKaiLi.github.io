@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LaTeX on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/latex/</link>
+    <description>Recent content in LaTeX on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Mon, 21 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>键盘使用技巧</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/21/keyboard-usage/</link>
+      <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/21/keyboard-usage/</guid>
+      <description>以前用 Windows 的时候用鼠标比较多，一直忽略键盘右边的按键。转到 Linux 之后才发现被我忽略的按键是多么好用。 缩写全称对照表 了解按键的全称有利于记忆按键的功能。 缩写 全称 符号 Tab Tabulator / Tabular ↹ Alt Alternate Ctrl Control Del Delete Shift ⇧ Backspace ← Enter ↵ PgUp PageUp PgDn PageDown Ins</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Markdown 技巧 - star5o的博客</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="star5o" />
+  <meta name="description" content="使用 R Markdown 常用的 GitHub Flavored Markdown 功能很少，熟悉之后可以使用更强大的 R Markdown。 R Markdown 的优势： 多用途 R Markdown 可以用来写文档，输出格式为 PDF、HTML、Word 等，写书可以用 bookdown。除了写文档，R Markdown 还可" />
+
+  <meta name="keywords" content="Star5o, star5o" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.107.0" />
+
+
+<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/post/2020/12/15/markdown-tricks/" />
+
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="Markdown 技巧" />
+<meta property="og:description" content="使用 R Markdown 常用的 GitHub Flavored Markdown 功能很少，熟悉之后可以使用更强大的 R Markdown。 R Markdown 的优势： 多用途 R Markdown 可以用来写文档，输出格式为 PDF、HTML、Word 等，写书可以用 bookdown。除了写文档，R Markdown 还可" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2020/12/15/markdown-tricks/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-12-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-12-15T00:00:00+00:00" /><meta property="og:site_name" content="star5o的博客" />
+
+<meta itemprop="name" content="Markdown 技巧">
+<meta itemprop="description" content="使用 R Markdown 常用的 GitHub Flavored Markdown 功能很少，熟悉之后可以使用更强大的 R Markdown。 R Markdown 的优势： 多用途 R Markdown 可以用来写文档，输出格式为 PDF、HTML、Word 等，写书可以用 bookdown。除了写文档，R Markdown 还可"><meta itemprop="datePublished" content="2020-12-15T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-12-15T00:00:00+00:00" />
+<meta itemprop="wordCount" content="2947">
+<meta itemprop="keywords" content="Markdown," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Markdown 技巧"/>
+<meta name="twitter:description" content="使用 R Markdown 常用的 GitHub Flavored Markdown 功能很少，熟悉之后可以使用更强大的 R Markdown。 R Markdown 的优势： 多用途 R Markdown 可以用来写文档，输出格式为 PDF、HTML、Word 等，写书可以用 bookdown。除了写文档，R Markdown 还可"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-193139827-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/zh-cn/" class="logo">star5o的博客</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/">主页</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/post/">文章</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/tags/">标签</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/about/">关于</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/subscribe/">订阅</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/donate/">鼓励</a>
+          
+        
+      </li>
+    <li class="mobile-menu-item">
+        
+        <div class="mobile-menu-parent mobile-menu-item-lang">
+          <span class="mobile-submenu-open"></span>
+          <a href="#">
+            
+            <i class="iconfont">
+              <svg height="16" width="16" version="1.1" viewBox="0 0 128 128">
+  <path d="m 64.719501,1.4279814 c -34.694029,0 -62.8192028,28.1251726 -62.8192028,62.8192016 0,34.694036 28.1251738,62.819207 62.8192028,62.819207 4.245691,0 8.392744,-0.42239 12.402214,-1.2253 -1.616124,-0.77296 -1.792473,-6.57213 -0.194346,-9.87848 1.779059,-3.68082 7.361625,-13.00555 1.840404,-16.134231 -5.521221,-3.12869 -3.98755,-4.53968 -7.361625,-8.15914 -3.374083,-3.61947 -1.994181,-4.16357 -2.208492,-5.09179 -0.736158,-3.19004 3.251385,-7.975096 3.435429,-8.465866 0.184043,-0.490781 0.184043,-2.331182 0.122689,-2.883308 -0.06131,-0.552125 -2.515051,-2.024446 -3.12852,-2.085791 -0.613469,-0.06133 -0.920209,0.98154 -1.77906,1.042896 -0.858856,0.06133 -4.601018,-2.269838 -5.39853,-2.883308 -0.797504,-0.61346 -1.165591,-2.085792 -2.269828,-3.190033 -1.104247,-1.104252 -1.226945,-0.24539 -2.944651,-0.920206 -1.717714,-0.674812 -7.238935,-2.69926 -11.471867,-4.416975 -4.23294,-1.717714 -4.601019,-4.125615 -4.662365,-5.827954 -0.06131,-1.702333 -2.57657,-4.171587 -3.756227,-5.950646 -1.179335,-1.77906 -1.396914,-4.232932 -1.826339,-3.680809 -0.429425,0.552114 2.208484,6.993538 1.77906,7.177582 -0.429425,0.184043 -1.349635,-1.77906 -2.576572,-3.374083 -1.226936,-1.595016 1.28829,-0.736159 -2.637915,-8.465864 -3.926198,-7.729705 1.226944,-11.671284 1.472324,-15.704806 0.24539,-4.033514 3.312738,1.472325 1.717715,-1.104238 -1.595016,-2.576571 0.122697,-7.975094 -1.104246,-9.938197 -1.226936,-1.963102 -8.220475,2.208492 -8.220475,2.208492 0.184036,-1.901758 6.134682,-5.153142 10.428966,-8.1591366 4.294277,-3.005996 6.91682,-0.674813 10.367621,0.4294236 3.450803,1.104246 3.680817,0.736167 2.515226,-0.368079 -1.165591,-1.1042446 0.49077,-1.6563686 3.190031,-1.2269356 2.699269,0.429425 3.435428,3.6808086 7.545669,3.3740746 4.110242,-0.306735 0.429425,0.797511 0.981548,1.840412 0.552123,1.042892 -0.613468,0.920202 -3.312729,2.760607 -2.699262,1.840403 0.06131,1.840403 4.846407,5.337177 4.785055,3.496773 3.312729,-2.331183 2.821952,-4.907753 -0.490777,-2.576563 3.496773,-0.552115 3.496773,-0.552115 2.944651,1.963094 2.400546,0.107972 4.547684,0.782784 2.147139,0.674814 7.967076,5.597286 7.967076,5.597286 -7.300273,3.98755 -2.699261,4.416975 -1.472325,5.337178 1.226937,0.920202 -2.515218,2.699261 -2.515218,2.699261 -1.53367,-1.53367 -1.779059,0.06131 -2.760614,0.613476 -0.981548,0.552115 -0.06131,1.963095 -0.06131,1.963095 -5.076415,0.797512 -3.926198,6.13469 -3.864852,7.422971 0.06131,1.288289 -3.251385,3.251384 -4.110242,5.091796 -0.858857,1.840405 2.208491,5.827948 0.613468,6.073336 -1.595016,0.24539 -3.190031,-6.011991 -11.778601,-3.680808 -2.589322,0.702954 -8.343174,3.680808 -5.275824,9.754153 3.06734,6.073336 8.15913,-1.717714 9.876843,-0.858857 1.717714,0.858857 -0.490778,4.72371 -0.122691,4.785055 0.368079,0.06131 4.8464,0.168662 5.09179,5.398522 0.245388,5.229868 6.809502,4.785065 8.220482,4.907755 1.410972,0.12269 6.134682,-3.864859 6.809502,-4.048894 0.674815,-0.184034 3.374076,-2.453876 9.263377,0.920195 5.889301,3.374089 8.895296,2.883308 10.919743,4.294285 2.02445,1.410987 0.61347,4.232939 2.51523,5.153134 1.90175,0.920217 9.50876,-0.306736 11.41051,2.821966 1.90176,3.1287 -7.8524,18.833491 -10.91974,20.551201 -3.06734,1.71772 -4.478321,5.64392 -7.545665,8.15913 -3.067349,2.51523 -7.361625,5.62854 -11.410522,8.03646 -3.583968,2.1311 -4.228845,5.949 -5.825333,7.15419 28.11404,-6.24545 49.13623,-31.328971 49.13623,-61.323497 0,-34.694029 -28.125171,-62.8192016 -62.819206,-62.8192016 z M 79.442753,60.382331 c -0.858857,0.245389 -2.637917,1.840405 -6.993547,-0.736166 -4.35563,-2.576564 -7.361625,-2.085794 -7.729705,-2.515218 0,0 -0.368079,-1.0429 1.533671,-1.226937 3.905098,-0.378065 8.833951,3.619464 9.938196,3.680809 1.104246,0.06131 1.656361,-1.104245 3.619464,-0.471631 1.963103,0.631953 0.490777,1.023755 -0.368079,1.269143 z M 58.891546,7.6853614 c -0.427786,-0.311152 0.354344,-0.669418 0.82058,-1.288281 0.269103,-0.357613 0.0695,-0.951289 0.406356,-1.28829 0.92021,-0.920203 5.459876,-2.208485 4.572225,0.306734 -0.887321,2.515226 -5.12434,2.760614 -5.799161,2.269837 z m 10.98109,7.9750936 c -1.533672,-0.06131 -5.14381,-0.442837 -4.478321,-1.104246 2.591952,-2.576563 -0.981548,-3.312729 -3.190039,-3.496766 -2.208485,-0.184043 -3.128687,-1.4109786 -2.02444,-1.5336776 1.104237,-0.12269 5.521213,0.06139 6.257379,0.6748206 0.736158,0.613469 4.723709,2.208485 4.969099,3.374076 0.24538,1.16559 0,2.147138 -1.533678,2.085793 z M 83.184914,15.23103 c -1.226943,0.981547 -7.400887,-3.521968 -8.588569,-4.539674 -5.153134,-4.4169746 -7.913742,-2.9446486 -8.995903,-3.6808086 -1.082485,-0.736166 -0.696897,-1.717713 0.959464,-3.190039 1.656369,-1.472325 6.318732,0.490778 9.017994,0.797512 2.699262,0.306734 5.827955,2.392527 5.889301,4.871925 0.06131,2.4792256 2.944649,4.7595296 1.717713,5.7410846 z" />
+</svg>
+
+            </i>
+            语言
+          </a>
+        </div>
+        <ul class="mobile-submenu-list">
+          
+            <li>
+              
+                <a href="https://www.gnn.ac.cn/en/">English</a>
+              
+            </li>
+          
+            <li>
+              
+                <a href="https://www.gnn.ac.cn/zh-cn/"><strong>简体中文</strong></a>
+              
+            </li>
+          
+        </ul>
+      </li>
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/zh-cn/" class="logo">
+    
+      star5o的博客
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/">主页</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/post/">文章</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/tags/">标签</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/about/">关于</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/subscribe/">订阅</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/donate/">鼓励</a>
+          
+
+        
+
+      </li>
+    
+
+    
+    <li class="menu-item">
+        
+        <a class="menu-item-link menu-parent menu-item-lang" href="#">
+          
+          <i class="iconfont">
+            <svg height="16" width="16" version="1.1" viewBox="0 0 128 128">
+  <path d="m 64.719501,1.4279814 c -34.694029,0 -62.8192028,28.1251726 -62.8192028,62.8192016 0,34.694036 28.1251738,62.819207 62.8192028,62.819207 4.245691,0 8.392744,-0.42239 12.402214,-1.2253 -1.616124,-0.77296 -1.792473,-6.57213 -0.194346,-9.87848 1.779059,-3.68082 7.361625,-13.00555 1.840404,-16.134231 -5.521221,-3.12869 -3.98755,-4.53968 -7.361625,-8.15914 -3.374083,-3.61947 -1.994181,-4.16357 -2.208492,-5.09179 -0.736158,-3.19004 3.251385,-7.975096 3.435429,-8.465866 0.184043,-0.490781 0.184043,-2.331182 0.122689,-2.883308 -0.06131,-0.552125 -2.515051,-2.024446 -3.12852,-2.085791 -0.613469,-0.06133 -0.920209,0.98154 -1.77906,1.042896 -0.858856,0.06133 -4.601018,-2.269838 -5.39853,-2.883308 -0.797504,-0.61346 -1.165591,-2.085792 -2.269828,-3.190033 -1.104247,-1.104252 -1.226945,-0.24539 -2.944651,-0.920206 -1.717714,-0.674812 -7.238935,-2.69926 -11.471867,-4.416975 -4.23294,-1.717714 -4.601019,-4.125615 -4.662365,-5.827954 -0.06131,-1.702333 -2.57657,-4.171587 -3.756227,-5.950646 -1.179335,-1.77906 -1.396914,-4.232932 -1.826339,-3.680809 -0.429425,0.552114 2.208484,6.993538 1.77906,7.177582 -0.429425,0.184043 -1.349635,-1.77906 -2.576572,-3.374083 -1.226936,-1.595016 1.28829,-0.736159 -2.637915,-8.465864 -3.926198,-7.729705 1.226944,-11.671284 1.472324,-15.704806 0.24539,-4.033514 3.312738,1.472325 1.717715,-1.104238 -1.595016,-2.576571 0.122697,-7.975094 -1.104246,-9.938197 -1.226936,-1.963102 -8.220475,2.208492 -8.220475,2.208492 0.184036,-1.901758 6.134682,-5.153142 10.428966,-8.1591366 4.294277,-3.005996 6.91682,-0.674813 10.367621,0.4294236 3.450803,1.104246 3.680817,0.736167 2.515226,-0.368079 -1.165591,-1.1042446 0.49077,-1.6563686 3.190031,-1.2269356 2.699269,0.429425 3.435428,3.6808086 7.545669,3.3740746 4.110242,-0.306735 0.429425,0.797511 0.981548,1.840412 0.552123,1.042892 -0.613468,0.920202 -3.312729,2.760607 -2.699262,1.840403 0.06131,1.840403 4.846407,5.337177 4.785055,3.496773 3.312729,-2.331183 2.821952,-4.907753 -0.490777,-2.576563 3.496773,-0.552115 3.496773,-0.552115 2.944651,1.963094 2.400546,0.107972 4.547684,0.782784 2.147139,0.674814 7.967076,5.597286 7.967076,5.597286 -7.300273,3.98755 -2.699261,4.416975 -1.472325,5.337178 1.226937,0.920202 -2.515218,2.699261 -2.515218,2.699261 -1.53367,-1.53367 -1.779059,0.06131 -2.760614,0.613476 -0.981548,0.552115 -0.06131,1.963095 -0.06131,1.963095 -5.076415,0.797512 -3.926198,6.13469 -3.864852,7.422971 0.06131,1.288289 -3.251385,3.251384 -4.110242,5.091796 -0.858857,1.840405 2.208491,5.827948 0.613468,6.073336 -1.595016,0.24539 -3.190031,-6.011991 -11.778601,-3.680808 -2.589322,0.702954 -8.343174,3.680808 -5.275824,9.754153 3.06734,6.073336 8.15913,-1.717714 9.876843,-0.858857 1.717714,0.858857 -0.490778,4.72371 -0.122691,4.785055 0.368079,0.06131 4.8464,0.168662 5.09179,5.398522 0.245388,5.229868 6.809502,4.785065 8.220482,4.907755 1.410972,0.12269 6.134682,-3.864859 6.809502,-4.048894 0.674815,-0.184034 3.374076,-2.453876 9.263377,0.920195 5.889301,3.374089 8.895296,2.883308 10.919743,4.294285 2.02445,1.410987 0.61347,4.232939 2.51523,5.153134 1.90175,0.920217 9.50876,-0.306736 11.41051,2.821966 1.90176,3.1287 -7.8524,18.833491 -10.91974,20.551201 -3.06734,1.71772 -4.478321,5.64392 -7.545665,8.15913 -3.067349,2.51523 -7.361625,5.62854 -11.410522,8.03646 -3.583968,2.1311 -4.228845,5.949 -5.825333,7.15419 28.11404,-6.24545 49.13623,-31.328971 49.13623,-61.323497 0,-34.694029 -28.125171,-62.8192016 -62.819206,-62.8192016 z M 79.442753,60.382331 c -0.858857,0.245389 -2.637917,1.840405 -6.993547,-0.736166 -4.35563,-2.576564 -7.361625,-2.085794 -7.729705,-2.515218 0,0 -0.368079,-1.0429 1.533671,-1.226937 3.905098,-0.378065 8.833951,3.619464 9.938196,3.680809 1.104246,0.06131 1.656361,-1.104245 3.619464,-0.471631 1.963103,0.631953 0.490777,1.023755 -0.368079,1.269143 z M 58.891546,7.6853614 c -0.427786,-0.311152 0.354344,-0.669418 0.82058,-1.288281 0.269103,-0.357613 0.0695,-0.951289 0.406356,-1.28829 0.92021,-0.920203 5.459876,-2.208485 4.572225,0.306734 -0.887321,2.515226 -5.12434,2.760614 -5.799161,2.269837 z m 10.98109,7.9750936 c -1.533672,-0.06131 -5.14381,-0.442837 -4.478321,-1.104246 2.591952,-2.576563 -0.981548,-3.312729 -3.190039,-3.496766 -2.208485,-0.184043 -3.128687,-1.4109786 -2.02444,-1.5336776 1.104237,-0.12269 5.521213,0.06139 6.257379,0.6748206 0.736158,0.613469 4.723709,2.208485 4.969099,3.374076 0.24538,1.16559 0,2.147138 -1.533678,2.085793 z M 83.184914,15.23103 c -1.226943,0.981547 -7.400887,-3.521968 -8.588569,-4.539674 -5.153134,-4.4169746 -7.913742,-2.9446486 -8.995903,-3.6808086 -1.082485,-0.736166 -0.696897,-1.717713 0.959464,-3.190039 1.656369,-1.472325 6.318732,0.490778 9.017994,0.797512 2.699262,0.306734 5.827955,2.392527 5.889301,4.871925 0.06131,2.4792256 2.944649,4.7595296 1.717713,5.7410846 z" />
+</svg>
+
+          </i>
+          简体中文
+        </a>
+        <ul class="submenu">
+          
+            
+              <li>
+                <a href="https://www.gnn.ac.cn/en/">English</a>
+              </li>
+            
+          
+            
+          
+        </ul>
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Markdown 技巧</h1>
+      
+      <div class="post-meta">
+        <time datetime="2020-12-15" class="post-time">
+          2020-12-15
+        </time>
+        
+        <span class="more-meta"> 约 2947 字 </span>
+          <span class="more-meta"> 预计阅读 6 分钟 </span>
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#使用-r-markdown">使用 R Markdown</a></li>
+    <li><a href="#有序列表只有第-1-个数字有作用">有序列表只有第 1 个数字有作用</a></li>
+    <li><a href="#图片--超链接">图片 + 超链接</a></li>
+    <li><a href="#使用包含--的代码块">使用包含 ``` 的代码块</a></li>
+    <li><a href="#用空行隔开不同元素">用空行隔开不同元素</a></li>
+    <li><a href="#typora-标题自动标号">Typora 标题自动标号</a></li>
+    <li><a href="#为什么-markdown-的标题叫-atx-和-setext">为什么 Markdown 的标题叫 ATX 和 Setext</a></li>
+    <li><a href="#避免使用其他标记语言">避免使用其他标记语言</a></li>
+    <li><a href="#在-r-markdown-中加载-latex-宏包">在 R Markdown 中加载 LaTeX 宏包</a>
+      <ul>
+        <li><a href="#extra_dependencies">extra_dependencies</a></li>
+        <li><a href="#header-includes">header-includes</a></li>
+        <li><a href="#in-header">in-header</a></li>
+        <li><a href="#参考资料">参考资料</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <h2 id="使用-r-markdown">使用 R Markdown</h2>
+<p>常用的 GitHub Flavored Markdown 功能很少，熟悉之后可以使用更强大的 <a href="https://bookdown.org/yihui/rmarkdown/">R Markdown</a>。</p>
+<p>R Markdown 的优势：</p>
+<ul>
+<li>
+<p>多用途</p>
+<p>R Markdown 可以用来写文档，输出格式为 PDF、HTML、Word 等，写书可以用 <a href="https://bookdown.org/yihui/bookdown/">bookdown</a>。除了写文档，R Markdown 还可以用来写幻灯片（ioslides、Slidy、Beamer、Powerpoint、xaringan 等）和写博客（<a href="https://bookdown.org/yihui/blogdown/">blogdown</a>）。</p>
+</li>
+<li>
+<p>可运行代码</p>
+<p>R Markdown 中可以插入代码，编译文档后代码结果会在输出文档里面。这样的话，改了代码新的结果也会自动插入到输出文档，就不用自己手动插入图片了。</p>
+</li>
+</ul>
+<h2 id="有序列表只有第-1-个数字有作用">有序列表只有第 1 个数字有作用</h2>
+<p>下面的有序列表显示效果一样</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1. 香蕉
+</span></span><span class="line"><span class="cl">2. 葡萄
+</span></span><span class="line"><span class="cl">3. 菠萝
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1. 香蕉
+</span></span><span class="line"><span class="cl">1. 葡萄
+</span></span><span class="line"><span class="cl">1. 菠萝
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1. 香蕉
+</span></span><span class="line"><span class="cl">111. 葡萄
+</span></span><span class="line"><span class="cl">10. 菠萝
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>它们都会显示为</p>
+<ol>
+<li>香蕉</li>
+<li>葡萄</li>
+<li>菠萝</li>
+</ol>
+<p>另外，列表数字可以不以 1 为开头。比如</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">2. 香蕉
+</span></span><span class="line"><span class="cl">2. 葡萄
+</span></span><span class="line"><span class="cl">2. 菠萝
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>会显示为</p>
+<ol start="2">
+<li>香蕉</li>
+<li>葡萄</li>
+<li>菠萝</li>
+</ol>
+<p>在有序列表中使用同一个数字有两个好处：一是不需要自己手动编号、二是使用 <code>Git</code> 管理文件时变动更少。</p>
+<h2 id="图片--超链接">图片 + 超链接</h2>
+<p>超链接的语法是<code>[链接文本](链接网址)</code>，图片的语法是<code>![图片标题](图片网址)</code>。把图片当成超链接的文本，放到超链接的语句中就可以生成带有超链接的图片，也就是<code>[![图片标题](图片网址)](链接网址)</code>。</p>
+<p>这是 GitHub 的吉祥物 Octocat</p>
+<p><code>![octocat](https://octodex.github.com/images/kimonotocat.png)</code></p>
+<p><img src="https://octodex.github.com/images/kimonotocat.png" alt="octocat"></p>
+<p>这是 Github 的链接</p>
+<p><code>[GitHub](https://github.com/)</code></p>
+<p>把它们拼凑起来就可以制作带有 GitHub 链接的 Octocat</p>
+<p><code>[![octocat](https://octodex.github.com/images/kimonotocat.png)](https://github.com/)</code></p>
+<p><a href="https://github.com/"><img src="https://octodex.github.com/images/kimonotocat.png" alt="octocat"></a></p>
+<p>因为本站使用了 fancybox，所以点击上面的图片不会跳转到 GitHub。不过你可以把代码复制到 Markdown 编辑器试试看。</p>
+<h2 id="使用包含--的代码块">使用包含 ``` 的代码块</h2>
+<p>如果代码块里包含 N 个 `，在需要代码块前后使用 N+1 个 ` 把它包裹起来，不然就会显示错误。下面内容会显示为两个空代码块夹着 <code>print(&quot;Hello, World!&quot;)</code>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">```
+</span></span><span class="line"><span class="cl">```
+</span></span><span class="line"><span class="cl">print(&#34;Hello, World!&#34;)
+</span></span><span class="line"><span class="cl">```
+</span></span><span class="line"><span class="cl">```
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>上面代码的正确写法应该是</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">````
+</span></span><span class="line"><span class="cl">```
+</span></span><span class="line"><span class="cl">print(&#34;Hello, World!&#34;)
+</span></span><span class="line"><span class="cl">```
+</span></span><span class="line"><span class="cl">````
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>它会显示为</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">```
+</span></span><span class="line"><span class="cl">print(&#34;Hello, World!&#34;)
+</span></span><span class="line"><span class="cl">```
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="用空行隔开不同元素">用空行隔开不同元素</h2>
+<p>用空行隔开不同元素可以消除歧义，避免错误的显示效果。如果不用空行的话，可能会出现意料之外的显示效果。如果我用下面的写法列举我喜欢吃的食物，猜猜 Markdown 编辑器会如何显示。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">水果：
+</span></span><span class="line"><span class="cl">1. 椰子
+</span></span><span class="line"><span class="cl">2. 香蕉
+</span></span><span class="line"><span class="cl">3. 菠萝
+</span></span><span class="line"><span class="cl">烧腊：
+</span></span><span class="line"><span class="cl">1. 叉烧
+</span></span><span class="line"><span class="cl">2. 烧鸭
+</span></span><span class="line"><span class="cl">3. 白切鸡
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a href="https://johnmacfarlane.net/babelmark2/?text=%E6%B0%B4%E6%9E%9C%EF%BC%9A%0A1.+%E6%A4%B0%E5%AD%90%0A2.+%E9%A6%99%E8%95%89%0A3.+%E8%8F%A0%E8%90%9D%0A%E7%83%A7%E8%85%8A%EF%BC%9A%0A1.+%E5%8F%89%E7%83%A7%0A2.+%E7%83%A7%E9%B8%AD%0A3.+%E7%99%BD%E5%88%87%E9%B8%A1">点击这里</a>查看不同解析器的结果，有三种显示效果。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/CyrusYip/blog-static/images/2020-12-15_food-1.png" alt="food"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/CyrusYip/blog-static/images/2020-12-15_food-2.png" alt="food"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/CyrusYip/blog-static/images/2020-12-15_food-3.png" alt="food"></p>
+<p>现在你应该知道不加空行的严重后果了。我们再来看看那个错误示范。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">水果：
+</span></span><span class="line"><span class="cl">1. 椰子
+</span></span><span class="line"><span class="cl">2. 香蕉
+</span></span><span class="line"><span class="cl">3. 菠萝
+</span></span><span class="line"><span class="cl">烧腊：
+</span></span><span class="line"><span class="cl">1. 叉烧
+</span></span><span class="line"><span class="cl">2. 烧鸭
+</span></span><span class="line"><span class="cl">3. 白切鸡
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>它应该包含了 4 个元素：依次为段落、有序列表、段落、有序列表。在元素间加上空行显示就没问题了。<a href="https://johnmacfarlane.net/babelmark2/?text=%E6%B0%B4%E6%9E%9C%EF%BC%9A%0A%0A1.+%E6%A4%B0%E5%AD%90%0A2.+%E9%A6%99%E8%95%89%0A3.+%E8%8F%A0%E8%90%9D%0A%0A%E7%83%A7%E8%85%8A%EF%BC%9A%0A%0A1.+%E5%8F%89%E7%83%A7%0A2.+%E7%83%A7%E9%B8%AD%0A3.+%E7%99%BD%E5%88%87%E9%B8%A1">点击这里</a>查看效果，这次所有解析结果都正常。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">水果：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">1. 椰子
+</span></span><span class="line"><span class="cl">2. 香蕉
+</span></span><span class="line"><span class="cl">3. 菠萝
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">烧腊：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">1. 叉烧
+</span></span><span class="line"><span class="cl">2. 烧鸭
+</span></span><span class="line"><span class="cl">3. 白切鸡
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="typora-标题自动标号">Typora 标题自动标号</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/CyrusYip/blog-static/images/2020-12-15_typora-auto-number-headings.png" alt="typora auto number headings"></p>
+<p>给 Typora 文章、目录和大纲的标题编号：</p>
+<ul>
+<li>
+<p>按下 <code>Ctrl + ,</code>打开 Typora 设置</p>
+</li>
+<li>
+<p>点击 <code>Appearance -&gt; Open Theme Folder</code>来打开主题文件夹</p>
+<p>Linux 的路径为 <code>~/.config/Typora/themes</code></p>
+<p>Windows 的路径为 <code>%APPDATA%\Typora\themes</code></p>
+</li>
+<li>
+<p>新建一个名为 <code>base.user.css</code> 的文件，把下面的代码粘贴进去（<a href="https://support.typora.io/Auto-Numbering/">出处</a>）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span><span class="lnt">146
+</span><span class="lnt">147
+</span><span class="lnt">148
+</span><span class="lnt">149
+</span><span class="lnt">150
+</span><span class="lnt">151
+</span><span class="lnt">152
+</span><span class="lnt">153
+</span><span class="lnt">154
+</span><span class="lnt">155
+</span><span class="lnt">156
+</span><span class="lnt">157
+</span><span class="lnt">158
+</span><span class="lnt">159
+</span><span class="lnt">160
+</span><span class="lnt">161
+</span><span class="lnt">162
+</span><span class="lnt">163
+</span><span class="lnt">164
+</span><span class="lnt">165
+</span><span class="lnt">166
+</span><span class="lnt">167
+</span><span class="lnt">168
+</span><span class="lnt">169
+</span><span class="lnt">170
+</span><span class="lnt">171
+</span><span class="lnt">172
+</span><span class="lnt">173
+</span><span class="lnt">174
+</span><span class="lnt">175
+</span><span class="lnt">176
+</span><span class="lnt">177
+</span><span class="lnt">178
+</span><span class="lnt">179
+</span><span class="lnt">180
+</span><span class="lnt">181
+</span><span class="lnt">182
+</span><span class="lnt">183
+</span><span class="lnt">184
+</span><span class="lnt">185
+</span><span class="lnt">186
+</span><span class="lnt">187
+</span><span class="lnt">188
+</span><span class="lnt">189
+</span><span class="lnt">190
+</span><span class="lnt">191
+</span><span class="lnt">192
+</span><span class="lnt">193
+</span><span class="lnt">194
+</span><span class="lnt">195
+</span><span class="lnt">196
+</span><span class="lnt">197
+</span><span class="lnt">198
+</span><span class="lnt">199
+</span><span class="lnt">200
+</span><span class="lnt">201
+</span><span class="lnt">202
+</span><span class="lnt">203
+</span><span class="lnt">204
+</span><span class="lnt">205
+</span><span class="lnt">206
+</span><span class="lnt">207
+</span><span class="lnt">208
+</span><span class="lnt">209
+</span><span class="lnt">210
+</span><span class="lnt">211
+</span><span class="lnt">212
+</span><span class="lnt">213
+</span><span class="lnt">214
+</span><span class="lnt">215
+</span><span class="lnt">216
+</span><span class="lnt">217
+</span><span class="lnt">218
+</span><span class="lnt">219
+</span><span class="lnt">220
+</span><span class="lnt">221
+</span><span class="lnt">222
+</span><span class="lnt">223
+</span><span class="lnt">224
+</span><span class="lnt">225
+</span><span class="lnt">226
+</span><span class="lnt">227
+</span><span class="lnt">228
+</span><span class="lnt">229
+</span><span class="lnt">230
+</span><span class="lnt">231
+</span><span class="lnt">232
+</span><span class="lnt">233
+</span><span class="lnt">234
+</span><span class="lnt">235
+</span><span class="lnt">236
+</span><span class="lnt">237
+</span><span class="lnt">238
+</span><span class="lnt">239
+</span><span class="lnt">240
+</span><span class="lnt">241
+</span><span class="lnt">242
+</span><span class="lnt">243
+</span><span class="lnt">244
+</span><span class="lnt">245
+</span><span class="lnt">246
+</span><span class="lnt">247
+</span><span class="lnt">248
+</span><span class="lnt">249
+</span><span class="lnt">250
+</span><span class="lnt">251
+</span><span class="lnt">252
+</span><span class="lnt">253
+</span><span class="lnt">254
+</span><span class="lnt">255
+</span><span class="lnt">256
+</span><span class="lnt">257
+</span><span class="lnt">258
+</span><span class="lnt">259
+</span><span class="lnt">260
+</span><span class="lnt">261
+</span><span class="lnt">262
+</span><span class="lnt">263
+</span><span class="lnt">264
+</span><span class="lnt">265
+</span><span class="lnt">266
+</span><span class="lnt">267
+</span><span class="lnt">268
+</span><span class="lnt">269
+</span><span class="lnt">270
+</span><span class="lnt">271
+</span><span class="lnt">272
+</span><span class="lnt">273
+</span><span class="lnt">274
+</span><span class="lnt">275
+</span><span class="lnt">276
+</span><span class="lnt">277
+</span><span class="lnt">278
+</span><span class="lnt">279
+</span><span class="lnt">280
+</span><span class="lnt">281
+</span><span class="lnt">282
+</span><span class="lnt">283
+</span><span class="lnt">284
+</span><span class="lnt">285
+</span><span class="lnt">286
+</span><span class="lnt">287
+</span><span class="lnt">288
+</span><span class="lnt">289
+</span><span class="lnt">290
+</span><span class="lnt">291
+</span><span class="lnt">292
+</span><span class="lnt">293
+</span><span class="lnt">294
+</span><span class="lnt">295
+</span><span class="lnt">296
+</span><span class="lnt">297
+</span><span class="lnt">298
+</span><span class="lnt">299
+</span><span class="lnt">300
+</span><span class="lnt">301
+</span><span class="lnt">302
+</span><span class="lnt">303
+</span><span class="lnt">304
+</span><span class="lnt">305
+</span><span class="lnt">306
+</span><span class="lnt">307
+</span><span class="lnt">308
+</span><span class="lnt">309
+</span><span class="lnt">310
+</span><span class="lnt">311
+</span><span class="lnt">312
+</span><span class="lnt">313
+</span><span class="lnt">314
+</span><span class="lnt">315
+</span><span class="lnt">316
+</span><span class="lnt">317
+</span><span class="lnt">318
+</span><span class="lnt">319
+</span><span class="lnt">320
+</span><span class="lnt">321
+</span><span class="lnt">322
+</span><span class="lnt">323
+</span><span class="lnt">324
+</span><span class="lnt">325
+</span><span class="lnt">326
+</span><span class="lnt">327
+</span><span class="lnt">328
+</span><span class="lnt">329
+</span><span class="lnt">330
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/**************************************
+</span></span></span><span class="line"><span class="cl"><span class="c"> * Header Counters in Article
+</span></span></span><span class="line"><span class="cl"><span class="c"> **************************************/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/** initialize css counter */</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h1</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">h1</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h2</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">h2</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h3</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">h3</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h4</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">h4</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h5</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">h5</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h6</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/** put counter result into headings */</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span> <span class="nt">h1</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span> <span class="nt">h2</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span> <span class="nt">h3</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">h3</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">.</span><span class="nc">md-heading</span><span class="p">:</span><span class="nd">before</span> <span class="c">/** override the default style for focused headings */</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h3</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span> <span class="nt">h4</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">h4</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">.</span><span class="nc">md-heading</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h3</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h4</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span> <span class="nt">h5</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">h5</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">.</span><span class="nc">md-heading</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h3</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h4</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h5</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span> <span class="nt">h6</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">h6</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">.</span><span class="nc">md-heading</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h6</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h3</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h4</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h5</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h6</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/** override the default style for focused headings */</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span><span class="o">&gt;</span><span class="nt">h3</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span><span class="o">&gt;</span><span class="nt">h4</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span><span class="o">&gt;</span><span class="nt">h5</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span><span class="o">&gt;</span><span class="nt">h6</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">h3</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">h4</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">h5</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">h6</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">border</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">border-radius</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">left</span><span class="p">:</span><span class="kc">initial</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">float</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">top</span><span class="p">:</span><span class="kc">initial</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-size</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">padding-left</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">padding-right</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">vertical-align</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-weight</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">line-height</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/**************************************
+</span></span></span><span class="line"><span class="cl"><span class="c"> * Header Counters in TOC
+</span></span></span><span class="line"><span class="cl"><span class="c"> **************************************/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/* No link underlines in TOC */</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-inner</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-content</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h1toc</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h1</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-size</span><span class="p">:</span> <span class="mf">1.5</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h2toc</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h2</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-size</span><span class="p">:</span> <span class="mf">1.1</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">2</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h3toc</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h3</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">3</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-size</span><span class="p">:</span> <span class="mf">.9</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h4toc</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h4</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">4</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-size</span><span class="p">:</span> <span class="mf">.85</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h5toc</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h5</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">5</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-size</span><span class="p">:</span> <span class="mf">.8</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h6toc</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h6</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">6</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-size</span><span class="p">:</span> <span class="mf">.75</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h1</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h1toc</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h1</span> <span class="p">.</span><span class="nc">md-toc-inner</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h2</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h2toc</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h2</span> <span class="p">.</span><span class="nc">md-toc-inner</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h3</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h3toc</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h3toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h3</span> <span class="p">.</span><span class="nc">md-toc-inner</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h4</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h4toc</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h3toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h4toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h4</span> <span class="p">.</span><span class="nc">md-toc-inner</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h5</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h5toc</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h3toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h4toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h5toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h5</span> <span class="p">.</span><span class="nc">md-toc-inner</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h6</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h6toc</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h3toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h4toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h5toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h6toc</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">md-toc-h6</span> <span class="p">.</span><span class="nc">md-toc-inner</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/**************************************
+</span></span></span><span class="line"><span class="cl"><span class="c"> * Header Counters in Content
+</span></span></span><span class="line"><span class="cl"><span class="c"> **************************************/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/** initialize css counter */</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h1</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">h1</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h2</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">h2</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h3</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">h3</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h4</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">h4</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h5</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">h5</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h6</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/** put counter result into headings */</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span> <span class="nt">h1</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span> <span class="nt">h2</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span> <span class="nt">h3</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span> <span class="nt">h3</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">.</span><span class="nc">md-heading</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span> <span class="c">/*override the default style for focused headings */</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h3</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span> <span class="nt">h4</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span> <span class="nt">h4</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">.</span><span class="nc">md-heading</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h3</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h4</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span> <span class="nt">h5</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span> <span class="nt">h5</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">.</span><span class="nc">md-heading</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h3</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h4</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h5</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span> <span class="nt">h6</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span> <span class="nt">h6</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">.</span><span class="nc">md-heading</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h6</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h3</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h4</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h5</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h6</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/** override the default style for focused headings */</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">write</span><span class="o">&gt;</span><span class="nt">h3</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span> <span class="p">#</span><span class="nn">write</span><span class="o">&gt;</span><span class="nt">h4</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span> <span class="p">#</span><span class="nn">write</span><span class="o">&gt;</span><span class="nt">h5</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span> <span class="p">#</span><span class="nn">write</span><span class="o">&gt;</span><span class="nt">h6</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span> <span class="nt">h3</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span> <span class="nt">h4</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span> <span class="nt">h5</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span> <span class="nt">h6</span><span class="p">.</span><span class="nc">md-focus</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">border</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">border-radius</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">left</span><span class="p">:</span> <span class="kc">initial</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">float</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">top</span><span class="p">:</span> <span class="kc">initial</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-size</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">padding-left</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">padding-right</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">vertical-align</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-weight</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">line-height</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/**************************************
+</span></span></span><span class="line"><span class="cl"><span class="c"> * Header Counters in Sidebar
+</span></span></span><span class="line"><span class="cl"><span class="c"> **************************************/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">sidebar-content</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h1</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">outline-h1</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h2</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">outline-h2</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h3</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">outline-h3</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h4</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">outline-h4</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h5</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">outline-h5</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">h6</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">outline-h1</span><span class="o">&gt;</span><span class="p">.</span><span class="nc">outline-item</span><span class="o">&gt;</span><span class="p">.</span><span class="nc">outline-label</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">outline-h2</span><span class="o">&gt;</span><span class="p">.</span><span class="nc">outline-item</span><span class="o">&gt;</span><span class="p">.</span><span class="nc">outline-label</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">outline-h3</span><span class="o">&gt;</span><span class="p">.</span><span class="nc">outline-item</span><span class="o">&gt;</span><span class="p">.</span><span class="nc">outline-label</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h3</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">outline-h4</span><span class="o">&gt;</span><span class="p">.</span><span class="nc">outline-item</span><span class="o">&gt;</span><span class="p">.</span><span class="nc">outline-label</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h3</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h4</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">outline-h5</span><span class="o">&gt;</span><span class="p">.</span><span class="nc">outline-item</span><span class="o">&gt;</span><span class="p">.</span><span class="nc">outline-label</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h3</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h4</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h5</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">outline-h6</span><span class="o">&gt;</span><span class="p">.</span><span class="nc">outline-item</span><span class="o">&gt;</span><span class="p">.</span><span class="nc">outline-label</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">h6</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h3</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h4</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h5</span><span class="p">)</span> <span class="s2">&#34;.&#34;</span> <span class="nb">counter</span><span class="p">(</span><span class="n">h6</span><span class="p">)</span> <span class="s2">&#34;. &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>保存文件并重启 Typora</p>
+</li>
+</ul>
+<h2 id="为什么-markdown-的标题叫-atx-和-setext">为什么 Markdown 的标题叫 ATX 和 Setext</h2>
+<p>Markdown 有两种标题写法，一种是 ATX 标题（ATX headings）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># foo
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">## foo
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### foo
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#### foo
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">##### foo
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">###### foo
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>另一种是 Setext 标题（Setext Headings）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Title 
+</span></span><span class="line"><span class="cl">=====
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Subhead 
+</span></span><span class="line"><span class="cl">-------
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>有很长一段时间，我都没法区分哪种标题是 ATX，哪种是 Setext。我特地用词典查 ATX 和 Setext，根本查不到释义。最近在谷歌和维基百科的帮助下，才发现原来这两个标题写法不是 Markdown 原创的，是出自 <a href="http://www.aaronsw.com/2002/atx/intro.html">atx(the true structured text format)</a> 和 <a href="https://en.wikipedia.org/wiki/Setext">Setext (Structure Enhanced Text)</a>。</p>
+<h2 id="避免使用其他标记语言">避免使用其他标记语言</h2>
+<p>Markdown 的格式有限，要使用 Markdown 不支持格式，就只能混用其他标记语言。但是混用标记语言可能会让你陷入追求格式的泥潭。举个例子，Markdown 不支持右对齐，要对文字右对齐只能使用 HTML 代码，比如 <code>&lt;div style=&quot;text-align: right&quot;&gt;右对齐的文字&lt;/div&gt;</code>。这么做有两个问题，一是要输入长长的代码，二是转换成 HTML 以外的文档（如 PDF）右对齐代码就失效了。下面这个 Markdown 文件转换成 PDF 的话，右对齐会失效。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">春有百花秋有月，夏有凉风冬有雪。
+</span></span></span><span class="line"><span class="cl"><span class="ge"></span><span class="k">&gt;
+</span></span></span><span class="line"><span class="cl"><span class="k"></span><span class="ge">&gt; 若无闲事挂心头，便是人间好时节。
+</span></span></span><span class="line"><span class="cl"><span class="ge"></span><span class="k">&gt;
+</span></span></span><span class="line"><span class="cl"><span class="k"></span><span class="ge">&gt; &lt;div style=&#34;text-align: right&#34;&gt;——无门慧开&lt;/div&gt;
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>春有百花秋有月，夏有凉风冬有雪。</p>
+<p>若无闲事挂心头，便是人间好时节。</p>
+<div style="text-align: right">——无门慧开</div>
+</blockquote>
+<p>其实在 R Markdown 中有让右对齐代码同时对 HTML 与 PDF 生效的方法（参考资料：<a href="https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html">9.6 Custom blocks (*) | R Markdown Cookbook</a>）。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">output:
+</span></span><span class="line"><span class="cl">  pdf_document: default
+</span></span><span class="line"><span class="cl">  html_document: default
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">flushright</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">text-align</span><span class="p">:</span> <span class="kc">right</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">If your mind isn’t clouded by unnecessary things,
+</span></span></span><span class="line"><span class="cl"><span class="ge"></span><span class="k">&gt;
+</span></span></span><span class="line"><span class="cl"><span class="k"></span><span class="ge">&gt; This is the best season of your life.
+</span></span></span><span class="line"><span class="cl"><span class="ge"></span><span class="k">&gt;
+</span></span></span><span class="line"><span class="cl"><span class="k"></span><span class="ge">&gt; ::: {.flushright data-latex=&#34;&#34;}
+</span></span></span><span class="line"><span class="cl"><span class="ge"></span><span class="k">&gt; </span><span class="ge">--- Wu-Men
+</span></span></span><span class="line"><span class="cl"><span class="ge"></span><span class="k">&gt; </span><span class="ge">:::
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="在-r-markdown-中加载-latex-宏包">在 R Markdown 中加载 LaTeX 宏包</h2>
+<h3 id="extra_dependencies">extra_dependencies</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">output: 
+</span></span><span class="line"><span class="cl">  pdf_document:
+</span></span><span class="line"><span class="cl">    extra_dependencies: [&#34;bbm&#34;, &#34;threeparttable&#34;]
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">output: 
+</span></span><span class="line"><span class="cl">  pdf_document:
+</span></span><span class="line"><span class="cl">    extra_dependencies:
+</span></span><span class="line"><span class="cl">      caption: [&#34;labelfont={bf}&#34;]
+</span></span><span class="line"><span class="cl">      hyperref: [&#34;unicode=true&#34;, &#34;breaklinks=true&#34;]
+</span></span><span class="line"><span class="cl">      lmodern: null
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="header-includes">header-includes</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">header-includes:
+</span></span><span class="line"><span class="cl">   - \usepackage{bbm}
+</span></span><span class="line"><span class="cl">output:
+</span></span><span class="line"><span class="cl">    pdf_document
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="in-header">in-header</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">output:
+</span></span><span class="line"><span class="cl">    pdf_document:
+</span></span><span class="line"><span class="cl">        includes:
+</span></span><span class="line"><span class="cl">            in_header: mystyles.sty
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">% mystyles.sty
+</span></span><span class="line"><span class="cl">\usepackage{bbm}
+</span></span><span class="line"><span class="cl">\usepackage{threeparttable}
+</span></span><span class="line"><span class="cl">\usepackage{booktabs}
+</span></span><span class="line"><span class="cl">\usepackage{expex}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="参考资料">参考资料</h3>
+<ul>
+<li><a href="https://bookdown.org/yihui/rmarkdown-cookbook/latex-extra.html">6.4 Include additional LaTeX packages | R Markdown Cookbook</a></li>
+<li><a href="https://tex.stackexchange.com/questions/171711/how-to-include-latex-package-in-r-markdown">knitr - How to include LaTeX package in R Markdown? - TeX - LaTeX Stack Exchange</a></li>
+</ul>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">star5o</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2020-12-15
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://www.gnn.ac.cn/zh-cn/tags/markdown/">Markdown</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/zh-cn/post/2020/12/21/keyboard-usage/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">键盘使用技巧</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/zh-cn/post/2020/12/12/trash-cli-manual/">
+            <span class="next-text nav-default">trash-cli 中文手册</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "Star5o/blog-comment"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  <div class="disqus-comment">
+  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
+    显示 Disqus 评论
+  </div>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_config = function () {
+      this.page.url = "https://www.gnn.ac.cn/zh-cn/post/2020/12/15/markdown-tricks/";
+    };
+    function load_disqus() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'star5o';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+      $('#load_disqus').remove();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+  
+  </div>
+
+    
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="https://twitter.com/liyakai_iie" rel="me noopener" class="iconfont"
+      title="twitter"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1264 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M1229.8616 18.043658c0 0-117.852626 63.135335-164.151872 67.344358-105.225559-164.151872-505.082682-92.598492-437.738325 223.078185C278.622548 312.675223 89.216542 47.506814 89.216542 47.506814s-117.852626 189.406006 75.762402 345.139833C127.097743 396.85567 55.544363 371.601535 55.544363 371.601535S26.081207 535.753407 253.368414 615.724832c-21.045112 29.463156-113.643603 8.418045-113.643603 8.418045s25.254134 143.10676 231.496229 180.987961c-143.10676 130.479693-387.230056 92.598492-370.393967 105.225559 206.242095 189.406006 1119.599946 231.496229 1128.01799-643.98042C1179.353331 249.539887 1263.533778 123.269217 1263.533778 123.269217s-130.479693 37.881201-138.897738 33.672179C1225.652577 98.015083 1229.8616 18.043658 1229.8616 18.043658"></path>
+</svg>
+
+    </a>
+  
+    <a href="https://github.com/yakaili" rel="me noopener" class="iconfont"
+      title="github"  target="_blank"
+      >
+      <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M512 12.672c-282.88 0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667 0-12.16-0.426667-44.373333-0.64-87.04-142.421333 30.890667-172.458667-68.693333-172.458667-68.693333C188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333 0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333 0 0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52 0.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667 0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72 0 68.522667-0.64 123.562667-0.64 140.202666 0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"></path>
+</svg>
+
+    </a>
+
+
+<a href="https://www.gnn.ac.cn/zh-cn/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2020 -
+    2022
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        Star5o
+        
+      </span></span>
+
+  
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

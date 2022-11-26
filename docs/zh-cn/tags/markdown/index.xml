@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/markdown/</link>
+    <description>Recent content in Markdown on star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o</copyright>
+    <lastBuildDate>Tue, 27 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>行李清单</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/04/27/baggage-checklist/</link>
+      <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/04/27/baggage-checklist/</guid>
+      <description>收拾行李对我来说一直是个大难题。每次出门都要收拾很久，还常常丢三落四。现在终于想到了个好办法——行李清单。出门前先写一份行李清单，然后把清单上的东西都拿出来，再逐一清点，有的东西就打个勾。就像这样： 衣</description>
+    </item>
+    
+    <item>
+      <title>让 Hugo 自动给图片加上说明文字</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2021/03/11/automatically-caption-image-with-alt-in-hugo/</link>
+      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2021/03/11/automatically-caption-image-with-alt-in-hugo/</guid>
+      <description>开始写博客之后我发现了 Markdown 缺少一个重要功能：给图片加上说明文字。Markdown 插入图片的语法是这样的： 1 ![这是一张图片](图片链接) 我希望「这是一张图片」可以显示在图片底部。想修改网站样式的时候，我</description>
+    </item>
+    
+    <item>
+      <title>键盘使用技巧</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/21/keyboard-usage/</link>
+      <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/21/keyboard-usage/</guid>
+      <description>以前用 Windows 的时候用鼠标比较多，一直忽略键盘右边的按键。转到 Linux 之后才发现被我忽略的按键是多么好用。 缩写全称对照表 了解按键的全称有利于记忆按键的功能。 缩写 全称 符号 Tab Tabulator / Tabular ↹ Alt Alternate Ctrl Control Del Delete Shift ⇧ Backspace ← Enter ↵ PgUp PageUp PgDn PageDown Ins</description>
+    </item>
+    
+    <item>
+      <title>Markdown 技巧</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/12/15/markdown-tricks/</link>
+      <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/12/15/markdown-tricks/</guid>
+      <description>使用 R Markdown 常用的 GitHub Flavored Markdown 功能很少，熟悉之后可以使用更强大的 R Markdown。 R Markdown 的优势： 多用途 R Markdown 可以用来写文档，输出格式为 PDF、HTML、Word 等，写书可以用 bookdown。除了写文档，R Markdown 还可</description>
+    </item>
+    
+    <item>
+      <title>正则表达式实例</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2020/11/26/regex-examples/</link>
+      <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2020/11/26/regex-examples/</guid>
+      <description>本文记录了我使用过的正则表达式，多数用于处理 Markdown 文档。所有正则表达式均在 VSCode 测试。 选取多段文字 有时候我要选取很多段文字，比如某本书的一个章节。以前我选取多段文字都是这样的： 把光标定位到开头 按下 Shift 滚动文档到</description>
+    </item>
+    
+  </channel>
+</rss>
