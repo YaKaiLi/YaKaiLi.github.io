@@ -6,13 +6,13 @@
     <description>Recent content in misc on star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o</copyright>
-    <lastBuildDate>Wed, 31 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>简单安装支持多语言的hugo</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2022/08/31/hugo-simple-install/</link>
-      <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/hugo-simple-install/</link>
+      <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/08/31/hugo-simple-install/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/hugo-simple-install/</guid>
       <description>直接拷贝已有好的配置～ 1 git clone --recurse-submodules https://github.com/CyrusYip/cyrusyip-blog.git 添加 favicon 利用https://realfavicongenerator.net/ 将头像做成favicon，然后放到static目录里 修改标题 修改config.toml 评论系</description>
     </item>
     

@@ -1,6 +1,6 @@
 ---
 title: Simple install hugo with Multi-language support
-date: '2022-08-31'
+date: '2022-11-27'
 slug: hugo-simple-install
 tags:
   - misc
