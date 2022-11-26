@@ -16,14 +16,5 @@
       <description>友情提示：你可以边看本文边猜问题的原因，这样可能比较有趣。 今天晚上电脑在 Chrome 用 Fcitx5 输入法的时候选字总是出错（奇怪现象 1），重启 Chrome 后又没事了。电脑锁屏后我就去睡觉了，半夜去上厕所的时候发现显示器和笔记本电脑</description>
     </item>
     
-    <item>
-      <title>旧电脑升级未遂记</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2022/05/02/upgrade-old-pc/</link>
-      <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/05/02/upgrade-old-pc/</guid>
-      <description>相关文章：Windows 10 简易安装教程 最近亲戚抱怨家里的台式电脑很慢，我就打算帮忙升级硬件，让电脑重获新生（苟延残喘）。电脑配置如下。 型号 Dell Optiplex 3020 备注 处理器 Intel Celeron G1840 2.8 GHz 双核双线程 内存 2*2 GB DDR3L 1600MHz 有两个内存插槽</description>
-    </item>
-    
   </channel>
 </rss>

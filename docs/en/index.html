@@ -155,13 +155,13 @@ if (!doNotTrack) {
           
             <li>
               
-                <a href="https://www.gnn.ac.cn/en/"><strong>English</strong></a>
+                <a href="https://www.gnn.ac.cn/zh-cn/">简体中文</a>
               
             </li>
           
             <li>
               
-                <a href="https://www.gnn.ac.cn/zh-cn/">简体中文</a>
+                <a href="https://www.gnn.ac.cn/en/"><strong>English</strong></a>
               
             </li>
           
@@ -311,11 +311,11 @@ if (!doNotTrack) {
         <ul class="submenu">
           
             
-          
-            
               <li>
                 <a href="https://www.gnn.ac.cn/zh-cn/">简体中文</a>
               </li>
+            
+          
             
           
         </ul>
@@ -339,78 +339,6 @@ if (!doNotTrack) {
     
   
   
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/en/post/2022/09/23/remove-python2-on-arch/">Removing Python 2 on Arch Linux</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2022-09-23" class="post-time">
-        2022-09-23
-      </time>
-      
-      <span class="more-meta"> 124 words </span>
-      <span class="more-meta"> 1 min read </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      Python 2 was dropped from Arch Linux. It was lucky that there were only two python2 packages on my Arch.
-1 2 3 4 5 ❯ pacman -Qs python2 local/python2 2.7.18-5 A high-level scripting language local/python2-setuptools 2:44.1.1-2 Easily download, build, install, upgrade, and uninstall Python packages I removed them without hesitation.
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 ❯ sudo pacman -Rscn python2 python2-setuptools checking dependencies... Package (2) Old Version Net Change python2 2.7.18-5 -76.84 MiB python2-setuptools 2:44.1.1-2 -3.81 MiB Total Removed Size: 80.65 MiB :: Do you want to remove these packages?
-    </div>
-    <div class="read-more">
-      <a href="/en/post/2022/09/23/remove-python2-on-arch/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/en/post/2022/08/08/paste-over-selected-text-in-vim/">How to Paste over Selected Text without Overwriting the Unnamed Register in Vim</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2022-08-08" class="post-time">
-        2022-08-08
-      </time>
-      
-      <span class="more-meta"> 171 words </span>
-      <span class="more-meta"> 1 min read </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      Summary: paste with P in visual mode.
-It&rsquo;s painful to paste over selected text in Vim, because the unnamed register is overwritten by the selected text. Thus, we can not paste the original yanked text twice.
-If you have a file:
-1 2 hello kitty You want to copy hello , paste it over kitty, and paste it again. You type these commands in Vim.
-1 2 3 4 5 gg &#34; move to the top yy &#34; copy current line jV &#34; move to the next line and select it p &#34; paste over the select line p &#34; paste again You expect to get:
-    </div>
-    <div class="read-more">
-      <a href="/en/post/2022/08/08/paste-over-selected-text-in-vim/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
   
     <article class="post bg-white">
   <header class="post-header">
