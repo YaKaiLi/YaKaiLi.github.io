@@ -124,7 +124,7 @@ defaultContentLanguage = "en"
 
   [params.utteranc]
     enable = true
-    repo = "Star5o/blog-comment"    # The repo to store comments
+    repo = "YaKaiLi/YaKaiLi.github.io"    # The repo to store comments
     issueTerm = "pathname"
   [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
     enable = false
