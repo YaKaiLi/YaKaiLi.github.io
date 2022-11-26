@@ -1,10 +1,12 @@
 ---
-title: 简单安装支持多语言的hugo
+title: Simple install hugo with Multi-language support
 date: '2022-08-31'
 slug: hugo-simple-install
 tags:
   - misc
 ---
+
+just use other's confige
 直接拷贝已有好的配置～
 
 ```
