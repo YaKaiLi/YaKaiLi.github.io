@@ -64,11 +64,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2020/11/24/kubuntu-no-sound-device/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-11-24T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-11-24T00:00:00+00:00" /><meta property="og:site_name" content="star5o的博客" />
+<meta property="article:modified_time" content="2022-11-27T02:42:17+08:00" /><meta property="og:site_name" content="star5o的博客" />
 
 <meta itemprop="name" content="修复 Kubuntu 无音频设备的问题">
 <meta itemprop="description" content="执行命令： 1 2 3 4 #!/bin/bash -x sudo alsa force-reload pulseaudio -k start-pulseaudio-x11 进入 System Settings -&gt; Hardware -&gt; Audio -&gt; Advanced -&gt; Device Profiles，把 Profile 改成 Analog Stereo Duplex。 把重置音频的命令保存为脚本文件，以后使用更方便： 把开头的脚本保存为 reset-sound 添加执行权限 chmod &#43;x reset-sound 把文件放到 $PATH1"><meta itemprop="datePublished" content="2020-11-24T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-11-24T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-27T02:42:17+08:00" />
 <meta itemprop="wordCount" content="219">
 <meta itemprop="keywords" content="Kubuntu," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="修复 Kubuntu 无音频设备的问题"/>
@@ -460,7 +460,10 @@ if (!doNotTrack) {
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2020-11-24
+      2022-11-27
+      
+        
+        
       
     </span>
   </p>
