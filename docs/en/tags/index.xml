@@ -16,23 +16,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>Arch Linux</title>
-      <link>https://www.gnn.ac.cn/en/tags/arch-linux/</link>
-      <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.gnn.ac.cn/en/tags/arch-linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pacman</title>
-      <link>https://www.gnn.ac.cn/en/tags/pacman/</link>
-      <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.gnn.ac.cn/en/tags/pacman/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

@@ -16,14 +16,5 @@
       <description>直接拷贝已有好的配置～ 1 git clone --recurse-submodules https://github.com/CyrusYip/cyrusyip-blog.git 添加 favicon 利用https://realfavicongenerator.net/ 将头像做成favicon，然后放到static目录里 修改标题 修改config.toml 评论系</description>
     </item>
     
-    <item>
-      <title>修复奇怪的电脑问题</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2022/08/31/fix-strange-pc-problem/</link>
-      <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/08/31/fix-strange-pc-problem/</guid>
-      <description>友情提示：你可以边看本文边猜问题的原因，这样可能比较有趣。 今天晚上电脑在 Chrome 用 Fcitx5 输入法的时候选字总是出错（奇怪现象 1），重启 Chrome 后又没事了。电脑锁屏后我就去睡觉了，半夜去上厕所的时候发现显示器和笔记本电脑</description>
-    </item>
-    
   </channel>
 </rss>

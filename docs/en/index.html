@@ -379,48 +379,6 @@ if (!doNotTrack) {
 </article>
 
   
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/en/post/2022/06/30/ignore-kernel-upgrades-on-arch/">How to Ignore Kernel Upgrades on Arch Linux</a>
-    </h1>
-    
-<div class="post-meta">
-  
-  <div><a href="https://www.gnn.ac.cn/zh-cn/post/2022/08/31/fix-strange-pc-problem/">中文阅读: 修复奇怪的电脑问题</a></div>
-  
-</div>
-
-    <div class="post-meta">
-      <time datetime="2022-06-30" class="post-time">
-        2022-06-30
-      </time>
-      
-      <span class="more-meta"> 446 words </span>
-      <span class="more-meta"> 3 min read </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      Warning: Ignoring kernel upgrades makes the system more vulnerable due to the lack of the latest security fixes.
-Ignore Temporarily Pacman&rsquo;s --ignore option is used to ignore package upgrades. You can ignore multiple packages, separated by commas. This command upgrades the system but ignores three kernels.
-1 sudo pacman -Syu --ignore linux,linux-header,linux-lts,linux-lts-headers,linux-zen,linux-zen-headers Ignore Permanently Typing --ignore packages takes some time1. Sometimes, you might forget to type it. You can permanently ignore kernel upgrades by adding this to /etc/pacman.conf in the [options] section.
-1 IgnorePkg = linux linux-headers linux-lts linux-lts-headers linux-zen linux-zen-headers Note that packages in IgnorePkg are separated by spaces. If you want to upgrade kernels after configuring IgnorePkg, install them explicitly:
-    </div>
-    <div class="read-more">
-      <a href="/en/post/2022/06/30/ignore-kernel-upgrades-on-arch/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
 </section>
 
 
