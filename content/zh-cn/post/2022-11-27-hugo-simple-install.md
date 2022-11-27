@@ -16,7 +16,7 @@ git clone --recurse-submodules https://github.com/CyrusYip/cyrusyip-blog.git
 
 ```
 ## 换成自己的favicon
-利用<https://realfavicongenerator.net/> 将头像做成`favicon`，然后放到`static`目录里
+利用 <https://realfavicongenerator.net/> 将头像做成`favicon`，然后放到`static`目录里
 ## 修改标题、作者等
 修改`config.toml`中相应的字段
 
@@ -24,7 +24,7 @@ git clone --recurse-submodules https://github.com/CyrusYip/cyrusyip-blog.git
 ### disqus配置（评论配置）
 
 注册disqus账号，新建一个网站
-将`config.toml`中的相关配置修改为disqus中自己的`shortname`：
+将 `config.toml` 中的相关配置修改为disqus中自己的 `shortname` ：
 ```
 disqusShortname = "star5o"
 ```
@@ -32,7 +32,7 @@ disqusShortname = "star5o"
 
 ### utteranc
 首先必须在 github 上进行安装 utterances，访问 [utterances应用程序](https://github.com/apps/utterances) 然后点击 Install 按钮进行安装。
-在这里可以选择可以关联的存储库，只选择博客所在的仓库`YaKaiLi/YaKaiLi.github.io`。
+在这里可以选择可以关联的存储库，只选择博客所在的仓库 `YaKaiLi/YaKaiLi.github.io` 。
 
 然后将配置文件`config.toml`中`params.utteranc`的`repo`参数修改为博客仓库名称，如`YaKaiLi/YaKaiLi.github.io`
 

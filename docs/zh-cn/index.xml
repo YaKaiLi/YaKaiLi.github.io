@@ -30,13 +30,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;换成自己的favicon&#34;&gt;换成自己的favicon&lt;/h2&gt;
-&lt;p&gt;利用&lt;a href=&#34;https://realfavicongenerator.net/&#34;&gt;https://realfavicongenerator.net/&lt;/a&gt; 将头像做成&lt;code&gt;favicon&lt;/code&gt;，然后放到&lt;code&gt;static&lt;/code&gt;目录里&lt;/p&gt;
+&lt;p&gt;利用 &lt;a href=&#34;https://realfavicongenerator.net/&#34;&gt;https://realfavicongenerator.net/&lt;/a&gt; 将头像做成&lt;code&gt;favicon&lt;/code&gt;，然后放到&lt;code&gt;static&lt;/code&gt;目录里&lt;/p&gt;
 &lt;h2 id=&#34;修改标题作者等&#34;&gt;修改标题、作者等&lt;/h2&gt;
 &lt;p&gt;修改&lt;code&gt;config.toml&lt;/code&gt;中相应的字段&lt;/p&gt;
 &lt;h2 id=&#34;评论系统&#34;&gt;评论系统&lt;/h2&gt;
 &lt;h3 id=&#34;disqus配置评论配置&#34;&gt;disqus配置（评论配置）&lt;/h3&gt;
 &lt;p&gt;注册disqus账号，新建一个网站
-将&lt;code&gt;config.toml&lt;/code&gt;中的相关配置修改为disqus中自己的&lt;code&gt;shortname&lt;/code&gt;：&lt;/p&gt;
+将 &lt;code&gt;config.toml&lt;/code&gt; 中的相关配置修改为disqus中自己的 &lt;code&gt;shortname&lt;/code&gt; ：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -48,7 +48,7 @@
 &lt;/div&gt;&lt;p&gt;注意：需要在disqus中将自己的域名添加到收信任列表，见&lt;a href=&#34;https://help.disqus.com/en/articles/1717206-how-to-use-trusted-domains&#34;&gt;官方网站&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;utteranc&#34;&gt;utteranc&lt;/h3&gt;
 &lt;p&gt;首先必须在 github 上进行安装 utterances，访问 &lt;a href=&#34;https://github.com/apps/utterances&#34;&gt;utterances应用程序&lt;/a&gt; 然后点击 Install 按钮进行安装。
-在这里可以选择可以关联的存储库，只选择博客所在的仓库&lt;code&gt;YaKaiLi/YaKaiLi.github.io&lt;/code&gt;。&lt;/p&gt;
+在这里可以选择可以关联的存储库，只选择博客所在的仓库 &lt;code&gt;YaKaiLi/YaKaiLi.github.io&lt;/code&gt; 。&lt;/p&gt;
 &lt;p&gt;然后将配置文件&lt;code&gt;config.toml&lt;/code&gt;中&lt;code&gt;params.utteranc&lt;/code&gt;的&lt;code&gt;repo&lt;/code&gt;参数修改为博客仓库名称，如&lt;code&gt;YaKaiLi/YaKaiLi.github.io&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;发布并托管到github&#34;&gt;发布并托管到Github&lt;/h2&gt;
 &lt;h3 id=&#34;修改配置文件&#34;&gt;修改配置文件&lt;/h3&gt;
