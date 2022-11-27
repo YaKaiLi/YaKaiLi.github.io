@@ -1,7 +1,6 @@
 ---
 title: 简单安装支持多语言的hugo
 date: '2022-11-27'
-lastmod: "2020-11-28"
 slug: hugo-simple-install
 tags:
   - misc
@@ -89,5 +88,6 @@ git push -u origin master
 
 ## 新建文章
 ```
-hugo new --kind post zh-cn/post/my-article.md
+hugo new content/zh-cn/post/test.md
+
 ```

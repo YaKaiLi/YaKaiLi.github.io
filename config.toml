@@ -19,7 +19,7 @@ paginate = 3              # Number of articles displayed on the homepage  # 首�
 # rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
 disqusShortname = "star5o"      # disqus_shortname
 googleAnalytics = "UA-193139827-1"      # UA-XXXXXXXX-X
-copyright = "Star5o and Haohao"            # default: author.name ↓        # 默认为下面配置的author.name ↓
+copyright = "Star5o Love Haohao"            # default: author.name ↓        # 默认为下面配置的author.name ↓
 enableGitInfo = true      # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 summaryLength = 100
 
