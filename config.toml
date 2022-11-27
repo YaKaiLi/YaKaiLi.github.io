@@ -7,7 +7,7 @@
 
 buildFuture = true
 baseURL = "https://www.gnn.ac.cn/"
-title = "star5o's blog"
+title = "Star5o's blog"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
@@ -61,7 +61,7 @@ defaultContentLanguage = "en"
   # languageCode = "en"
   # weight = 2
 [languages.zh-cn]
-  title = "star5o的博客"
+  title = "Star5o的博客"
   languageName = "简体中文"
   contentDir = 'content/zh-cn'
   # languageCode = "zh-cn"
