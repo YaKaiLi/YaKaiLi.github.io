@@ -1,6 +1,7 @@
 ---
 title: 简单安装支持多语言的hugo
 date: '2022-11-27'
+lastmod: "2020-11-28"
 slug: hugo-simple-install
 tags:
   - misc
