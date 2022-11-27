@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Misc on Star5o&#39;s Blog</title>
-    <link>https://www.gnn.ac.cn/en/tags/misc/</link>
-    <description>Recent content in Misc on Star5o&#39;s Blog</description>
+    <title>Software on Star5o&#39;s Blog</title>
+    <link>https://www.gnn.ac.cn/en/tags/software/</link>
+    <description>Recent content in Software on Star5o&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/en/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/en/tags/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simple install hugo with Multi-language support</title>
       <link>https://www.gnn.ac.cn/en/post/2022/11/27/hugo-simple-install/</link>

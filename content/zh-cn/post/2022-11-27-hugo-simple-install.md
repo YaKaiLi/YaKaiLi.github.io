@@ -3,7 +3,8 @@ title: 简单安装支持多语言的hugo
 date: '2022-11-27'
 slug: hugo-simple-install
 tags:
-  - misc
+  - Misc
+  - Software
 ---
 最想计划使用hugo搭建一个中英双语的博客网站，遇到了各种各样的坑，心力交瘁，还是配置不成功。突发奇想，可不可以直接使用他人配置好的Hugo，于是就有了这个博客和这篇文章。
 
@@ -67,7 +68,7 @@ git push -u origin master
 ## 配置个人域名
 以本站为例，设置的个人域名为`www.gnn.ac.cn`
 ### hugo配置
-在本地仓库docs子目录中需要添加一个名为CNAME的文档
+在本地仓库`docs`子目录中需要添加一个名为CNAME的文档
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2022/11/27/14-45-12-4a79ee47ee4aab06a968f61fbedc139e-928291.png)
 然后回到网站目录进行git同步
 ```

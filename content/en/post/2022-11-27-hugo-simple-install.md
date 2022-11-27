@@ -3,7 +3,8 @@ title: Simple install hugo with Multi-language support
 date: '2022-11-27'
 slug: hugo-simple-install
 tags:
-  - misc
+  - Misc
+  - Software
 ---
 
 just use other's confige

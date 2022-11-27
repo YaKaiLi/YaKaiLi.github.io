@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Misc on Star5o的博客</title>
-    <link>https://www.gnn.ac.cn/zh-cn/tags/misc/</link>
-    <description>Recent content in Misc on Star5o的博客</description>
+    <title>Troubleshooting on Star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/troubleshooting/</link>
+    <description>Recent content in Troubleshooting on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>linux-Python3-UnicodeEncodeError: &#39;ascii&#39; codec can&#39;t encode characters in position 0-1: ordinal not in range(128)</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/python3-unicodeencodeerror/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/python3-unicodeencodeerror/</guid>
       <description>错误说明 今天在服务器上使用python3执行python文件时报错。 报错所在行语句： 1 print(&amp;#34;读取图片文件耗费时间：%d秒&amp;#34; % time_elapsed) 报错信息： 1 UnicodeEncodeError: &amp;#39;ascii&amp;#39; codec can&amp;#39;t encode characters in position 0-1: ordinal not in range(128) 问题分析 1、</description>
-    </item>
-    
-    <item>
-      <title>简单安装支持多语言的hugo</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/hugo-simple-install/</link>
-      <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/hugo-simple-install/</guid>
-      <description>最想计划使用hugo搭建一个中英双语的博客网站，遇到了各种各样的坑，心力交瘁，还是配置不成功。突发奇想，可不可以直接使用他人配置好的Hugo，于是就有了这个博客和这篇文章。 感谢叶寻的博客 本地安装 1 git clone</description>
     </item>
     
   </channel>
