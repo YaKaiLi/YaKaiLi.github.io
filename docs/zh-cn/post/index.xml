@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>Windows10安装redis</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/win10-install-redis/</link>
+      <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/win10-install-redis/</guid>
+      <description>下载Redis 1、打开https://github.com/MSOpenTech/redis/releases，选择版本下载msi安装包，编写博客时最新版本为3.2.100。 安装Redis 1、打开ms</description>
+    </item>
+    
+    <item>
       <title>简单安装支持多语言的hugo</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/hugo-simple-install/</link>
       <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
