@@ -5,12 +5,14 @@ slug: hugo-simple-install
 tags:
   - misc
 ---
-直接拷贝已有好的配置～
+最想计划使用hugo搭建一个中英双语的博客网站，遇到了各种各样的坑，心力交瘁，还是配置不成功。突发奇想，可不可以直接使用他人配置好的Hugo。于是就有了这篇文章，感谢[叶寻的博客](https://github.com/CyrusYip/cyrusyip-blog)
 
+## 本地安装
 ```
 git clone --recurse-submodules https://github.com/CyrusYip/cyrusyip-blog.git
+
 ```
-## 添加 favicon
+## 换成自己的favicon
 利用https://realfavicongenerator.net/ 将头像做成favicon，然后放到static目录里
 ## 修改标题
 修改config.toml
@@ -58,14 +60,11 @@ git push -u origin master
 将所有文档push到Github的master branch，进入Github对应repository的Settings标签菜单，在Pages选项的Source栏选择master branch /docs folder:
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/%E6%88%AA%E5%B1%8F2022-11-25%2022.29.36.png)
 
-
-
-
 ## 配置个人域名
 
 ### hugo配置
 在本地仓库docs子目录中需要添加一个名为CNAME的文档
-![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_gpHTEu/2022/11/25/22-53-41-61d7aee7cdd4839e45edeae9bac52ae4-ef8ceb.png)
+![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2022/11/27/14-45-12-4a79ee47ee4aab06a968f61fbedc139e-928291.png)
 然后回到网站目录进行git同步
 ```
 git add .
@@ -74,9 +73,10 @@ git push -u origin master
 ```
 
 ### 域名解析
-1、添加A记录（即地址记录，用来指定域名的IP地址），主机记录（Name）栏填www，记录值(Target)那栏填Github服务器IP地址（即your_name.github.io的IP地址）
+<!-- 1、添加A记录（即地址记录，用来指定域名的IP地址），主机记录（Name）栏填www，记录值(Target)那栏填Github服务器IP地址（即your_name.github.io的IP地址）
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_ikHhPb/2022/11/25/22-56-43-d6d5169f3a39225b581fad8452028ed2-552c42.png)
-2、添加CNAME记录（用于将一个域名映射到另一个域名），主机记录栏填@，记录值那栏填yakaili.github.io
+2、 -->
+在域名解释时，添加CNAME记录（用于将一个域名映射到另一个域名），主机记录栏填@，记录值那栏填yakaili.github.io
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_Mi97Kd/2022/11/25/22-59-06-e34743664fae9b43c3fafadb22862b15-515bf5.png)
 
 

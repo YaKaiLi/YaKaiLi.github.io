@@ -5,7 +5,7 @@
     <link>https://www.gnn.ac.cn/zh-cn/tags/misc/</link>
     <description>Recent content in misc on star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Star5o</copyright>
+    <copyright>Star5o and Haohao</copyright>
     <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>简单安装支持多语言的hugo</title>
@@ -13,7 +13,7 @@
       <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/hugo-simple-install/</guid>
-      <description>直接拷贝已有好的配置～ 1 git clone --recurse-submodules https://github.com/CyrusYip/cyrusyip-blog.git 添加 favicon 利用https://realfavicongenerator.net/ 将头像做成favicon，然后放到static目录里 修改标题 修改config.toml 评论系</description>
+      <description>最想计划使用hugo搭建一个中英双语的博客网站，遇到了各种各样的坑，心力交瘁，还是配置不成功。突发奇想，可不可以直接使用他人配置好的Hugo。于是就有了这篇文章，感谢叶寻的博客 本地安装 1 git clone --recurse-submodules https://github.com/CyrusYip/cyrusyip-blog.git 换成自</description>
     </item>
     
   </channel>

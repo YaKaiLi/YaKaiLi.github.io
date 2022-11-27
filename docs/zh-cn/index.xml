@@ -5,7 +5,7 @@
     <link>https://www.gnn.ac.cn/zh-cn/</link>
     <description>Recent content on star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Star5o</copyright>
+    <copyright>Star5o and Haohao</copyright>
     <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://www.gnn.ac.cn/zh-cn/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +18,8 @@
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/hugo-simple-install/</guid>
       
-        <description>&lt;p&gt;直接拷贝已有好的配置～&lt;/p&gt;
+        <description>&lt;p&gt;最想计划使用hugo搭建一个中英双语的博客网站，遇到了各种各样的坑，心力交瘁，还是配置不成功。突发奇想，可不可以直接使用他人配置好的Hugo。于是就有了这篇文章，感谢&lt;a href=&#34;https://github.com/CyrusYip/cyrusyip-blog&#34;&gt;叶寻的博客&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;本地安装&#34;&gt;本地安装&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -27,7 +28,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone --recurse-submodules https://github.com/CyrusYip/cyrusyip-blog.git
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;添加-favicon&#34;&gt;添加 favicon&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;换成自己的favicon&#34;&gt;换成自己的favicon&lt;/h2&gt;
 &lt;p&gt;利用https://realfavicongenerator.net/ 将头像做成favicon，然后放到static目录里&lt;/p&gt;
 &lt;h2 id=&#34;修改标题&#34;&gt;修改标题&lt;/h2&gt;
 &lt;p&gt;修改config.toml&lt;/p&gt;
@@ -87,7 +88,7 @@
 &lt;h2 id=&#34;配置个人域名&#34;&gt;配置个人域名&lt;/h2&gt;
 &lt;h3 id=&#34;hugo配置&#34;&gt;hugo配置&lt;/h3&gt;
 &lt;p&gt;在本地仓库docs子目录中需要添加一个名为CNAME的文档
-&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_gpHTEu/2022/11/25/22-53-41-61d7aee7cdd4839e45edeae9bac52ae4-ef8ceb.png&#34; alt=&#34;&#34;&gt;
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2022/11/27/14-45-12-4a79ee47ee4aab06a968f61fbedc139e-928291.png&#34; alt=&#34;&#34;&gt;
 然后回到网站目录进行git同步&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -102,9 +103,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;域名解析&#34;&gt;域名解析&lt;/h3&gt;
-&lt;p&gt;1、添加A记录（即地址记录，用来指定域名的IP地址），主机记录（Name）栏填www，记录值(Target)那栏填Github服务器IP地址（即your_name.github.io的IP地址）
-&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_ikHhPb/2022/11/25/22-56-43-d6d5169f3a39225b581fad8452028ed2-552c42.png&#34; alt=&#34;&#34;&gt;
-2、添加CNAME记录（用于将一个域名映射到另一个域名），主机记录栏填@，记录值那栏填yakaili.github.io
+&lt;!-- 1、添加A记录（即地址记录，用来指定域名的IP地址），主机记录（Name）栏填www，记录值(Target)那栏填Github服务器IP地址（即your_name.github.io的IP地址）
+![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_ikHhPb/2022/11/25/22-56-43-d6d5169f3a39225b581fad8452028ed2-552c42.png)
+2、 --&gt;
+&lt;p&gt;在域名解释时，添加CNAME记录（用于将一个域名映射到另一个域名），主机记录栏填@，记录值那栏填yakaili.github.io
 &lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_Mi97Kd/2022/11/25/22-59-06-e34743664fae9b43c3fafadb22862b15-515bf5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;新建文章&#34;&gt;新建文章&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
