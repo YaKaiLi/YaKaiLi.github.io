@@ -66,12 +66,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2022/11/27/hugo-simple-install/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-11-27T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-11-27T04:15:06+08:00" /><meta property="og:site_name" content="star5o的博客" />
+<meta property="article:modified_time" content="2022-11-27T14:56:39+08:00" /><meta property="og:site_name" content="star5o的博客" />
 
 <meta itemprop="name" content="简单安装支持多语言的hugo">
 <meta itemprop="description" content="最想计划使用hugo搭建一个中英双语的博客网站，遇到了各种各样的坑，心力交瘁，还是配置不成功。突发奇想，可不可以直接使用他人配置好的Hugo。于是就有了这篇文章，感谢叶寻的博客 本地安装 1 git clone --recurse-submodules https://github.com/CyrusYip/cyrusyip-blog.git 换成自"><meta itemprop="datePublished" content="2022-11-27T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-11-27T04:15:06+08:00" />
-<meta itemprop="wordCount" content="1267">
+<meta itemprop="dateModified" content="2022-11-27T14:56:39+08:00" />
+<meta itemprop="wordCount" content="1296">
 <meta itemprop="keywords" content="misc," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="简单安装支持多语言的hugo"/>
 <meta name="twitter:description" content="最想计划使用hugo搭建一个中英双语的博客网站，遇到了各种各样的坑，心力交瘁，还是配置不成功。突发奇想，可不可以直接使用他人配置好的Hugo。于是就有了这篇文章，感谢叶寻的博客 本地安装 1 git clone --recurse-submodules https://github.com/CyrusYip/cyrusyip-blog.git 换成自"/>
@@ -390,7 +390,7 @@ if (!doNotTrack) {
           2022-11-27
         </time>
         
-        <span class="more-meta"> 约 1267 字 </span>
+        <span class="more-meta"> 约 1296 字 </span>
           <span class="more-meta"> 预计阅读 3 分钟 </span>
 
         
@@ -505,6 +505,7 @@ if (!doNotTrack) {
 <p>将所有文档push到Github的master branch，进入Github对应repository的Settings标签菜单，在Pages选项的Source栏选择master branch /docs folder:
 <img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/%E6%88%AA%E5%B1%8F2022-11-25%2022.29.36.png" alt=""></p>
 <h2 id="配置个人域名">配置个人域名</h2>
+<p>以本站为例，设置的个人域名为<code>www.gnn.ac.cn</code></p>
 <h3 id="hugo配置">hugo配置</h3>
 <p>在本地仓库docs子目录中需要添加一个名为CNAME的文档
 <img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2022/11/27/14-45-12-4a79ee47ee4aab06a968f61fbedc139e-928291.png" alt="">
@@ -525,8 +526,9 @@ if (!doNotTrack) {
 <!-- 1、添加A记录（即地址记录，用来指定域名的IP地址），主机记录（Name）栏填www，记录值(Target)那栏填Github服务器IP地址（即your_name.github.io的IP地址）
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_ikHhPb/2022/11/25/22-56-43-d6d5169f3a39225b581fad8452028ed2-552c42.png)
 2、 -->
-<p>在域名解释时，添加CNAME记录（用于将一个域名映射到另一个域名），主机记录栏填@，记录值那栏填yakaili.github.io
-<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_Mi97Kd/2022/11/25/22-59-06-e34743664fae9b43c3fafadb22862b15-515bf5.png" alt=""></p>
+<p>在域名解释时，添加CNAME记录（用于将一个域名映射到另一个域名）。
+主机记录栏填<code>www</code>，记录值那栏填<code>yakaili.github.io</code>
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_7kBVbA/2022/11/27/14-58-34-6f94d010344dde1c6bc4f4b9333cdbd0-a4dcab.png" alt=""></p>
 <h2 id="新建文章">新建文章</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

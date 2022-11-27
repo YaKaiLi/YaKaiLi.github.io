@@ -61,7 +61,7 @@ git push -u origin master
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/%E6%88%AA%E5%B1%8F2022-11-25%2022.29.36.png)
 
 ## 配置个人域名
-
+以本站为例，设置的个人域名为`www.gnn.ac.cn`
 ### hugo配置
 在本地仓库docs子目录中需要添加一个名为CNAME的文档
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2022/11/27/14-45-12-4a79ee47ee4aab06a968f61fbedc139e-928291.png)
@@ -76,8 +76,10 @@ git push -u origin master
 <!-- 1、添加A记录（即地址记录，用来指定域名的IP地址），主机记录（Name）栏填www，记录值(Target)那栏填Github服务器IP地址（即your_name.github.io的IP地址）
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_ikHhPb/2022/11/25/22-56-43-d6d5169f3a39225b581fad8452028ed2-552c42.png)
 2、 -->
-在域名解释时，添加CNAME记录（用于将一个域名映射到另一个域名），主机记录栏填@，记录值那栏填yakaili.github.io
-![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_Mi97Kd/2022/11/25/22-59-06-e34743664fae9b43c3fafadb22862b15-515bf5.png)
+
+在域名解释时，添加CNAME记录（用于将一个域名映射到另一个域名）。
+主机记录栏填`www`，记录值那栏填`yakaili.github.io`
+![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_7kBVbA/2022/11/27/14-58-34-6f94d010344dde1c6bc4f4b9333cdbd0-a4dcab.png)
 
 
 ## 新建文章
