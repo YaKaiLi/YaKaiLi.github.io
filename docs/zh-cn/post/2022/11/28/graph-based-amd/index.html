@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="star5o" />
-  <meta name="description" content="主要是图嵌入方法的区别。" />
+  <meta name="description" content="此篇文章只介绍已开源或能够找到复现源码的工作。 主要是图嵌入方法的区别。 MalScan MamaDroid 阅读主要关注于算法如何实现的，分为四个阶段：调用图提取、序列提取、构建马尔可夫链和特征向量、分类器。 MaMaDROID不使用原" />
 
   <meta name="keywords" content="Star5o, star5o" />
 
@@ -60,19 +60,19 @@
 
 
 <meta property="og:title" content="基于图的安卓恶意软件检测方法综述" />
-<meta property="og:description" content="主要是图嵌入方法的区别。" />
+<meta property="og:description" content="此篇文章只介绍已开源或能够找到复现源码的工作。 主要是图嵌入方法的区别。 MalScan MamaDroid 阅读主要关注于算法如何实现的，分为四个阶段：调用图提取、序列提取、构建马尔可夫链和特征向量、分类器。 MaMaDROID不使用原" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2022/11/28/graph-based-amd/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-11-28T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-11-28T21:19:43+08:00" /><meta property="og:site_name" content="Star5o的博客" />
 
 <meta itemprop="name" content="基于图的安卓恶意软件检测方法综述">
-<meta itemprop="description" content="主要是图嵌入方法的区别。"><meta itemprop="datePublished" content="2022-11-28T00:00:00+00:00" />
+<meta itemprop="description" content="此篇文章只介绍已开源或能够找到复现源码的工作。 主要是图嵌入方法的区别。 MalScan MamaDroid 阅读主要关注于算法如何实现的，分为四个阶段：调用图提取、序列提取、构建马尔可夫链和特征向量、分类器。 MaMaDROID不使用原"><meta itemprop="datePublished" content="2022-11-28T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-11-28T21:19:43+08:00" />
-<meta itemprop="wordCount" content="12">
+<meta itemprop="wordCount" content="368">
 <meta itemprop="keywords" content="Graph_embedding,Android,Malware_detection," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="基于图的安卓恶意软件检测方法综述"/>
-<meta name="twitter:description" content="主要是图嵌入方法的区别。"/>
+<meta name="twitter:description" content="此篇文章只介绍已开源或能够找到复现源码的工作。 主要是图嵌入方法的区别。 MalScan MamaDroid 阅读主要关注于算法如何实现的，分为四个阶段：调用图提取、序列提取、构建马尔可夫链和特征向量、分类器。 MaMaDROID不使用原"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -382,7 +382,7 @@ if (!doNotTrack) {
           2022-11-28
         </time>
         
-        <span class="more-meta"> 约 12 字 </span>
+        <span class="more-meta"> 约 368 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
 
         
@@ -398,13 +398,34 @@ if (!doNotTrack) {
 <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">文章目录</h2>
   <div class="post-toc-content">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#调用图提取">调用图提取</a></li>
+    <li><a href="#序列提取">序列提取</a></li>
+    <li><a href="#构建马尔可夫链和特征向量">构建马尔可夫链和特征向量</a></li>
+    <li><a href="#分类器">分类器</a></li>
+  </ul>
+</nav>
   </div>
 </div>
 
     
     <div class="post-content">
-      <p>主要是图嵌入方法的区别。</p>
+      <p>此篇文章只介绍已开源或能够找到复现源码的工作。</p>
+<p>主要是图嵌入方法的区别。</p>
+<h1 id="malscan">MalScan</h1>
+<h1 id="mamadroid">MamaDroid</h1>
+<p>阅读主要关注于算法如何实现的，分为四个阶段：调用图提取、序列提取、构建马尔可夫链和特征向量、分类器。</p>
+<p>MaMaDROID不使用原始API调用序列，而是将每个调用抽象为其包或其族。</p>
+<p><img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2022/11/28/21-50-42-98fe24fe906cbdc4c9e1bb91275551b9-0e11e0.png" alt=""></p>
+<h2 id="调用图提取">调用图提取</h2>
+<p>Soot [52], to extract call graphs and FlowDroid [6] to ensure contexts and ﬂows are preserved.</p>
+<h2 id="序列提取">序列提取</h2>
+<p>有了调用图之后从调用图中提取API调用序列。</p>
+<p>首先，标识调用图中的一组入口节点，即没有传入边的节点（例如，如果app中没有来自任何其他调用的传入边，则图2中代码段中的执行方法是入口节点）。然后，它枚举从每个入口节点可以到达的路径。在此阶段确定的所有路径集构成API调用序列，用于构建马尔可夫链行为模型和提取特征（参见第II-D节）。</p>
+<h2 id="构建马尔可夫链和特征向量">构建马尔可夫链和特征向量</h2>
+<h2 id="分类器">分类器</h2>
+<p>随机森林、1近邻（1-NN）、3近邻（3-NN）和支持向量机（SVM）</p>
 
     </div>
 
