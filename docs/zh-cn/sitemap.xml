@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/android/</loc>
+    <lastmod>2022-11-28T21:19:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/graph_embedding/</loc>
+    <lastmod>2022-11-28T21:19:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/malware_detection/</loc>
+    <lastmod>2022-11-28T21:19:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/post/</loc>
+    <lastmod>2022-11-28T21:19:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/</loc>
+    <lastmod>2022-11-28T21:19:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/</loc>
+    <lastmod>2022-11-28T21:19:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/graph-based-amd/</loc>
+    <lastmod>2022-11-28T21:19:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/python3-unicodeencodeerror/</loc>
     <lastmod>2022-11-27T16:49:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -10,14 +59,7 @@
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/misc/</loc>
-    <lastmod>2022-11-27T16:49:06+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/post/</loc>
-    <lastmod>2022-11-27T16:59:43+08:00</lastmod>
+    <lastmod>2022-11-28T21:19:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -31,21 +73,7 @@
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/software/</loc>
-    <lastmod>2022-11-27T16:59:43+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/</loc>
-    <lastmod>2022-11-27T16:59:43+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/tags/</loc>
-    <lastmod>2022-11-27T16:59:43+08:00</lastmod>
+    <lastmod>2022-11-28T21:19:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -66,7 +94,7 @@
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/hugo-simple-install/</loc>
-    <lastmod>2022-11-27T16:49:06+08:00</lastmod>
+    <lastmod>2022-11-28T21:19:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

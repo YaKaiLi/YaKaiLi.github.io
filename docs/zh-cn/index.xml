@@ -6,10 +6,22 @@
     <description>Recent content on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Nov 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://www.gnn.ac.cn/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>基于图的安卓恶意软件检测方法综述</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/graph-based-amd/</link>
+      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/graph-based-amd/</guid>
+      
+        <description>&lt;p&gt;主要是图嵌入方法的区别。&lt;/p&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>linux-Python3-UnicodeEncodeError: &#39;ascii&#39; codec can&#39;t encode characters in position 0-1: ordinal not in range(128)</title>
@@ -120,7 +132,7 @@
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/hugo-simple-install/</guid>
       
-        <description>&lt;p&gt;最想计划使用hugo搭建一个中英双语的博客网站，遇到了各种各样的坑，心力交瘁，还是配置不成功。突发奇想，可不可以直接使用他人配置好的Hugo，于是就有了这个博客和这篇文章。&lt;/p&gt;
+        <description>&lt;p&gt;前段时间计划使用hugo搭建一个中英双语的博客网站，遇到了各种各样的坑，心力交瘁。突发奇想，可不可以直接使用他人配置好的Hugo，于是就有了这个博客和这篇文章。&lt;/p&gt;
 &lt;p&gt;感谢&lt;a href=&#34;https://github.com/CyrusYip/cyrusyip-blog&#34;&gt;叶寻的博客&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;本地安装&#34;&gt;本地安装&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

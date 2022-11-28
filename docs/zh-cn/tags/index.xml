@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android</title>
+      <link>https://www.gnn.ac.cn/zh-cn/tags/android/</link>
+      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graph_embedding</title>
+      <link>https://www.gnn.ac.cn/zh-cn/tags/graph_embedding/</link>
+      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/tags/graph_embedding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Malware_detection</title>
+      <link>https://www.gnn.ac.cn/zh-cn/tags/malware_detection/</link>
+      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/tags/malware_detection/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Misc</title>
       <link>https://www.gnn.ac.cn/zh-cn/tags/misc/</link>
