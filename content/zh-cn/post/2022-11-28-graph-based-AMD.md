@@ -21,7 +21,7 @@ MaMaDROID不使用原始API调用序列，而是将每个调用抽象为其包�
 
 ## 调用图提取
 
-Soot [52], to extract call graphs and FlowDroid [6] to ensure contexts and ﬂows are preserved.
+Soot工具用于提取函数调用图，FlowDroid工具用于确保上下文和流是被保留的。
 
 ## 序列提取
 
