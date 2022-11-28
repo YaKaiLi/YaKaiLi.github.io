@@ -134,5 +134,6 @@ defaultContentLanguage = "en"
   [params.social]                                         # 社交链接
     c-twitter = "https://twitter.com/liyakai_iie"
     g-github = "https://github.com/yakaili"
+    i-zhihu = "https://www.zhihu.com/people/li-ya-kai-23"
 # ]]]
 # vim:foldmethod=marker:foldmarker=[[[,]]]
