@@ -64,12 +64,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2022/11/28/graph-based-amd/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-11-28T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-11-28T21:19:43+08:00" /><meta property="og:site_name" content="Star5o的博客" />
+<meta property="article:modified_time" content="2022-11-28T22:14:22+08:00" /><meta property="og:site_name" content="Star5o的博客" />
 
 <meta itemprop="name" content="基于图的安卓恶意软件检测方法综述">
 <meta itemprop="description" content="此篇文章只介绍已开源或能够找到复现源码的工作。 主要是图嵌入方法的区别。 MalScan MamaDroid 阅读主要关注于算法如何实现的，分为四个阶段：调用图提取、序列提取、构建马尔可夫链和特征向量、分类器。 MaMaDROID不使用原"><meta itemprop="datePublished" content="2022-11-28T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-11-28T21:19:43+08:00" />
-<meta itemprop="wordCount" content="368">
+<meta itemprop="dateModified" content="2022-11-28T22:14:22+08:00" />
+<meta itemprop="wordCount" content="391">
 <meta itemprop="keywords" content="Graph_embedding,Android,Malware_detection," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="基于图的安卓恶意软件检测方法综述"/>
 <meta name="twitter:description" content="此篇文章只介绍已开源或能够找到复现源码的工作。 主要是图嵌入方法的区别。 MalScan MamaDroid 阅读主要关注于算法如何实现的，分为四个阶段：调用图提取、序列提取、构建马尔可夫链和特征向量、分类器。 MaMaDROID不使用原"/>
@@ -382,7 +382,7 @@ if (!doNotTrack) {
           2022-11-28
         </time>
         
-        <span class="more-meta"> 约 368 字 </span>
+        <span class="more-meta"> 约 391 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
 
         
@@ -419,7 +419,7 @@ if (!doNotTrack) {
 <p>MaMaDROID不使用原始API调用序列，而是将每个调用抽象为其包或其族。</p>
 <p><img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2022/11/28/21-50-42-98fe24fe906cbdc4c9e1bb91275551b9-0e11e0.png" alt=""></p>
 <h2 id="调用图提取">调用图提取</h2>
-<p>Soot [52], to extract call graphs and FlowDroid [6] to ensure contexts and ﬂows are preserved.</p>
+<p>Soot工具用于提取函数调用图，FlowDroid工具用于确保上下文和流是被保留的。</p>
 <h2 id="序列提取">序列提取</h2>
 <p>有了调用图之后从调用图中提取API调用序列。</p>
 <p>首先，标识调用图中的一组入口节点，即没有传入边的节点（例如，如果app中没有来自任何其他调用的传入边，则图2中代码段中的执行方法是入口节点）。然后，它枚举从每个入口节点可以到达的路径。在此阶段确定的所有路径集构成API调用序列，用于构建马尔可夫链行为模型和提取特征（参见第II-D节）。</p>
@@ -468,6 +468,19 @@ if (!doNotTrack) {
       
       <nav class="post-nav">
         
+          <a class="prev" href="/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">《图神经网络-基础、前沿与应用》序章：表征学习（Representation Learning）</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
         
           <a class="next" href="/zh-cn/post/2022/11/27/python3-unicodeencodeerror/">
             <span class="next-text nav-default">linux-Python3-UnicodeEncodeError: &#39;ascii&#39; codec can&#39;t encode characters in position 0-1: ordinal not in range(128)</span>

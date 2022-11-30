@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>《图神经网络-基础、前沿与应用》序章：表征学习（Representation Learning）</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/</link>
+      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
       <title>基于图的安卓恶意软件检测方法综述</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/graph-based-amd/</link>
       <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
@@ -26,7 +37,7 @@
 &lt;p&gt;MaMaDROID不使用原始API调用序列，而是将每个调用抽象为其包或其族。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2022/11/28/21-50-42-98fe24fe906cbdc4c9e1bb91275551b9-0e11e0.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;调用图提取&#34;&gt;调用图提取&lt;/h2&gt;
-&lt;p&gt;Soot [52], to extract call graphs and FlowDroid [6] to ensure contexts and ﬂows are preserved.&lt;/p&gt;
+&lt;p&gt;Soot工具用于提取函数调用图，FlowDroid工具用于确保上下文和流是被保留的。&lt;/p&gt;
 &lt;h2 id=&#34;序列提取&#34;&gt;序列提取&lt;/h2&gt;
 &lt;p&gt;有了调用图之后从调用图中提取API调用序列。&lt;/p&gt;
 &lt;p&gt;首先，标识调用图中的一组入口节点，即没有传入边的节点（例如，如果app中没有来自任何其他调用的传入边，则图2中代码段中的执行方法是入口节点）。然后，它枚举从每个入口节点可以到达的路径。在此阶段确定的所有路径集构成API调用序列，用于构建马尔可夫链行为模型和提取特征（参见第II-D节）。&lt;/p&gt;
