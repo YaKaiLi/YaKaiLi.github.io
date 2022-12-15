@@ -131,7 +131,7 @@ defaultContentLanguage = "en"
     id = "34ea7590e075242d3:q1gkomof_em"
     title = "gnn"
   [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
-    enable = false
+    enable = true
   # [params.gitInfo] # show link to lastmod commit, enableGitInfo should be true
   #   gitRepo = "https://github.com/CyrusYip/cyrusyip-blog"
   #   showCommitMessage = true
