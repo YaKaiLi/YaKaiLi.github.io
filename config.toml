@@ -126,6 +126,10 @@ defaultContentLanguage = "en"
     enable = true
     repo = "YaKaiLi/YaKaiLi.github.io"    # The repo to store comments
     issueTerm = "pathname"
+  [params.search.google]    # google custom search, see https://cse.google.com
+    enable = true
+    id = "34ea7590e075242d3:q1gkomof_em"
+    title = "gnn"
   [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
     enable = false
   # [params.gitInfo] # show link to lastmod commit, enableGitInfo should be true
