@@ -31,7 +31,7 @@ pygmentsOptions = "linenos=table"
 
 # Render English site under /en
 defaultContentLanguageInSubdir = "true"
-defaultContentLanguage = "en"
+defaultContentLanguage = "zh-cn"
 # ]]]
 # permalinks, author, sitemap, markup[[[
 [permalinks]
