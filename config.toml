@@ -128,8 +128,8 @@ defaultContentLanguage = "en"
     issueTerm = "pathname"
   [params.search.google]    # google custom search, see https://cse.google.com
     enable = true
-    id = "34ea7590e075242d3:q1gkomof_em"
-    title = "gnn"
+    id = "34ea7590e075242d3"
+    title = "Search"
   [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
     enable = true
   # [params.gitInfo] # show link to lastmod commit, enableGitInfo should be true
