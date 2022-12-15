@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>git push error &#39;:&#39; 更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/12/15/git-push-error1-1/</link>
+      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/12/15/git-push-error1-1/</guid>
+      <description>报错 1 2 3 4 5 ! [rejected] master -&amp;gt; master (non-fast-forward) error: 无法推送一些引用到 &amp;#39;https://github.com/xxx.git&amp;#39; 提示：更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支。 提示：再次推送前，先与远程变更合并（如 &amp;#39;git pull ...&amp;#39;）。详见 提示：&amp;#39;gi</description>
+    </item>
+    
+    <item>
       <title>《图神经网络：基础、前沿与应用》（又名：图神经网络城堡书） Part1:引言》第一章：表征学习（Representation Learning）</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/</link>
       <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
