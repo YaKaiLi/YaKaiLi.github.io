@@ -18,7 +18,7 @@ hasCJKLanguage = true
 paginate = 3              # Number of articles displayed on the homepage  # 首页每页显示的文章数
 # rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
 disqusShortname = "star5o"      # disqus_shortname
-googleAnalytics = "UA-193139827-1"      # UA-XXXXXXXX-X
+googleAnalytics = "G-9YR4FEGTDL"      # UA-XXXXXXXX-X
 copyright = "Star5o Love Haohao"            # default: author.name ↓        # 默认为下面配置的author.name ↓
 enableGitInfo = true      # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 summaryLength = 100
@@ -126,10 +126,10 @@ defaultContentLanguage = "en"
     enable = true
     repo = "YaKaiLi/YaKaiLi.github.io"    # The repo to store comments
     issueTerm = "pathname"
-  [params.search.google]    # google custom search, see https://cse.google.com
-    enable = true
-    id = "34ea7590e075242d3"
-    title = "Search"
+  #[params.search.google]    # google custom search, see https://cse.google.com
+  #  enable = true
+  #  id = "34ea7590e075242d3"
+  #  title = "Search"
   [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
     enable = true
   # [params.gitInfo] # show link to lastmod commit, enableGitInfo should be true
