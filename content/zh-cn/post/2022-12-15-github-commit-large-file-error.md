@@ -5,6 +5,7 @@ slug: git-commit-large-file-error
 tags:
   - Troubleshooting
   - Misc
+  - Git
 mathjax: true
 ---
 # 报错

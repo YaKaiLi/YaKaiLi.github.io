@@ -5,6 +5,7 @@ slug: git-push-error1-1
 tags:
   - Troubleshooting
   - Misc
+  - Git
 mathjax: true
 ---
 # 报错
