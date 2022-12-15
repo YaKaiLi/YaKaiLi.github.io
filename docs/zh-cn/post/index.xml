@@ -6,9 +6,18 @@
     <description>Recent content in Posts on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Mon, 28 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>《图神经网络-基础、前沿与应用》序章：表征学习（Representation Learning）</title>
+      <title>commit了一个大文件导致本地仓库无法推送到github的问题解决方法</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/12/15/git-commit-large-file-error/</link>
+      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/12/15/git-commit-large-file-error/</guid>
+      <description>报错 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 枚举对象中: 57, 完成. 对象计数中: 100% (57/57), 完成. 使用 8 个线程进行压缩 压缩对象中: 100% (37/37), 完成. 写入对象中: 28% (11/38) 写入对象中: 100% (38/38), 365.92 MiB | 4.85 MiB/s, 完成. 总共 38（差异 23），复用 0（差异</description>
+    </item>
+    
+    <item>
+      <title>《图神经网络：基础、前沿与应用》（又名：图神经网络城堡书） Part1:引言》第一章：表征学习（Representation Learning）</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/</link>
       <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
       
