@@ -121,6 +121,7 @@ defaultContentLanguage = "zh-cn"
   #   (relative to /static/css and /static/js respectively)
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
   customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
+  customFooter = "京ICP备2022034397号-1"
 
   [params.utteranc]
     enable = true
