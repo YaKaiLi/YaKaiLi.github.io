@@ -131,12 +131,12 @@ defaultContentLanguage = "zh-cn"
   #  enable = true
   #  id = "34ea7590e075242d3"
   #  title = "Search"
-  [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
-    enable = true
-  #[params.counter.leancloud]  # Chinese leancloud visitor counter  # leancloud 计数器
+  #[params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
   #  enable = true
-  #  appId = "rTbNOMu7jR6E6DvALJYAwZX2-gzGzoHsz"
-  #  appKey = "ObTPpMrg3o52A2n6n5HaXXUV"
+  [params.counter.leancloud]  # Chinese leancloud visitor counter  # leancloud 计数器
+    enable = true
+    appId = "rTbNOMu7jR6E6DvALJYAwZX2-gzGzoHsz"
+    appKey = "ObTPpMrg3o52A2n6n5HaXXUV"
 
   # [params.gitInfo] # show link to lastmod commit, enableGitInfo should be true
   #   gitRepo = "https://github.com/CyrusYip/cyrusyip-blog"
