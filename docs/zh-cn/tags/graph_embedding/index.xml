@@ -13,7 +13,7 @@
       <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/graph-based-amd/</guid>
-      <description>此篇文章只介绍已开源或能够找到复现源码的工作。 主要是图嵌入方法的区别。 MalScan MamaDroid 阅读主要关注于算法如何实现的，分为四个阶段：调用图提取、序列提取、构建马尔可夫链和特征向量、分类器。 MaMaDROID不使用原</description>
+      <description>此篇文章只总结已开源或能够找到复现源码的工作。 这些方法之间的区别主要是图嵌入方式。 MalScan MamaDroid 阅读主要关注于算法如何实现的，分为四个阶段：调用图提取、序列提取、构建马尔可夫链和特征向量、分类器。 MaMaDRO</description>
     </item>
     
   </channel>
