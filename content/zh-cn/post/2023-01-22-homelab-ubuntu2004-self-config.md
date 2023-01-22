@@ -126,6 +126,7 @@ sudo apt upgrade	#更新软件仓库
 
 ## 安装docker
 docker官方的源比较慢，采用阿里云的docker源进行安装。
+
 https://developer.aliyun.com/mirror/docker-ce
 ```shell
 # step 1: 安装必要的一些系统工具
@@ -161,7 +162,8 @@ sudo chmod a+rw /var/run/docker.sock
 wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
 bash Anaconda3-2022.10-Linux-x86_64.sh
 ```
-配置conda国内源：清华源
+配置conda国内源：清华源。
+
 https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
 ```shell
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
