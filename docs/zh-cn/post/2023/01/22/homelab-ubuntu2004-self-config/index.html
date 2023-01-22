@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Simple install hugo with Multi-language support - Star5o&#39;s Blog</title>
+  <title>homelab ubuntu20.04系统安装后自用配置 - Star5o的博客</title>
   
-<link rel="alternate" hreflang="" href="https://www.gnn.ac.cn/zh-cn/post/2022/11/27/hugo-simple-install/" />
-
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
@@ -25,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="star5o" />
-  <meta name="description" content="just use other&amp;rsquo;s confige 直接拷贝已有好的配置～ 1 git clone --recurse-submodules https://github.com/CyrusYip/cyrusyip-blog.git 添加 favicon 利用https://realfavicongenerator.net/ 将头像做成favicon，然后放到static目录里 修改标题 修改config.tom" />
+  <meta name="description" content="换国内源 配置中科大源 1 2 sudo sed -i &amp;#39;s@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g&amp;#39; /etc/apt/sources.list sudo apt update ssh配置 安装ssh 1 2 sudo apt update sudo apt install openssh-server vim 配置密钥 1 2 3 4 5 ssh-keygen cd .ssh cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys chmod 600 authorized_keys chmod 700 ~/.ssh 1 sudo vim /etc/ssh/sshd_config sshd_config文件内修改： 1 2 3 4 5 6 RSAAuthentication yes #开启密钥登陆 PubkeyAuthentication yes" />
 
   <meta name="keywords" content="Star5o, star5o" />
 
@@ -37,7 +35,7 @@
 <meta name="generator" content="Hugo 0.107.0" />
 
 
-<link rel="canonical" href="https://www.gnn.ac.cn/en/post/2022/11/27/hugo-simple-install/" />
+<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/" />
 
 
 
@@ -61,20 +59,20 @@
 
 
 
-<meta property="og:title" content="Simple install hugo with Multi-language support" />
-<meta property="og:description" content="just use other&rsquo;s confige 直接拷贝已有好的配置～ 1 git clone --recurse-submodules https://github.com/CyrusYip/cyrusyip-blog.git 添加 favicon 利用https://realfavicongenerator.net/ 将头像做成favicon，然后放到static目录里 修改标题 修改config.tom" />
+<meta property="og:title" content="homelab ubuntu20.04系统安装后自用配置" />
+<meta property="og:description" content="换国内源 配置中科大源 1 2 sudo sed -i &#39;s@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g&#39; /etc/apt/sources.list sudo apt update ssh配置 安装ssh 1 2 sudo apt update sudo apt install openssh-server vim 配置密钥 1 2 3 4 5 ssh-keygen cd .ssh cat id_rsa.pub &gt;&gt; authorized_keys chmod 600 authorized_keys chmod 700 ~/.ssh 1 sudo vim /etc/ssh/sshd_config sshd_config文件内修改： 1 2 3 4 5 6 RSAAuthentication yes #开启密钥登陆 PubkeyAuthentication yes" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.gnn.ac.cn/en/post/2022/11/27/hugo-simple-install/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-11-27T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-11-27T16:49:06+08:00" /><meta property="og:site_name" content="Star5o&#39;s Blog" />
+<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-01-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-01-22T00:00:00+00:00" /><meta property="og:site_name" content="Star5o的博客" />
 
-<meta itemprop="name" content="Simple install hugo with Multi-language support">
-<meta itemprop="description" content="just use other&rsquo;s confige 直接拷贝已有好的配置～ 1 git clone --recurse-submodules https://github.com/CyrusYip/cyrusyip-blog.git 添加 favicon 利用https://realfavicongenerator.net/ 将头像做成favicon，然后放到static目录里 修改标题 修改config.tom"><meta itemprop="datePublished" content="2022-11-27T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-11-27T16:49:06+08:00" />
-<meta itemprop="wordCount" content="1273">
-<meta itemprop="keywords" content="Misc,Software," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Simple install hugo with Multi-language support"/>
-<meta name="twitter:description" content="just use other&rsquo;s confige 直接拷贝已有好的配置～ 1 git clone --recurse-submodules https://github.com/CyrusYip/cyrusyip-blog.git 添加 favicon 利用https://realfavicongenerator.net/ 将头像做成favicon，然后放到static目录里 修改标题 修改config.tom"/>
+<meta itemprop="name" content="homelab ubuntu20.04系统安装后自用配置">
+<meta itemprop="description" content="换国内源 配置中科大源 1 2 sudo sed -i &#39;s@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g&#39; /etc/apt/sources.list sudo apt update ssh配置 安装ssh 1 2 sudo apt update sudo apt install openssh-server vim 配置密钥 1 2 3 4 5 ssh-keygen cd .ssh cat id_rsa.pub &gt;&gt; authorized_keys chmod 600 authorized_keys chmod 700 ~/.ssh 1 sudo vim /etc/ssh/sshd_config sshd_config文件内修改： 1 2 3 4 5 6 RSAAuthentication yes #开启密钥登陆 PubkeyAuthentication yes"><meta itemprop="datePublished" content="2023-01-22T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-01-22T00:00:00+00:00" />
+<meta itemprop="wordCount" content="935">
+<meta itemprop="keywords" content="Misc,homelab," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="homelab ubuntu20.04系统安装后自用配置"/>
+<meta name="twitter:description" content="换国内源 配置中科大源 1 2 sudo sed -i &#39;s@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g&#39; /etc/apt/sources.list sudo apt update ssh配置 安装ssh 1 2 sudo apt update sudo apt install openssh-server vim 配置密钥 1 2 3 4 5 ssh-keygen cd .ssh cat id_rsa.pub &gt;&gt; authorized_keys chmod 600 authorized_keys chmod 700 ~/.ssh 1 sudo vim /etc/ssh/sshd_config sshd_config文件内修改： 1 2 3 4 5 6 RSAAuthentication yes #开启密钥登陆 PubkeyAuthentication yes"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -103,7 +101,7 @@ if (!doNotTrack) {
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/en/" class="logo">Star5o&#39;s Blog</a>
+    <a href="/zh-cn/" class="logo">Star5o的博客</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -117,28 +115,42 @@ if (!doNotTrack) {
         
           
           
-            <a class="menu-item-link" href="https://www.gnn.ac.cn/en/">Home</a>
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/">主页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://www.gnn.ac.cn/en/post/">Archives</a>
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/post/">文章</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://www.gnn.ac.cn/en/tags/">Tags</a>
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://www.gnn.ac.cn/en/about/">About</a>
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/about/">关于</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/subscribe/">订阅</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/donate/">鼓励</a>
           
         
       </li>
@@ -154,20 +166,20 @@ if (!doNotTrack) {
 </svg>
 
             </i>
-            Language
+            语言
           </a>
         </div>
         <ul class="mobile-submenu-list">
           
             <li>
               
-                <a href="https://www.gnn.ac.cn/zh-cn/">简体中文</a>
+                <a href="https://www.gnn.ac.cn/zh-cn/"><strong>简体中文</strong></a>
               
             </li>
           
             <li>
               
-                <a href="https://www.gnn.ac.cn/en/"><strong>English</strong></a>
+                <a href="https://www.gnn.ac.cn/en/">English</a>
               
             </li>
           
@@ -245,9 +257,9 @@ if (!doNotTrack) {
 
   <header id="header" class="header container">
     <div class="logo-wrapper">
-  <a href="/en/" class="logo">
+  <a href="/zh-cn/" class="logo">
     
-      Star5o&#39;s Blog
+      Star5o的博客
     
   </a>
 </div>
@@ -260,7 +272,7 @@ if (!doNotTrack) {
         
           
           
-            <a class="menu-item-link" href="https://www.gnn.ac.cn/en/">Home</a>
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/">主页</a>
           
 
         
@@ -271,7 +283,7 @@ if (!doNotTrack) {
         
           
           
-            <a class="menu-item-link" href="https://www.gnn.ac.cn/en/post/">Archives</a>
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/post/">文章</a>
           
 
         
@@ -282,7 +294,7 @@ if (!doNotTrack) {
         
           
           
-            <a class="menu-item-link" href="https://www.gnn.ac.cn/en/tags/">Tags</a>
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/tags/">标签</a>
           
 
         
@@ -293,7 +305,29 @@ if (!doNotTrack) {
         
           
           
-            <a class="menu-item-link" href="https://www.gnn.ac.cn/en/about/">About</a>
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/about/">关于</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/subscribe/">订阅</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://www.gnn.ac.cn/zh-cn/donate/">鼓励</a>
           
 
         
@@ -312,16 +346,16 @@ if (!doNotTrack) {
 </svg>
 
           </i>
-          English
+          简体中文
         </a>
         <ul class="submenu">
           
             
-              <li>
-                <a href="https://www.gnn.ac.cn/zh-cn/">简体中文</a>
-              </li>
-            
           
+            
+              <li>
+                <a href="https://www.gnn.ac.cn/en/">English</a>
+              </li>
             
           
         </ul>
@@ -341,21 +375,15 @@ if (!doNotTrack) {
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">Simple install hugo with Multi-language support</h1>
+      <h1 class="post-title">homelab ubuntu20.04系统安装后自用配置</h1>
       
-<div class="post-meta">
-  
-  <div><a href="https://www.gnn.ac.cn/zh-cn/post/2022/11/27/hugo-simple-install/">中文阅读: 简单安装支持多语言的hugo</a></div>
-  
-</div>
-
       <div class="post-meta">
-        <time datetime="2022-11-27" class="post-time">
-          2022-11-27
+        <time datetime="2023-01-22" class="post-time">
+          2023-01-22
         </time>
         
-        <span class="more-meta"> 1273 words </span>
-          <span class="more-meta"> 3 min read </span>
+        <span class="more-meta"> 约 935 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
 
         
         
@@ -372,31 +400,32 @@ if (!doNotTrack) {
     
     
 <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">Table of Contents</h2>
+  <h2 class="post-toc-title">文章目录</h2>
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#添加-favicon">添加 favicon</a></li>
-    <li><a href="#修改标题">修改标题</a></li>
-    <li><a href="#评论系统">评论系统</a>
+    <li><a href="#换国内源">换国内源</a></li>
+    <li><a href="#ssh配置">ssh配置</a>
       <ul>
-        <li><a href="#disqus配置评论配置">disqus配置（评论配置）</a></li>
-        <li><a href="#utteranc">utteranc</a></li>
+        <li><a href="#安装ssh">安装ssh</a></li>
+        <li><a href="#配置密钥">配置密钥</a></li>
       </ul>
     </li>
-    <li><a href="#发布并托管到github">发布并托管到Github</a>
+    <li><a href="#远程桌面设置">远程桌面设置</a>
       <ul>
-        <li><a href="#修改配置文件">修改配置文件</a></li>
-        <li><a href="#发布并托管到github-1">发布并托管到Github</a></li>
+        <li><a href="#安装vino">安装vino</a>
+          <ul>
+            <li><a href="#配置vino">配置vino</a></li>
+          </ul>
+        </li>
+        <li><a href="#安装todesk">安装todesk</a></li>
+        <li><a href="#安装向日葵">安装向日葵</a></li>
+        <li><a href="#安装teamviewer">安装teamviewer</a></li>
       </ul>
     </li>
-    <li><a href="#配置个人域名">配置个人域名</a>
-      <ul>
-        <li><a href="#hugo配置">hugo配置</a></li>
-        <li><a href="#域名解析">域名解析</a></li>
-      </ul>
-    </li>
-    <li><a href="#新建文章">新建文章</a></li>
+    <li><a href="#精简-ubuntu-2004----删除不必要的自带软件">精简 ubuntu 20.04 &ndash; 删除不必要的自带软件</a></li>
+    <li><a href="#安装docker">安装docker</a></li>
+    <li><a href="#安装anaconda">安装Anaconda</a></li>
   </ul>
 </nav>
   </div>
@@ -404,54 +433,31 @@ if (!doNotTrack) {
 
     
     <div class="post-content">
-      <p>just use other&rsquo;s confige
-直接拷贝已有好的配置～</p>
+      <h2 id="换国内源">换国内源</h2>
+<p>配置中科大源</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone --recurse-submodules https://github.com/CyrusYip/cyrusyip-blog.git
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo sed -i <span class="s1">&#39;s@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g&#39;</span> /etc/apt/sources.list
+</span></span><span class="line"><span class="cl">sudo apt update
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="添加-favicon">添加 favicon</h2>
-<p>利用https://realfavicongenerator.net/ 将头像做成favicon，然后放到static目录里</p>
-<h2 id="修改标题">修改标题</h2>
-<p>修改config.toml</p>
-<h2 id="评论系统">评论系统</h2>
-<h3 id="disqus配置评论配置">disqus配置（评论配置）</h3>
-<p>注册disqus账号，新建一个网站
-将config.toml中的相关配置修改为disqus中自己的shortname：</p>
+</div><h2 id="ssh配置">ssh配置</h2>
+<h3 id="安装ssh">安装ssh</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">disqusShortname = &#34;star5o&#34;
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt install openssh-server vim
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>注意：需要在disqus中将自己的域名添加到收信任列表，见<a href="https://help.disqus.com/en/articles/1717206-how-to-use-trusted-domains">官方网站</a></p>
-<h3 id="utteranc">utteranc</h3>
-<p>首先必须在 github 上进行安装 utterances，访问 <a href="https://github.com/apps/utterances">utterances应用程序</a> 然后点击 Install 按钮进行安装。
-在这里可以选择可以关联的存储库，可以选择我们所拥有的库(也包括未来建立的库)或者某一个仓库，这里只选择某一个需要进行评论的库，这样比较好。</p>
-<p>然后将配置文件<code>config.toml</code>中<code>params.utteranc</code>的<code>repo</code>参数修改为博客仓库名称，如<code>YaKaiLi/YaKaiLi.github.io</code></p>
-<h2 id="发布并托管到github">发布并托管到Github</h2>
-<h3 id="修改配置文件">修改配置文件</h3>
-<p>参见<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Hugo官方文档</a>,配置Hugo将网页生成在名为/docs的子目录中，然后直接push到master branch。这样就可以让Github Pages加载我们想要托管的/public子目录中的网页。</p>
-<p>在config.toml中添加如下一行配置，使得生成的网页默认保存在/docs子目录下：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">echo &#34;publishDir = &#39;docs&#39;&#34; &gt;&gt; config.toml
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>自此运行hugo命令后生成的网页文件将保存在/docs子目录下。</p>
-<h3 id="发布并托管到github-1">发布并托管到Github</h3>
-<p>上传到Github之前，先在Github中添加一个空白repository，仓库名为：username.github.io，注意不要添加如README，.gitignore等文档。由此得到Github中该repository的网址：https://github.com/YaKaiLi/YaKaiLi.github.io.git</p>
-<p><img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/%E6%88%AA%E5%B1%8F2022-11-25%2022.11.58.png" alt="">
-复制该网址后，在本地网站文档根目录中初始化git：</p>
+</div><h3 id="配置密钥">配置密钥</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -461,21 +467,79 @@ if (!doNotTrack) {
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git init
-</span></span><span class="line"><span class="cl">git add .
-</span></span><span class="line"><span class="cl">git commit -m &#34;first commit&#34;
-</span></span><span class="line"><span class="cl">git remote add origin https://github.com/YaKaiLi/YaKaiLi.github.io.git
-</span></span><span class="line"><span class="cl">git push -u origin master
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ssh-keygen
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> .ssh
+</span></span><span class="line"><span class="cl">cat id_rsa.pub &gt;&gt; authorized_keys
+</span></span><span class="line"><span class="cl">chmod <span class="m">600</span> authorized_keys
+</span></span><span class="line"><span class="cl">chmod <span class="m">700</span> ~/.ssh
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>至此所有源文档就都push到Github上了。然而此时Github对待这些源文档跟其他任何普通的repository中的代码并没有任何不同，并不会将public子目录中的网页托管在Github Pages上。</p>
-<p>将所有文档push到Github的master branch，进入Github对应repository的Settings标签菜单，在Pages选项的Source栏选择master branch /docs folder:
-<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/%E6%88%AA%E5%B1%8F2022-11-25%2022.29.36.png" alt=""></p>
-<h2 id="配置个人域名">配置个人域名</h2>
-<h3 id="hugo配置">hugo配置</h3>
-<p>在本地仓库docs子目录中需要添加一个名为CNAME的文档
-<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_gpHTEu/2022/11/25/22-53-41-61d7aee7cdd4839e45edeae9bac52ae4-ef8ceb.png" alt="">
-然后回到网站目录进行git同步</p>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo vim /etc/ssh/sshd_config
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>sshd_config</code>文件内修改：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">RSAAuthentication yes #开启密钥登陆
+</span></span><span class="line"><span class="cl">PubkeyAuthentication yes #开启密钥登陆
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">PasswordAuthentication no # 禁用密码登陆
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">PermitRootLogin no # 禁用root用户登录
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">service sshd restart
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后在客户端使用id_rsa文件作为密钥登陆即可</p>
+<h2 id="远程桌面设置">远程桌面设置</h2>
+<p>可以使用ubuntu自带的屏幕共享功能(基于Vino)，但有可能需要安装下才会在菜单中显示。</p>
+<h3 id="安装vino">安装vino</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt install vino
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="配置vino">配置vino</h4>
+<p>首先在设置里配置屏幕共享
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/01/22/19-01-10-8843c84ce098b51bef1af8cc813a5b3b-8510c3.png" alt=""></p>
+<p><img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/01/22/19-01-33-d4b043531d93248a487c588b9ac68ab2-66c732.png" alt="">
+密码最多可以设置8位</p>
+<p>然后在终端中再进行配置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">gsettings <span class="nb">set</span> org.gnome.Vino require-encryption <span class="nb">false</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 关闭vino的require-encryption选项</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>参考：https://www.cnblogs.com/jzcn/p/16624641.html
+<a href="https://blog.csdn.net/Naisu_kun/article/details/123007055">https://blog.csdn.net/Naisu_kun/article/details/123007055</a></p>
+<h3 id="安装todesk">安装todesk</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -483,23 +547,184 @@ if (!doNotTrack) {
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git add .
-</span></span><span class="line"><span class="cl">git commit -m &#34;commit&#34;
-</span></span><span class="line"><span class="cl">git push -u origin master
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget https://newdl.todesk.com/linux/todesk-v4.3.1.0-amd64.deb
+</span></span><span class="line"><span class="cl">sudo apt-get install ./todesk-v4.3.1.0-amd64.deb
+</span></span><span class="line"><span class="cl">todesk <span class="c1">#启动</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="域名解析">域名解析</h3>
-<p>1、添加A记录（即地址记录，用来指定域名的IP地址），主机记录（Name）栏填www，记录值(Target)那栏填Github服务器IP地址（即your_name.github.io的IP地址）
-<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_ikHhPb/2022/11/25/22-56-43-d6d5169f3a39225b581fad8452028ed2-552c42.png" alt="">
-2、添加CNAME记录（用于将一个域名映射到另一个域名），主机记录栏填@，记录值那栏填yakaili.github.io
-<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_Mi97Kd/2022/11/25/22-59-06-e34743664fae9b43c3fafadb22862b15-515bf5.png" alt=""></p>
-<h2 id="新建文章">新建文章</h2>
+</div><h3 id="安装向日葵">安装向日葵</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget https://dl-cdn.oray.com/sunlogin/linux/SunloginClient_11.0.1.44968_amd64.deb
+</span></span><span class="line"><span class="cl">sudo apt install ./SunloginClient_11.0.1.44968_amd64.deb
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="安装teamviewer">安装teamviewer</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+</span></span><span class="line"><span class="cl">sudo apt install ./teamviewer_amd64.deb
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="精简-ubuntu-2004----删除不必要的自带软件">精简 ubuntu 20.04 &ndash; 删除不必要的自带软件</h2>
+<p>系统预装了一些无用或者用处很少的软件
+执行下面这行命令可以删除它们</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo new --kind post zh-cn/post/my-article.md
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt remove remmina libreoffice-common thunderbird totem rhythmbox simple-scan gnome-mahjongg aisleriot gnome-mines cheese transmission-common gnome-sudoku
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#根据个人习惯自行决定是否删除
+</span></span><span class="line"><span class="cl">remmina	远程桌面
+</span></span><span class="line"><span class="cl">libreoffice	办公软件
+</span></span><span class="line"><span class="cl">thunderbird	邮件客户端
+</span></span><span class="line"><span class="cl">totem	视频播放
+</span></span><span class="line"><span class="cl">rhythmbox	音乐播放器
+</span></span><span class="line"><span class="cl">simple-scan	文档扫描仪
+</span></span><span class="line"><span class="cl">gnome-mahjongg	对对碰游戏
+</span></span><span class="line"><span class="cl">aisleriot	接龙游戏
+</span></span><span class="line"><span class="cl">gnome-mines	扫雷
+</span></span><span class="line"><span class="cl">cheese	茄子(拍照)
+</span></span><span class="line"><span class="cl">transmission-common	bt下载
+</span></span><span class="line"><span class="cl">gnome-sudoku	数独
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后自动卸载不需要的依赖</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt --purge autoremove
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>最后更新软件包</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt upgrade	<span class="c1">#更新软件仓库</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="安装docker">安装docker</h2>
+<p>docker官方的源比较慢，采用阿里云的docker源进行安装。
+<a href="https://developer.aliyun.com/mirror/docker-ce">https://developer.aliyun.com/mirror/docker-ce</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># step 1: 安装必要的一些系统工具</span>
+</span></span><span class="line"><span class="cl">sudo apt-get update
+</span></span><span class="line"><span class="cl">sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-common
+</span></span><span class="line"><span class="cl"><span class="c1"># step 2: 安装GPG证书</span>
+</span></span><span class="line"><span class="cl">curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg <span class="p">|</span> sudo apt-key add -
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 3: 写入软件源信息</span>
+</span></span><span class="line"><span class="cl">sudo add-apt-repository <span class="s2">&#34;deb [arch=amd64] https://mirrors.aliyun.com/docker-ce/linux/ubuntu </span><span class="k">$(</span>lsb_release -cs<span class="k">)</span><span class="s2"> stable&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 4: 更新并安装Docker-CE</span>
+</span></span><span class="line"><span class="cl">sudo apt-get -y update
+</span></span><span class="line"><span class="cl">sudo apt-get -y install docker-ce
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>设置非root账户执行docker命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 1.创建名为docker的组，如果之前已经有该组就会报错，可以忽略这个错误：</span>
+</span></span><span class="line"><span class="cl">sudo groupadd docker
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2.将当前用户加入组docker：</span>
+</span></span><span class="line"><span class="cl">sudo gpasswd -a <span class="si">${</span><span class="nv">USER</span><span class="si">}</span> docker
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3.重启docker服务</span>
+</span></span><span class="line"><span class="cl">sudo systemctl restart docker
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 4.添加访问和执行docker sock的权限：</span>
+</span></span><span class="line"><span class="cl">sudo chmod a+rw /var/run/docker.sock
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="安装anaconda">安装Anaconda</h2>
+<p>下载安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
+</span></span><span class="line"><span class="cl">bash Anaconda3-2022.10-Linux-x86_64.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>配置conda国内源：清华源
+<a href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/">https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+</span></span><span class="line"><span class="cl">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+</span></span><span class="line"><span class="cl">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">conda config --set show_channel_urls yes
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">conda clean -i <span class="c1"># 清除索引缓存</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
@@ -509,22 +734,19 @@ if (!doNotTrack) {
     
 <div class="post-copyright">
   <p class="copyright-item">
-    <span class="item-title">Author</span>
+    <span class="item-title">文章作者</span>
     <span class="item-content">star5o</span>
   </p>
   <p class="copyright-item">
-    <span class="item-title">LastMod</span>
+    <span class="item-title">上次更新</span>
     <span class="item-content">
-      2022-11-27
-      
-        
-        
+      2023-01-22
       
     </span>
   </p>
   
   <p class="copyright-item">
-    <span class="item-title">License</span>
+    <span class="item-title">许可协议</span>
     <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
   </p>
 </div>
@@ -535,8 +757,8 @@ if (!doNotTrack) {
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="https://www.gnn.ac.cn/en/tags/misc/">Misc</a>
-          <a href="https://www.gnn.ac.cn/en/tags/software/">Software</a>
+          <a href="https://www.gnn.ac.cn/zh-cn/tags/misc/">Misc</a>
+          <a href="https://www.gnn.ac.cn/zh-cn/tags/homelab/">homelab</a>
           
         </div>
 
@@ -544,6 +766,19 @@ if (!doNotTrack) {
       <nav class="post-nav">
         
         
+          <a class="next" href="/zh-cn/post/2022/12/15/git-commit-large-file-error/">
+            <span class="next-text nav-default">commit了一个大文件导致本地仓库无法推送到github的问题解决方法</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
       </nav>
     </footer>
   </article>
@@ -575,12 +810,12 @@ if (!doNotTrack) {
 
   <div class="disqus-comment">
   <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
-    Show Disqus Comments
+    显示 Disqus 评论
   </div>
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     var disqus_config = function () {
-      this.page.url = "https://www.gnn.ac.cn/en/post/2022/11/27/hugo-simple-install/";
+      this.page.url = "https://www.gnn.ac.cn/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/";
     };
     function load_disqus() {
       
@@ -648,7 +883,7 @@ if (!doNotTrack) {
     </a>
 
 
-<a href="https://www.gnn.ac.cn/en/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://www.gnn.ac.cn/zh-cn/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"

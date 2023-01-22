@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/homelab/</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/misc/</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/post/</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.gnn.ac.cn/zh-cn/post/2022/12/15/git-commit-large-file-error/</loc>
     <lastmod>2022-12-15T23:37:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -23,34 +65,6 @@
   </url>
   
   <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/tags/misc/</loc>
-    <lastmod>2022-12-15T23:37:36+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/post/</loc>
-    <lastmod>2022-12-15T23:37:36+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/</loc>
-    <lastmod>2022-12-15T23:37:36+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/tags/</loc>
-    <lastmod>2022-12-15T23:37:36+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/troubleshooting/</loc>
     <lastmod>2022-12-15T23:37:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -66,7 +80,7 @@
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/android/</loc>
-    <lastmod>2022-11-28T22:14:22+08:00</lastmod>
+    <lastmod>2023-01-21T14:13:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -80,21 +94,21 @@
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/graph_embedding/</loc>
-    <lastmod>2022-11-28T22:14:22+08:00</lastmod>
+    <lastmod>2023-01-21T14:13:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/malware_detection/</loc>
-    <lastmod>2022-11-28T22:14:22+08:00</lastmod>
+    <lastmod>2023-01-21T14:13:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/graph-based-amd/</loc>
-    <lastmod>2022-11-28T22:14:22+08:00</lastmod>
+    <lastmod>2023-01-21T14:13:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
