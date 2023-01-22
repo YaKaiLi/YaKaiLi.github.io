@@ -8,7 +8,16 @@
     <copyright>Star5o Love Haohao</copyright>
     <lastBuildDate>Sun, 22 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Homelab Ubuntu20.04系统安装后自用配置</title>
+      <title>docker安装plex及设置</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/docker-plex-install/</link>
+      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/docker-plex-install/</guid>
+      <description>搭建Plex Server 新建文件夹plex， 创建docker-compose.yml 1 2 mkdir plex &amp;amp;&amp;amp; cd plex touch docker-compose.yml vim docker-compose.yml写入下面的配置 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 version: &amp;#34;2.1&amp;#34; services: plex: image: linuxserver/plex container_name: plex environment: -</description>
+    </item>
+    
+    <item>
+      <title>Homelab Ubuntu 20.04系统安装后自用配置</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/</link>
       <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
       

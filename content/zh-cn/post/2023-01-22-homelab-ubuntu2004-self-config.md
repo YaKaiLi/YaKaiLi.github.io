@@ -1,5 +1,5 @@
 ---
-title: Homelab Ubuntu20.04系统安装后自用配置
+title: Homelab Ubuntu 20.04系统安装后自用配置
 date: '2023-01-22'
 slug: homelab-ubuntu2004-self-config
 tags:
@@ -141,7 +141,7 @@ sudo apt-get -y update
 sudo apt-get -y install docker-ce
 ```
 
-设置非root账户执行docker命令
+## 设置非root账户执行docker命令
 ```shell
 # 1.创建名为docker的组，如果之前已经有该组就会报错，可以忽略这个错误：
 sudo groupadd docker
@@ -156,6 +156,30 @@ sudo systemctl restart docker
 sudo chmod a+rw /var/run/docker.sock
 
 ```
+## 设置容器镜像加速
+```shell
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://stl5pm36.mirror.aliyuncs.com"]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+# 使用的是作者自己申请的加速器地址
+```
+
+## 安装docker-compose
+
+```shell
+
+sudo apt-get install docker-compose-plugin
+
+docker compose version #查看是否安装成功
+
+
+```
+
 # 安装Anaconda
 下载安装：
 ```shell
