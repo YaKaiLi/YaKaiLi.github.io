@@ -1,5 +1,5 @@
 ---
-title: homelab ubuntu20.04系统安装后自用配置
+title: Homelab Ubuntu20.04系统安装后自用配置
 date: '2023-01-22'
 slug: homelab-ubuntu2004-self-config
 tags:
