@@ -4,7 +4,7 @@ date: '2023-01-22'
 slug: homelab-ubuntu2004-self-config
 tags:
   - Misc
-  - homelab
+  - Homelab
 ---
 
 ## 换国内源
