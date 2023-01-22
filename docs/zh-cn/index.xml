@@ -18,7 +18,7 @@
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/</guid>
       
-        <description>&lt;h2 id=&#34;换国内源&#34;&gt;换国内源&lt;/h2&gt;
+        <description>&lt;h1 id=&#34;换国内源&#34;&gt;换国内源&lt;/h1&gt;
 &lt;p&gt;配置中科大源&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -30,8 +30,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt update
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;ssh配置&#34;&gt;ssh配置&lt;/h2&gt;
-&lt;h3 id=&#34;安装ssh&#34;&gt;安装ssh&lt;/h3&gt;
+&lt;/div&gt;&lt;h1 id=&#34;ssh配置&#34;&gt;ssh配置&lt;/h1&gt;
+&lt;h2 id=&#34;安装ssh&#34;&gt;安装ssh&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -42,7 +42,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install openssh-server vim
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;配置密钥&#34;&gt;配置密钥&lt;/h3&gt;
+&lt;/div&gt;&lt;h2 id=&#34;配置密钥&#34;&gt;配置密钥&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -95,9 +95,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后在客户端使用id_rsa文件作为密钥登陆即可&lt;/p&gt;
-&lt;h2 id=&#34;远程桌面设置&#34;&gt;远程桌面设置&lt;/h2&gt;
+&lt;h1 id=&#34;远程桌面设置&#34;&gt;远程桌面设置&lt;/h1&gt;
 &lt;p&gt;可以使用ubuntu自带的屏幕共享功能(基于Vino)，但有可能需要安装下才会在菜单中显示。&lt;/p&gt;
-&lt;h3 id=&#34;安装vino&#34;&gt;安装vino&lt;/h3&gt;
+&lt;h2 id=&#34;安装vino&#34;&gt;安装vino&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -106,7 +106,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install vino
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;配置vino&#34;&gt;配置vino&lt;/h4&gt;
+&lt;/div&gt;&lt;h3 id=&#34;配置vino&#34;&gt;配置vino&lt;/h3&gt;
 &lt;p&gt;首先在设置里配置屏幕共享
 &lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/01/22/19-01-10-8843c84ce098b51bef1af8cc813a5b3b-8510c3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/01/22/19-01-33-d4b043531d93248a487c588b9ac68ab2-66c732.png&#34; alt=&#34;&#34;&gt;
@@ -124,7 +124,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;参考：https://www.cnblogs.com/jzcn/p/16624641.html
 &lt;a href=&#34;https://blog.csdn.net/Naisu_kun/article/details/123007055&#34;&gt;https://blog.csdn.net/Naisu_kun/article/details/123007055&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;安装todesk&#34;&gt;安装todesk&lt;/h3&gt;
+&lt;h2 id=&#34;安装todesk&#34;&gt;安装todesk&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -137,7 +137,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;todesk &lt;span class=&#34;c1&#34;&gt;#启动&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;安装向日葵&#34;&gt;安装向日葵&lt;/h3&gt;
+&lt;/div&gt;&lt;h2 id=&#34;安装向日葵&#34;&gt;安装向日葵&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -148,7 +148,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install ./SunloginClient_11.0.1.44968_amd64.deb
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;安装teamviewer&#34;&gt;安装teamviewer&lt;/h3&gt;
+&lt;/div&gt;&lt;h2 id=&#34;安装teamviewer&#34;&gt;安装teamviewer&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -159,7 +159,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install ./teamviewer_amd64.deb
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;精简-ubuntu-2004----删除不必要的自带软件&#34;&gt;精简 ubuntu 20.04 &amp;ndash; 删除不必要的自带软件&lt;/h2&gt;
+&lt;/div&gt;&lt;h1 id=&#34;精简-ubuntu-2004----删除不必要的自带软件&#34;&gt;精简 Ubuntu 20.04 &amp;ndash; 删除不必要的自带软件&lt;/h1&gt;
 &lt;p&gt;系统预装了一些无用或者用处很少的软件
 执行下面这行命令可以删除它们&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -220,7 +220,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt upgrade	&lt;span class=&#34;c1&#34;&gt;#更新软件仓库&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;安装docker&#34;&gt;安装docker&lt;/h2&gt;
+&lt;/div&gt;&lt;h1 id=&#34;安装docker&#34;&gt;安装docker&lt;/h1&gt;
 &lt;p&gt;docker官方的源比较慢，采用阿里云的docker源进行安装。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://developer.aliyun.com/mirror/docker-ce&#34;&gt;https://developer.aliyun.com/mirror/docker-ce&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -278,7 +278,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo chmod a+rw /var/run/docker.sock
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;安装anaconda&#34;&gt;安装Anaconda&lt;/h2&gt;
+&lt;/div&gt;&lt;h1 id=&#34;安装anaconda&#34;&gt;安装Anaconda&lt;/h1&gt;
 &lt;p&gt;下载安装：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

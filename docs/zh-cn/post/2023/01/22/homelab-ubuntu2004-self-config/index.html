@@ -64,11 +64,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-01-22T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-01-22T21:48:00+08:00" /><meta property="og:site_name" content="Star5o的博客" />
+<meta property="article:modified_time" content="2023-01-22T21:48:35+08:00" /><meta property="og:site_name" content="Star5o的博客" />
 
 <meta itemprop="name" content="Homelab Ubuntu20.04系统安装后自用配置">
 <meta itemprop="description" content="换国内源 配置中科大源 1 2 sudo sed -i &#39;s@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g&#39; /etc/apt/sources.list sudo apt update ssh配置 安装ssh 1 2 sudo apt update sudo apt install openssh-server vim 配置密钥 1 2 3 4 5 ssh-keygen cd .ssh cat id_rsa.pub &gt;&gt; authorized_keys chmod 600 authorized_keys chmod 700 ~/.ssh 1 sudo vim /etc/ssh/sshd_config sshd_config文件内修改： 1 2 3 4 5 6 RSAAuthentication yes #开启密钥登陆 PubkeyAuthentication yes"><meta itemprop="datePublished" content="2023-01-22T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-01-22T21:48:00+08:00" />
+<meta itemprop="dateModified" content="2023-01-22T21:48:35+08:00" />
 <meta itemprop="wordCount" content="936">
 <meta itemprop="keywords" content="Misc,Homelab," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Homelab Ubuntu20.04系统安装后自用配置"/>
@@ -404,28 +404,19 @@ if (!doNotTrack) {
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#换国内源">换国内源</a></li>
-    <li><a href="#ssh配置">ssh配置</a>
+    <li><a href="#安装ssh">安装ssh</a></li>
+    <li><a href="#配置密钥">配置密钥</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#安装vino">安装vino</a>
       <ul>
-        <li><a href="#安装ssh">安装ssh</a></li>
-        <li><a href="#配置密钥">配置密钥</a></li>
+        <li><a href="#配置vino">配置vino</a></li>
       </ul>
     </li>
-    <li><a href="#远程桌面设置">远程桌面设置</a>
-      <ul>
-        <li><a href="#安装vino">安装vino</a>
-          <ul>
-            <li><a href="#配置vino">配置vino</a></li>
-          </ul>
-        </li>
-        <li><a href="#安装todesk">安装todesk</a></li>
-        <li><a href="#安装向日葵">安装向日葵</a></li>
-        <li><a href="#安装teamviewer">安装teamviewer</a></li>
-      </ul>
-    </li>
-    <li><a href="#精简-ubuntu-2004----删除不必要的自带软件">精简 ubuntu 20.04 &ndash; 删除不必要的自带软件</a></li>
-    <li><a href="#安装docker">安装docker</a></li>
-    <li><a href="#安装anaconda">安装Anaconda</a></li>
+    <li><a href="#安装todesk">安装todesk</a></li>
+    <li><a href="#安装向日葵">安装向日葵</a></li>
+    <li><a href="#安装teamviewer">安装teamviewer</a></li>
   </ul>
 </nav>
   </div>
@@ -433,7 +424,7 @@ if (!doNotTrack) {
 
     
     <div class="post-content">
-      <h2 id="换国内源">换国内源</h2>
+      <h1 id="换国内源">换国内源</h1>
 <p>配置中科大源</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -445,8 +436,8 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">sudo apt update
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="ssh配置">ssh配置</h2>
-<h3 id="安装ssh">安装ssh</h3>
+</div><h1 id="ssh配置">ssh配置</h1>
+<h2 id="安装ssh">安装ssh</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -457,7 +448,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">sudo apt install openssh-server vim
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="配置密钥">配置密钥</h3>
+</div><h2 id="配置密钥">配置密钥</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -510,9 +501,9 @@ if (!doNotTrack) {
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后在客户端使用id_rsa文件作为密钥登陆即可</p>
-<h2 id="远程桌面设置">远程桌面设置</h2>
+<h1 id="远程桌面设置">远程桌面设置</h1>
 <p>可以使用ubuntu自带的屏幕共享功能(基于Vino)，但有可能需要安装下才会在菜单中显示。</p>
-<h3 id="安装vino">安装vino</h3>
+<h2 id="安装vino">安装vino</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -521,7 +512,7 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt install vino
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="配置vino">配置vino</h4>
+</div><h3 id="配置vino">配置vino</h3>
 <p>首先在设置里配置屏幕共享
 <img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/01/22/19-01-10-8843c84ce098b51bef1af8cc813a5b3b-8510c3.png" alt=""></p>
 <p><img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/01/22/19-01-33-d4b043531d93248a487c588b9ac68ab2-66c732.png" alt="">
@@ -539,7 +530,7 @@ if (!doNotTrack) {
 </div>
 </div><p>参考：https://www.cnblogs.com/jzcn/p/16624641.html
 <a href="https://blog.csdn.net/Naisu_kun/article/details/123007055">https://blog.csdn.net/Naisu_kun/article/details/123007055</a></p>
-<h3 id="安装todesk">安装todesk</h3>
+<h2 id="安装todesk">安装todesk</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -552,7 +543,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">todesk <span class="c1">#启动</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="安装向日葵">安装向日葵</h3>
+</div><h2 id="安装向日葵">安装向日葵</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -563,7 +554,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">sudo apt install ./SunloginClient_11.0.1.44968_amd64.deb
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="安装teamviewer">安装teamviewer</h3>
+</div><h2 id="安装teamviewer">安装teamviewer</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -574,7 +565,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">sudo apt install ./teamviewer_amd64.deb
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="精简-ubuntu-2004----删除不必要的自带软件">精简 ubuntu 20.04 &ndash; 删除不必要的自带软件</h2>
+</div><h1 id="精简-ubuntu-2004----删除不必要的自带软件">精简 Ubuntu 20.04 &ndash; 删除不必要的自带软件</h1>
 <p>系统预装了一些无用或者用处很少的软件
 执行下面这行命令可以删除它们</p>
 <div class="highlight"><div class="chroma">
@@ -635,7 +626,7 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt upgrade	<span class="c1">#更新软件仓库</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="安装docker">安装docker</h2>
+</div><h1 id="安装docker">安装docker</h1>
 <p>docker官方的源比较慢，采用阿里云的docker源进行安装。</p>
 <p><a href="https://developer.aliyun.com/mirror/docker-ce">https://developer.aliyun.com/mirror/docker-ce</a></p>
 <div class="highlight"><div class="chroma">
@@ -693,7 +684,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">sudo chmod a+rw /var/run/docker.sock
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="安装anaconda">安装Anaconda</h2>
+</div><h1 id="安装anaconda">安装Anaconda</h1>
 <p>下载安装：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

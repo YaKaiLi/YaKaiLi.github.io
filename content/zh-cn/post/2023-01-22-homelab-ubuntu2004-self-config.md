@@ -7,20 +7,20 @@ tags:
   - Homelab
 ---
 
-## 换国内源
+# 换国内源
 配置中科大源
 ```shell
 sudo sed -i 's@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g' /etc/apt/sources.list
 sudo apt update
 ```
 
-## ssh配置
-### 安装ssh
+# ssh配置
+## 安装ssh
 ```shell
 sudo apt update
 sudo apt install openssh-server vim
 ```
-### 配置密钥
+## 配置密钥
 ```shell
 ssh-keygen
 cd .ssh
@@ -48,13 +48,13 @@ service sshd restart
 ```
 然后在客户端使用id_rsa文件作为密钥登陆即可
 
-## 远程桌面设置
+# 远程桌面设置
 可以使用ubuntu自带的屏幕共享功能(基于Vino)，但有可能需要安装下才会在菜单中显示。
-### 安装vino
+## 安装vino
 ```shell
 sudo apt install vino
 ```
-#### 配置vino
+### 配置vino
 首先在设置里配置屏幕共享
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/01/22/19-01-10-8843c84ce098b51bef1af8cc813a5b3b-8510c3.png)
 
@@ -70,26 +70,26 @@ gsettings set org.gnome.Vino require-encryption false
 参考：https://www.cnblogs.com/jzcn/p/16624641.html
 https://blog.csdn.net/Naisu_kun/article/details/123007055
 
-### 安装todesk
+## 安装todesk
 ```shell
 wget https://newdl.todesk.com/linux/todesk-v4.3.1.0-amd64.deb
 sudo apt-get install ./todesk-v4.3.1.0-amd64.deb
 todesk #启动
 ```
 
-### 安装向日葵
+## 安装向日葵
 ```shell
 wget https://dl-cdn.oray.com/sunlogin/linux/SunloginClient_11.0.1.44968_amd64.deb
 sudo apt install ./SunloginClient_11.0.1.44968_amd64.deb
 ```
 
-### 安装teamviewer
+## 安装teamviewer
 ```shell
 wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 sudo apt install ./teamviewer_amd64.deb
 ```
 
-## 精简 ubuntu 20.04 -- 删除不必要的自带软件
+# 精简 Ubuntu 20.04 -- 删除不必要的自带软件
 
 系统预装了一些无用或者用处很少的软件
 执行下面这行命令可以删除它们
@@ -124,7 +124,7 @@ sudo apt upgrade	#更新软件仓库
 ```
 
 
-## 安装docker
+# 安装docker
 docker官方的源比较慢，采用阿里云的docker源进行安装。
 
 https://developer.aliyun.com/mirror/docker-ce
@@ -156,7 +156,7 @@ sudo systemctl restart docker
 sudo chmod a+rw /var/run/docker.sock
 
 ```
-## 安装Anaconda
+# 安装Anaconda
 下载安装：
 ```shell
 wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
