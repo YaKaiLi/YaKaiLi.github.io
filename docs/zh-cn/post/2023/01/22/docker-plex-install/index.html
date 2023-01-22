@@ -64,11 +64,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/01/22/docker-plex-install/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-01-22T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-01-22T00:00:00+00:00" /><meta property="og:site_name" content="Star5o的博客" />
+<meta property="article:modified_time" content="2023-01-22T23:17:25+08:00" /><meta property="og:site_name" content="Star5o的博客" />
 
 <meta itemprop="name" content="docker安装plex及设置">
 <meta itemprop="description" content="搭建Plex Server 新建文件夹plex， 创建docker-compose.yml 1 2 mkdir plex &amp;&amp; cd plex touch docker-compose.yml vim docker-compose.yml写入下面的配置 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 version: &#34;2.1&#34; services: plex: image: linuxserver/plex container_name: plex environment: -"><meta itemprop="datePublished" content="2023-01-22T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-01-22T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-01-22T23:17:25+08:00" />
 <meta itemprop="wordCount" content="482">
 <meta itemprop="keywords" content="Homelab,Misc," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="docker安装plex及设置"/>
@@ -486,9 +486,9 @@ if (!doNotTrack) {
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">wget https://downloads.plex.tv/plex-media-server-new/1.25.7.5604-980a13e02/redhat/plexmediaserver-1.25.7.5604-980a13e02.x86_64.rpm
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget https://downloads.plex.tv/plex-media-server-new/1.25.7.5604-980a13e02/redhat/plexmediaserver-1.25.7.5604-980a13e02.x86_64.rpm
 </span></span><span class="line"><span class="cl">rpm -i plexmediaserver-1.25.7.5604-980a13e02.x86_64.rpm
-</span></span><span class="line"><span class="cl">systemctl enable plexmediaserver.service
+</span></span><span class="line"><span class="cl">systemctl <span class="nb">enable</span> plexmediaserver.service
 </span></span><span class="line"><span class="cl">systemctl start plexmediaserver.service
 </span></span></code></pre></td></tr></table>
 </div>
@@ -506,6 +506,9 @@ if (!doNotTrack) {
     <span class="item-title">上次更新</span>
     <span class="item-content">
       2023-01-22
+      
+        
+        
       
     </span>
   </p>

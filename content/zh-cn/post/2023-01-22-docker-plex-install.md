@@ -48,7 +48,7 @@ services:
 
 
 附：直接在主机上安装的方式
-```
+```shell
 wget https://downloads.plex.tv/plex-media-server-new/1.25.7.5604-980a13e02/redhat/plexmediaserver-1.25.7.5604-980a13e02.x86_64.rpm
 rpm -i plexmediaserver-1.25.7.5604-980a13e02.x86_64.rpm
 systemctl enable plexmediaserver.service
