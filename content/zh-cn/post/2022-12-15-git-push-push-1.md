@@ -1,5 +1,5 @@
 ---
-title: git push error ':' 更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支
+title: git push error &#58; 更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支
 date: '2022-12-15'
 slug: git-push-error1-1
 tags:
