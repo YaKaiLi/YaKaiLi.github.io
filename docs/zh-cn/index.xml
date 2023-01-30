@@ -6,10 +6,26 @@
     <description>Recent content on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Sun, 22 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Jan 2023 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://www.gnn.ac.cn/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>国内使用ChatGPT</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/29/use-chatgpt-in-china/</link>
+      <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/29/use-chatgpt-in-china/</guid>
+      
+        <description>&lt;p&gt;OpenAI有地区限制，第一次登陆&lt;code&gt;ChatGPT&lt;/code&gt;时使用的香港IP，注册然后登陆进去直接提示&lt;code&gt;OpenAI&#39;s services are not available in your country&lt;/code&gt;，之后更换使用的IP（包括美国）和邮箱依旧提示。解决方法如下：&lt;/p&gt;
+&lt;p&gt;首先切换到美国IP。然后在&lt;code&gt;OpenAI&#39;s services are not available in your country&lt;/code&gt;提示页按F12打开开发者工具，到【应用-存储-本地存储空间】页把&lt;code&gt;@@authOspajs&lt;/code&gt;开头的这个密钥删除，再刷新页面，没有 &lt;code&gt;OpenAI&#39;s services are not available in your country&lt;/code&gt;提示了。&lt;/p&gt;
+&lt;p&gt;根据&lt;a href=&#34;https://readdevdocs.com/blog/makemoney/%E4%B8%AD%E5%9B%BD%E5%8C%BA%E6%B3%A8%E5%86%8COpenAI%E8%B4%A6%E5%8F%B7%E8%AF%95%E7%94%A8ChatGPT%E6%8C%87%E5%8D%97.html&#34;&gt;这篇&lt;/a&gt;文章注册国外接码平台，充值0.2美元使用印度号码就行。&lt;/p&gt;
+&lt;p&gt;接下来可以愉快的使用ChatGPT啦。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/01/30/13-42-02-32dd6d57c43d1076a0f60197d9f98cfd-9be825.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>docker安装plex及设置</title>
@@ -448,22 +464,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>国内使用ChatGPT</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/use-chatgpt-in-china/</link>
-      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/use-chatgpt-in-china/</guid>
-      
-        <description>&lt;p&gt;OpenAI有地区限制，第一次登陆&lt;code&gt;ChatGPT&lt;/code&gt;时使用的香港IP，注册然后登陆进去直接提示&lt;code&gt;OpenAI&#39;s services are not available in your country&lt;/code&gt;，之后更换使用的IP（包括美国）和邮箱依旧提示。解决方法如下：&lt;/p&gt;
-&lt;p&gt;首先切换到美国IP。然后在&lt;code&gt;OpenAI&#39;s services are not available in your country&lt;/code&gt;提示页按F12打开开发者工具，到【应用-存储-本地存储空间】页把&lt;code&gt;@@authOspajs&lt;/code&gt;开头的这个密钥删除，再刷新页面，没有 &lt;code&gt;OpenAI&#39;s services are not available in your country&lt;/code&gt;提示了。&lt;/p&gt;
-&lt;p&gt;根据&lt;a href=&#34;https://readdevdocs.com/blog/makemoney/%E4%B8%AD%E5%9B%BD%E5%8C%BA%E6%B3%A8%E5%86%8COpenAI%E8%B4%A6%E5%8F%B7%E8%AF%95%E7%94%A8ChatGPT%E6%8C%87%E5%8D%97.html&#34;&gt;这篇&lt;/a&gt;文章注册国外接码平台，充值0.2美元使用印度号码就行。&lt;/p&gt;
-&lt;p&gt;接下来可以愉快的使用ChatGPT啦。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/01/30/13-42-02-32dd6d57c43d1076a0f60197d9f98cfd-9be825.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-</description>
       
     </item>
     

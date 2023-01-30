@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Sun, 22 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>国内使用ChatGPT</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/29/use-chatgpt-in-china/</link>
+      <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/29/use-chatgpt-in-china/</guid>
+      <description>OpenAI有地区限制，第一次登陆ChatGPT时使用的香港IP，注册然后登陆进去直接提示OpenAI&#39;s services are not available in your country，之后更换使用的IP（包括美国）和邮箱依旧提示。解决方法如下： 首先切</description>
+    </item>
+    
     <item>
       <title>docker安装plex及设置</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/docker-plex-install/</link>
@@ -23,15 +32,6 @@
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/</guid>
       <description>换国内源 配置中科大源 1 2 sudo sed -i &amp;#39;s@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g&amp;#39; /etc/apt/sources.list sudo apt update ssh配置 安装ssh 1 2 sudo apt update sudo apt install openssh-server vim 配置密钥 1 2 3 4 5 ssh-keygen cd .ssh cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys chmod 600 authorized_keys chmod 700 ~/.ssh 1 sudo vim /etc/ssh/sshd_config sshd_config文件内修改： 1 2 3 4 5 6 RSAAuthentication yes #开启密钥登陆 PubkeyAuthentication yes</description>
-    </item>
-    
-    <item>
-      <title>国内使用ChatGPT</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/use-chatgpt-in-china/</link>
-      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/use-chatgpt-in-china/</guid>
-      <description>OpenAI有地区限制，第一次登陆ChatGPT时使用的香港IP，注册然后登陆进去直接提示OpenAI&#39;s services are not available in your country，之后更换使用的IP（包括美国）和邮箱依旧提示。解决方法如下： 首先切</description>
     </item>
     
     <item>
