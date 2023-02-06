@@ -37,6 +37,9 @@ github pages的ip地址列表为：
 修改域名DNS解析，境内CNAME为腾讯云的CDN地址`www.gnn.ac.cn.cdn.dnsv1.com.`，境外为github的地址`yakaili.github.io`。
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_1m66CF/2023/01/31/11-08-43-4e32d202fe9bfeeb1138e2d2258c3e85-dbede3.png)
 
+测速后转为全绿，CDN加速效果明显。
+![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/20-09-22-9d406853e30d05f0671b3416c610b901-e4892e.png)
+
 # HTTPS
 
 ## 申请阿里云免费HTTPS证书

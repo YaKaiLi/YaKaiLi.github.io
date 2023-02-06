@@ -113,6 +113,8 @@
 &lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/01/31/11-09-52-adb8836d184c30d3459d16ef634c3f16-7c225f.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;修改域名DNS解析，境内CNAME为腾讯云的CDN地址&lt;code&gt;www.gnn.ac.cn.cdn.dnsv1.com.&lt;/code&gt;，境外为github的地址&lt;code&gt;yakaili.github.io&lt;/code&gt;。
 &lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_1m66CF/2023/01/31/11-08-43-4e32d202fe9bfeeb1138e2d2258c3e85-dbede3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;测速后转为全绿，CDN加速效果明显。
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/20-09-22-9d406853e30d05f0671b3416c610b901-e4892e.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;https&#34;&gt;HTTPS&lt;/h1&gt;
 &lt;h2 id=&#34;申请阿里云免费https证书&#34;&gt;申请阿里云免费HTTPS证书&lt;/h2&gt;
 &lt;p&gt;多次申请腾讯云免费SSL证书一直签发不成功，转为申请阿里云SSL证书。
