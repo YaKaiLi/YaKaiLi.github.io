@@ -6,10 +6,139 @@
     <description>Recent content on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Sun, 29 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Feb 2023 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://www.gnn.ac.cn/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>通过docker安装alist来挂载网盘</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/02/06/docker-install-alist/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/06/docker-install-alist/</guid>
+      
+        <description>&lt;h1 id=&#34;安装&#34;&gt;安装&lt;/h1&gt;
+&lt;p&gt;新建配置文件存放目录&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir ~/software/alist
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;启动容器&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker run -d --restart&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;always -v ~/software/alist:/opt/alist/data -p 5244:5244 --name&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;alist&amp;#34;&lt;/span&gt; xhofe/alist:latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;访问ip:5244即可进入alist
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_a6MzTC/2023/02/06/16-41-34-0f74b85b27b985bf47928c46816ea009-1f25bf.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;输入以下命令查看初始账号密码&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker logs alist
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h1 id=&#34;配置阿里云盘&#34;&gt;配置阿里云盘&lt;/h1&gt;
+&lt;p&gt;进入后点击&lt;code&gt;管理&lt;/code&gt;添加挂载的网盘。
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/16-47-06-4edcd86b015455f266a5111d78dce6e9-a6360e.png&#34; alt=&#34;&#34;&gt;
+点击&lt;code&gt;存储&lt;/code&gt;-&amp;gt;&lt;code&gt;添加&lt;/code&gt;，驱动选择阿里云盘。
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/16-48-57-c019b443fcc1d25ee72a581868cdc4c1-49267a.png&#34; alt=&#34;&#34;&gt;
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/16-51-30-822037316ec975b02ef413a579767717-866a81.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;通过链接&lt;a href=&#34;https://alist.nn.ci/zh/guide/drivers/aliyundrive.html&#34;&gt;https://alist.nn.ci/zh/guide/drivers/aliyundrive.html&lt;/a&gt;获取刷新令牌并填写&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/16-54-50-1a8947220eb76298f45938d6d672131d-f4d67e.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/17-05-20-5a9b37d18edc45c566ab9e3606691f10-04ac1d.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;接下来就可以愉快的使用Alist啦！&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>PicGO 上传图片前自动压缩</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</link>
+      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</guid>
+      
+        <description>&lt;h1 id=&#34;安装插件&#34;&gt;安装插件&lt;/h1&gt;
+&lt;p&gt;采用picgo-plugin-compress插件，国内在PicGo-gui上直接搜索该插件安装会因为网络问题无法安装成功。&lt;/p&gt;
+&lt;h1 id=&#34;配置&#34;&gt;配置&lt;/h1&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>腾讯云CDN加速hugo的github pages</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</link>
+      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</guid>
+      
+        <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;通过网站测速发现很多地方访问非常慢，&lt;a href=&#34;https://www.17ce.com/site/http/20230131_836e6700a11111ed9608d9f7b39b2ff3:1.html&#34;&gt;点击查看&lt;/a&gt;测速详情。需要对github pages进行CDN加速。
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_TwbGm7/2023/01/31/10-49-19-5eaee042cd262880bec3bc2ce000fe73-a2f596.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;注意：腾讯云加速全球站需要网站备案，选择腾讯云加速主要是因为域名是在腾讯云注册的。
+参考：https://zhuanlan.zhihu.com/p/393779644&lt;/p&gt;
+&lt;h1 id=&#34;配置腾讯云-cdn-服务器&#34;&gt;配置腾讯云 CDN 服务器&lt;/h1&gt;
+&lt;p&gt;点击 &lt;code&gt;域名管理&lt;/code&gt; -&amp;gt; &lt;code&gt;添加域名&lt;/code&gt;。然后在 &lt;code&gt;域名配置&lt;/code&gt; 选 &lt;code&gt;中国境外&lt;/code&gt;，填上自己的域名，然后选择 &lt;code&gt;CDN网页小文件&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/01/31/10-43-51-461e861cbf3afdf19df638bc0f382a7c-1b08ab.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;github pages的ip地址列表为：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;185.199.108.153
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;185.199.109.153
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;185.199.110.153
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;185.199.111.153
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这里不要选择&lt;code&gt;HTTPS&lt;/code&gt;，因为腾讯云的&lt;code&gt;HTTPS&lt;/code&gt;是单独按次计费的，无法使用免费的10G流量。如果选择&lt;code&gt;HTTPS&lt;/code&gt;，在未开通&lt;code&gt;HTTPS&lt;/code&gt;服务下，网站会出现&lt;code&gt;514&lt;/code&gt;状态码报错。
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_tLFMYI/2023/01/31/11-27-59-8369ba2b8931e446a63f847178f67d64-6bfa4e.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;全部文件的缓存方式改为遵循源站。
+然后在推荐配置里的 &lt;code&gt;文件后缀&lt;/code&gt; 里添加 &lt;code&gt;html&lt;/code&gt; 的后缀。因为如果把 &lt;code&gt;index.html&lt;/code&gt; 也缓存了，部署后看到还是上一个版本的 &lt;code&gt;html&lt;/code&gt;。
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/01/31/11-09-52-adb8836d184c30d3459d16ef634c3f16-7c225f.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;修改域名DNS解析，境内CNAME为腾讯云的CDN地址&lt;code&gt;www.gnn.ac.cn.cdn.dnsv1.com.&lt;/code&gt;，境外为github的地址&lt;code&gt;yakaili.github.io&lt;/code&gt;。
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_1m66CF/2023/01/31/11-08-43-4e32d202fe9bfeeb1138e2d2258c3e85-dbede3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;https&#34;&gt;HTTPS&lt;/h1&gt;
+&lt;h2 id=&#34;申请阿里云免费https证书&#34;&gt;申请阿里云免费HTTPS证书&lt;/h2&gt;
+&lt;p&gt;多次申请腾讯云免费SSL证书一直签发不成功，转为申请阿里云SSL证书。
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-22-10-5ec936f698f48a6260fa5afe8c26f0be-7c9225.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;依次填写所需字段，提交审核。
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-23-25-e759a14dc3ae88f775e301117aadb70a-41e463.png&#34; alt=&#34;&#34;&gt;
+然后在域名解析中添加要求的解析字段，然后点击验证。等待大约10分钟即可签发成功。
+ps：比腾讯云体验好多了QAQ，腾讯云试了好几次，每次都是验证成功后等大概两天后才通知我验证失败，可能是我哪没有配置对吧。
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-25-08-c75a9de4201fef14894a36e17ed49195-1f5738.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;下载并部署证书&#34;&gt;下载并部署证书&lt;/h2&gt;
+&lt;p&gt;选择&lt;code&gt;其他&lt;/code&gt;栏下载证书，其中包含签名证书（.pem格式）和签名私钥（.key格式）。
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-47-27-356ddbff4672a52ef64b4630265fde58-872278.png&#34; alt=&#34;&#34;&gt;
+点击腾讯云SSL的上传证书，输入签名证书内容（.pem格式文件）和签名私钥内容（.key格式文件），点击确定即可托管证书成功。
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-55-12-7d7ba721d8415756b197f711adda7eac-ba1658.png&#34; alt=&#34;&#34;&gt;
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-54-30-762b40d01475bb9e31733aafd592d600-e90b9f.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在腾讯云CDN的控制台中，对加速域名进行管理。
+打开HTTPS开关并配置证书。
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-56-21-e048fc4b360b440e29e8faa52e42f842-6adc00.png&#34; alt=&#34;&#34;&gt;
+配置证书时选择上步骤托管的证书。
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-57-39-fc3d14c4689b9e951d42be1017fe367a-d7ccfa.png&#34; alt=&#34;&#34;&gt;
+最后等待腾讯云CDN部署完成。&lt;/p&gt;
+&lt;p&gt;访问主页不会显示https证书错误了。
+&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_VF6cte/2023/02/06/20-05-03-3e4a5210a31a23bfa395628ec55396ae-451414.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>国内使用ChatGPT</title>

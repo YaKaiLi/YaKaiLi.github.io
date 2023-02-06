@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Star5o的博客</title>
+  <title>腾讯云CDN加速hugo的github pages - Star5o的博客</title>
   
-<link rel="alternate" hreflang="" href="https://www.gnn.ac.cn/en/" />
-
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
@@ -25,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="star5o" />
-  <meta name="description" content="Star5o&#39;s Blog; Star5o的博客" />
+  <meta name="description" content="前言 通过网站测速发现很多地方访问非常慢，点击查看测速详情。需要对github pages进行CDN加速。 注意：腾讯云加速全球站需要网站备案，选择腾讯云加速主要是因为域名是在腾讯云注册的。 参考：https" />
+
   <meta name="keywords" content="Star5o, star5o" />
 
 
@@ -36,8 +35,8 @@
 <meta name="generator" content="Hugo 0.107.0" />
 
 
-<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/" />
-<link href="/zh-cn/index.xml" rel="alternate" type="application/rss+xml" title="Star5o的博客" />
+<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/" />
+
 
 
 
@@ -60,15 +59,20 @@
 
 
 
-<meta property="og:title" content="Star5o的博客" />
-<meta property="og:description" content="Star5o&#39;s Blog; Star5o的博客" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/" /><meta property="og:site_name" content="Star5o的博客" />
+<meta property="og:title" content="腾讯云CDN加速hugo的github pages" />
+<meta property="og:description" content="前言 通过网站测速发现很多地方访问非常慢，点击查看测速详情。需要对github pages进行CDN加速。 注意：腾讯云加速全球站需要网站备案，选择腾讯云加速主要是因为域名是在腾讯云注册的。 参考：https" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-01-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-01-31T00:00:00+00:00" /><meta property="og:site_name" content="Star5o的博客" />
 
-<meta itemprop="name" content="Star5o的博客">
-<meta itemprop="description" content="Star5o&#39;s Blog; Star5o的博客"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Star5o的博客"/>
-<meta name="twitter:description" content="Star5o&#39;s Blog; Star5o的博客"/>
+<meta itemprop="name" content="腾讯云CDN加速hugo的github pages">
+<meta itemprop="description" content="前言 通过网站测速发现很多地方访问非常慢，点击查看测速详情。需要对github pages进行CDN加速。 注意：腾讯云加速全球站需要网站备案，选择腾讯云加速主要是因为域名是在腾讯云注册的。 参考：https"><meta itemprop="datePublished" content="2023-01-31T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-01-31T00:00:00+00:00" />
+<meta itemprop="wordCount" content="808">
+<meta itemprop="keywords" content="Misc," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="腾讯云CDN加速hugo的github pages"/>
+<meta name="twitter:description" content="前言 通过网站测速发现很多地方访问非常慢，点击查看测速详情。需要对github pages进行CDN加速。 注意：腾讯云加速全球站需要网站备案，选择腾讯云加速主要是因为域名是在腾讯云注册的。 参考：https"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -368,167 +372,224 @@ if (!doNotTrack) {
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">腾讯云CDN加速hugo的github pages</h1>
+      
+      <div class="post-meta">
+        <time datetime="2023-01-31" class="post-time">
+          2023-01-31
+        </time>
+        
+        <span class="more-meta"> 约 808 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
+
+        
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#申请阿里云免费https证书">申请阿里云免费HTTPS证书</a></li>
+    <li><a href="#下载并部署证书">下载并部署证书</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <h1 id="前言">前言</h1>
+<p>通过网站测速发现很多地方访问非常慢，<a href="https://www.17ce.com/site/http/20230131_836e6700a11111ed9608d9f7b39b2ff3:1.html">点击查看</a>测速详情。需要对github pages进行CDN加速。
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_TwbGm7/2023/01/31/10-49-19-5eaee042cd262880bec3bc2ce000fe73-a2f596.png" alt=""></p>
+<p>注意：腾讯云加速全球站需要网站备案，选择腾讯云加速主要是因为域名是在腾讯云注册的。
+参考：https://zhuanlan.zhihu.com/p/393779644</p>
+<h1 id="配置腾讯云-cdn-服务器">配置腾讯云 CDN 服务器</h1>
+<p>点击 <code>域名管理</code> -&gt; <code>添加域名</code>。然后在 <code>域名配置</code> 选 <code>中国境外</code>，填上自己的域名，然后选择 <code>CDN网页小文件</code>。</p>
+<p><img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/01/31/10-43-51-461e861cbf3afdf19df638bc0f382a7c-1b08ab.png" alt=""></p>
+<p>github pages的ip地址列表为：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">185.199.108.153
+</span></span><span class="line"><span class="cl">185.199.109.153
+</span></span><span class="line"><span class="cl">185.199.110.153
+</span></span><span class="line"><span class="cl">185.199.111.153
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这里不要选择<code>HTTPS</code>，因为腾讯云的<code>HTTPS</code>是单独按次计费的，无法使用免费的10G流量。如果选择<code>HTTPS</code>，在未开通<code>HTTPS</code>服务下，网站会出现<code>514</code>状态码报错。
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_tLFMYI/2023/01/31/11-27-59-8369ba2b8931e446a63f847178f67d64-6bfa4e.png" alt=""></p>
+<p>全部文件的缓存方式改为遵循源站。
+然后在推荐配置里的 <code>文件后缀</code> 里添加 <code>html</code> 的后缀。因为如果把 <code>index.html</code> 也缓存了，部署后看到还是上一个版本的 <code>html</code>。
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/01/31/11-09-52-adb8836d184c30d3459d16ef634c3f16-7c225f.png" alt=""></p>
+<p>修改域名DNS解析，境内CNAME为腾讯云的CDN地址<code>www.gnn.ac.cn.cdn.dnsv1.com.</code>，境外为github的地址<code>yakaili.github.io</code>。
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_1m66CF/2023/01/31/11-08-43-4e32d202fe9bfeeb1138e2d2258c3e85-dbede3.png" alt=""></p>
+<h1 id="https">HTTPS</h1>
+<h2 id="申请阿里云免费https证书">申请阿里云免费HTTPS证书</h2>
+<p>多次申请腾讯云免费SSL证书一直签发不成功，转为申请阿里云SSL证书。
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-22-10-5ec936f698f48a6260fa5afe8c26f0be-7c9225.png" alt=""></p>
+<p>依次填写所需字段，提交审核。
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-23-25-e759a14dc3ae88f775e301117aadb70a-41e463.png" alt="">
+然后在域名解析中添加要求的解析字段，然后点击验证。等待大约10分钟即可签发成功。
+ps：比腾讯云体验好多了QAQ，腾讯云试了好几次，每次都是验证成功后等大概两天后才通知我验证失败，可能是我哪没有配置对吧。
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-25-08-c75a9de4201fef14894a36e17ed49195-1f5738.png" alt=""></p>
+<h2 id="下载并部署证书">下载并部署证书</h2>
+<p>选择<code>其他</code>栏下载证书，其中包含签名证书（.pem格式）和签名私钥（.key格式）。
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-47-27-356ddbff4672a52ef64b4630265fde58-872278.png" alt="">
+点击腾讯云SSL的上传证书，输入签名证书内容（.pem格式文件）和签名私钥内容（.key格式文件），点击确定即可托管证书成功。
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-55-12-7d7ba721d8415756b197f711adda7eac-ba1658.png" alt="">
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-54-30-762b40d01475bb9e31733aafd592d600-e90b9f.png" alt=""></p>
+<p>在腾讯云CDN的控制台中，对加速域名进行管理。
+打开HTTPS开关并配置证书。
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-56-21-e048fc4b360b440e29e8faa52e42f842-6adc00.png" alt="">
+配置证书时选择上步骤托管的证书。
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-57-39-fc3d14c4689b9e951d42be1017fe367a-d7ccfa.png" alt="">
+最后等待腾讯云CDN部署完成。</p>
+<p>访问主页不会显示https证书错误了。
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_VF6cte/2023/02/06/20-05-03-3e4a5210a31a23bfa395628ec55396ae-451414.png" alt=""></p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">star5o</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2023-01-31
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://www.gnn.ac.cn/zh-cn/tags/misc/">Misc</a>
           
-<section id="posts" class="posts">
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">PicGO 上传图片前自动压缩</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/zh-cn/post/2023/01/29/use-chatgpt-in-china/">
+            <span class="next-text nav-default">国内使用ChatGPT</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
   
   
-    
+
   
   
+
   
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/01/29/use-chatgpt-in-china/">国内使用ChatGPT</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2023-01-29" class="post-time">
-        2023-01-29
-      </time>
-      
-      <span class="more-meta"> 约 286 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "YaKaiLi/YaKaiLi.github.io"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
     </div>
-  </header>
   
-  <div class="post-content">
-    
-    <div class="post-summary">
-      OpenAI有地区限制，第一次登陆ChatGPT时使用的香港IP，注册然后登陆进去直接提示OpenAI's services are not available in your country，之后更换使用的IP（包括美国）和邮箱依旧提示。解决方法如下： 首先切
-    </div>
-    <div class="read-more">
-      <a href="/zh-cn/post/2023/01/29/use-chatgpt-in-china/" class="read-more-link">阅读全文</a>
-    </div>
-    
+
+  
+
+  
+
+  <div class="disqus-comment">
+  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
+    显示 Disqus 评论
   </div>
-</article>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_config = function () {
+      this.page.url = "https://www.gnn.ac.cn/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/";
+    };
+    function load_disqus() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
 
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'star5o';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+      $('#load_disqus').remove();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
   
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/01/22/docker-plex-install/">docker安装plex及设置</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2023-01-22" class="post-time">
-        2023-01-22
-      </time>
-      
-      <span class="more-meta"> 约 482 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      搭建Plex Server 新建文件夹plex， 创建docker-compose.yml 1 2 mkdir plex &amp;&amp; cd plex touch docker-compose.yml vim docker-compose.yml写入下面的配置 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 version: &#34;2.1&#34; services: plex: image: linuxserver/plex container_name: plex environment: -
-    </div>
-    <div class="read-more">
-      <a href="/zh-cn/post/2023/01/22/docker-plex-install/" class="read-more-link">阅读全文</a>
-    </div>
-    
   </div>
-</article>
 
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/">Homelab Ubuntu 20.04系统安装后自用配置</a>
-    </h1>
     
-    <div class="post-meta">
-      <time datetime="2023-01-22" class="post-time">
-        2023-01-22
-      </time>
-      
-      <span class="more-meta"> 约 1026 字 </span>
-      <span class="more-meta"> 预计阅读 3 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      换国内源 配置中科大源 1 2 sudo sed -i &#39;s@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g&#39; /etc/apt/sources.list sudo apt update ssh配置 安装ssh 1 2 sudo apt update sudo apt install openssh-server vim 配置密钥 1 2 3 4 5 ssh-keygen cd .ssh cat id_rsa.pub &gt;&gt; authorized_keys chmod 600 authorized_keys chmod 700 ~/.ssh 1 sudo vim /etc/ssh/sshd_config sshd_config文件内修改： 1 2 3 4 5 6 RSAAuthentication yes #开启密钥登陆 PubkeyAuthentication yes
-    </div>
-    <div class="read-more">
-      <a href="/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
 
   
-</section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
-      
-      <li >
-        <a href="/zh-cn/">1</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/zh-cn/page/2/">2</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/3/">3</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/4/">4</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/5/">5</a>
-      </li>
-      
-    </ul>
-  </nav>
-
-  
-  
-
-
-
-
 
         </div>
       </div>
@@ -654,6 +715,13 @@ if (!doNotTrack) {
 
 
 
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 

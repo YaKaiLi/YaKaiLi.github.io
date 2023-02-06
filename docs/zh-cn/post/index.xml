@@ -6,7 +6,34 @@
     <description>Recent content in Posts on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Sun, 29 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>通过docker安装alist来挂载网盘</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/02/06/docker-install-alist/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/06/docker-install-alist/</guid>
+      <description>安装 新建配置文件存放目录 1 mkdir ~/software/alist 启动容器 1 docker run -d --restart=always -v ~/software/alist:/opt/alist/data -p 5244:5244 --name=&amp;#34;alist&amp;#34; xhofe/alist:latest 访问ip:5244即可进入alist 输入以下命令查看初始账号密码 1 docker logs alist 配置阿里云盘 进入后点击管理添加挂载的网盘。 点击存储-&amp;gt;添加，驱</description>
+    </item>
+    
+    <item>
+      <title>PicGO 上传图片前自动压缩</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</link>
+      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</guid>
+      <description>安装插件 采用picgo-plugin-compress插件，国内在PicGo-gui上直接搜索该插件安装会因为网络问题无法安装成功。 配置</description>
+    </item>
+    
+    <item>
+      <title>腾讯云CDN加速hugo的github pages</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</link>
+      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</guid>
+      <description>前言 通过网站测速发现很多地方访问非常慢，点击查看测速详情。需要对github pages进行CDN加速。 注意：腾讯云加速全球站需要网站备案，选择腾讯云加速主要是因为域名是在腾讯云注册的。 参考：https</description>
+    </item>
+    
     <item>
       <title>国内使用ChatGPT</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/29/use-chatgpt-in-china/</link>
