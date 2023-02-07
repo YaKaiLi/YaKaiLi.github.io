@@ -4,6 +4,7 @@ date: '2022-11-28'
 slug: gnn-ffa-read-part1-chapter1
 tags:
   - GNN
+  - Deep learning
 mathjax: true
 ---
 

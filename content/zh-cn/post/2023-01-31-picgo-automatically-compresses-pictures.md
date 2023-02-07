@@ -4,6 +4,7 @@ date: '2023-01-31'
 slug: picgo-automatically-compresses-pictures
 tags:
   - Misc
+  - Blog
 mathjax: true
 ---
 # 安装插件
@@ -20,4 +21,10 @@ mathjax: true
 + tinypng 无损压缩，需要上传到 tinypng
 + imagemin 压缩过程不需要经过网络，但是图片会有损耗
 + image2webp 本地有损压缩，支持 GIF 格式有损压缩 注意：有些图床（比如 sm.ms）不支持 webp 图片格式，会上传失败
+
+# 启用插件
+
+![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/07/10-35-53-6fa5b01d18915958659ced93c9dddc6f-376497.png)
+
+
 

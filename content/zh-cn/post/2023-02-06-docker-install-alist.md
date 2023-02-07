@@ -4,6 +4,7 @@ date: '2023-02-06'
 slug: docker-install-alist
 tags:
   - Misc
+  - Homelab
 mathjax: true
 ---
 

@@ -4,6 +4,7 @@ date: '2023-01-31'
 slug: tencent-cdn-speeds-up-gitpages-speed
 tags:
   - Misc
+  - Blog
 mathjax: true
 ---
 
