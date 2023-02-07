@@ -5,7 +5,6 @@ slug: picgo-automatically-compresses-pictures
 tags:
   - Misc
   - Blog
-mathjax: true
 ---
 # 安装插件
 采用picgo-plugin-compress插件，在PicGo-gui上直接搜索该插件并安装。

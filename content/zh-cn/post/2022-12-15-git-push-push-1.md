@@ -6,7 +6,6 @@ tags:
   - Troubleshooting
   - Misc
   - Git
-mathjax: true
 ---
 # 报错
 ```shell

@@ -5,7 +5,6 @@ slug: tencent-cdn-speeds-up-gitpages-speed
 tags:
   - Misc
   - Blog
-mathjax: true
 ---
 
 # 前言

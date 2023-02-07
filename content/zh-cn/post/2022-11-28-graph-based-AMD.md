@@ -3,9 +3,9 @@ title: 基于图的安卓恶意软件检测方法综述
 date: '2022-11-28'
 slug: graph-based-AMD
 tags:
-  - Graph_embedding
+  - Graph embedding
   - Android
-  - Malware_detection
+  - Malware detection
 ---
 此篇文章只总结已开源或能够找到复现源码的工作。
 

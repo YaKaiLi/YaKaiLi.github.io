@@ -5,7 +5,6 @@ slug: docker-install-alist
 tags:
   - Misc
   - Homelab
-mathjax: true
 ---
 
 # 安装

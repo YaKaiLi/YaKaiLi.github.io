@@ -4,6 +4,7 @@ date: '2022-11-27'
 slug: win10-install-redis
 tags:
   - Software
+  - Misc
 ---
 
 
