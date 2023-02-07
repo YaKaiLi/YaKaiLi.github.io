@@ -22,7 +22,7 @@
       <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</guid>
-      <description>安装插件 采用picgo-plugin-compress插件，国内在PicGo-gui上直接搜索该插件安装会因为网络问题无法安装成功。 配置</description>
+      <description>安装插件 采用picgo-plugin-compress插件，在PicGo-gui上直接搜索该插件并安装。 配置 点击插件配置选择压缩方式 压缩方式有： tinypng 无损压缩，需要上传到 tinypng imagemin 压缩过程不需要经过网络，但是图</description>
     </item>
     
     <item>
