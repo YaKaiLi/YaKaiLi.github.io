@@ -6,14 +6,14 @@
     <description>Recent content in Posts on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Tue, 21 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>《Interpreting Machine Learning Models》阅读笔记</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/build-latex-env-in-m1-macbook/</link>
-      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
+      <title>使用OpenAPI搭建私人Chatgpt</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/build-latex-env-in-m1-macbook/</guid>
-      <description>参考：https://ml4.apachecn.org/#/docs/interp-ml-model/01</description>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/</guid>
+      <description>方案一 来源于https://github.com/869413421/chatgpt-web 通过docker安装 1 2 3 4 5 6 7 8 9 10 docker run -itd --name chatgpt-web --restart=always \ -e APIKEY=换成你的key \ -e MODEL=gpt-3.5-turbo-0301 \ -e MAX_TOKENS=512 \ -e TEMPREATURE=0.9 \ -e TOP_P=1</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/build-latex-env-in-m1-macbook/</guid>
-      <description>方案一 来源于https://github.com/869413421/chatgpt-web 通过docker安装 1 2 3 4 5 6 7 8 9 10 docker run -itd --name chatgpt-web --restart=always \ -e APIKEY=换成你的key \ -e MODEL=gpt-3.5-turbo-0301 \ -e MAX_TOKENS=512 \ -e TEMPREATURE=0.9 \ -e TOP_P=1</description>
+      <description>参考：https://ml4.apachecn.org/#/docs/interp-ml-model/01</description>
     </item>
     
     <item>

@@ -1,7 +1,7 @@
 ---
-title: 《Interpreting Machine Learning Models》阅读笔记
-date: '2023-02-21'
-slug: build-latex-env-in-m1-macbook
+title: 使用OpenAPI搭建私人Chatgpt
+date: '2023-03-02'
+slug: build-personal-chatgpt-based-gpt3.5api
 tags:
   - Misc
   - Software

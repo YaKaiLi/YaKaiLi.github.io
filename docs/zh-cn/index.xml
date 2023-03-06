@@ -6,29 +6,17 @@
     <description>Recent content on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Tue, 21 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://www.gnn.ac.cn/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>《Interpreting Machine Learning Models》阅读笔记</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/build-latex-env-in-m1-macbook/</link>
-      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
+      <title>使用OpenAPI搭建私人Chatgpt</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/build-latex-env-in-m1-macbook/</guid>
-      
-        <description>&lt;p&gt;参考：https://ml4.apachecn.org/#/docs/interp-ml-model/01&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>《Interpreting Machine Learning Models》阅读笔记</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/build-latex-env-in-m1-macbook/</link>
-      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/build-latex-env-in-m1-macbook/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/</guid>
       
         <description>&lt;h1 id=&#34;方案一&#34;&gt;方案一&lt;/h1&gt;
 &lt;p&gt;来源于https://github.com/869413421/chatgpt-web&lt;/p&gt;
@@ -94,6 +82,18 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;服务器位置&#34;&gt;服务器位置&lt;/h1&gt;
 &lt;p&gt;使用国外的容器托管平台：Railway或Vercel等。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《Interpreting Machine Learning Models》阅读笔记</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/build-latex-env-in-m1-macbook/</link>
+      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/build-latex-env-in-m1-macbook/</guid>
+      
+        <description>&lt;p&gt;参考：https://ml4.apachecn.org/#/docs/interp-ml-model/01&lt;/p&gt;
 </description>
       
     </item>

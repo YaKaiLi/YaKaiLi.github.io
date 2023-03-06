@@ -2,8 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/build-latex-env-in-m1-macbook/</loc>
-    <lastmod>2023-03-07T01:45:17+08:00</lastmod>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/misc/</loc>
+    <lastmod>2023-03-07T01:53:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/post/</loc>
+    <lastmod>2023-03-07T01:53:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/software/</loc>
+    <lastmod>2023-03-07T01:53:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/</loc>
+    <lastmod>2023-03-07T01:53:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/</loc>
+    <lastmod>2023-03-07T01:53:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/</loc>
+    <lastmod>2023-03-07T01:53:16+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -31,41 +66,6 @@
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/interpret/</loc>
-    <lastmod>2023-03-07T01:45:17+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/tags/misc/</loc>
-    <lastmod>2023-03-07T01:45:17+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/post/</loc>
-    <lastmod>2023-03-07T01:45:17+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/tags/software/</loc>
-    <lastmod>2023-03-07T01:45:17+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/</loc>
-    <lastmod>2023-03-07T01:45:17+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/tags/</loc>
     <lastmod>2023-03-07T01:45:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
