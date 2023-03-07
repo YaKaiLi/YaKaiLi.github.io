@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Macbook（M1）搭建LaTex运行环境</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/</guid>
+      <description>MacTex安装 官网下载安装包 通过中科大源下载MacTex：https://mirrors.ustc.edu.cn/CTAN/systems/mac/mactex/MacTeX.pkg 官方网址：htt</description>
+    </item>
+    
     <item>
       <title>使用OpenAPI搭建私人Chatgpt</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/</link>
@@ -18,20 +27,11 @@
     
     <item>
       <title>《Interpreting Machine Learning Models》阅读笔记</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/build-latex-env-in-m1-macbook/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/interpret-machine-learning-read/</link>
       <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/build-latex-env-in-m1-macbook/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/interpret-machine-learning-read/</guid>
       <description>参考：https://ml4.apachecn.org/#/docs/interp-ml-model/01</description>
-    </item>
-    
-    <item>
-      <title>Macbook（M1）搭建LaTex运行环境</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/02/15/build-latex-env-in-m1-macbook/</link>
-      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/15/build-latex-env-in-m1-macbook/</guid>
-      <description>MacTex安装 官网下载安装包 通过中科大源下载MacTex：https://mirrors.ustc.edu.cn/CTAN/systems/mac/mactex/MacTeX.pkg 官方网址：htt</description>
     </item>
     
     <item>

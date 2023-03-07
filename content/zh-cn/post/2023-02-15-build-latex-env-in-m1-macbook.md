@@ -1,6 +1,6 @@
 ---
 title: Macbook（M1）搭建LaTex运行环境
-date: '2023-02-15'
+date: '2023-03-07'
 slug: build-latex-env-in-m1-macbook
 tags:
   - Misc
