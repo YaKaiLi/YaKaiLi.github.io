@@ -380,6 +380,72 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/zh-cn/post/2023/03/07/build-ccfddl-website/">搭建组内CCFDDL网站</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2023-03-07" class="post-time">
+        2023-03-07
+      </time>
+      
+      <span class="more-meta"> 约 74 字 </span>
+      <span class="more-meta"> 预计阅读 1 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      代码来源：https://github.com/ccfddl/ccf-deadlines docker build -t my-vue-app . 部署方案1：vercel容器托管平台。 部署方案2:
+    </div>
+    <div class="read-more">
+      <a href="/zh-cn/post/2023/03/07/build-ccfddl-website/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/">使用OpenAPI搭建私人Chatgpt</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2023-03-02" class="post-time">
+        2023-03-02
+      </time>
+      
+      <span class="more-meta"> 约 258 字 </span>
+      <span class="more-meta"> 预计阅读 1 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      方案一 来源于https://github.com/869413421/chatgpt-web 通过docker安装 1 2 3 4 5 6 7 8 9 10 docker run -itd --name chatgpt-web --restart=always \ -e APIKEY=换成你的key \ -e MODEL=gpt-3.5-turbo-0301 \ -e MAX_TOKENS=512 \ -e TEMPREATURE=0.9 \ -e TOP_P=1
+    </div>
+    <div class="read-more">
+      <a href="/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/zh-cn/post/2023/02/21/interpret-machine-learning-read/">《Interpreting Machine Learning Models》阅读笔记</a>
     </h1>
     
@@ -403,72 +469,6 @@ if (!doNotTrack) {
     </div>
     <div class="read-more">
       <a href="/zh-cn/post/2023/02/21/interpret-machine-learning-read/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/02/06/docker-install-alist/">通过docker安装alist来挂载网盘</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2023-02-06" class="post-time">
-        2023-02-06
-      </time>
-      
-      <span class="more-meta"> 约 192 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      安装 新建配置文件存放目录 1 mkdir ~/software/alist 启动容器 1 docker run -d --restart=always -v ~/software/alist:/opt/alist/data -p 5244:5244 --name=&#34;alist&#34; xhofe/alist:latest 访问ip:5244即可进入alist 输入以下命令查看初始账号密码 1 docker logs alist 配置阿里云盘 进入后点击管理添加挂载的网盘。 点击存储-&gt;添加，驱
-    </div>
-    <div class="read-more">
-      <a href="/zh-cn/post/2023/02/06/docker-install-alist/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/">PicGO 上传图片前自动压缩</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2023-01-31" class="post-time">
-        2023-01-31
-      </time>
-      
-      <span class="more-meta"> 约 156 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      安装插件 采用picgo-plugin-compress插件，在PicGo-gui上直接搜索该插件并安装。 配置 点击插件配置选择压缩方式 压缩方式有： tinypng 无损压缩，需要上传到 tinypng imagemin 压缩过程不需要经过网络，但是图
-    </div>
-    <div class="read-more">
-      <a href="/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -522,6 +522,10 @@ if (!doNotTrack) {
       
       <li >
         <a href="/zh-cn/page/6/">6</a>
+      </li>
+      
+      <li >
+        <a href="/zh-cn/page/7/">7</a>
       </li>
       
     </ul>

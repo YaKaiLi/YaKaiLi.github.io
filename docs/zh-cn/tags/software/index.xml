@@ -6,7 +6,25 @@
     <description>Recent content in Software on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Tue, 07 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iterm2&#43;xquartz x11转发</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/iterm2-x11-forwarding/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/iterm2-x11-forwarding/</guid>
+      <description>安装xquartz https://www.xquartz.org/ 在linux服务器端打开X11转发 1 sudo vim /etc/ssh/sshd_config 配置转发参数为yes 1 2 X11Forwarding yes X11DisplayOffset 10 然后重启ssh服务 1 service ssh restart 在Mac本地设置 1 sudo vim /etc/ssh/ssh_config 配置转发参数为yes 1 2 3 4 ForwardAgent yes ForwardX11 yes ForwardX11Trusted yes XAuthLocation /opt/X11/bin/xauth 使用 ssh -X username@host ssh</description>
+    </item>
+    
+    <item>
+      <title>深度学习可解释性度量方法</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/</link>
+      <pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/</guid>
+      <description>保真度测试指标</description>
+    </item>
+    
     <item>
       <title>Macbook（M1）搭建LaTex运行环境</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/</link>
@@ -22,7 +40,7 @@
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/07/build-ccfddl-website/</guid>
-      <description></description>
+      <description>代码来源：https://github.com/ccfddl/ccf-deadlines docker build -t my-vue-app . 部署方案1：vercel容器托管平台。 部署方案2:</description>
     </item>
     
     <item>
