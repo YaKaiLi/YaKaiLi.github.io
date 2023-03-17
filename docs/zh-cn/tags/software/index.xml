@@ -6,7 +6,25 @@
     <description>Recent content in Software on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Wed, 15 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 Cloudflare Workers 解决 OpenAI 和 ChatGPT 的 API 无法访问的问题</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/</link>
+      <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/</guid>
+      <description>https://github.com/noobnooc/noobnooc/discussions/9 1、新建一个 Cloudflare Worker 2、将 https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6 里的代码粘贴到 Worker 中并部署 3、给 Worker 绑定一个没有被 GFW 认证的域名 4、使用自己的域名代替 api.openai.com 域名托管转到Cloudflare Websites-&amp;gt;Add Site 接下来输入需要转入的域名，点击Add Site 选择free套餐。</description>
+    </item>
+    
+    <item>
+      <title>docker搭建stable diffusion webui</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/</guid>
+      <description>docker pull nvidia/cuda:11.7.0-devel-ubuntu22.04 docker run &amp;ndash;gpus all -it -d &amp;ndash;name sd -v /home/star5o/software/stable-diffusion-webui:/stable-diffusion-webui -v /home/star5o/dataset:/dataset -p 7860:7860 nvidia/cuda:11.7.0-devel-ubuntu22.04 /bin/bash apt update apt install sudo wget git vim adduser sd adduser sd sudo apt install software-properties-common -y add-apt-repository ppa:deadsnakes/ppa apt update sudo apt install python3.10 sudo apt install python3.10-venv vim ~/.bashrc 1 2 3 export PATH=/usr/local/cuda/bin:$PATH export PATH=/home/sd/.local/bin:$PATH export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH 方案1:使用Anaconda conda create &amp;ndash;name sd python=3.10.6 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui cd stable-diffusion-webui python launch.py 方案2:直接安装python</description>
+    </item>
+    
     <item>
       <title>iterm2&#43;xquartz x11转发</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/iterm2-x11-forwarding/</link>
@@ -14,6 +32,15 @@
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/iterm2-x11-forwarding/</guid>
       <description>安装xquartz https://www.xquartz.org/ 在linux服务器端打开X11转发 1 sudo vim /etc/ssh/sshd_config 配置转发参数为yes 1 2 X11Forwarding yes X11DisplayOffset 10 然后重启ssh服务 1 service ssh restart 在Mac本地设置 1 sudo vim /etc/ssh/ssh_config 配置转发参数为yes 1 2 3 4 ForwardAgent yes ForwardX11 yes ForwardX11Trusted yes XAuthLocation /opt/X11/bin/xauth 使用 ssh -X username@host ssh</description>
+    </item>
+    
+    <item>
+      <title>普通用户使用root用户安装的anaconda</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/normal-user-use-root-installed-anaconda/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/normal-user-use-root-installed-anaconda/</guid>
+      <description>首先，root用户安装anaconda的时候，需要安装在普通用户可以访问的目录下，比如/usr/local、/opt、/home之类的 其次，普通用户登陆后，需要执行一下conda init 使conda的路径等</description>
     </item>
     
     <item>

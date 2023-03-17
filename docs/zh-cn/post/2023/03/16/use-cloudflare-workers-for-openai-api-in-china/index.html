@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Star5o的博客</title>
+  <title>使用 Cloudflare Workers 解决 OpenAI 和 ChatGPT 的 API 无法访问的问题 - Star5o的博客</title>
   
-<link rel="alternate" hreflang="" href="https://www.gnn.ac.cn/en/" />
-
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
@@ -25,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="star5o" />
-  <meta name="description" content="Star5o&#39;s Blog; Star5o的博客" />
+  <meta name="description" content="https://github.com/noobnooc/noobnooc/discussions/9 1、新建一个 Cloudflare Worker 2、将 https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6 里的代码粘贴到 Worker 中并部署 3、给 Worker 绑定一个没有被 GFW 认证的域名 4、使用自己的域名代替 api.openai.com 域名托管转到Cloudflare Websites-&amp;gt;Add Site 接下来输入需要转入的域名，点击Add Site 选择free套餐。" />
+
   <meta name="keywords" content="Star5o, star5o" />
 
 
@@ -36,8 +35,8 @@
 <meta name="generator" content="Hugo 0.107.0" />
 
 
-<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/" />
-<link href="/zh-cn/index.xml" rel="alternate" type="application/rss+xml" title="Star5o的博客" />
+<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/" />
+
 
 
 
@@ -60,15 +59,20 @@
 
 
 
-<meta property="og:title" content="Star5o的博客" />
-<meta property="og:description" content="Star5o&#39;s Blog; Star5o的博客" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/" /><meta property="og:site_name" content="Star5o的博客" />
+<meta property="og:title" content="使用 Cloudflare Workers 解决 OpenAI 和 ChatGPT 的 API 无法访问的问题" />
+<meta property="og:description" content="https://github.com/noobnooc/noobnooc/discussions/9 1、新建一个 Cloudflare Worker 2、将 https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6 里的代码粘贴到 Worker 中并部署 3、给 Worker 绑定一个没有被 GFW 认证的域名 4、使用自己的域名代替 api.openai.com 域名托管转到Cloudflare Websites-&gt;Add Site 接下来输入需要转入的域名，点击Add Site 选择free套餐。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-03-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-03-16T00:00:00+00:00" /><meta property="og:site_name" content="Star5o的博客" />
 
-<meta itemprop="name" content="Star5o的博客">
-<meta itemprop="description" content="Star5o&#39;s Blog; Star5o的博客"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Star5o的博客"/>
-<meta name="twitter:description" content="Star5o&#39;s Blog; Star5o的博客"/>
+<meta itemprop="name" content="使用 Cloudflare Workers 解决 OpenAI 和 ChatGPT 的 API 无法访问的问题">
+<meta itemprop="description" content="https://github.com/noobnooc/noobnooc/discussions/9 1、新建一个 Cloudflare Worker 2、将 https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6 里的代码粘贴到 Worker 中并部署 3、给 Worker 绑定一个没有被 GFW 认证的域名 4、使用自己的域名代替 api.openai.com 域名托管转到Cloudflare Websites-&gt;Add Site 接下来输入需要转入的域名，点击Add Site 选择free套餐。"><meta itemprop="datePublished" content="2023-03-16T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-03-16T00:00:00+00:00" />
+<meta itemprop="wordCount" content="269">
+<meta itemprop="keywords" content="Misc,Software," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用 Cloudflare Workers 解决 OpenAI 和 ChatGPT 的 API 无法访问的问题"/>
+<meta name="twitter:description" content="https://github.com/noobnooc/noobnooc/discussions/9 1、新建一个 Cloudflare Worker 2、将 https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6 里的代码粘贴到 Worker 中并部署 3、给 Worker 绑定一个没有被 GFW 认证的域名 4、使用自己的域名代替 api.openai.com 域名托管转到Cloudflare Websites-&gt;Add Site 接下来输入需要转入的域名，点击Add Site 选择free套餐。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -368,179 +372,248 @@ if (!doNotTrack) {
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">使用 Cloudflare Workers 解决 OpenAI 和 ChatGPT 的 API 无法访问的问题</h1>
+      
+      <div class="post-meta">
+        <time datetime="2023-03-16" class="post-time">
+          2023-03-16
+        </time>
+        
+        <span class="more-meta"> 约 269 字 </span>
+          <span class="more-meta"> 预计阅读 1 分钟 </span>
+
+        
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#域名托管转到cloudflare">域名托管转到Cloudflare</a></li>
+    <li><a href="#创建一个worker">创建一个Worker</a>
+      <ul>
+        <li><a href="#修改-cloudflare-worker-的代码">修改 Cloudflare Worker 的代码</a></li>
+      </ul>
+    </li>
+    <li><a href="#绑定域名">绑定域名</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p><a href="https://github.com/noobnooc/noobnooc/discussions/9">https://github.com/noobnooc/noobnooc/discussions/9</a>
+1、新建一个 Cloudflare Worker
+2、将 <a href="https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6">https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6</a> 里的代码粘贴到 Worker 中并部署
+3、给 Worker 绑定一个没有被 GFW 认证的域名
+4、使用自己的域名代替 api.openai.com</p>
+<h2 id="域名托管转到cloudflare">域名托管转到Cloudflare</h2>
+<p><img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_ixpjzt/2023/03/16/21-18-33-6ee6a9f8538bfb65ab6a4a18afaac7fe-a3b82d.png" alt="">
+Websites-&gt;Add Site
+接下来输入需要转入的域名，点击Add Site
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_iYBytI/2023/03/16/21-19-35-e01e0d43d9e3873e31441edc950a5861-9036c9.png" alt="">
+选择free套餐。
+根据 Cloudflare 的提示，在域名注册商处将 NS 修改到 Cloudflare 指定的地址，等待域名解析成功后，即可进行后续操作。</p>
+<h2 id="创建一个worker">创建一个Worker</h2>
+<p><img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_b6yMwo/2023/03/16/21-33-15-f7f9fd81cfdff09ffc50710ff6ae0984-3ff856.png" alt="">
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_xkOd55/2023/03/16/21-35-12-a3fc8af1b3d55d4736f00a2981c54806-60a891.png" alt=""></p>
+<h3 id="修改-cloudflare-worker-的代码">修改 Cloudflare Worker 的代码</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">TELEGRAPH_URL</span> <span class="o">=</span> <span class="s1">&#39;https://api.openai.com&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;fetch&#39;</span><span class="p">,</span> <span class="nx">event</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">event</span><span class="p">.</span><span class="nx">respondWith</span><span class="p">(</span><span class="nx">handleRequest</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">request</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">handleRequest</span><span class="p">(</span><span class="nx">request</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">URL</span><span class="p">(</span><span class="nx">request</span><span class="p">.</span><span class="nx">url</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span><span class="p">.</span><span class="nx">host</span> <span class="o">=</span> <span class="nx">TELEGRAPH_URL</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/^https?:\/\//</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">modifiedRequest</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Request</span><span class="p">(</span><span class="nx">url</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">headers</span><span class="o">:</span> <span class="nx">request</span><span class="p">.</span><span class="nx">headers</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">method</span><span class="o">:</span> <span class="nx">request</span><span class="p">.</span><span class="nx">method</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">body</span><span class="o">:</span> <span class="nx">request</span><span class="p">.</span><span class="nx">body</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">redirect</span><span class="o">:</span> <span class="s1">&#39;follow&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">response</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">fetch</span><span class="p">(</span><span class="nx">modifiedRequest</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">modifiedResponse</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Response</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">body</span><span class="p">,</span> <span class="nx">response</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// 添加允许跨域访问的响应头
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">modifiedResponse</span><span class="p">.</span><span class="nx">headers</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;Access-Control-Allow-Origin&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">modifiedResponse</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>或</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://gist.github.com/YaKaiLi/3106669ded79d4918a6f51f8fd322c2e
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="绑定域名">绑定域名</h2>
+<p><img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_427ZgX/2023/03/16/21-50-11-87105f65bd8e4f8eaeb8e5af5139889f-d2ae1a.png" alt=""></p>
+<p>至此便大功告成。</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">star5o</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2023-03-16
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://www.gnn.ac.cn/zh-cn/tags/misc/">Misc</a>
+          <a href="https://www.gnn.ac.cn/zh-cn/tags/software/">Software</a>
           
-<section id="posts" class="posts">
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/">
+            <span class="next-text nav-default">docker搭建stable diffusion webui</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
   
   
-    
+
   
   
+
   
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/03/07/build-ccfddl-website/">搭建组内CCFDDL网站</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2023-03-07" class="post-time">
-        2023-03-07
-      </time>
-      
-      <span class="more-meta"> 约 74 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "YaKaiLi/YaKaiLi.github.io"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
     </div>
-  </header>
   
-  <div class="post-content">
-    
-    <div class="post-summary">
-      代码来源：https://github.com/ccfddl/ccf-deadlines docker build -t my-vue-app . 部署方案1：vercel容器托管平台。 部署方案2:
-    </div>
-    <div class="read-more">
-      <a href="/zh-cn/post/2023/03/07/build-ccfddl-website/" class="read-more-link">阅读全文</a>
-    </div>
-    
+
+  
+
+  
+
+  <div class="disqus-comment">
+  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
+    显示 Disqus 评论
   </div>
-</article>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_config = function () {
+      this.page.url = "https://www.gnn.ac.cn/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/";
+    };
+    function load_disqus() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
 
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'star5o';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+      $('#load_disqus').remove();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
   
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/">使用OpenAPI搭建私人Chatgpt</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2023-03-02" class="post-time">
-        2023-03-02
-      </time>
-      
-      <span class="more-meta"> 约 258 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      方案一 来源于https://github.com/869413421/chatgpt-web 通过docker安装 1 2 3 4 5 6 7 8 9 10 docker run -itd --name chatgpt-web --restart=always \ -e APIKEY=换成你的key \ -e MODEL=gpt-3.5-turbo-0301 \ -e MAX_TOKENS=512 \ -e TEMPREATURE=0.9 \ -e TOP_P=1
-    </div>
-    <div class="read-more">
-      <a href="/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/" class="read-more-link">阅读全文</a>
-    </div>
-    
   </div>
-</article>
 
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/02/21/interpret-machine-learning-read/">《Interpreting Machine Learning Models》阅读笔记</a>
-    </h1>
     
-    <div class="post-meta">
-      <time datetime="2023-02-21" class="post-time">
-        2023-02-21
-      </time>
-      
-      <span class="more-meta"> 约 53 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      参考：https://ml4.apachecn.org/#/docs/interp-ml-model/01
-    </div>
-    <div class="read-more">
-      <a href="/zh-cn/post/2023/02/21/interpret-machine-learning-read/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
 
   
-</section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
-      
-      <li >
-        <a href="/zh-cn/">1</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/2/">2</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/zh-cn/page/3/">3</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/4/">4</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/5/">5</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/6/">6</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/7/">7</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/8/">8</a>
-      </li>
-      
-    </ul>
-  </nav>
-
-  
-  
-
-
-
-
 
         </div>
       </div>

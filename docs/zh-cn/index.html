@@ -380,6 +380,72 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/">使用 Cloudflare Workers 解决 OpenAI 和 ChatGPT 的 API 无法访问的问题</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2023-03-16" class="post-time">
+        2023-03-16
+      </time>
+      
+      <span class="more-meta"> 约 269 字 </span>
+      <span class="more-meta"> 预计阅读 1 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      https://github.com/noobnooc/noobnooc/discussions/9 1、新建一个 Cloudflare Worker 2、将 https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6 里的代码粘贴到 Worker 中并部署 3、给 Worker 绑定一个没有被 GFW 认证的域名 4、使用自己的域名代替 api.openai.com 域名托管转到Cloudflare Websites-&gt;Add Site 接下来输入需要转入的域名，点击Add Site 选择free套餐。
+    </div>
+    <div class="read-more">
+      <a href="/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/">docker搭建stable diffusion webui</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2023-03-15" class="post-time">
+        2023-03-15
+      </time>
+      
+      <span class="more-meta"> 约 99 字 </span>
+      <span class="more-meta"> 预计阅读 1 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      docker pull nvidia/cuda:11.7.0-devel-ubuntu22.04 docker run &ndash;gpus all -it -d &ndash;name sd -v /home/star5o/software/stable-diffusion-webui:/stable-diffusion-webui -v /home/star5o/dataset:/dataset -p 7860:7860 nvidia/cuda:11.7.0-devel-ubuntu22.04 /bin/bash apt update apt install sudo wget git vim adduser sd adduser sd sudo apt install software-properties-common -y add-apt-repository ppa:deadsnakes/ppa apt update sudo apt install python3.10 sudo apt install python3.10-venv vim ~/.bashrc 1 2 3 export PATH=/usr/local/cuda/bin:$PATH export PATH=/home/sd/.local/bin:$PATH export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH 方案1:使用Anaconda conda create &ndash;name sd python=3.10.6 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui cd stable-diffusion-webui python launch.py 方案2:直接安装python
+    </div>
+    <div class="read-more">
+      <a href="/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/zh-cn/post/2023/03/15/iterm2-x11-forwarding/">iterm2&#43;xquartz x11转发</a>
     </h1>
     
@@ -403,72 +469,6 @@ if (!doNotTrack) {
     </div>
     <div class="read-more">
       <a href="/zh-cn/post/2023/03/15/iterm2-x11-forwarding/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/">深度学习可解释性度量方法</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2023-03-10" class="post-time">
-        2023-03-10
-      </time>
-      
-      <span class="more-meta"> 约 7 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      保真度测试指标
-    </div>
-    <div class="read-more">
-      <a href="/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/">Macbook（M1）搭建LaTex运行环境</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2023-03-07" class="post-time">
-        2023-03-07
-      </time>
-      
-      <span class="more-meta"> 约 292 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      MacTex安装 官网下载安装包 通过中科大源下载MacTex：https://mirrors.ustc.edu.cn/CTAN/systems/mac/mactex/MacTeX.pkg 官方网址：htt
-    </div>
-    <div class="read-more">
-      <a href="/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -526,6 +526,10 @@ if (!doNotTrack) {
       
       <li >
         <a href="/zh-cn/page/7/">7</a>
+      </li>
+      
+      <li >
+        <a href="/zh-cn/page/8/">8</a>
       </li>
       
     </ul>
