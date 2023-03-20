@@ -26,18 +26,9 @@
     </item>
     
     <item>
-      <title>Book reading</title>
-      <link>https://www.gnn.ac.cn/zh-cn/tags/book-reading/</link>
-      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.gnn.ac.cn/zh-cn/tags/book-reading/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Deep learning</title>
       <link>https://www.gnn.ac.cn/zh-cn/tags/deep-learning/</link>
-      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/tags/deep-learning/</guid>
       <description></description>
@@ -46,9 +37,27 @@
     <item>
       <title>Interpret</title>
       <link>https://www.gnn.ac.cn/zh-cn/tags/interpret/</link>
-      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/tags/interpret/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Survey</title>
+      <link>https://www.gnn.ac.cn/zh-cn/tags/survey/</link>
+      <pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/tags/survey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Book reading</title>
+      <link>https://www.gnn.ac.cn/zh-cn/tags/book-reading/</link>
+      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/tags/book-reading/</guid>
       <description></description>
     </item>
     

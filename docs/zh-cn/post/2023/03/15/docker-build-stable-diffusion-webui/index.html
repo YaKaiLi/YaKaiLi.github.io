@@ -64,11 +64,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-03-15T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-03-15T00:00:00+00:00" /><meta property="og:site_name" content="Star5o的博客" />
+<meta property="article:modified_time" content="2023-03-17T14:24:51+08:00" /><meta property="og:site_name" content="Star5o的博客" />
 
 <meta itemprop="name" content="docker搭建stable diffusion webui">
 <meta itemprop="description" content="docker pull nvidia/cuda:11.7.0-devel-ubuntu22.04 docker run &ndash;gpus all -it -d &ndash;name sd -v /home/star5o/software/stable-diffusion-webui:/stable-diffusion-webui -v /home/star5o/dataset:/dataset -p 7860:7860 nvidia/cuda:11.7.0-devel-ubuntu22.04 /bin/bash apt update apt install sudo wget git vim adduser sd adduser sd sudo apt install software-properties-common -y add-apt-repository ppa:deadsnakes/ppa apt update sudo apt install python3.10 sudo apt install python3.10-venv vim ~/.bashrc 1 2 3 export PATH=/usr/local/cuda/bin:$PATH export PATH=/home/sd/.local/bin:$PATH export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH 方案1:使用Anaconda conda create &ndash;name sd python=3.10.6 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui cd stable-diffusion-webui python launch.py 方案2:直接安装python"><meta itemprop="datePublished" content="2023-03-15T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-03-15T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-03-17T14:24:51+08:00" />
 <meta itemprop="wordCount" content="99">
 <meta itemprop="keywords" content="Misc,Software," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="docker搭建stable diffusion webui"/>
@@ -456,7 +456,10 @@ python launch.py</p>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2023-03-15
+      2023-03-17
+      
+        
+        
       
     </span>
   </p>

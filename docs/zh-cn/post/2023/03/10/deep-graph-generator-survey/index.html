@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Star5o的博客</title>
+  <title>图生成方法综述 - Star5o的博客</title>
   
-<link rel="alternate" hreflang="" href="https://www.gnn.ac.cn/en/" />
-
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
@@ -25,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="star5o" />
-  <meta name="description" content="Star5o&#39;s Blog; Star5o的博客" />
+  <meta name="description" content="基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可附加生成条件 公开源码 MolMP 逐节点生成 节点/边 YES 逐节点生成 节点/边 NO 逐节点生成 逐节点生成 使用RNN的方法 逐节点生成图的方法 MolM" />
+
   <meta name="keywords" content="Star5o, star5o" />
 
 
@@ -36,8 +35,8 @@
 <meta name="generator" content="Hugo 0.107.0" />
 
 
-<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/" />
-<link href="/zh-cn/index.xml" rel="alternate" type="application/rss+xml" title="Star5o的博客" />
+<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-graph-generator-survey/" />
+
 
 
 
@@ -60,15 +59,20 @@
 
 
 
-<meta property="og:title" content="Star5o的博客" />
-<meta property="og:description" content="Star5o&#39;s Blog; Star5o的博客" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/" /><meta property="og:site_name" content="Star5o的博客" />
+<meta property="og:title" content="图生成方法综述" />
+<meta property="og:description" content="基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可附加生成条件 公开源码 MolMP 逐节点生成 节点/边 YES 逐节点生成 节点/边 NO 逐节点生成 逐节点生成 使用RNN的方法 逐节点生成图的方法 MolM" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-graph-generator-survey/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-03-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-03-10T00:00:00+00:00" /><meta property="og:site_name" content="Star5o的博客" />
 
-<meta itemprop="name" content="Star5o的博客">
-<meta itemprop="description" content="Star5o&#39;s Blog; Star5o的博客"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Star5o的博客"/>
-<meta name="twitter:description" content="Star5o&#39;s Blog; Star5o的博客"/>
+<meta itemprop="name" content="图生成方法综述">
+<meta itemprop="description" content="基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可附加生成条件 公开源码 MolMP 逐节点生成 节点/边 YES 逐节点生成 节点/边 NO 逐节点生成 逐节点生成 使用RNN的方法 逐节点生成图的方法 MolM"><meta itemprop="datePublished" content="2023-03-10T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-03-10T00:00:00+00:00" />
+<meta itemprop="wordCount" content="283">
+<meta itemprop="keywords" content="Misc,Deep-learning,Survey," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="图生成方法综述"/>
+<meta name="twitter:description" content="基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可附加生成条件 公开源码 MolMP 逐节点生成 节点/边 YES 逐节点生成 节点/边 NO 逐节点生成 逐节点生成 使用RNN的方法 逐节点生成图的方法 MolM"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -368,179 +372,261 @@ if (!doNotTrack) {
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">图生成方法综述</h1>
+      
+      <div class="post-meta">
+        <time datetime="2023-03-10" class="post-time">
+          2023-03-10
+        </time>
+        
+        <span class="more-meta"> 约 283 字 </span>
+          <span class="more-meta"> 预计阅读 1 分钟 </span>
+
+        
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#使用rnn的方法">使用RNN的方法</a>
+      <ul>
+        <li><a href="#逐节点生成图的方法">逐节点生成图的方法</a></li>
+        <li><a href="#逐边生成图的方法">逐边生成图的方法</a></li>
+      </ul>
+    </li>
+    <li><a href="#不使用rnn的">不使用RNN的</a>
+      <ul>
+        <li><a href="#基于注意力机制的">基于注意力机制的</a></li>
+        <li><a href="#其他方法">其他方法</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#一次生成整个图的方法">一次生成整个图的方法</a></li>
+    <li><a href="#基于子结构substructure的方法">基于子结构（SUBSTRUCTURE）的方法</a></li>
+    <li><a href="#逐节点生成图的方法-1">逐节点生成图的方法</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#基于随机游走的方法">基于随机游走的方法</a></li>
+    <li><a href="#基于整个图的方法">基于整个图的方法</a>
+      <ul>
+        <li><a href="#general-graph-based-adversarial-dggs">GENERAL GRAPH-BASED ADVERSARIAL DGGs</a></li>
+        <li><a href="#graph-to-graph-translators">GRAPH-TO-GRAPH TRANSLATORS</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <h1 id="基于自回归autoregressive的图生成方法">基于自回归（AUTOREGRESSIVE）的图生成方法</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">方法</th>
+<th style="text-align:center">生成策略</th>
+<th style="text-align:center">特征类型</th>
+<th style="text-align:center">可附加生成条件</th>
+<th>公开源码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">MolMP</td>
+<td style="text-align:center">逐节点生成</td>
+<td style="text-align:center">节点/边</td>
+<td style="text-align:center">YES</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">逐节点生成</td>
+<td style="text-align:center">节点/边</td>
+<td style="text-align:center">NO</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">逐节点生成</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">逐节点生成</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="使用rnn的方法">使用RNN的方法</h2>
+<h3 id="逐节点生成图的方法">逐节点生成图的方法</h3>
+<p>MolMP、MolRNN、GraphRNN、MolecularRNN</p>
+<h3 id="逐边生成图的方法">逐边生成图的方法</h3>
+<p>GraphGen</p>
+<h2 id="不使用rnn的">不使用RNN的</h2>
+<h3 id="基于注意力机制的">基于注意力机制的</h3>
+<h3 id="其他方法">其他方法</h3>
+<h1 id="基于自编码器autoencoder的图生成方法">基于自编码器（AUTOENCODER）的图生成方法</h1>
+<h2 id="一次生成整个图的方法">一次生成整个图的方法</h2>
+<h2 id="基于子结构substructure的方法">基于子结构（SUBSTRUCTURE）的方法</h2>
+<h2 id="逐节点生成图的方法-1">逐节点生成图的方法</h2>
+<h1 id="基于强化学习的图生成方法">基于强化学习的图生成方法</h1>
+<h1 id="基于生成对抗网络的图生成方法">基于生成对抗网络的图生成方法</h1>
+<h2 id="基于随机游走的方法">基于随机游走的方法</h2>
+<h2 id="基于整个图的方法">基于整个图的方法</h2>
+<h3 id="general-graph-based-adversarial-dggs">GENERAL GRAPH-BASED ADVERSARIAL DGGs</h3>
+<p>MolGAN</p>
+<h3 id="graph-to-graph-translators">GRAPH-TO-GRAPH TRANSLATORS</h3>
+<h1 id="基于流的图生成方法">基于流的图生成方法</h1>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">star5o</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2023-03-10
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://www.gnn.ac.cn/zh-cn/tags/misc/">Misc</a>
+          <a href="https://www.gnn.ac.cn/zh-cn/tags/deep-learning/">Deep-learning</a>
+          <a href="https://www.gnn.ac.cn/zh-cn/tags/survey/">Survey</a>
           
-<section id="posts" class="posts">
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">深度学习可解释性度量方法</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/">
+            <span class="next-text nav-default">Macbook（M1）搭建LaTex运行环境</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
   
   
-    
+
   
   
+
   
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/">《图神经网络：基础、前沿与应用》（又名：图神经网络城堡书） Part1:引言》第一章：表征学习（Representation Learning）</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2022-11-28" class="post-time">
-        2022-11-28
-      </time>
-      
-      <span class="more-meta"> 约 0 字 </span>
-      <span class="more-meta"> 预计阅读 0 分钟 </span>
-      
-      
-      
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "YaKaiLi/YaKaiLi.github.io"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
     </div>
-  </header>
   
-  <div class="post-content">
-    
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/" class="read-more-link">阅读全文</a>
-    </div>
-    
+
+  
+
+  
+
+  <div class="disqus-comment">
+  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
+    显示 Disqus 评论
   </div>
-</article>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_config = function () {
+      this.page.url = "https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-graph-generator-survey/";
+    };
+    function load_disqus() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
 
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'star5o';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+      $('#load_disqus').remove();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
   
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2022/11/28/graph-based-amd/">基于图的安卓恶意软件检测方法综述</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2022-11-28" class="post-time">
-        2022-11-28
-      </time>
-      
-      <span class="more-meta"> 约 397 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      此篇文章只总结已开源或能够找到复现源码的工作。 这些方法之间的区别主要是图嵌入方式。 MalScan MamaDroid 阅读主要关注于算法如何实现的，分为四个阶段：调用图提取、序列提取、构建马尔可夫链和特征向量、分类器。 MaMaDRO
-    </div>
-    <div class="read-more">
-      <a href="/zh-cn/post/2022/11/28/graph-based-amd/" class="read-more-link">阅读全文</a>
-    </div>
-    
   </div>
-</article>
 
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2022/11/27/python3-unicodeencodeerror/">linux-Python3-UnicodeEncodeError: &#39;ascii&#39; codec can&#39;t encode characters in position 0-1: ordinal not in range(128)</a>
-    </h1>
     
-    <div class="post-meta">
-      <time datetime="2022-11-27" class="post-time">
-        2022-11-27
-      </time>
-      
-      <span class="more-meta"> 约 299 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      错误说明 今天在服务器上使用python3执行python文件时报错。 报错所在行语句： 1 print(&#34;读取图片文件耗费时间：%d秒&#34; % time_elapsed) 报错信息： 1 UnicodeEncodeError: &#39;ascii&#39; codec can&#39;t encode characters in position 0-1: ordinal not in range(128) 问题分析 1、
-    </div>
-    <div class="read-more">
-      <a href="/zh-cn/post/2022/11/27/python3-unicodeencodeerror/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
 
   
-</section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
-      
-      <li >
-        <a href="/zh-cn/">1</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/2/">2</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/3/">3</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/4/">4</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/5/">5</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/6/">6</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/zh-cn/page/7/">7</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/8/">8</a>
-      </li>
-      
-    </ul>
-  </nav>
-
-  
-  
-
-
-
-
 
         </div>
       </div>
