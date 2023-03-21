@@ -1,6 +1,6 @@
 ---
 title: 图生成方法综述
-date: '2023-03-10'
+date: '2023-03-17'
 slug: deep-graph-generator-survey
 tags:
   - Misc

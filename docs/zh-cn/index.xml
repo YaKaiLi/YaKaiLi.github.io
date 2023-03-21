@@ -6,10 +6,83 @@
     <description>Recent content on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Thu, 16 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Mar 2023 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://www.gnn.ac.cn/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>图生成方法综述</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/</link>
+      <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/</guid>
+      
+        <description>&lt;h1 id=&#34;基于自回归autoregressive的图生成方法&#34;&gt;基于自回归（AUTOREGRESSIVE）的图生成方法&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;方法&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;生成策略&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;特征类型&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;可附加生成条件&lt;/th&gt;
+&lt;th&gt;公开源码&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;MolMP&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;YES&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;NO&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;使用rnn的方法&#34;&gt;使用RNN的方法&lt;/h2&gt;
+&lt;h3 id=&#34;逐节点生成图的方法&#34;&gt;逐节点生成图的方法&lt;/h3&gt;
+&lt;p&gt;MolMP、MolRNN、GraphRNN、MolecularRNN&lt;/p&gt;
+&lt;h3 id=&#34;逐边生成图的方法&#34;&gt;逐边生成图的方法&lt;/h3&gt;
+&lt;p&gt;GraphGen&lt;/p&gt;
+&lt;h2 id=&#34;不使用rnn的&#34;&gt;不使用RNN的&lt;/h2&gt;
+&lt;h3 id=&#34;基于注意力机制的&#34;&gt;基于注意力机制的&lt;/h3&gt;
+&lt;h3 id=&#34;其他方法&#34;&gt;其他方法&lt;/h3&gt;
+&lt;h1 id=&#34;基于自编码器autoencoder的图生成方法&#34;&gt;基于自编码器（AUTOENCODER）的图生成方法&lt;/h1&gt;
+&lt;h2 id=&#34;一次生成整个图的方法&#34;&gt;一次生成整个图的方法&lt;/h2&gt;
+&lt;h2 id=&#34;基于子结构substructure的方法&#34;&gt;基于子结构（SUBSTRUCTURE）的方法&lt;/h2&gt;
+&lt;h2 id=&#34;逐节点生成图的方法-1&#34;&gt;逐节点生成图的方法&lt;/h2&gt;
+&lt;h1 id=&#34;基于强化学习的图生成方法&#34;&gt;基于强化学习的图生成方法&lt;/h1&gt;
+&lt;h1 id=&#34;基于生成对抗网络的图生成方法&#34;&gt;基于生成对抗网络的图生成方法&lt;/h1&gt;
+&lt;h2 id=&#34;基于随机游走的方法&#34;&gt;基于随机游走的方法&lt;/h2&gt;
+&lt;h2 id=&#34;基于整个图的方法&#34;&gt;基于整个图的方法&lt;/h2&gt;
+&lt;h3 id=&#34;general-graph-based-adversarial-dggs&#34;&gt;GENERAL GRAPH-BASED ADVERSARIAL DGGs&lt;/h3&gt;
+&lt;p&gt;MolGAN&lt;/p&gt;
+&lt;h3 id=&#34;graph-to-graph-translators&#34;&gt;GRAPH-TO-GRAPH TRANSLATORS&lt;/h3&gt;
+&lt;h1 id=&#34;基于流的图生成方法&#34;&gt;基于流的图生成方法&lt;/h1&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>使用 Cloudflare Workers 解决 OpenAI 和 ChatGPT 的 API 无法访问的问题</title>
@@ -251,79 +324,6 @@ ssh -X nickname&lt;/p&gt;
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/</guid>
       
         <description>&lt;p&gt;保真度测试指标&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>图生成方法综述</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-graph-generator-survey/</link>
-      <pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-graph-generator-survey/</guid>
-      
-        <description>&lt;h1 id=&#34;基于自回归autoregressive的图生成方法&#34;&gt;基于自回归（AUTOREGRESSIVE）的图生成方法&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;方法&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;生成策略&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;特征类型&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;可附加生成条件&lt;/th&gt;
-&lt;th&gt;公开源码&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;MolMP&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;YES&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;NO&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;使用rnn的方法&#34;&gt;使用RNN的方法&lt;/h2&gt;
-&lt;h3 id=&#34;逐节点生成图的方法&#34;&gt;逐节点生成图的方法&lt;/h3&gt;
-&lt;p&gt;MolMP、MolRNN、GraphRNN、MolecularRNN&lt;/p&gt;
-&lt;h3 id=&#34;逐边生成图的方法&#34;&gt;逐边生成图的方法&lt;/h3&gt;
-&lt;p&gt;GraphGen&lt;/p&gt;
-&lt;h2 id=&#34;不使用rnn的&#34;&gt;不使用RNN的&lt;/h2&gt;
-&lt;h3 id=&#34;基于注意力机制的&#34;&gt;基于注意力机制的&lt;/h3&gt;
-&lt;h3 id=&#34;其他方法&#34;&gt;其他方法&lt;/h3&gt;
-&lt;h1 id=&#34;基于自编码器autoencoder的图生成方法&#34;&gt;基于自编码器（AUTOENCODER）的图生成方法&lt;/h1&gt;
-&lt;h2 id=&#34;一次生成整个图的方法&#34;&gt;一次生成整个图的方法&lt;/h2&gt;
-&lt;h2 id=&#34;基于子结构substructure的方法&#34;&gt;基于子结构（SUBSTRUCTURE）的方法&lt;/h2&gt;
-&lt;h2 id=&#34;逐节点生成图的方法-1&#34;&gt;逐节点生成图的方法&lt;/h2&gt;
-&lt;h1 id=&#34;基于强化学习的图生成方法&#34;&gt;基于强化学习的图生成方法&lt;/h1&gt;
-&lt;h1 id=&#34;基于生成对抗网络的图生成方法&#34;&gt;基于生成对抗网络的图生成方法&lt;/h1&gt;
-&lt;h2 id=&#34;基于随机游走的方法&#34;&gt;基于随机游走的方法&lt;/h2&gt;
-&lt;h2 id=&#34;基于整个图的方法&#34;&gt;基于整个图的方法&lt;/h2&gt;
-&lt;h3 id=&#34;general-graph-based-adversarial-dggs&#34;&gt;GENERAL GRAPH-BASED ADVERSARIAL DGGs&lt;/h3&gt;
-&lt;p&gt;MolGAN&lt;/p&gt;
-&lt;h3 id=&#34;graph-to-graph-translators&#34;&gt;GRAPH-TO-GRAPH TRANSLATORS&lt;/h3&gt;
-&lt;h1 id=&#34;基于流的图生成方法&#34;&gt;基于流的图生成方法&lt;/h1&gt;
 </description>
       
     </item>

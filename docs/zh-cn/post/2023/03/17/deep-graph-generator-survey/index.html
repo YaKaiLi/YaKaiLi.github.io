@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>深度学习可解释性度量方法 - Star5o的博客</title>
+  <title>图生成方法综述 - Star5o的博客</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="star5o" />
-  <meta name="description" content="保真度测试指标" />
+  <meta name="description" content="基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可附加生成条件 公开源码 MolMP 逐节点生成 节点/边 YES 逐节点生成 节点/边 NO 逐节点生成 逐节点生成 使用RNN的方法 逐节点生成图的方法 MolM" />
 
   <meta name="keywords" content="Star5o, star5o" />
 
@@ -35,7 +35,7 @@
 <meta name="generator" content="Hugo 0.107.0" />
 
 
-<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/" />
+<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/" />
 
 
 
@@ -59,20 +59,20 @@
 
 
 
-<meta property="og:title" content="深度学习可解释性度量方法" />
-<meta property="og:description" content="保真度测试指标" />
+<meta property="og:title" content="图生成方法综述" />
+<meta property="og:description" content="基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可附加生成条件 公开源码 MolMP 逐节点生成 节点/边 YES 逐节点生成 节点/边 NO 逐节点生成 逐节点生成 使用RNN的方法 逐节点生成图的方法 MolM" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2023-03-10T00:00:00+00:00" />
+<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-03-17T00:00:00+00:00" />
 <meta property="article:modified_time" content="2023-03-20T11:16:16+08:00" /><meta property="og:site_name" content="Star5o的博客" />
 
-<meta itemprop="name" content="深度学习可解释性度量方法">
-<meta itemprop="description" content="保真度测试指标"><meta itemprop="datePublished" content="2023-03-10T00:00:00+00:00" />
+<meta itemprop="name" content="图生成方法综述">
+<meta itemprop="description" content="基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可附加生成条件 公开源码 MolMP 逐节点生成 节点/边 YES 逐节点生成 节点/边 NO 逐节点生成 逐节点生成 使用RNN的方法 逐节点生成图的方法 MolM"><meta itemprop="datePublished" content="2023-03-17T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-03-20T11:16:16+08:00" />
-<meta itemprop="wordCount" content="7">
-<meta itemprop="keywords" content="Misc,Deep-learning,Interpret," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="深度学习可解释性度量方法"/>
-<meta name="twitter:description" content="保真度测试指标"/>
+<meta itemprop="wordCount" content="283">
+<meta itemprop="keywords" content="Misc,Deep-learning,Survey," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="图生成方法综述"/>
+<meta name="twitter:description" content="基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可附加生成条件 公开源码 MolMP 逐节点生成 节点/边 YES 逐节点生成 节点/边 NO 逐节点生成 逐节点生成 使用RNN的方法 逐节点生成图的方法 MolM"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -375,14 +375,14 @@ if (!doNotTrack) {
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">深度学习可解释性度量方法</h1>
+      <h1 class="post-title">图生成方法综述</h1>
       
       <div class="post-meta">
-        <time datetime="2023-03-10" class="post-time">
-          2023-03-10
+        <time datetime="2023-03-17" class="post-time">
+          2023-03-17
         </time>
         
-        <span class="more-meta"> 约 7 字 </span>
+        <span class="more-meta"> 约 283 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
 
         
@@ -402,13 +402,105 @@ if (!doNotTrack) {
 <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">文章目录</h2>
   <div class="post-toc-content">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#使用rnn的方法">使用RNN的方法</a>
+      <ul>
+        <li><a href="#逐节点生成图的方法">逐节点生成图的方法</a></li>
+        <li><a href="#逐边生成图的方法">逐边生成图的方法</a></li>
+      </ul>
+    </li>
+    <li><a href="#不使用rnn的">不使用RNN的</a>
+      <ul>
+        <li><a href="#基于注意力机制的">基于注意力机制的</a></li>
+        <li><a href="#其他方法">其他方法</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#一次生成整个图的方法">一次生成整个图的方法</a></li>
+    <li><a href="#基于子结构substructure的方法">基于子结构（SUBSTRUCTURE）的方法</a></li>
+    <li><a href="#逐节点生成图的方法-1">逐节点生成图的方法</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#基于随机游走的方法">基于随机游走的方法</a></li>
+    <li><a href="#基于整个图的方法">基于整个图的方法</a>
+      <ul>
+        <li><a href="#general-graph-based-adversarial-dggs">GENERAL GRAPH-BASED ADVERSARIAL DGGs</a></li>
+        <li><a href="#graph-to-graph-translators">GRAPH-TO-GRAPH TRANSLATORS</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
 
     
     <div class="post-content">
-      <p>保真度测试指标</p>
+      <h1 id="基于自回归autoregressive的图生成方法">基于自回归（AUTOREGRESSIVE）的图生成方法</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">方法</th>
+<th style="text-align:center">生成策略</th>
+<th style="text-align:center">特征类型</th>
+<th style="text-align:center">可附加生成条件</th>
+<th>公开源码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">MolMP</td>
+<td style="text-align:center">逐节点生成</td>
+<td style="text-align:center">节点/边</td>
+<td style="text-align:center">YES</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">逐节点生成</td>
+<td style="text-align:center">节点/边</td>
+<td style="text-align:center">NO</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">逐节点生成</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">逐节点生成</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="使用rnn的方法">使用RNN的方法</h2>
+<h3 id="逐节点生成图的方法">逐节点生成图的方法</h3>
+<p>MolMP、MolRNN、GraphRNN、MolecularRNN</p>
+<h3 id="逐边生成图的方法">逐边生成图的方法</h3>
+<p>GraphGen</p>
+<h2 id="不使用rnn的">不使用RNN的</h2>
+<h3 id="基于注意力机制的">基于注意力机制的</h3>
+<h3 id="其他方法">其他方法</h3>
+<h1 id="基于自编码器autoencoder的图生成方法">基于自编码器（AUTOENCODER）的图生成方法</h1>
+<h2 id="一次生成整个图的方法">一次生成整个图的方法</h2>
+<h2 id="基于子结构substructure的方法">基于子结构（SUBSTRUCTURE）的方法</h2>
+<h2 id="逐节点生成图的方法-1">逐节点生成图的方法</h2>
+<h1 id="基于强化学习的图生成方法">基于强化学习的图生成方法</h1>
+<h1 id="基于生成对抗网络的图生成方法">基于生成对抗网络的图生成方法</h1>
+<h2 id="基于随机游走的方法">基于随机游走的方法</h2>
+<h2 id="基于整个图的方法">基于整个图的方法</h2>
+<h3 id="general-graph-based-adversarial-dggs">GENERAL GRAPH-BASED ADVERSARIAL DGGs</h3>
+<p>MolGAN</p>
+<h3 id="graph-to-graph-translators">GRAPH-TO-GRAPH TRANSLATORS</h3>
+<h1 id="基于流的图生成方法">基于流的图生成方法</h1>
 
     </div>
 
@@ -444,29 +536,16 @@ if (!doNotTrack) {
       <div class="post-tags">
           <a href="https://www.gnn.ac.cn/zh-cn/tags/misc/">Misc</a>
           <a href="https://www.gnn.ac.cn/zh-cn/tags/deep-learning/">Deep-learning</a>
-          <a href="https://www.gnn.ac.cn/zh-cn/tags/interpret/">Interpret</a>
+          <a href="https://www.gnn.ac.cn/zh-cn/tags/survey/">Survey</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/zh-cn/post/2023/03/15/normal-user-use-root-installed-anaconda/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">普通用户使用root用户安装的anaconda</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
         
-          <a class="next" href="/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/">
-            <span class="next-text nav-default">Macbook（M1）搭建LaTex运行环境</span>
+          <a class="next" href="/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/">
+            <span class="next-text nav-default">使用 Cloudflare Workers 解决 OpenAI 和 ChatGPT 的 API 无法访问的问题</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
@@ -514,7 +593,7 @@ if (!doNotTrack) {
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     var disqus_config = function () {
-      this.page.url = "https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/";
+      this.page.url = "https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/";
     };
     function load_disqus() {
       

@@ -6,13 +6,13 @@
     <description>Recent content in Survey on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Fri, 10 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/survey/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/survey/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>图生成方法综述</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-graph-generator-survey/</link>
-      <pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/</link>
+      <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-graph-generator-survey/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/</guid>
       <description>基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可附加生成条件 公开源码 MolMP 逐节点生成 节点/边 YES 逐节点生成 节点/边 NO 逐节点生成 逐节点生成 使用RNN的方法 逐节点生成图的方法 MolM</description>
     </item>
     
