@@ -116,8 +116,8 @@ Websites-&amp;gt;Add Site
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/</guid>
       
         <description>&lt;h2 id=&#34;环境要求&#34;&gt;环境要求&lt;/h2&gt;
-&lt;p&gt;Docker、docker compose&lt;/p&gt;
-&lt;p&gt;docker compose安装命令：&lt;/p&gt;
+&lt;p&gt;Docker及docker-compose&lt;/p&gt;
+&lt;p&gt;docker-compose安装命令：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1

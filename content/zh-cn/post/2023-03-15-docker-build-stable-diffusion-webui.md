@@ -7,9 +7,9 @@ tags:
   - Software
 ---
 ## 环境要求
-Docker、docker compose
+Docker及docker-compose
 
-docker compose安装命令：
+docker-compose安装命令：
 ```shell
 apt install docker-compose-plugin
 ```
