@@ -13,7 +13,7 @@
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/</guid>
-      <description>https://github.com/noobnooc/noobnooc/discussions/9 1、新建一个 Cloudflare Worker 2、将 https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6 里的代码粘贴到 Worker 中并部署 3、给 Worker 绑定一个没有被 GFW 认证的域名 4、使用自己的域名代替 api.openai.com 域名托管转到Cloudflare Websites-&amp;gt;Add Site 接下来输入需要转入的域名，点击Add Site 选择free套餐。</description>
+      <description>参考： https://github.com/noobnooc/noobnooc/discussions/9 主要流程（步骤3和4可省略）： 1、新建一个 Cloudflare Worker 2、将 https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6 里的代码粘贴到 Worker 中并部署 3、给 Worker 绑定一个域名 4、使用自己的域名代替 api.openai.com 域名托管转到Cloudflare Websites-&amp;gt;Add Site 接下来输入需要转入的域名，点击Ad</description>
     </item>
     
     <item>

@@ -18,11 +18,13 @@
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/</guid>
       
-        <description>&lt;p&gt;&lt;a href=&#34;https://github.com/noobnooc/noobnooc/discussions/9&#34;&gt;https://github.com/noobnooc/noobnooc/discussions/9&lt;/a&gt;
-1、新建一个 Cloudflare Worker
-2、将 &lt;a href=&#34;https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6&#34;&gt;https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6&lt;/a&gt; 里的代码粘贴到 Worker 中并部署
-3、给 Worker 绑定一个没有被 GFW 认证的域名
-4、使用自己的域名代替 api.openai.com&lt;/p&gt;
+        <description>&lt;p&gt;参考：
+&lt;a href=&#34;https://github.com/noobnooc/noobnooc/discussions/9&#34;&gt;https://github.com/noobnooc/noobnooc/discussions/9&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;主要流程（步骤3和4可省略）：&lt;/p&gt;
+&lt;p&gt;1、新建一个 Cloudflare Worker&lt;/p&gt;
+&lt;p&gt;2、将 &lt;a href=&#34;https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6&#34;&gt;https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6&lt;/a&gt; 里的代码粘贴到 Worker 中并部署&lt;/p&gt;
+&lt;p&gt;3、给 Worker 绑定一个域名&lt;/p&gt;
+&lt;p&gt;4、使用自己的域名代替 api.openai.com&lt;/p&gt;
 &lt;h2 id=&#34;域名托管转到cloudflare&#34;&gt;域名托管转到Cloudflare&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_ixpjzt/2023/03/16/21-18-33-6ee6a9f8538bfb65ab6a4a18afaac7fe-a3b82d.png&#34; alt=&#34;&#34;&gt;
 Websites-&amp;gt;Add Site
@@ -99,7 +101,7 @@ Websites-&amp;gt;Add Site
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;https://gist.github.com/YaKaiLi/3106669ded79d4918a6f51f8fd322c2e
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;绑定域名&#34;&gt;绑定域名&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;绑定自定义域名&#34;&gt;绑定自定义域名&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_427ZgX/2023/03/16/21-50-11-87105f65bd8e4f8eaeb8e5af5139889f-d2ae1a.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;至此便大功告成。&lt;/p&gt;
 </description>

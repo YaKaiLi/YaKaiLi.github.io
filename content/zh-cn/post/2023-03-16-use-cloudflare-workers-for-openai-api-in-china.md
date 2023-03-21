@@ -6,10 +6,17 @@ tags:
   - Misc
   - Software
 ---
+参考：
 https://github.com/noobnooc/noobnooc/discussions/9
+
+主要流程（步骤3和4可省略）：
+
 1、新建一个 Cloudflare Worker
+
 2、将 https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6 里的代码粘贴到 Worker 中并部署
-3、给 Worker 绑定一个没有被 GFW 认证的域名
+
+3、给 Worker 绑定一个域名
+
 4、使用自己的域名代替 api.openai.com
 
 ## 域名托管转到Cloudflare
@@ -61,7 +68,7 @@ https://gist.github.com/YaKaiLi/3106669ded79d4918a6f51f8fd322c2e
 
 
 
-## 绑定域名
+## 绑定自定义域名
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_427ZgX/2023/03/16/21-50-11-87105f65bd8e4f8eaeb8e5af5139889f-d2ae1a.png)
 
 至此便大功告成。
