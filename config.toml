@@ -18,7 +18,6 @@ hasCJKLanguage = true
 paginate = 3              # Number of articles displayed on the homepage  # 首页每页显示的文章数
 # rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
 disqusShortname = "star5o"      # disqus_shortname
-googleAnalytics = "G-9YR4FEGTDL"      # UA-XXXXXXXX-X
 copyright = "Star5o Love Haohao"            # default: author.name ↓        # 默认为下面配置的author.name ↓
 enableGitInfo = true      # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 summaryLength = 100
@@ -105,6 +104,9 @@ defaultContentLanguage = "zh-cn"
   showMenuLanguageChooser = true
   moreMeta = true # word count and read time
 
+  # googleAnalytics = "G-9YR4FEGTDL"      # UA-XXXXXXXX-X
+  baidu_analytics = "1806bc95934db833f0ef5ce2536bee40"
+
   # site info (optional)
   # logoTitle = "Jane"        # default: the title value
   keywords = ["Star5o","star5o"]
@@ -131,8 +133,8 @@ defaultContentLanguage = "zh-cn"
   #  enable = true
   #  id = "34ea7590e075242d3"
   #  title = "Search"
-  [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
-    enable = true
+  #[params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
+  #  enable = true
   #[params.counter.leancloud]  # Chinese leancloud visitor counter  # leancloud 计数器
   #  enable = true
   #  appId = "rTbNOMu7jR6E6DvALJYAwZX2-gzGzoHsz"
