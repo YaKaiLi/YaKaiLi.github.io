@@ -31,4 +31,5 @@ title: 关于
 
 ## 友情链接
 
-- caijiqhx（[博客网址](https://notes.caijiqhx.top)）
+- [caijiqhx](https://notes.caijiqhx.top)：菜鸡 qhx 的学习笔记。
+
