@@ -10,7 +10,7 @@ baseURL = "https://www.gnn.ac.cn/"
 title = "Star5o's blog"
 enableRobotsTXT = true
 enableEmoji = true
-theme = "jane_new"
+theme = "hugo-theme-jane"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 publishDir = 'docs'
 
