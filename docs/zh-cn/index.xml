@@ -18,7 +18,7 @@
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/</guid>
       
-        <description>&lt;h1 id=&#34;基于自回归autoregressive的图生成方法&#34;&gt;基于自回归（AUTOREGRESSIVE）的图生成方法&lt;/h1&gt;
+        <description>&lt;h2 id=&#34;基于自回归autoregressive的图生成方法&#34;&gt;基于自回归（AUTOREGRESSIVE）的图生成方法&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -60,26 +60,26 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;使用rnn的方法&#34;&gt;使用RNN的方法&lt;/h2&gt;
-&lt;h3 id=&#34;逐节点生成图的方法&#34;&gt;逐节点生成图的方法&lt;/h3&gt;
+&lt;h3 id=&#34;使用rnn的方法&#34;&gt;使用RNN的方法&lt;/h3&gt;
+&lt;h4 id=&#34;逐节点生成图的方法&#34;&gt;逐节点生成图的方法&lt;/h4&gt;
 &lt;p&gt;MolMP、MolRNN、GraphRNN、MolecularRNN&lt;/p&gt;
-&lt;h3 id=&#34;逐边生成图的方法&#34;&gt;逐边生成图的方法&lt;/h3&gt;
+&lt;h4 id=&#34;逐边生成图的方法&#34;&gt;逐边生成图的方法&lt;/h4&gt;
 &lt;p&gt;GraphGen&lt;/p&gt;
-&lt;h2 id=&#34;不使用rnn的&#34;&gt;不使用RNN的&lt;/h2&gt;
-&lt;h3 id=&#34;基于注意力机制的&#34;&gt;基于注意力机制的&lt;/h3&gt;
-&lt;h3 id=&#34;其他方法&#34;&gt;其他方法&lt;/h3&gt;
-&lt;h1 id=&#34;基于自编码器autoencoder的图生成方法&#34;&gt;基于自编码器（AUTOENCODER）的图生成方法&lt;/h1&gt;
-&lt;h2 id=&#34;一次生成整个图的方法&#34;&gt;一次生成整个图的方法&lt;/h2&gt;
-&lt;h2 id=&#34;基于子结构substructure的方法&#34;&gt;基于子结构（SUBSTRUCTURE）的方法&lt;/h2&gt;
-&lt;h2 id=&#34;逐节点生成图的方法-1&#34;&gt;逐节点生成图的方法&lt;/h2&gt;
-&lt;h1 id=&#34;基于强化学习的图生成方法&#34;&gt;基于强化学习的图生成方法&lt;/h1&gt;
-&lt;h1 id=&#34;基于生成对抗网络的图生成方法&#34;&gt;基于生成对抗网络的图生成方法&lt;/h1&gt;
-&lt;h2 id=&#34;基于随机游走的方法&#34;&gt;基于随机游走的方法&lt;/h2&gt;
-&lt;h2 id=&#34;基于整个图的方法&#34;&gt;基于整个图的方法&lt;/h2&gt;
-&lt;h3 id=&#34;general-graph-based-adversarial-dggs&#34;&gt;GENERAL GRAPH-BASED ADVERSARIAL DGGs&lt;/h3&gt;
+&lt;h3 id=&#34;不使用rnn的&#34;&gt;不使用RNN的&lt;/h3&gt;
+&lt;h4 id=&#34;基于注意力机制的&#34;&gt;基于注意力机制的&lt;/h4&gt;
+&lt;h4 id=&#34;其他方法&#34;&gt;其他方法&lt;/h4&gt;
+&lt;h2 id=&#34;基于自编码器autoencoder的图生成方法&#34;&gt;基于自编码器（AUTOENCODER）的图生成方法&lt;/h2&gt;
+&lt;h3 id=&#34;一次生成整个图的方法&#34;&gt;一次生成整个图的方法&lt;/h3&gt;
+&lt;h3 id=&#34;基于子结构substructure的方法&#34;&gt;基于子结构（SUBSTRUCTURE）的方法&lt;/h3&gt;
+&lt;h3 id=&#34;逐节点生成图的方法-1&#34;&gt;逐节点生成图的方法&lt;/h3&gt;
+&lt;h2 id=&#34;基于强化学习的图生成方法&#34;&gt;基于强化学习的图生成方法&lt;/h2&gt;
+&lt;h2 id=&#34;基于生成对抗网络的图生成方法&#34;&gt;基于生成对抗网络的图生成方法&lt;/h2&gt;
+&lt;h3 id=&#34;基于随机游走的方法&#34;&gt;基于随机游走的方法&lt;/h3&gt;
+&lt;h3 id=&#34;基于整个图的方法&#34;&gt;基于整个图的方法&lt;/h3&gt;
+&lt;h4 id=&#34;general-graph-based-adversarial-dggs&#34;&gt;GENERAL GRAPH-BASED ADVERSARIAL DGGs&lt;/h4&gt;
 &lt;p&gt;MolGAN&lt;/p&gt;
-&lt;h3 id=&#34;graph-to-graph-translators&#34;&gt;GRAPH-TO-GRAPH TRANSLATORS&lt;/h3&gt;
-&lt;h1 id=&#34;基于流的图生成方法&#34;&gt;基于流的图生成方法&lt;/h1&gt;
+&lt;h4 id=&#34;graph-to-graph-translators&#34;&gt;GRAPH-TO-GRAPH TRANSLATORS&lt;/h4&gt;
+&lt;h2 id=&#34;基于流的图生成方法&#34;&gt;基于流的图生成方法&lt;/h2&gt;
 </description>
       
     </item>
