@@ -1,5 +1,5 @@
 ---
-title: 使用 Cloudflare Workers 解决 OpenAI 和 ChatGPT 的 API 无法访问的问题
+title: 使用 Cloudflare Workers 解决 OpenAI 的 API 无法访问问题
 date: "2023-03-16"
 slug: use-cloudflare-workers-for-openai-api-in-china
 tags:

@@ -85,7 +85,7 @@
     </item>
     
     <item>
-      <title>使用 Cloudflare Workers 解决 OpenAI 和 ChatGPT 的 API 无法访问的问题</title>
+      <title>使用 Cloudflare Workers 解决 OpenAI 的 API 无法访问问题</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/</link>
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       
@@ -184,7 +184,7 @@ Websites-&amp;gt;Add Site
     </item>
     
     <item>
-      <title>docker搭建stable diffusion webui</title>
+      <title>Docker搭建Stable Diffusion Webui</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
       

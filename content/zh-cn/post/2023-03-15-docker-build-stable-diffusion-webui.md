@@ -1,5 +1,5 @@
 ---
-title: docker搭建stable diffusion webui
+title: Docker搭建Stable Diffusion Webui
 date: "2023-03-15"
 slug: docker-build-stable-diffusion-webui
 tags:
