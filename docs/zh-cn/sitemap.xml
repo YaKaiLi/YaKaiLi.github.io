@@ -9,13 +9,6 @@
   </url>
   
   <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/tags/misc/</loc>
-    <lastmod>2023-03-21T18:06:53+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://www.gnn.ac.cn/zh-cn/post/</loc>
     <lastmod>2023-03-21T23:01:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -31,7 +24,7 @@
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/survey/</loc>
-    <lastmod>2023-03-21T18:06:53+08:00</lastmod>
+    <lastmod>2023-03-21T23:01:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -46,6 +39,13 @@
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/</loc>
     <lastmod>2023-03-21T18:06:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/misc/</loc>
+    <lastmod>2023-03-21T17:12:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -289,13 +289,6 @@
   </url>
   
   <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/donate/</loc>
-    <lastmod>2022-11-27T02:42:17+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://www.gnn.ac.cn/zh-cn/subscribe/</loc>
     <lastmod>2022-11-27T15:10:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -304,7 +297,7 @@
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/about/</loc>
-    <lastmod>2023-03-21T16:31:36+08:00</lastmod>
+    <lastmod>2023-03-21T23:07:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

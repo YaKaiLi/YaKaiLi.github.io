@@ -16,5 +16,14 @@
       <description>基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可附加生成条件 公开源码 MolMP 逐节点生成 节点/边 YES 逐节点生成 节点/边 NO 逐节点生成 逐节点生成 使用RNN的方法 逐节点生成图的方法 MolM</description>
     </item>
     
+    <item>
+      <title>基于图的安卓恶意软件检测方法综述</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/graph-based-amd/</link>
+      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/graph-based-amd/</guid>
+      <description>此篇文章只总结已开源或能够找到复现源码的工作。 这些方法之间的区别主要是图嵌入方式。 MalScan MamaDroid 阅读主要关注于算法如何实现的，分为四个阶段：调用图提取、序列提取、构建马尔可夫链和特征向量、分类器。 MaMaDRO</description>
+    </item>
+    
   </channel>
 </rss>
