@@ -115,36 +115,46 @@ Websites-&amp;gt;Add Site
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/</guid>
       
-        <description>&lt;p&gt;docker pull nvidia/cuda:11.7.0-devel-ubuntu22.04&lt;/p&gt;
-&lt;p&gt;docker run &amp;ndash;gpus all -it -d &amp;ndash;name sd -v /home/star5o/software/stable-diffusion-webui:/stable-diffusion-webui -v /home/star5o/dataset:/dataset -p 7860:7860 nvidia/cuda:11.7.0-devel-ubuntu22.04 /bin/bash&lt;/p&gt;
-&lt;p&gt;apt update
-apt install sudo wget git vim&lt;/p&gt;
-&lt;p&gt;adduser sd
-adduser sd sudo&lt;/p&gt;
-&lt;p&gt;apt install software-properties-common -y
-add-apt-repository ppa:deadsnakes/ppa
-apt update
-sudo apt install python3.10
-sudo apt install python3.10-venv&lt;/p&gt;
-&lt;p&gt;vim ~/.bashrc&lt;/p&gt;
+        <description>&lt;h2 id=&#34;环境要求&#34;&gt;环境要求&lt;/h2&gt;
+&lt;p&gt;Docker、docker compose&lt;/p&gt;
+&lt;p&gt;docker compose安装命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt install docker-compose-plugin
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;搭建&#34;&gt;搭建&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;export PATH=/usr/local/cuda/bin:$PATH
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;export PATH=/home/sd/.local/bin:$PATH
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/AbdBarho/stable-diffusion-webui-docker.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; stable-diffusion-webui-docker
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker compose --profile download up --build &lt;span class=&#34;c1&#34;&gt;# 下载模型文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker compose --profile &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;ui&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; up --build &lt;span class=&#34;c1&#34;&gt;# 启动服务&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;方案1使用anaconda&#34;&gt;方案1:使用Anaconda&lt;/h2&gt;
-&lt;p&gt;conda create &amp;ndash;name sd python=3.10.6&lt;/p&gt;
-&lt;p&gt;git clone &lt;a href=&#34;https://github.com/AUTOMATIC1111/stable-diffusion-webui&#34;&gt;https://github.com/AUTOMATIC1111/stable-diffusion-webui&lt;/a&gt;
-cd stable-diffusion-webui
-python launch.py&lt;/p&gt;
-&lt;h2 id=&#34;方案2直接安装python&#34;&gt;方案2:直接安装python&lt;/h2&gt;
+&lt;/div&gt;&lt;h3 id=&#34;ui选择项&#34;&gt;ui选择项&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;invoke&lt;/code&gt;: One of the earliest forks, stunning UI Repo by InvokeAI&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;auto&lt;/code&gt;: The most popular fork, many features with neat UI, Repo by AUTOMATIC1111&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;auto-cpu&lt;/code&gt;: for users without a GPU.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sygil&lt;/code&gt;: Another great fork Repo by Sygil-Dev&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sygil-sl&lt;/code&gt;: A second version of the above using streamlit (still in development, has bugs)&lt;/li&gt;
+&lt;/ul&gt;
 </description>
       
     </item>

@@ -421,7 +421,7 @@ if (!doNotTrack) {
         2023-03-15
       </time>
       
-      <span class="more-meta"> 约 99 字 </span>
+      <span class="more-meta"> 约 129 字 </span>
       <span class="more-meta"> 预计阅读 1 分钟 </span>
       
       
@@ -432,7 +432,7 @@ if (!doNotTrack) {
   <div class="post-content">
     
     <div class="post-summary">
-      docker pull nvidia/cuda:11.7.0-devel-ubuntu22.04 docker run &ndash;gpus all -it -d &ndash;name sd -v /home/star5o/software/stable-diffusion-webui:/stable-diffusion-webui -v /home/star5o/dataset:/dataset -p 7860:7860 nvidia/cuda:11.7.0-devel-ubuntu22.04 /bin/bash apt update apt install sudo wget git vim adduser sd adduser sd sudo apt install software-properties-common -y add-apt-repository ppa:deadsnakes/ppa apt update sudo apt install python3.10 sudo apt install python3.10-venv vim ~/.bashrc 1 2 3 export PATH=/usr/local/cuda/bin:$PATH export PATH=/home/sd/.local/bin:$PATH export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH 方案1:使用Anaconda conda create &ndash;name sd python=3.10.6 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui cd stable-diffusion-webui python launch.py 方案2:直接安装python
+      环境要求 Docker、docker compose docker compose安装命令： 1 apt install docker-compose-plugin 搭建 1 2 3 4 5 6 7 git clone https://github.com/AbdBarho/stable-diffusion-webui-docker.git cd stable-diffusion-webui-docker docker compose --profile download up --build # 下载模型文件 docker compose --profile [ui] up --build # 启动服务 ui选择项 invoke: One of the earliest forks, stunning UI Repo by InvokeAI auto: The most popular fork, many features with neat UI, Repo
     </div>
     <div class="read-more">
       <a href="/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/" class="read-more-link">阅读全文</a>

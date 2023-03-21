@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="star5o" />
-  <meta name="description" content="docker pull nvidia/cuda:11.7.0-devel-ubuntu22.04 docker run &amp;ndash;gpus all -it -d &amp;ndash;name sd -v /home/star5o/software/stable-diffusion-webui:/stable-diffusion-webui -v /home/star5o/dataset:/dataset -p 7860:7860 nvidia/cuda:11.7.0-devel-ubuntu22.04 /bin/bash apt update apt install sudo wget git vim adduser sd adduser sd sudo apt install software-properties-common -y add-apt-repository ppa:deadsnakes/ppa apt update sudo apt install python3.10 sudo apt install python3.10-venv vim ~/.bashrc 1 2 3 export PATH=/usr/local/cuda/bin:$PATH export PATH=/home/sd/.local/bin:$PATH export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH 方案1:使用Anaconda conda create &amp;ndash;name sd python=3.10.6 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui cd stable-diffusion-webui python launch.py 方案2:直接安装python" />
+  <meta name="description" content="环境要求 Docker、docker compose docker compose安装命令： 1 apt install docker-compose-plugin 搭建 1 2 3 4 5 6 7 git clone https://github.com/AbdBarho/stable-diffusion-webui-docker.git cd stable-diffusion-webui-docker docker compose --profile download up --build # 下载模型文件 docker compose --profile [ui] up --build # 启动服务 ui选择项 invoke: One of the earliest forks, stunning UI Repo by InvokeAI auto: The most popular fork, many features with neat UI, Repo" />
 
   <meta name="keywords" content="Star5o, star5o" />
 
@@ -60,19 +60,19 @@
 
 
 <meta property="og:title" content="docker搭建stable diffusion webui" />
-<meta property="og:description" content="docker pull nvidia/cuda:11.7.0-devel-ubuntu22.04 docker run &ndash;gpus all -it -d &ndash;name sd -v /home/star5o/software/stable-diffusion-webui:/stable-diffusion-webui -v /home/star5o/dataset:/dataset -p 7860:7860 nvidia/cuda:11.7.0-devel-ubuntu22.04 /bin/bash apt update apt install sudo wget git vim adduser sd adduser sd sudo apt install software-properties-common -y add-apt-repository ppa:deadsnakes/ppa apt update sudo apt install python3.10 sudo apt install python3.10-venv vim ~/.bashrc 1 2 3 export PATH=/usr/local/cuda/bin:$PATH export PATH=/home/sd/.local/bin:$PATH export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH 方案1:使用Anaconda conda create &ndash;name sd python=3.10.6 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui cd stable-diffusion-webui python launch.py 方案2:直接安装python" />
+<meta property="og:description" content="环境要求 Docker、docker compose docker compose安装命令： 1 apt install docker-compose-plugin 搭建 1 2 3 4 5 6 7 git clone https://github.com/AbdBarho/stable-diffusion-webui-docker.git cd stable-diffusion-webui-docker docker compose --profile download up --build # 下载模型文件 docker compose --profile [ui] up --build # 启动服务 ui选择项 invoke: One of the earliest forks, stunning UI Repo by InvokeAI auto: The most popular fork, many features with neat UI, Repo" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-03-15T00:00:00+00:00" />
 <meta property="article:modified_time" content="2023-03-17T14:24:51+08:00" /><meta property="og:site_name" content="Star5o的博客" />
 
 <meta itemprop="name" content="docker搭建stable diffusion webui">
-<meta itemprop="description" content="docker pull nvidia/cuda:11.7.0-devel-ubuntu22.04 docker run &ndash;gpus all -it -d &ndash;name sd -v /home/star5o/software/stable-diffusion-webui:/stable-diffusion-webui -v /home/star5o/dataset:/dataset -p 7860:7860 nvidia/cuda:11.7.0-devel-ubuntu22.04 /bin/bash apt update apt install sudo wget git vim adduser sd adduser sd sudo apt install software-properties-common -y add-apt-repository ppa:deadsnakes/ppa apt update sudo apt install python3.10 sudo apt install python3.10-venv vim ~/.bashrc 1 2 3 export PATH=/usr/local/cuda/bin:$PATH export PATH=/home/sd/.local/bin:$PATH export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH 方案1:使用Anaconda conda create &ndash;name sd python=3.10.6 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui cd stable-diffusion-webui python launch.py 方案2:直接安装python"><meta itemprop="datePublished" content="2023-03-15T00:00:00+00:00" />
+<meta itemprop="description" content="环境要求 Docker、docker compose docker compose安装命令： 1 apt install docker-compose-plugin 搭建 1 2 3 4 5 6 7 git clone https://github.com/AbdBarho/stable-diffusion-webui-docker.git cd stable-diffusion-webui-docker docker compose --profile download up --build # 下载模型文件 docker compose --profile [ui] up --build # 启动服务 ui选择项 invoke: One of the earliest forks, stunning UI Repo by InvokeAI auto: The most popular fork, many features with neat UI, Repo"><meta itemprop="datePublished" content="2023-03-15T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-03-17T14:24:51+08:00" />
-<meta itemprop="wordCount" content="99">
+<meta itemprop="wordCount" content="129">
 <meta itemprop="keywords" content="Misc,Software," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="docker搭建stable diffusion webui"/>
-<meta name="twitter:description" content="docker pull nvidia/cuda:11.7.0-devel-ubuntu22.04 docker run &ndash;gpus all -it -d &ndash;name sd -v /home/star5o/software/stable-diffusion-webui:/stable-diffusion-webui -v /home/star5o/dataset:/dataset -p 7860:7860 nvidia/cuda:11.7.0-devel-ubuntu22.04 /bin/bash apt update apt install sudo wget git vim adduser sd adduser sd sudo apt install software-properties-common -y add-apt-repository ppa:deadsnakes/ppa apt update sudo apt install python3.10 sudo apt install python3.10-venv vim ~/.bashrc 1 2 3 export PATH=/usr/local/cuda/bin:$PATH export PATH=/home/sd/.local/bin:$PATH export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH 方案1:使用Anaconda conda create &ndash;name sd python=3.10.6 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui cd stable-diffusion-webui python launch.py 方案2:直接安装python"/>
+<meta name="twitter:description" content="环境要求 Docker、docker compose docker compose安装命令： 1 apt install docker-compose-plugin 搭建 1 2 3 4 5 6 7 git clone https://github.com/AbdBarho/stable-diffusion-webui-docker.git cd stable-diffusion-webui-docker docker compose --profile download up --build # 下载模型文件 docker compose --profile [ui] up --build # 启动服务 ui选择项 invoke: One of the earliest forks, stunning UI Repo by InvokeAI auto: The most popular fork, many features with neat UI, Repo"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -382,7 +382,7 @@ if (!doNotTrack) {
           2023-03-15
         </time>
         
-        <span class="more-meta"> 约 99 字 </span>
+        <span class="more-meta"> 约 129 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
 
         
@@ -404,8 +404,12 @@ if (!doNotTrack) {
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#方案1使用anaconda">方案1:使用Anaconda</a></li>
-    <li><a href="#方案2直接安装python">方案2:直接安装python</a></li>
+    <li><a href="#环境要求">环境要求</a></li>
+    <li><a href="#搭建">搭建</a>
+      <ul>
+        <li><a href="#ui选择项">ui选择项</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -413,36 +417,46 @@ if (!doNotTrack) {
 
     
     <div class="post-content">
-      <p>docker pull nvidia/cuda:11.7.0-devel-ubuntu22.04</p>
-<p>docker run &ndash;gpus all -it -d &ndash;name sd -v /home/star5o/software/stable-diffusion-webui:/stable-diffusion-webui -v /home/star5o/dataset:/dataset -p 7860:7860 nvidia/cuda:11.7.0-devel-ubuntu22.04 /bin/bash</p>
-<p>apt update
-apt install sudo wget git vim</p>
-<p>adduser sd
-adduser sd sudo</p>
-<p>apt install software-properties-common -y
-add-apt-repository ppa:deadsnakes/ppa
-apt update
-sudo apt install python3.10
-sudo apt install python3.10-venv</p>
-<p>vim ~/.bashrc</p>
+      <h2 id="环境要求">环境要求</h2>
+<p>Docker、docker compose</p>
+<p>docker compose安装命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">apt install docker-compose-plugin
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="搭建">搭建</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">export PATH=/usr/local/cuda/bin:$PATH
-</span></span><span class="line"><span class="cl">export PATH=/home/sd/.local/bin:$PATH
-</span></span><span class="line"><span class="cl">export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git clone https://github.com/AbdBarho/stable-diffusion-webui-docker.git
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> stable-diffusion-webui-docker
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker compose --profile download up --build <span class="c1"># 下载模型文件</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker compose --profile <span class="o">[</span>ui<span class="o">]</span> up --build <span class="c1"># 启动服务</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="方案1使用anaconda">方案1:使用Anaconda</h2>
-<p>conda create &ndash;name sd python=3.10.6</p>
-<p>git clone <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">https://github.com/AUTOMATIC1111/stable-diffusion-webui</a>
-cd stable-diffusion-webui
-python launch.py</p>
-<h2 id="方案2直接安装python">方案2:直接安装python</h2>
+</div><h3 id="ui选择项">ui选择项</h3>
+<ul>
+<li><code>invoke</code>: One of the earliest forks, stunning UI Repo by InvokeAI</li>
+<li><code>auto</code>: The most popular fork, many features with neat UI, Repo by AUTOMATIC1111</li>
+<li><code>auto-cpu</code>: for users without a GPU.</li>
+<li><code>sygil</code>: Another great fork Repo by Sygil-Dev</li>
+<li><code>sygil-sl</code>: A second version of the above using streamlit (still in development, has bugs)</li>
+</ul>
 
     </div>
 

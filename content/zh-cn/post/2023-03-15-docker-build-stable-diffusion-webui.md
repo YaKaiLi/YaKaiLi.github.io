@@ -6,37 +6,30 @@ tags:
   - Misc
   - Software
 ---
+## 环境要求
+Docker、docker compose
 
-docker pull nvidia/cuda:11.7.0-devel-ubuntu22.04
-
-docker run --gpus all -it -d --name sd -v /home/star5o/software/stable-diffusion-webui:/stable-diffusion-webui -v /home/star5o/dataset:/dataset -p 7860:7860 nvidia/cuda:11.7.0-devel-ubuntu22.04 /bin/bash
-
-apt update
-apt install sudo wget git vim
-
-adduser sd 
-adduser sd sudo
-
-apt install software-properties-common -y
-add-apt-repository ppa:deadsnakes/ppa
-apt update
-sudo apt install python3.10
-sudo apt install python3.10-venv
-
-vim ~/.bashrc
-```
-export PATH=/usr/local/cuda/bin:$PATH
-export PATH=/home/sd/.local/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+docker compose安装命令：
+```shell
+apt install docker-compose-plugin
 ```
 
-## 方案1:使用Anaconda
-conda create --name sd python=3.10.6
+## 搭建
 
-git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
-cd stable-diffusion-webui
-python launch.py
+```shell
+git clone https://github.com/AbdBarho/stable-diffusion-webui-docker.git
 
-## 方案2:直接安装python
+cd stable-diffusion-webui-docker
 
+docker compose --profile download up --build # 下载模型文件
+
+docker compose --profile [ui] up --build # 启动服务
+```
+
+### ui选择项
+- `invoke`: One of the earliest forks, stunning UI Repo by InvokeAI
+- `auto`: The most popular fork, many features with neat UI, Repo by AUTOMATIC1111
+- `auto-cpu`: for users without a GPU.
+- `sygil`: Another great fork Repo by Sygil-Dev
+- `sygil-sl`: A second version of the above using streamlit (still in development, has bugs)
 
