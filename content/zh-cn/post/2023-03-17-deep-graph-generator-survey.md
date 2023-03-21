@@ -9,12 +9,33 @@ tags:
 
 ## 基于自回归（AUTOREGRESSIVE）的图生成方法
 
-|     方法      |  生成策略  | 特征类型 | 可附加生成条件 | 公开源码 |
-| :-----------: | :--------: | :------: | :------------: | -------- |
-| MolMP[^MolMP] | 逐节点生成 | 节点/边  |      YES       |          |
-|               | 逐节点生成 | 节点/边  |       NO       |          |
-|               | 逐节点生成 |          |                |          |
-|               | 逐节点生成 |          |                |          |
+|               方法               |  生成策略  | 特征类型 | 可生成多维特征 | 可附加生成条件 | 公开源码 |
+| :------------------------------: | :--------: | :------: | :------------: | :------------: | :------: |
+|         MolMP[^MolMPRNN]         | 逐节点生成 | 节点/边  |                |      YES       |   Yes    |
+|        MolRNN[^MolMPRNN]         | 逐节点生成 | 节点/边  |                |      YES       |   Yes    |
+|       GraphRNN[^GraphRNN]        | 逐节点生成 |    -     |                |       No       |   Yes    |
+|   MolecularRNN[^MolecularRNN]    | 逐节点生成 | 节点/边  |                |       No       |   Yes    |
+| D.Bacciu等人[^Bacciu1][^Bacciu2] |  逐边生成  |    -     |                |       No       |   Yes    |
+|       GraphGen[^GraphGen]        |  逐边生成  | 节点/边  |                |       No       |   Yes    |
+|           GRAN[^GRAN]            | 逐子图生成 |    -     |                |       No       |   Yes    |
+|           GRAM[^GRAM]            | 逐节点生成 | 节点/边  |                |       No       |   Yes    |
+|            AGE[^AGE]             | 逐节点生成 |   节点   |                |      Yes       |   Yes    |
+|        DeepGMG[^DeepGMG]         | 逐节点生成 | 节点/边  |                |      Yes       |    No    |
+|          BigGG[^BigGG]           | 逐节点生成 |    -     |                |       No       |   Yes    |
+
+[^MolMPRNN]: Li Y, Zhang L, Liu Z. Multi-objective de novo drug design with conditional graph generative model[J]. Journal of cheminformatics, 2018, 10: 1-24.
+[^GraphRNN]: You J, Ying R, Ren X, et al. Graphrnn: Generating realistic graphs with deep auto-regressive models[C]//International conference on machine learning. PMLR, 2018: 5708-5717.
+[^MolecularRNN]: Popova M, Shvets M, Oliva J, et al. MolecularRNN: Generating realistic molecular graphs with optimized properties[J]. arXiv preprint arXiv:1905.13372, 2019.
+[^Bacciu1]: Bacciu D, Micheli A, Podda M. Graph generation by sequential edge prediction[C]//ESANN. 2019, 2019: 95-100. 
+[^Bacciu2]: Bacciu D, Micheli A, Podda M. Edge-based sequential graph generation with recurrent neural networks[J]. Neurocomputing, 2020, 416: 177-189.
+[^GraphGen]: Goyal N, Jain H V, Ranu S. GraphGen: a scalable approach to domain-agnostic labeled graph generation[C]//Proceedings of The Web Conference 2020. 2020: 1253-1263.
+[^GRAN]: Liao R, Li Y, Song Y, et al. Efficient graph generation with graph recurrent attention networks[J]. Advances in neural information processing systems, 2019, 32.
+[^GRAM]: Kawai W, Mukuta Y, Harada T. Scalable generative models for graphs with graph attention mechanism[J]. arXiv preprint arXiv:1906.01861, 2019.
+[^AGE]: Fan S, Huang B. Attention-based graph evolution[C]//Advances in Knowledge Discovery and Data Mining: 24th Pacific-Asia Conference, PAKDD 2020, Singapore, May 11–14, 2020, Proceedings, Part I 24. Springer International Publishing, 2020: 436-447.
+[^DeepGMG]: Li Y, Vinyals O, Dyer C, et al. Learning deep generative models of graphs[J]. arXiv preprint arXiv:1803.03324, 2018.
+[^BigGG]: Dai H, Nazi A, Li Y, et al. Scalable deep generative modeling for sparse graphs[C]//International conference on machine learning. PMLR, 2020: 2302-2312.
+
+
 
 ### 使用RNN的方法
 #### 逐节点生成图的方法
@@ -47,4 +68,3 @@ MolGAN
 ## 基于流的图生成方法
 
 
-[^MolMP]: 我目前使用 Feedly。

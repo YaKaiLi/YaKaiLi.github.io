@@ -13,7 +13,7 @@
       <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/</guid>
-      <description>基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可附加生成条件 公开源码 MolMP1 逐节点生成 节点/边 YES 逐节点生成 节点/边 NO 逐节点生成 逐节点生成 使用RNN的方法 逐节点生成图的方法 MolM</description>
+      <description>基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可生成多维特征 可附加生成条件 公开源码 MolMP1 逐节点生成 节点/边 YES Yes MolRNN1 逐节点生成 节点/边 YES Yes GraphRNN2 逐节点生成 - No Yes MolecularRNN3 逐节点生成 节点/边 No Yes</description>
     </item>
     
     <item>
