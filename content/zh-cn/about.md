@@ -8,11 +8,11 @@ title: 关于
 
 ## 自我介绍
 
-我叫李亚凯。
+我是李亚凯。
 
-## 网站帐号
+## 网站
 
-请看我的 [GitHub 主页](https://github.com/YakaiLi)。
+[GitHub 主页](https://github.com/YakaiLi)。
 
 
 ## 本站架构
