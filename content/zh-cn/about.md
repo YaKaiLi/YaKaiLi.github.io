@@ -28,3 +28,7 @@ title: 关于
 主要参考了Cyrus Yip｜叶寻的博客
 
 - GitHub（[源代码](https://github.com/CyrusYip/cyrusyip-blog)）
+
+## 友情链接
+
+- caijiqhx（[博客网址](https://notes.caijiqhx.top)）
