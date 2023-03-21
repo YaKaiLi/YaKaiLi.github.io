@@ -11,13 +11,10 @@ https://github.com/noobnooc/noobnooc/discussions/9
 
 主要流程（步骤3和4可省略）：
 
-1、新建一个 Cloudflare Worker
-
-2、将 https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6 里的代码粘贴到 Worker 中并部署
-
-3、给 Worker 绑定一个域名
-
-4、使用自己的域名代替 api.openai.com
+1. 新建一个 Cloudflare Worker
+2. 将 https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6 里的代码粘贴到 Worker 中并部署
+3. 给 Worker 绑定一个域名
+4. 使用自己的域名代替 api.openai.com
 
 ## 域名托管转到Cloudflare
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_ixpjzt/2023/03/16/21-18-33-6ee6a9f8538bfb65ab6a4a18afaac7fe-a3b82d.png)
