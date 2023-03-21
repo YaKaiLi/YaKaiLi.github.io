@@ -423,18 +423,18 @@
         <div class="post-content">
           <p>此篇文章只总结已开源或能够找到复现源码的工作。</p>
 <p>这些方法之间的区别主要是图嵌入方式。</p>
-<h1 id="malscan">MalScan</h1>
-<h1 id="mamadroid">MamaDroid</h1>
+<h2 id="malscan">MalScan</h2>
+<h2 id="mamadroid">MamaDroid</h2>
 <p>阅读主要关注于算法如何实现的，分为四个阶段：调用图提取、序列提取、构建马尔可夫链和特征向量、分类器。</p>
 <p>MaMaDROID不使用原始API调用序列，而是将每个调用抽象为其包或其族。</p>
 <p><img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2022/11/28/21-50-42-98fe24fe906cbdc4c9e1bb91275551b9-0e11e0.png" alt=""></p>
-<h2 id="调用图提取">调用图提取</h2>
+<h3 id="调用图提取">调用图提取</h3>
 <p>Soot工具用于提取函数调用图，FlowDroid工具用于确保上下文和流是被保留的。</p>
-<h2 id="序列提取">序列提取</h2>
+<h3 id="序列提取">序列提取</h3>
 <p>有了调用图之后从调用图中提取API调用序列。</p>
 <p>首先，标识调用图中的一组入口节点，即没有传入边的节点（例如，如果app中没有来自任何其他调用的传入边，则图2中代码段中的执行方法是入口节点）。然后，它枚举从每个入口节点可以到达的路径。在此阶段确定的所有路径集构成API调用序列，用于构建马尔可夫链行为模型和提取特征（参见第II-D节）。</p>
-<h2 id="构建马尔可夫链和特征向量">构建马尔可夫链和特征向量</h2>
-<h2 id="分类器">分类器</h2>
+<h3 id="构建马尔可夫链和特征向量">构建马尔可夫链和特征向量</h3>
+<h3 id="分类器">分类器</h3>
 <p>随机森林、1近邻（1-NN）、3近邻（3-NN）和支持向量机（SVM）</p>
 
         </div>
@@ -585,10 +585,15 @@
     <div class="toc-content custom-scrollbar">
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#调用图提取">调用图提取</a></li>
-    <li><a href="#序列提取">序列提取</a></li>
-    <li><a href="#构建马尔可夫链和特征向量">构建马尔可夫链和特征向量</a></li>
-    <li><a href="#分类器">分类器</a></li>
+    <li><a href="#malscan">MalScan</a></li>
+    <li><a href="#mamadroid">MamaDroid</a>
+      <ul>
+        <li><a href="#调用图提取">调用图提取</a></li>
+        <li><a href="#序列提取">序列提取</a></li>
+        <li><a href="#构建马尔可夫链和特征向量">构建马尔可夫链和特征向量</a></li>
+        <li><a href="#分类器">分类器</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
