@@ -180,7 +180,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;节点&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;GraphVAE&lt;/strong&gt; [⑤1]&lt;/td&gt;
@@ -188,7 +188,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;一次生成整个图&lt;/strong&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;节点/边&lt;/strong&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;No&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -197,8 +197,8 @@
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;一次生成整个图&lt;/strong&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;节点/边&lt;/strong&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;No&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;RGVAE [53]&lt;/td&gt;
@@ -206,7 +206,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;一次生成整个图&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;No&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -216,7 +216,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;节点&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;NED-VAE [55]&lt;/td&gt;
@@ -225,7 +225,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;DGVAE [56]&lt;/td&gt;
@@ -234,7 +234,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;节点&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;JTVAE [57]&lt;/td&gt;
@@ -243,7 +243,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;HierVAE&lt;/strong&gt; [37]&lt;/td&gt;
@@ -261,7 +261,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;MoleculeChef [38]&lt;/td&gt;
@@ -270,7 +270,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;CGVAE [39]&lt;/td&gt;
@@ -279,7 +279,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;DEFactor [40]&lt;/td&gt;
@@ -287,8 +287,8 @@
 &lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;No&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;NeVAE [59]&lt;/td&gt;
@@ -297,7 +297,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;GraphVRNN [41]&lt;/td&gt;
@@ -305,7 +305,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;节点&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;No&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;

@@ -72,11 +72,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-03-17T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-03-22T22:35:30+08:00" /><meta property="og:site_name" content="Star5o的博客" />
+<meta property="article:modified_time" content="2023-03-22T22:47:40+08:00" /><meta property="og:site_name" content="Star5o的博客" />
 
 <meta itemprop="name" content="图生成方法综述">
 <meta itemprop="description" content="我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数，并且支持添加生成约束条件的图生成方法。因此进行了一系列调研，总结如下。 主要参考了文章《Deep Graph Generators: A Survey》1 基于自回归（Autor"><meta itemprop="datePublished" content="2023-03-17T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-03-22T22:35:30+08:00" />
+<meta itemprop="dateModified" content="2023-03-22T22:47:40+08:00" />
 <meta itemprop="wordCount" content="1335">
 <meta itemprop="keywords" content="Deep-learning,Survey," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="图生成方法综述"/>
@@ -541,7 +541,7 @@
 <td style="text-align:center">节点</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
 </tr>
 <tr>
 <td style="text-align:center"><strong>GraphVAE</strong> [⑤1]</td>
@@ -549,7 +549,7 @@
 <td style="text-align:center"><strong>一次生成整个图</strong></td>
 <td style="text-align:center"><strong>节点/边</strong></td>
 <td style="text-align:center">-</td>
-<td style="text-align:center"><strong>No</strong></td>
+<td style="text-align:center"><strong>Yes</strong></td>
 <td style="text-align:center"><strong>Yes</strong></td>
 </tr>
 <tr>
@@ -558,8 +558,8 @@
 <td style="text-align:center"><strong>一次生成整个图</strong></td>
 <td style="text-align:center"><strong>节点/边</strong></td>
 <td style="text-align:center">-</td>
-<td style="text-align:center"><strong>Yes</strong></td>
 <td style="text-align:center"><strong>No</strong></td>
+<td style="text-align:center"><strong>Yes</strong></td>
 </tr>
 <tr>
 <td style="text-align:center">RGVAE [53]</td>
@@ -567,7 +567,7 @@
 <td style="text-align:center">一次生成整个图</td>
 <td style="text-align:center">节点/边</td>
 <td style="text-align:center">-</td>
-<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
 <td style="text-align:center">No</td>
 </tr>
 <tr>
@@ -577,7 +577,7 @@
 <td style="text-align:center">节点</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
 </tr>
 <tr>
 <td style="text-align:center">NED-VAE [55]</td>
@@ -586,7 +586,7 @@
 <td style="text-align:center">节点/边</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
 </tr>
 <tr>
 <td style="text-align:center">DGVAE [56]</td>
@@ -595,7 +595,7 @@
 <td style="text-align:center">节点</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
 </tr>
 <tr>
 <td style="text-align:center">JTVAE [57]</td>
@@ -604,7 +604,7 @@
 <td style="text-align:center">节点/边</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
 </tr>
 <tr>
 <td style="text-align:center"><strong>HierVAE</strong> [37]</td>
@@ -622,7 +622,7 @@
 <td style="text-align:center">节点/边</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
 </tr>
 <tr>
 <td style="text-align:center">MoleculeChef [38]</td>
@@ -631,7 +631,7 @@
 <td style="text-align:center">节点/边</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
 </tr>
 <tr>
 <td style="text-align:center">CGVAE [39]</td>
@@ -640,7 +640,7 @@
 <td style="text-align:center">节点/边</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
 </tr>
 <tr>
 <td style="text-align:center">DEFactor [40]</td>
@@ -648,8 +648,8 @@
 <td style="text-align:center">逐节点生成</td>
 <td style="text-align:center">节点/边</td>
 <td style="text-align:center">-</td>
-<td style="text-align:center">Yes</td>
 <td style="text-align:center">No</td>
+<td style="text-align:center">Yes</td>
 </tr>
 <tr>
 <td style="text-align:center">NeVAE [59]</td>
@@ -658,7 +658,7 @@
 <td style="text-align:center">节点/边</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center">Yes</td>
-<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
 </tr>
 <tr>
 <td style="text-align:center">GraphVRNN [41]</td>
@@ -666,7 +666,7 @@
 <td style="text-align:center">逐节点生成</td>
 <td style="text-align:center">节点</td>
 <td style="text-align:center">-</td>
-<td style="text-align:center">Yes</td>
+<td style="text-align:center">No</td>
 <td style="text-align:center">No</td>
 </tr>
 <tr>
