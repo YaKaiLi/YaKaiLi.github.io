@@ -13,7 +13,7 @@
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</guid>
-      <description>前言 先前使用腾讯云的CDN小文件加速github pages，更新博客之后总是需要刷新缓存，使用有些不便，因此切换为阿里云DCDN全站加速。 添加域名和IP 配置CNAME 开启HTTPS 至此便完成加速配置，</description>
+      <description>前言 先前使用腾讯云的CDN小文件加速github pages，更新博客之后总是需要刷新缓存，使用有些不便，因此切换为阿里云DCDN全站加速。 添加域名和IP 配置CNAME 开启HTTPS 购买资源包 至此便完成</description>
     </item>
     
     <item>

@@ -21,5 +21,10 @@ tags:
 ## 开启HTTPS
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_IInoSE/2023/03/22/15-20-41-0df04bba76acaa78d57c8db1b69103b6-b58b91.png)
 
+
+## 购买资源包
+![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_lLC4kH/2023/03/22/15-31-54-fdd12efffb142969cd550fd8254e9749-e0de6b.png)
+![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_CbwsgS/2023/03/22/15-31-35-46894c7bf725d81e0d880f16468b33c0-c97190.png)
+
 至此便完成加速配置，阿里云比腾讯云配置要简洁很多。
 
