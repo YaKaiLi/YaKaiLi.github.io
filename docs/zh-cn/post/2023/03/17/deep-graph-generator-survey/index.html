@@ -29,7 +29,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="star5o" />
-  <meta name="description" content="基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可生成多维特征 可附加生成条件 公开源码 MolMP1 逐节点生成 节点/边 YES Yes MolRNN1 逐节点生成 节点/边 YES Yes GraphRNN2 逐节点生成 - No Yes MolecularRNN3 逐节点生成 节点/边 No Yes" />
+  <meta name="description" content="我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数的图生成方法。因此进行了一系列调研，总结如下。 主要参考了文章《Deep Graph Generators: A Survey》1 基于自回归（Autoregressive）的图生" />
 
   <meta name="keywords" content="Star5o, star5o" />
 
@@ -68,19 +68,19 @@
 
 
 <meta property="og:title" content="图生成方法综述" />
-<meta property="og:description" content="基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可生成多维特征 可附加生成条件 公开源码 MolMP1 逐节点生成 节点/边 YES Yes MolRNN1 逐节点生成 节点/边 YES Yes GraphRNN2 逐节点生成 - No Yes MolecularRNN3 逐节点生成 节点/边 No Yes" />
+<meta property="og:description" content="我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数的图生成方法。因此进行了一系列调研，总结如下。 主要参考了文章《Deep Graph Generators: A Survey》1 基于自回归（Autoregressive）的图生" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-03-17T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-03-21T23:17:10+08:00" /><meta property="og:site_name" content="Star5o的博客" />
+<meta property="article:modified_time" content="2023-03-22T00:04:17+08:00" /><meta property="og:site_name" content="Star5o的博客" />
 
 <meta itemprop="name" content="图生成方法综述">
-<meta itemprop="description" content="基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可生成多维特征 可附加生成条件 公开源码 MolMP1 逐节点生成 节点/边 YES Yes MolRNN1 逐节点生成 节点/边 YES Yes GraphRNN2 逐节点生成 - No Yes MolecularRNN3 逐节点生成 节点/边 No Yes"><meta itemprop="datePublished" content="2023-03-17T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-03-21T23:17:10+08:00" />
-<meta itemprop="wordCount" content="626">
+<meta itemprop="description" content="我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数的图生成方法。因此进行了一系列调研，总结如下。 主要参考了文章《Deep Graph Generators: A Survey》1 基于自回归（Autoregressive）的图生"><meta itemprop="datePublished" content="2023-03-17T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-03-22T00:04:17+08:00" />
+<meta itemprop="wordCount" content="721">
 <meta itemprop="keywords" content="Deep-learning,Survey," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="图生成方法综述"/>
-<meta name="twitter:description" content="基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可生成多维特征 可附加生成条件 公开源码 MolMP1 逐节点生成 节点/边 YES Yes MolRNN1 逐节点生成 节点/边 YES Yes GraphRNN2 逐节点生成 - No Yes MolecularRNN3 逐节点生成 节点/边 No Yes"/>
+<meta name="twitter:description" content="我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数的图生成方法。因此进行了一系列调研，总结如下。 主要参考了文章《Deep Graph Generators: A Survey》1 基于自回归（Autoregressive）的图生"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -376,14 +376,14 @@
   
     <div class="post-meta-lastmod">
       (上次更新:
-      2023-03-21)
+      2023-03-22)
     </div>
   
 
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 626 字 -
+        约 721 字 -
         预计阅读 2 分钟
       </span>
 
@@ -403,7 +403,9 @@
 
         
         <div class="post-content">
-          <h2 id="基于自回归autoregressive的图生成方法">基于自回归（AUTOREGRESSIVE）的图生成方法</h2>
+          <p>我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数的图生成方法。因此进行了一系列调研，总结如下。</p>
+<p>主要参考了文章《Deep Graph Generators: A Survey》<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<h2 id="基于自回归autoregressive的图生成方法">基于自回归（Autoregressive）的图生成方法</h2>
 <table>
 <thead>
 <tr>
@@ -417,7 +419,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">MolMP<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></td>
+<td style="text-align:center">MolMP<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
 <td style="text-align:center">逐节点生成</td>
 <td style="text-align:center">节点/边</td>
 <td style="text-align:center"></td>
@@ -425,7 +427,7 @@
 <td style="text-align:center">Yes</td>
 </tr>
 <tr>
-<td style="text-align:center">MolRNN<sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></td>
+<td style="text-align:center">MolRNN<sup id="fnref1:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
 <td style="text-align:center">逐节点生成</td>
 <td style="text-align:center">节点/边</td>
 <td style="text-align:center"></td>
@@ -433,7 +435,7 @@
 <td style="text-align:center">Yes</td>
 </tr>
 <tr>
-<td style="text-align:center">GraphRNN<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
+<td style="text-align:center">GraphRNN<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
 <td style="text-align:center">逐节点生成</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center"></td>
@@ -441,7 +443,7 @@
 <td style="text-align:center">Yes</td>
 </tr>
 <tr>
-<td style="text-align:center">MolecularRNN<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
+<td style="text-align:center">MolecularRNN<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></td>
 <td style="text-align:center">逐节点生成</td>
 <td style="text-align:center">节点/边</td>
 <td style="text-align:center"></td>
@@ -449,7 +451,7 @@
 <td style="text-align:center">Yes</td>
 </tr>
 <tr>
-<td style="text-align:center">D.Bacciu等人<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></td>
+<td style="text-align:center">D.Bacciu等人<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup><sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></td>
 <td style="text-align:center">逐边生成</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center"></td>
@@ -457,7 +459,7 @@
 <td style="text-align:center">Yes</td>
 </tr>
 <tr>
-<td style="text-align:center">GraphGen<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></td>
+<td style="text-align:center">GraphGen<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></td>
 <td style="text-align:center">逐边生成</td>
 <td style="text-align:center">节点/边</td>
 <td style="text-align:center"></td>
@@ -465,7 +467,7 @@
 <td style="text-align:center">Yes</td>
 </tr>
 <tr>
-<td style="text-align:center">GRAN<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></td>
+<td style="text-align:center">GRAN<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></td>
 <td style="text-align:center">逐子图生成</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center"></td>
@@ -473,7 +475,7 @@
 <td style="text-align:center">Yes</td>
 </tr>
 <tr>
-<td style="text-align:center">GRAM<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></td>
+<td style="text-align:center">GRAM<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></td>
 <td style="text-align:center">逐节点生成</td>
 <td style="text-align:center">节点/边</td>
 <td style="text-align:center"></td>
@@ -481,7 +483,7 @@
 <td style="text-align:center">Yes</td>
 </tr>
 <tr>
-<td style="text-align:center">AGE<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></td>
+<td style="text-align:center">AGE<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup></td>
 <td style="text-align:center">逐节点生成</td>
 <td style="text-align:center">节点</td>
 <td style="text-align:center"></td>
@@ -489,7 +491,7 @@
 <td style="text-align:center">Yes</td>
 </tr>
 <tr>
-<td style="text-align:center">DeepGMG<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup></td>
+<td style="text-align:center">DeepGMG<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup></td>
 <td style="text-align:center">逐节点生成</td>
 <td style="text-align:center">节点/边</td>
 <td style="text-align:center"></td>
@@ -497,7 +499,7 @@
 <td style="text-align:center">No</td>
 </tr>
 <tr>
-<td style="text-align:center">BigGG<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup></td>
+<td style="text-align:center">BigGG<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup></td>
 <td style="text-align:center">逐节点生成</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center"></td>
@@ -514,9 +516,9 @@
 <h3 id="不使用rnn的">不使用RNN的</h3>
 <h4 id="基于注意力机制的">基于注意力机制的</h4>
 <h4 id="其他方法">其他方法</h4>
-<h2 id="基于自编码器autoencoder的图生成方法">基于自编码器（AUTOENCODER）的图生成方法</h2>
+<h2 id="基于自编码器autoencoder的图生成方法">基于自编码器（Autoencoder）的图生成方法</h2>
 <h3 id="一次生成整个图的方法">一次生成整个图的方法</h3>
-<h3 id="基于子结构substructure的方法">基于子结构（SUBSTRUCTURE）的方法</h3>
+<h3 id="基于子结构substructure的方法">基于子结构（Substructure）的方法</h3>
 <h3 id="逐节点生成图的方法-1">逐节点生成图的方法</h3>
 <h2 id="基于强化学习的图生成方法">基于强化学习的图生成方法</h2>
 <h2 id="基于生成对抗网络的图生成方法">基于生成对抗网络的图生成方法</h2>
@@ -530,37 +532,40 @@
 <hr>
 <ol>
 <li id="fn:1">
-<p>Li Y, Zhang L, Liu Z. Multi-objective de novo drug design with conditional graph generative model[J]. Journal of cheminformatics, 2018, 10: 1-24.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Faez F, Ommi Y, Baghshah M S, et al. Deep graph generators: A survey[J]. IEEE Access, 2021, 9: 106675-106702.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2">
-<p>You J, Ying R, Ren X, et al. Graphrnn: Generating realistic graphs with deep auto-regressive models[C]//International conference on machine learning. PMLR, 2018: 5708-5717.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Li Y, Zhang L, Liu Z. Multi-objective de novo drug design with conditional graph generative model[J]. Journal of cheminformatics, 2018, 10: 1-24.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3">
-<p>Popova M, Shvets M, Oliva J, et al. MolecularRNN: Generating realistic molecular graphs with optimized properties[J]. arXiv preprint arXiv:1905.13372, 2019.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>You J, Ying R, Ren X, et al. Graphrnn: Generating realistic graphs with deep auto-regressive models[C]//International conference on machine learning. PMLR, 2018: 5708-5717.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4">
-<p>Bacciu D, Micheli A, Podda M. Graph generation by sequential edge prediction[C]//ESANN. 2019, 2019: 95-100.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Popova M, Shvets M, Oliva J, et al. MolecularRNN: Generating realistic molecular graphs with optimized properties[J]. arXiv preprint arXiv:1905.13372, 2019.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5">
-<p>Bacciu D, Micheli A, Podda M. Edge-based sequential graph generation with recurrent neural networks[J]. Neurocomputing, 2020, 416: 177-189.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Bacciu D, Micheli A, Podda M. Graph generation by sequential edge prediction[C]//ESANN. 2019, 2019: 95-100.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6">
-<p>Goyal N, Jain H V, Ranu S. GraphGen: a scalable approach to domain-agnostic labeled graph generation[C]//Proceedings of The Web Conference 2020. 2020: 1253-1263.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Bacciu D, Micheli A, Podda M. Edge-based sequential graph generation with recurrent neural networks[J]. Neurocomputing, 2020, 416: 177-189.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7">
-<p>Liao R, Li Y, Song Y, et al. Efficient graph generation with graph recurrent attention networks[J]. Advances in neural information processing systems, 2019, 32.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Goyal N, Jain H V, Ranu S. GraphGen: a scalable approach to domain-agnostic labeled graph generation[C]//Proceedings of The Web Conference 2020. 2020: 1253-1263.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:8">
-<p>Kawai W, Mukuta Y, Harada T. Scalable generative models for graphs with graph attention mechanism[J]. arXiv preprint arXiv:1906.01861, 2019.&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Liao R, Li Y, Song Y, et al. Efficient graph generation with graph recurrent attention networks[J]. Advances in neural information processing systems, 2019, 32.&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:9">
-<p>Fan S, Huang B. Attention-based graph evolution[C]//Advances in Knowledge Discovery and Data Mining: 24th Pacific-Asia Conference, PAKDD 2020, Singapore, May 11–14, 2020, Proceedings, Part I 24. Springer International Publishing, 2020: 436-447.&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Kawai W, Mukuta Y, Harada T. Scalable generative models for graphs with graph attention mechanism[J]. arXiv preprint arXiv:1906.01861, 2019.&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:10">
-<p>Li Y, Vinyals O, Dyer C, et al. Learning deep generative models of graphs[J]. arXiv preprint arXiv:1803.03324, 2018.&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Fan S, Huang B. Attention-based graph evolution[C]//Advances in Knowledge Discovery and Data Mining: 24th Pacific-Asia Conference, PAKDD 2020, Singapore, May 11–14, 2020, Proceedings, Part I 24. Springer International Publishing, 2020: 436-447.&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:11">
-<p>Dai H, Nazi A, Li Y, et al. Scalable deep generative modeling for sparse graphs[C]//International conference on machine learning. PMLR, 2020: 2302-2312.&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Li Y, Vinyals O, Dyer C, et al. Learning deep generative models of graphs[J]. arXiv preprint arXiv:1803.03324, 2018.&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:12">
+<p>Dai H, Nazi A, Li Y, et al. Scalable deep generative modeling for sparse graphs[C]//International conference on machine learning. PMLR, 2020: 2302-2312.&#160;<a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>
@@ -577,7 +582,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2023-03-21
+      2023-03-22
       
         
         
@@ -608,6 +613,19 @@
           
           <nav class="post-nav">
             
+              <a class="prev" href="/zh-cn/post/2023/03/22/tencent-ecdn-speeds-up-gitpages-speed/">
+                
+                <i class="iconfont">
+                  <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+                </i>
+                <span class="prev-text nav-default">腾讯云ECDN加速hugo的github pages</span>
+                <span class="prev-text nav-mobile">上一篇</span>
+              </a>
             
               <a class="next" href="/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/">
                 <span class="next-text nav-default">使用 Cloudflare Workers 解决 OpenAI 的 API 无法访问问题</span>
@@ -699,7 +717,7 @@
     <div class="toc-content custom-scrollbar">
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#基于自回归autoregressive的图生成方法">基于自回归（AUTOREGRESSIVE）的图生成方法</a>
+    <li><a href="#基于自回归autoregressive的图生成方法">基于自回归（Autoregressive）的图生成方法</a>
       <ul>
         <li><a href="#使用rnn的方法">使用RNN的方法</a>
           <ul>
@@ -715,10 +733,10 @@
         </li>
       </ul>
     </li>
-    <li><a href="#基于自编码器autoencoder的图生成方法">基于自编码器（AUTOENCODER）的图生成方法</a>
+    <li><a href="#基于自编码器autoencoder的图生成方法">基于自编码器（Autoencoder）的图生成方法</a>
       <ul>
         <li><a href="#一次生成整个图的方法">一次生成整个图的方法</a></li>
-        <li><a href="#基于子结构substructure的方法">基于子结构（SUBSTRUCTURE）的方法</a></li>
+        <li><a href="#基于子结构substructure的方法">基于子结构（Substructure）的方法</a></li>
         <li><a href="#逐节点生成图的方法-1">逐节点生成图的方法</a></li>
       </ul>
     </li>

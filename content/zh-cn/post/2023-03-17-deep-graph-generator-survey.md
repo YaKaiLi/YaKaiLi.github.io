@@ -6,8 +6,13 @@ tags:
   - Deep-learning
   - Survey
 ---
+我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数的图生成方法。因此进行了一系列调研，总结如下。
 
-## 基于自回归（AUTOREGRESSIVE）的图生成方法
+主要参考了文章《Deep Graph Generators: A Survey》[^DGGsSurvey]
+
+[^DGGsSurvey]: Faez F, Ommi Y, Baghshah M S, et al. Deep graph generators: A survey[J]. IEEE Access, 2021, 9: 106675-106702.
+
+## 基于自回归（Autoregressive）的图生成方法
 
 |               方法               |  生成策略  | 特征类型 | 可生成多维特征 | 可附加生成条件 | 公开源码 |
 | :------------------------------: | :--------: | :------: | :------------: | :------------: | :------: |
@@ -48,10 +53,10 @@ GraphGen
 #### 其他方法
 
 
-## 基于自编码器（AUTOENCODER）的图生成方法
+## 基于自编码器（Autoencoder）的图生成方法
 
 ### 一次生成整个图的方法
-### 基于子结构（SUBSTRUCTURE）的方法
+### 基于子结构（Substructure）的方法
 ### 逐节点生成图的方法
 
 

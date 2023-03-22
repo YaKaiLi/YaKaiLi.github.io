@@ -6,10 +6,23 @@
     <description>Recent content on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Fri, 17 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://www.gnn.ac.cn/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>腾讯云ECDN加速hugo的github pages</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/tencent-ecdn-speeds-up-gitpages-speed/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/tencent-ecdn-speeds-up-gitpages-speed/</guid>
+      
+        <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;先前使用腾讯云的CDN小文件加速github pages，更新博客之后总是需要刷新缓存，使用有些不便，因此切换为ECDN全站加速。&lt;/p&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>图生成方法综述</title>
@@ -18,7 +31,9 @@
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/</guid>
       
-        <description>&lt;h2 id=&#34;基于自回归autoregressive的图生成方法&#34;&gt;基于自回归（AUTOREGRESSIVE）的图生成方法&lt;/h2&gt;
+        <description>&lt;p&gt;我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数的图生成方法。因此进行了一系列调研，总结如下。&lt;/p&gt;
+&lt;p&gt;主要参考了文章《Deep Graph Generators: A Survey》&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h2 id=&#34;基于自回归autoregressive的图生成方法&#34;&gt;基于自回归（Autoregressive）的图生成方法&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -32,7 +47,7 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;MolMP&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;MolMP&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
@@ -40,7 +55,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;MolRNN&lt;sup id=&#34;fnref1:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;MolRNN&lt;sup id=&#34;fnref1:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
@@ -48,7 +63,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;GraphRNN&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;GraphRNN&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
@@ -56,7 +71,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;MolecularRNN&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;MolecularRNN&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
@@ -64,7 +79,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;D.Bacciu等人&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;D.Bacciu等人&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;逐边生成&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
@@ -72,7 +87,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;GraphGen&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;GraphGen&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;逐边生成&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
@@ -80,7 +95,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;GRAN&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;GRAN&lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;逐子图生成&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
@@ -88,7 +103,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;GRAM&lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;GRAM&lt;sup id=&#34;fnref:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
@@ -96,7 +111,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;AGE&lt;sup id=&#34;fnref:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;AGE&lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;节点&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
@@ -104,7 +119,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;Yes&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;DeepGMG&lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;DeepGMG&lt;sup id=&#34;fnref:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;节点/边&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
@@ -112,7 +127,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;BigGG&lt;sup id=&#34;fnref:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;BigGG&lt;sup id=&#34;fnref:12&#34;&gt;&lt;a href=&#34;#fn:12&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;12&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;逐节点生成&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
@@ -129,9 +144,9 @@
 &lt;h3 id=&#34;不使用rnn的&#34;&gt;不使用RNN的&lt;/h3&gt;
 &lt;h4 id=&#34;基于注意力机制的&#34;&gt;基于注意力机制的&lt;/h4&gt;
 &lt;h4 id=&#34;其他方法&#34;&gt;其他方法&lt;/h4&gt;
-&lt;h2 id=&#34;基于自编码器autoencoder的图生成方法&#34;&gt;基于自编码器（AUTOENCODER）的图生成方法&lt;/h2&gt;
+&lt;h2 id=&#34;基于自编码器autoencoder的图生成方法&#34;&gt;基于自编码器（Autoencoder）的图生成方法&lt;/h2&gt;
 &lt;h3 id=&#34;一次生成整个图的方法&#34;&gt;一次生成整个图的方法&lt;/h3&gt;
-&lt;h3 id=&#34;基于子结构substructure的方法&#34;&gt;基于子结构（SUBSTRUCTURE）的方法&lt;/h3&gt;
+&lt;h3 id=&#34;基于子结构substructure的方法&#34;&gt;基于子结构（Substructure）的方法&lt;/h3&gt;
 &lt;h3 id=&#34;逐节点生成图的方法-1&#34;&gt;逐节点生成图的方法&lt;/h3&gt;
 &lt;h2 id=&#34;基于强化学习的图生成方法&#34;&gt;基于强化学习的图生成方法&lt;/h2&gt;
 &lt;h2 id=&#34;基于生成对抗网络的图生成方法&#34;&gt;基于生成对抗网络的图生成方法&lt;/h2&gt;
@@ -145,37 +160,40 @@
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;Li Y, Zhang L, Liu Z. Multi-objective de novo drug design with conditional graph generative model[J]. Journal of cheminformatics, 2018, 10: 1-24.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Faez F, Ommi Y, Baghshah M S, et al. Deep graph generators: A survey[J]. IEEE Access, 2021, 9: 106675-106702.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34;&gt;
-&lt;p&gt;You J, Ying R, Ren X, et al. Graphrnn: Generating realistic graphs with deep auto-regressive models[C]//International conference on machine learning. PMLR, 2018: 5708-5717.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Li Y, Zhang L, Liu Z. Multi-objective de novo drug design with conditional graph generative model[J]. Journal of cheminformatics, 2018, 10: 1-24.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34;&gt;
-&lt;p&gt;Popova M, Shvets M, Oliva J, et al. MolecularRNN: Generating realistic molecular graphs with optimized properties[J]. arXiv preprint arXiv:1905.13372, 2019.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You J, Ying R, Ren X, et al. Graphrnn: Generating realistic graphs with deep auto-regressive models[C]//International conference on machine learning. PMLR, 2018: 5708-5717.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34;&gt;
-&lt;p&gt;Bacciu D, Micheli A, Podda M. Graph generation by sequential edge prediction[C]//ESANN. 2019, 2019: 95-100.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Popova M, Shvets M, Oliva J, et al. MolecularRNN: Generating realistic molecular graphs with optimized properties[J]. arXiv preprint arXiv:1905.13372, 2019.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:5&#34;&gt;
-&lt;p&gt;Bacciu D, Micheli A, Podda M. Edge-based sequential graph generation with recurrent neural networks[J]. Neurocomputing, 2020, 416: 177-189.&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bacciu D, Micheli A, Podda M. Graph generation by sequential edge prediction[C]//ESANN. 2019, 2019: 95-100.&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:6&#34;&gt;
-&lt;p&gt;Goyal N, Jain H V, Ranu S. GraphGen: a scalable approach to domain-agnostic labeled graph generation[C]//Proceedings of The Web Conference 2020. 2020: 1253-1263.&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bacciu D, Micheli A, Podda M. Edge-based sequential graph generation with recurrent neural networks[J]. Neurocomputing, 2020, 416: 177-189.&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:7&#34;&gt;
-&lt;p&gt;Liao R, Li Y, Song Y, et al. Efficient graph generation with graph recurrent attention networks[J]. Advances in neural information processing systems, 2019, 32.&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Goyal N, Jain H V, Ranu S. GraphGen: a scalable approach to domain-agnostic labeled graph generation[C]//Proceedings of The Web Conference 2020. 2020: 1253-1263.&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:8&#34;&gt;
-&lt;p&gt;Kawai W, Mukuta Y, Harada T. Scalable generative models for graphs with graph attention mechanism[J]. arXiv preprint arXiv:1906.01861, 2019.&amp;#160;&lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Liao R, Li Y, Song Y, et al. Efficient graph generation with graph recurrent attention networks[J]. Advances in neural information processing systems, 2019, 32.&amp;#160;&lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:9&#34;&gt;
-&lt;p&gt;Fan S, Huang B. Attention-based graph evolution[C]//Advances in Knowledge Discovery and Data Mining: 24th Pacific-Asia Conference, PAKDD 2020, Singapore, May 11–14, 2020, Proceedings, Part I 24. Springer International Publishing, 2020: 436-447.&amp;#160;&lt;a href=&#34;#fnref:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kawai W, Mukuta Y, Harada T. Scalable generative models for graphs with graph attention mechanism[J]. arXiv preprint arXiv:1906.01861, 2019.&amp;#160;&lt;a href=&#34;#fnref:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:10&#34;&gt;
-&lt;p&gt;Li Y, Vinyals O, Dyer C, et al. Learning deep generative models of graphs[J]. arXiv preprint arXiv:1803.03324, 2018.&amp;#160;&lt;a href=&#34;#fnref:10&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Fan S, Huang B. Attention-based graph evolution[C]//Advances in Knowledge Discovery and Data Mining: 24th Pacific-Asia Conference, PAKDD 2020, Singapore, May 11–14, 2020, Proceedings, Part I 24. Springer International Publishing, 2020: 436-447.&amp;#160;&lt;a href=&#34;#fnref:10&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:11&#34;&gt;
-&lt;p&gt;Dai H, Nazi A, Li Y, et al. Scalable deep generative modeling for sparse graphs[C]//International conference on machine learning. PMLR, 2020: 2302-2312.&amp;#160;&lt;a href=&#34;#fnref:11&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Li Y, Vinyals O, Dyer C, et al. Learning deep generative models of graphs[J]. arXiv preprint arXiv:1803.03324, 2018.&amp;#160;&lt;a href=&#34;#fnref:11&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:12&#34;&gt;
+&lt;p&gt;Dai H, Nazi A, Li Y, et al. Scalable deep generative modeling for sparse graphs[C]//International conference on machine learning. PMLR, 2020: 2302-2312.&amp;#160;&lt;a href=&#34;#fnref:12&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -654,12 +672,12 @@ ssh -X nickname&lt;/p&gt;
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</guid>
       
-        <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+        <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;通过网站测速发现很多地方访问非常慢，&lt;a href=&#34;https://www.17ce.com/site/http/20230131_836e6700a11111ed9608d9f7b39b2ff3:1.html&#34;&gt;点击查看&lt;/a&gt;测速详情。需要对github pages进行CDN加速。
 &lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_TwbGm7/2023/01/31/10-49-19-5eaee042cd262880bec3bc2ce000fe73-a2f596.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;注意：腾讯云加速全球站需要网站备案，选择腾讯云加速主要是因为域名是在腾讯云注册的。
 参考：https://zhuanlan.zhihu.com/p/393779644&lt;/p&gt;
-&lt;h1 id=&#34;配置腾讯云-cdn-服务器&#34;&gt;配置腾讯云 CDN 服务器&lt;/h1&gt;
+&lt;h2 id=&#34;配置腾讯云-cdn-服务器&#34;&gt;配置腾讯云 CDN 服务器&lt;/h2&gt;
 &lt;p&gt;点击 &lt;code&gt;域名管理&lt;/code&gt; -&amp;gt; &lt;code&gt;添加域名&lt;/code&gt;。然后在 &lt;code&gt;域名配置&lt;/code&gt; 选 &lt;code&gt;中国境外&lt;/code&gt;，填上自己的域名，然后选择 &lt;code&gt;CDN网页小文件&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/01/31/10-43-51-461e861cbf3afdf19df638bc0f382a7c-1b08ab.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;github pages的ip地址列表为：&lt;/p&gt;
@@ -686,8 +704,8 @@ ssh -X nickname&lt;/p&gt;
 &lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_1m66CF/2023/01/31/11-08-43-4e32d202fe9bfeeb1138e2d2258c3e85-dbede3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;测速后转为全绿，CDN加速效果明显。
 &lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/20-09-22-9d406853e30d05f0671b3416c610b901-e4892e.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;https&#34;&gt;HTTPS&lt;/h1&gt;
-&lt;h2 id=&#34;申请阿里云免费https证书&#34;&gt;申请阿里云免费HTTPS证书&lt;/h2&gt;
+&lt;h2 id=&#34;https&#34;&gt;HTTPS&lt;/h2&gt;
+&lt;h3 id=&#34;申请阿里云免费https证书&#34;&gt;申请阿里云免费HTTPS证书&lt;/h3&gt;
 &lt;p&gt;多次申请腾讯云免费SSL证书一直签发不成功，转为申请阿里云SSL证书。
 &lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-22-10-5ec936f698f48a6260fa5afe8c26f0be-7c9225.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;依次填写所需字段，提交审核。
@@ -695,7 +713,7 @@ ssh -X nickname&lt;/p&gt;
 然后在域名解析中添加要求的解析字段，然后点击验证。等待大约10分钟即可签发成功。
 ps：比腾讯云体验好多了QAQ，腾讯云试了好几次，每次都是验证成功后等大概两天后才通知我验证失败，可能是我哪没有配置对吧。
 &lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-25-08-c75a9de4201fef14894a36e17ed49195-1f5738.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;下载并部署证书&#34;&gt;下载并部署证书&lt;/h2&gt;
+&lt;h3 id=&#34;下载并部署证书&#34;&gt;下载并部署证书&lt;/h3&gt;
 &lt;p&gt;选择&lt;code&gt;其他&lt;/code&gt;栏下载证书，其中包含签名证书（.pem格式）和签名私钥（.key格式）。
 &lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-47-27-356ddbff4672a52ef64b4630265fde58-872278.png&#34; alt=&#34;&#34;&gt;
 点击腾讯云SSL的上传证书，输入签名证书内容（.pem格式文件）和签名私钥内容（.key格式文件），点击确定即可托管证书成功。

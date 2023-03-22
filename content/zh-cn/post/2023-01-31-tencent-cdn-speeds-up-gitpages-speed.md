@@ -7,14 +7,14 @@ tags:
   - Blog
 ---
 
-# 前言
+## 前言
 通过网站测速发现很多地方访问非常慢，[点击查看](https://www.17ce.com/site/http/20230131_836e6700a11111ed9608d9f7b39b2ff3:1.html)测速详情。需要对github pages进行CDN加速。
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_TwbGm7/2023/01/31/10-49-19-5eaee042cd262880bec3bc2ce000fe73-a2f596.png)
 
 注意：腾讯云加速全球站需要网站备案，选择腾讯云加速主要是因为域名是在腾讯云注册的。
 参考：https://zhuanlan.zhihu.com/p/393779644
 
-# 配置腾讯云 CDN 服务器
+## 配置腾讯云 CDN 服务器
 
 点击 `域名管理` -> `添加域名`。然后在 `域名配置` 选 `中国境外`，填上自己的域名，然后选择 `CDN网页小文件`。
 
@@ -40,9 +40,9 @@ github pages的ip地址列表为：
 测速后转为全绿，CDN加速效果明显。
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/20-09-22-9d406853e30d05f0671b3416c610b901-e4892e.png)
 
-# HTTPS
+## HTTPS
 
-## 申请阿里云免费HTTPS证书
+### 申请阿里云免费HTTPS证书
 多次申请腾讯云免费SSL证书一直签发不成功，转为申请阿里云SSL证书。
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-22-10-5ec936f698f48a6260fa5afe8c26f0be-7c9225.png)
 
@@ -52,7 +52,7 @@ github pages的ip地址列表为：
 ps：比腾讯云体验好多了QAQ，腾讯云试了好几次，每次都是验证成功后等大概两天后才通知我验证失败，可能是我哪没有配置对吧。
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-25-08-c75a9de4201fef14894a36e17ed49195-1f5738.png)
 
-## 下载并部署证书
+### 下载并部署证书
 
 选择`其他`栏下载证书，其中包含签名证书（.pem格式）和签名私钥（.key格式）。
 ![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/star5o/Desktop/2023/02/06/19-47-27-356ddbff4672a52ef64b4630265fde58-872278.png)

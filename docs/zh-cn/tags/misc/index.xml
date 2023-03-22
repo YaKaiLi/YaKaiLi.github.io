@@ -6,7 +6,16 @@
     <description>Recent content in Misc on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Thu, 16 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>腾讯云ECDN加速hugo的github pages</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/tencent-ecdn-speeds-up-gitpages-speed/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/tencent-ecdn-speeds-up-gitpages-speed/</guid>
+      <description>前言 先前使用腾讯云的CDN小文件加速github pages，更新博客之后总是需要刷新缓存，使用有些不便，因此切换为ECDN全站加速。</description>
+    </item>
+    
     <item>
       <title>使用 Cloudflare Workers 解决 OpenAI 的 API 无法访问问题</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/</link>

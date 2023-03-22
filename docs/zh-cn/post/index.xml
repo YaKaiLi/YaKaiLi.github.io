@@ -6,14 +6,23 @@
     <description>Recent content in Posts on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Fri, 17 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>腾讯云ECDN加速hugo的github pages</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/tencent-ecdn-speeds-up-gitpages-speed/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/tencent-ecdn-speeds-up-gitpages-speed/</guid>
+      <description>前言 先前使用腾讯云的CDN小文件加速github pages，更新博客之后总是需要刷新缓存，使用有些不便，因此切换为ECDN全站加速。</description>
+    </item>
+    
     <item>
       <title>图生成方法综述</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/</link>
       <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/</guid>
-      <description>基于自回归（AUTOREGRESSIVE）的图生成方法 方法 生成策略 特征类型 可生成多维特征 可附加生成条件 公开源码 MolMP1 逐节点生成 节点/边 YES Yes MolRNN1 逐节点生成 节点/边 YES Yes GraphRNN2 逐节点生成 - No Yes MolecularRNN3 逐节点生成 节点/边 No Yes</description>
+      <description>我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数的图生成方法。因此进行了一系列调研，总结如下。 主要参考了文章《Deep Graph Generators: A Survey》1 基于自回归（Autoregressive）的图生</description>
     </item>
     
     <item>
