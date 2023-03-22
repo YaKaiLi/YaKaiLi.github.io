@@ -6,7 +6,7 @@ tags:
   - Deep-learning
   - Survey
 ---
-我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数的图生成方法。因此进行了一系列调研，总结如下。
+我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数，并且支持添加生成约束条件的图生成方法。因此进行了一系列调研，总结如下。
 
 主要参考了文章《Deep Graph Generators: A Survey》[^DGGsSurvey]
 
@@ -19,7 +19,7 @@ tags:
 |         MolMP[^MolMPRNN]         | 逐节点生成 | 节点/边  |              |      YES       |   Yes    |
 |        MolRNN[^MolMPRNN]         | 逐节点生成 | 节点/边  |              |      YES       |   Yes    |
 |       GraphRNN[^GraphRNN]        | 逐节点生成 |    -     |      -       |       No       |   Yes    |
-|   MolecularRNN[^MolecularRNN]    | 逐节点生成 | 节点/边  |              |       No       |   Yes    |
+|   MolecularRNN[^MolecularRNN]    | 逐节点生成 | 节点/边  |              |       No       |    No    |
 | D.Bacciu等人[^Bacciu1][^Bacciu2] |  逐边生成  |    -     |      -       |       No       |   Yes    |
 |       GraphGen[^GraphGen]        |  逐边生成  | 节点/边  |              |       No       |   Yes    |
 |           GRAN[^GRAN]            | 逐子图生成 |    -     |      -       |       No       |   Yes    |
@@ -83,7 +83,15 @@ DeepGMG、DeepGG
 
 
 ## 基于强化学习的图生成方法
-
+|         方法         | 特征类型 | 多维节点特征 | 公开源码 | 可附加生成条件 |
+| :------------------: | :------: | :----------: | :------: | :------------: |
+|      GCPN [43]       | 节点/边  |              |   Yes    |       No       |
+|   Shi et al. [44]    | 节点/边  |              |   Yes    |       No       |
+|  Karimi et al. [45]  | 节点/边  |              |   Yes    |      Yes       |
+| DeepGraphMolGen [46] | 节点/边  |              |   Yes    |       No       |
+|    GraphOpt [47]     | 节点/边  |              |   Yes    |       No       |
+|     MNCE-RL [48]     | 节点/边  |              |   Yes    |       No       |
+|      GEGL [49]       | 节点/边  |              |   Yes    |       No       |
 
 ## 基于生成对抗网络的图生成方法
 ### 基于随机游走的方法
