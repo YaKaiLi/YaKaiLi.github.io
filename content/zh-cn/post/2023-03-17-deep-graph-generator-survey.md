@@ -46,12 +46,15 @@ tags:
 #### 逐节点生成图的方法
 MolMP、MolRNN、GraphRNN、MolecularRNN
 #### 逐边生成图的方法
-GraphGen
+GraphGen、D.Bacciu等人[^Bacciu1][^Bacciu2]、
 
+GraphGen:
+![](https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_S0DirU/2023/03/22/16-43-52-8b674f03711941e861995a97b7cb8184-58a19a.png)
 ### 不使用RNN的
 #### 基于注意力机制的
+GRAN、GRAM、AGE
 #### 其他方法
-
+DeepGMG、DeepGG
 
 ## 基于自编码器（Autoencoder）的图生成方法
 

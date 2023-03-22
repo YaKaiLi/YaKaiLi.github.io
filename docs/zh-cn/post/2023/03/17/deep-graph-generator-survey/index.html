@@ -77,7 +77,7 @@
 <meta itemprop="name" content="图生成方法综述">
 <meta itemprop="description" content="我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数的图生成方法。因此进行了一系列调研，总结如下。 主要参考了文章《Deep Graph Generators: A Survey》1 基于自回归（Autoregressive）的图生"><meta itemprop="datePublished" content="2023-03-17T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-03-22T15:23:12+08:00" />
-<meta itemprop="wordCount" content="727">
+<meta itemprop="wordCount" content="776">
 <meta itemprop="keywords" content="Deep-learning,Survey," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="图生成方法综述"/>
 <meta name="twitter:description" content="我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数的图生成方法。因此进行了一系列调研，总结如下。 主要参考了文章《Deep Graph Generators: A Survey》1 基于自回归（Autoregressive）的图生"/>
@@ -383,7 +383,7 @@
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 727 字 -
+        约 776 字 -
         预计阅读 2 分钟
       </span>
 
@@ -512,10 +512,14 @@
 <h4 id="逐节点生成图的方法">逐节点生成图的方法</h4>
 <p>MolMP、MolRNN、GraphRNN、MolecularRNN</p>
 <h4 id="逐边生成图的方法">逐边生成图的方法</h4>
-<p>GraphGen</p>
+<p>GraphGen、D.Bacciu等人<sup id="fnref1:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup><sup id="fnref1:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>、</p>
+<p>GraphGen:
+<img src="https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_S0DirU/2023/03/22/16-43-52-8b674f03711941e861995a97b7cb8184-58a19a.png" alt=""></p>
 <h3 id="不使用rnn的">不使用RNN的</h3>
 <h4 id="基于注意力机制的">基于注意力机制的</h4>
+<p>GRAN、GRAM、AGE</p>
 <h4 id="其他方法">其他方法</h4>
+<p>DeepGMG、DeepGG</p>
 <h2 id="基于自编码器autoencoder的图生成方法">基于自编码器（Autoencoder）的图生成方法</h2>
 <h3 id="一次生成整个图的方法">一次生成整个图的方法</h3>
 <h3 id="基于子结构substructure的方法">基于子结构（Substructure）的方法</h3>
@@ -545,10 +549,10 @@
 <p>Popova M, Shvets M, Oliva J, et al. MolecularRNN: Generating realistic molecular graphs with optimized properties[J]. arXiv preprint arXiv:1905.13372, 2019.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5">
-<p>Bacciu D, Micheli A, Podda M. Graph generation by sequential edge prediction[C]//ESANN. 2019, 2019: 95-100.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Bacciu D, Micheli A, Podda M. Graph generation by sequential edge prediction[C]//ESANN. 2019, 2019: 95-100.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6">
-<p>Bacciu D, Micheli A, Podda M. Edge-based sequential graph generation with recurrent neural networks[J]. Neurocomputing, 2020, 416: 177-189.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Bacciu D, Micheli A, Podda M. Edge-based sequential graph generation with recurrent neural networks[J]. Neurocomputing, 2020, 416: 177-189.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7">
 <p>Goyal N, Jain H V, Ranu S. GraphGen: a scalable approach to domain-agnostic labeled graph generation[C]//Proceedings of The Web Conference 2020. 2020: 1253-1263.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
