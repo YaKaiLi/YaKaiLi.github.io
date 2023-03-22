@@ -72,12 +72,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-03-17T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-03-22T22:47:40+08:00" /><meta property="og:site_name" content="Star5o的博客" />
+<meta property="article:modified_time" content="2023-03-22T22:51:10+08:00" /><meta property="og:site_name" content="Star5o的博客" />
 
 <meta itemprop="name" content="图生成方法综述">
 <meta itemprop="description" content="我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数，并且支持添加生成约束条件的图生成方法。因此进行了一系列调研，总结如下。 主要参考了文章《Deep Graph Generators: A Survey》1 基于自回归（Autor"><meta itemprop="datePublished" content="2023-03-17T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-03-22T22:47:40+08:00" />
-<meta itemprop="wordCount" content="1335">
+<meta itemprop="dateModified" content="2023-03-22T22:51:10+08:00" />
+<meta itemprop="wordCount" content="1402">
 <meta itemprop="keywords" content="Deep-learning,Survey," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="图生成方法综述"/>
 <meta name="twitter:description" content="我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数，并且支持添加生成约束条件的图生成方法。因此进行了一系列调研，总结如下。 主要参考了文章《Deep Graph Generators: A Survey》1 基于自回归（Autor"/>
@@ -383,7 +383,7 @@
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 1335 字 -
+        约 1402 字 -
         预计阅读 3 分钟
       </span>
 
@@ -849,6 +849,42 @@
 <p>MolGAN</p>
 <h4 id="graph-to-graph-translators">GRAPH-TO-GRAPH TRANSLATORS</h4>
 <h2 id="基于流的图生成方法">基于流的图生成方法</h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>生成策略</th>
+<th>特征类型</th>
+<th>可附加生成条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GNF [60]</td>
+<td>一次生成整个图</td>
+<td>节点/边</td>
+<td>No</td>
+</tr>
+<tr>
+<td>GraphNVP [71]</td>
+<td>一次生成整个图</td>
+<td>节点/边</td>
+<td>No</td>
+</tr>
+<tr>
+<td>GraphAF [35]</td>
+<td>逐节点生成</td>
+<td>节点/边</td>
+<td>No</td>
+</tr>
+<tr>
+<td>GrAD [36]</td>
+<td>生成子图结构</td>
+<td>-</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 <h2 id="参考文献">参考文献</h2>
 <div class="footnotes" role="doc-endnotes">
 <hr>
