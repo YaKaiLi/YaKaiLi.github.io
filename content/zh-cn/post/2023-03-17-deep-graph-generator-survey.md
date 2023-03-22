@@ -14,19 +14,19 @@ tags:
 
 ## 基于自回归（Autoregressive）的图生成方法
 
-|               方法               |  生成策略  | 特征类型 | 可生成多维节点特征 | 可附加生成条件 | 公开源码 |
-| :------------------------------: | :--------: | :------: | :----------------: | :------------: | :------: |
-|         MolMP[^MolMPRNN]         | 逐节点生成 | 节点/边  |                    |      YES       |   Yes    |
-|        MolRNN[^MolMPRNN]         | 逐节点生成 | 节点/边  |                    |      YES       |   Yes    |
-|       GraphRNN[^GraphRNN]        | 逐节点生成 |    -     |                    |       No       |   Yes    |
-|   MolecularRNN[^MolecularRNN]    | 逐节点生成 | 节点/边  |                    |       No       |   Yes    |
-| D.Bacciu等人[^Bacciu1][^Bacciu2] |  逐边生成  |    -     |                    |       No       |   Yes    |
-|       GraphGen[^GraphGen]        |  逐边生成  | 节点/边  |                    |       No       |   Yes    |
-|           GRAN[^GRAN]            | 逐子图生成 |    -     |                    |       No       |   Yes    |
-|           GRAM[^GRAM]            | 逐节点生成 | 节点/边  |                    |       No       |   Yes    |
-|            AGE[^AGE]             | 逐节点生成 |   节点   |                    |      Yes       |   Yes    |
-|        DeepGMG[^DeepGMG]         | 逐节点生成 | 节点/边  |                    |      Yes       |    No    |
-|          BigGG[^BigGG]           | 逐节点生成 |    -     |                    |       No       |   Yes    |
+|               方法               |  生成策略  | 特征类型 | 多维节点特征 | 可附加生成条件 | 公开源码 |
+| :------------------------------: | :--------: | :------: | :----------: | :------------: | :------: |
+|         MolMP[^MolMPRNN]         | 逐节点生成 | 节点/边  |              |      YES       |   Yes    |
+|        MolRNN[^MolMPRNN]         | 逐节点生成 | 节点/边  |              |      YES       |   Yes    |
+|       GraphRNN[^GraphRNN]        | 逐节点生成 |    -     |      -       |       No       |   Yes    |
+|   MolecularRNN[^MolecularRNN]    | 逐节点生成 | 节点/边  |              |       No       |   Yes    |
+| D.Bacciu等人[^Bacciu1][^Bacciu2] |  逐边生成  |    -     |      -       |       No       |   Yes    |
+|       GraphGen[^GraphGen]        |  逐边生成  | 节点/边  |              |       No       |   Yes    |
+|           GRAN[^GRAN]            | 逐子图生成 |    -     |      -       |       No       |   Yes    |
+|           GRAM[^GRAM]            | 逐节点生成 | 节点/边  |              |       No       |   Yes    |
+|            AGE[^AGE]             | 逐节点生成 |   节点   |              |      Yes       |   Yes    |
+|        DeepGMG[^DeepGMG]         | 逐节点生成 | 节点/边  |              |      Yes       |    No    |
+|          BigGG[^BigGG]           | 逐节点生成 |    -     |      -       |       No       |   Yes    |
 
 [^MolMPRNN]: Li Y, Zhang L, Liu Z. Multi-objective de novo drug design with conditional graph generative model[J]. Journal of cheminformatics, 2018, 10: 1-24.
 [^GraphRNN]: You J, Ying R, Ren X, et al. Graphrnn: Generating realistic graphs with deep auto-regressive models[C]//International conference on machine learning. PMLR, 2018: 5708-5717.
@@ -57,6 +57,25 @@ GRAN、GRAM、AGE
 DeepGMG、DeepGG
 
 ## 基于自编码器（Autoencoder）的图生成方法
+|       方法        |    输入    |    生成方式    | 特征类型 | 多维节点特征 | 公开源码 | 可附加生成条件 |
+| :---------------: | :--------: | :------------: | :------: | :----------: | :------: | :------------: |
+|     VGAE [50]     |   单个图   | 一次生成整个图 |   节点   |              |   Yes    |       No       |
+|   GraphVAE [⑤1]   | 数据集的图 | 一次生成整个图 | 节点/边  |              |    No    |      Yes       |
+|    MPGVAE [52]    | 数据集的图 | 一次生成整个图 | 节点/边  |              |   Yes    |      Yes       |
+|    RGVAE [53]     | 数据集的图 | 一次生成整个图 | 节点/边  |              |   Yes    |       No       |
+|   Graphite [54]   |   单个图   | 一次生成整个图 |   节点   |              |   Yes    |       No       |
+|   NED-VAE [55]    | 数据集的图 | 一次生成整个图 | 节点/边  |              |   Yes    |       No       |
+|    DGVAE [56]     | 数据集的图 | 一次生成整个图 |   节点   |              |   Yes    |       No       |
+|    JTVAE [57]     | 数据集的图 |  生成子图结构  | 节点/边  |              |   Yes    |       No       |
+|   HierVAE [37]    | 数据集的图 |  生成子图结构  | 节点/边  |              |   Yes    |      Yes       |
+|   MHG-VAE [58]    | 数据集的图 |  生成子图结构  | 节点/边  |              |   Yes    |       No       |
+| MoleculeChef [38] | 数据集的图 |  生成子图结构  | 节点/边  |              |   Yes    |       No       |
+|    CGVAE [39]     | 数据集的图 |   逐节点生成   | 节点/边  |              |   Yes    |       No       |
+|   DEFactor [40]   | 数据集的图 |   逐节点生成   | 节点/边  |              |   Yes    |      Yes       |
+|    NeVAE [59]     | 数据集的图 |   逐节点生成   | 节点/边  |              |   Yes    |       No       |
+|  GraphVRNN [41]   | 数据集的图 |   逐节点生成   |   节点   |              |   Yes    |       No       |
+|  Lim et al. [42]  | 数据集的图 |   逐节点生成   | 节点/边  |              |   Yes    |      Yes       |
+
 
 ### 一次生成整个图的方法
 ### 基于子结构（Substructure）的方法
