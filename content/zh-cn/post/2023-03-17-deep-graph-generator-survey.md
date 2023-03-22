@@ -14,19 +14,19 @@ tags:
 
 ## 基于自回归（Autoregressive）的图生成方法
 
-|               方法               |  生成策略  | 特征类型 | 可生成多维特征 | 可附加生成条件 | 公开源码 |
-| :------------------------------: | :--------: | :------: | :------------: | :------------: | :------: |
-|         MolMP[^MolMPRNN]         | 逐节点生成 | 节点/边  |                |      YES       |   Yes    |
-|        MolRNN[^MolMPRNN]         | 逐节点生成 | 节点/边  |                |      YES       |   Yes    |
-|       GraphRNN[^GraphRNN]        | 逐节点生成 |    -     |                |       No       |   Yes    |
-|   MolecularRNN[^MolecularRNN]    | 逐节点生成 | 节点/边  |                |       No       |   Yes    |
-| D.Bacciu等人[^Bacciu1][^Bacciu2] |  逐边生成  |    -     |                |       No       |   Yes    |
-|       GraphGen[^GraphGen]        |  逐边生成  | 节点/边  |                |       No       |   Yes    |
-|           GRAN[^GRAN]            | 逐子图生成 |    -     |                |       No       |   Yes    |
-|           GRAM[^GRAM]            | 逐节点生成 | 节点/边  |                |       No       |   Yes    |
-|            AGE[^AGE]             | 逐节点生成 |   节点   |                |      Yes       |   Yes    |
-|        DeepGMG[^DeepGMG]         | 逐节点生成 | 节点/边  |                |      Yes       |    No    |
-|          BigGG[^BigGG]           | 逐节点生成 |    -     |                |       No       |   Yes    |
+|               方法               |  生成策略  | 特征类型 | 可生成多维节点特征 | 可附加生成条件 | 公开源码 |
+| :------------------------------: | :--------: | :------: | :----------------: | :------------: | :------: |
+|         MolMP[^MolMPRNN]         | 逐节点生成 | 节点/边  |                    |      YES       |   Yes    |
+|        MolRNN[^MolMPRNN]         | 逐节点生成 | 节点/边  |                    |      YES       |   Yes    |
+|       GraphRNN[^GraphRNN]        | 逐节点生成 |    -     |                    |       No       |   Yes    |
+|   MolecularRNN[^MolecularRNN]    | 逐节点生成 | 节点/边  |                    |       No       |   Yes    |
+| D.Bacciu等人[^Bacciu1][^Bacciu2] |  逐边生成  |    -     |                    |       No       |   Yes    |
+|       GraphGen[^GraphGen]        |  逐边生成  | 节点/边  |                    |       No       |   Yes    |
+|           GRAN[^GRAN]            | 逐子图生成 |    -     |                    |       No       |   Yes    |
+|           GRAM[^GRAM]            | 逐节点生成 | 节点/边  |                    |       No       |   Yes    |
+|            AGE[^AGE]             | 逐节点生成 |   节点   |                    |      Yes       |   Yes    |
+|        DeepGMG[^DeepGMG]         | 逐节点生成 | 节点/边  |                    |      Yes       |    No    |
+|          BigGG[^BigGG]           | 逐节点生成 |    -     |                    |       No       |   Yes    |
 
 [^MolMPRNN]: Li Y, Zhang L, Liu Z. Multi-objective de novo drug design with conditional graph generative model[J]. Journal of cheminformatics, 2018, 10: 1-24.
 [^GraphRNN]: You J, Ying R, Ren X, et al. Graphrnn: Generating realistic graphs with deep auto-regressive models[C]//International conference on machine learning. PMLR, 2018: 5708-5717.

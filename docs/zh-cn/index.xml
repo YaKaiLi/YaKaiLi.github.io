@@ -12,14 +12,22 @@
     
     
     <item>
-      <title>腾讯云ECDN加速hugo的github pages</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/tencent-ecdn-speeds-up-gitpages-speed/</link>
+      <title>阿里云DCDN全站加速hugo的github pages</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/tencent-ecdn-speeds-up-gitpages-speed/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</guid>
       
         <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;先前使用腾讯云的CDN小文件加速github pages，更新博客之后总是需要刷新缓存，使用有些不便，因此切换为ECDN全站加速。&lt;/p&gt;
+&lt;p&gt;先前使用腾讯云的CDN小文件加速github pages，更新博客之后总是需要刷新缓存，使用有些不便，因此切换为阿里云DCDN全站加速。&lt;/p&gt;
+&lt;h2 id=&#34;添加域名和ip&#34;&gt;添加域名和IP&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_5pPiYD/2023/03/22/15-12-16-5126aa7256f5013509cce3a26fd4ee28-3578fa.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;配置cname&#34;&gt;配置CNAME&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_LXyrLN/2023/03/22/15-16-15-4a7a0fb024ea90ce915021c275983ec6-22f97d.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_K803Hm/2023/03/22/15-16-29-45ee7a1679871347329ab4c874a86841-5e3d5d.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;开启https&#34;&gt;开启HTTPS&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog-oss-1252232218.cos.ap-beijing.myqcloud.com/fix-dir/TemporaryItems/NSIRD_screencaptureui_IInoSE/2023/03/22/15-20-41-0df04bba76acaa78d57c8db1b69103b6-b58b91.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;至此便完成加速配置，阿里云比腾讯云配置要简洁很多。&lt;/p&gt;
 </description>
       
     </item>
@@ -40,7 +48,7 @@
 &lt;th style=&#34;text-align:center&#34;&gt;方法&lt;/th&gt;
 &lt;th style=&#34;text-align:center&#34;&gt;生成策略&lt;/th&gt;
 &lt;th style=&#34;text-align:center&#34;&gt;特征类型&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;可生成多维特征&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;可生成多维节点特征&lt;/th&gt;
 &lt;th style=&#34;text-align:center&#34;&gt;可附加生成条件&lt;/th&gt;
 &lt;th style=&#34;text-align:center&#34;&gt;公开源码&lt;/th&gt;
 &lt;/tr&gt;

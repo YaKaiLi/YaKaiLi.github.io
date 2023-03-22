@@ -8,12 +8,12 @@
     <copyright>Star5o Love Haohao</copyright>
     <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>腾讯云ECDN加速hugo的github pages</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/tencent-ecdn-speeds-up-gitpages-speed/</link>
+      <title>阿里云DCDN全站加速hugo的github pages</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/tencent-ecdn-speeds-up-gitpages-speed/</guid>
-      <description>前言 先前使用腾讯云的CDN小文件加速github pages，更新博客之后总是需要刷新缓存，使用有些不便，因此切换为ECDN全站加速。</description>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</guid>
+      <description>前言 先前使用腾讯云的CDN小文件加速github pages，更新博客之后总是需要刷新缓存，使用有些不便，因此切换为阿里云DCDN全站加速。 添加域名和IP 配置CNAME 开启HTTPS 至此便完成加速配置，</description>
     </item>
     
     <item>
