@@ -76,9 +76,10 @@ DeepGMG、DeepGG
 |  GraphVRNN [41]   |   数据集   |     逐节点生成     |    节点     |      -       |           No           |       No       |
 |  Lim et al. [42]  |   数据集   |     逐节点生成     |   节点/边   |      -       |          Yes           |      Yes       |
 
-[^HierVAECode]: pytorch. https://github.com/wengong-jin/hgraph2graph
-[^GraphVAECode]: pytorch. https://github.com/JiaxuanYou/graph-generation/tree/master/baselines/graphvae
+[^HierVAECode]: HierVAE Code. https://github.com/wengong-jin/hgraph2graph
+[^GraphVAECode]: GraphVAE Code. https://github.com/JiaxuanYou/graph-generation/tree/master/baselines/graphvae
 
+HierVAE对于较大的分子，性能会显著降低。
 
 ### 一次生成整个图的方法
 ### 基于子结构（Substructure）的方法
@@ -110,7 +111,7 @@ DeepGMG、DeepGG
 |   Misc- GAN [70]    |   单个图   |         -          |    -     |              |          Yes          |       No       |
 
 
-[^CondGenCode]: pytorch. https://github.com/KelestZ/CondGen
+[^CondGenCode]: CondGen Code. https://github.com/KelestZ/CondGen
 
 ### 基于随机游走的方法
 ### 基于整个图的方法
