@@ -360,6 +360,124 @@
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/zh-cn/post/2023/03/26/librespeed-linux-server-speedtest/">搭建linux服务器网页测速</a>
+    </h1>
+    
+
+    <div class="post-meta">
+  <div class="post-meta-author">
+    by
+      star5o
+    
+  </div>
+
+  <div class="post-meta-time">
+    <time datetime="2023-03-26">
+      2023-03-26
+    </time>
+  </div>
+
+  
+
+
+  <div class="post-meta__right">
+    <span class="post-meta-more">
+        约 38 字 -
+        预计阅读 1 分钟
+      </span>
+
+    
+
+
+    
+    
+
+
+    
+    
+  </div>
+</div>
+
+  </header>
+  
+  <div class="post-content">
+    
+      <div class="post-summary">
+        1 2 3 4 5 6 7 8 9 10 docker run -d \ --name=librespeed \ -e PUID=1000 \ -e PGID=1000 \ -e TZ=Etc/UTC \ -e PASSWORD=&#34;password&#34; \ -p 80:80 \ -v ~/librespeed/config:/config \ --restart unless-stopped \ lscr.io/linuxserver/librespeed:latest
+      </div>
+      <div class="read-more">
+        <a href="/zh-cn/post/2023/03/26/librespeed-linux-server-speedtest/" class="read-more-link"
+          >阅读全文</a
+        >
+      </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/zh-cn/post/2023/03/25/build-wechart-chatgpt-bot/">搭建chatgpt微信机器人</a>
+    </h1>
+    
+
+    <div class="post-meta">
+  <div class="post-meta-author">
+    by
+      star5o
+    
+  </div>
+
+  <div class="post-meta-time">
+    <time datetime="2023-03-25">
+      2023-03-25
+    </time>
+  </div>
+
+  
+
+
+  <div class="post-meta__right">
+    <span class="post-meta-more">
+        约 171 字 -
+        预计阅读 1 分钟
+      </span>
+
+    
+
+
+    
+    
+
+
+    
+    
+  </div>
+</div>
+
+  </header>
+  
+  <div class="post-content">
+    
+      <div class="post-summary">
+        拉docker 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # pull image docker pull holegots/wechat-chatgpt # run container docker run -d --name wechat-chatgpt \ -e OPENAI_API_KEY=&#34;&#34; \ -e MODEL=&#34;gpt-3.5-turbo&#34; \ -e DISABLE_GROUP_MESSAGE=&#34;false&#34; \ -e CHAT_PRIVATE_TRIGGER_KEYWORD=&#34;小助理&#34; \ -v $(pwd)/data:/app/data/wechat-assistant.memory-card.json \ holegots/wechat-chatgpt:latest # # View the QR code to
+      </div>
+      <div class="read-more">
+        <a href="/zh-cn/post/2023/03/25/build-wechart-chatgpt-bot/" class="read-more-link"
+          >阅读全文</a
+        >
+      </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/">阿里云DCDN全站加速hugo的github pages</a>
     </h1>
     
@@ -407,134 +525,6 @@
       </div>
       <div class="read-more">
         <a href="/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/" class="read-more-link"
-          >阅读全文</a
-        >
-      </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/03/17/deep-graph-generator-survey/">图生成方法综述</a>
-    </h1>
-    
-
-    <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      star5o
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2023-03-17">
-      2023-03-17
-    </time>
-  </div>
-
-  
-    <div class="post-meta-lastmod">
-      (上次更新:
-      2023-03-23)
-    </div>
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        约 1434 字 -
-        预计阅读 3 分钟
-      </span>
-
-    
-
-
-    
-    
-
-
-    
-    
-  </div>
-</div>
-
-  </header>
-  
-  <div class="post-content">
-    
-      <div class="post-summary">
-        我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数，并且支持添加生成约束条件的图生成方法。因此进行了一系列调研，总结如下。 主要参考了文章《Deep Graph Generators: A Survey》1 基于自回归（Autor
-      </div>
-      <div class="read-more">
-        <a href="/zh-cn/post/2023/03/17/deep-graph-generator-survey/" class="read-more-link"
-          >阅读全文</a
-        >
-      </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/">使用 Cloudflare Workers 解决 OpenAI 的 API 无法访问问题</a>
-    </h1>
-    
-
-    <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      star5o
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2023-03-16">
-      2023-03-16
-    </time>
-  </div>
-
-  
-    <div class="post-meta-lastmod">
-      (上次更新:
-      2023-03-21)
-    </div>
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        约 275 字 -
-        预计阅读 1 分钟
-      </span>
-
-    
-
-
-    
-    
-
-
-    
-    
-  </div>
-</div>
-
-  </header>
-  
-  <div class="post-content">
-    
-      <div class="post-summary">
-        参考： https://github.com/noobnooc/noobnooc/discussions/9 主要流程（步骤3和4可省略）： 新建一个 Cloudflare Worker 将 https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6 里的代码粘贴到 Worker 中并部署 给 Worker 绑定一个域名 使用自己的域名代替 api.openai.com 域名托管转到Cloudflare Websites-&gt;Add Site 接下来输入需要转入的域名，点击Add Site 选择free
-      </div>
-      <div class="read-more">
-        <a href="/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/" class="read-more-link"
           >阅读全文</a
         >
       </div>
@@ -598,6 +588,10 @@
       
       <li >
         <a href="/zh-cn/page/8/">8</a>
+      </li>
+      
+      <li >
+        <a href="/zh-cn/page/9/">9</a>
       </li>
       
     </ul>
