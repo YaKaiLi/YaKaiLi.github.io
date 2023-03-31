@@ -12,7 +12,10 @@ tags:
 #jsdelivrCDN源
 export url='https://fastly.jsdelivr.net/gh/juewuy/ShellClash@master' && sh -c "$(curl -kfsSl $url/install.sh)" && source /etc/profile &> /dev/null
 ```
-
+或者
+```shell
+export url='https://gh.jwsc.eu.org/master' && bash -c "$(curl -kfsSl $url/install.sh)" && source /etc/profile &> /dev/null
+```
 ## 使用wget安装：
 ```shell
 #Release版本-jsdelivrCDN源

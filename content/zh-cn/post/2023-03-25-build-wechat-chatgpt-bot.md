@@ -1,7 +1,7 @@
 ---
 title: 搭建chatgpt微信机器人
 date: '2023-03-25'
-slug: build-wechart-chatgpt-bot
+slug: build-wechat-chatgpt-bot
 tags:
   - Misc
   - Software
