@@ -6,7 +6,9 @@ tags:
   - Misc
   - Software
 ---
-## 拉docker
+
+## fuergaosi233/wechat-chatgpt方案
+### 拉docker
 ```shell
 # pull image
 docker pull holegots/wechat-chatgpt
@@ -36,4 +38,14 @@ docker-compose up -d
 # View the QR code to log in to wechat
 docker logs -f wechat-chatgpt
 ```
+
+
+## zhayujie/chatgpt-on-wechat方案
+### compose本地构建
+```shell
+git clone https://ghproxy.com/https://github.com/YaKaiLi/chatgpt-on-wechat.git
+```
+
+### Railway部署
+
 

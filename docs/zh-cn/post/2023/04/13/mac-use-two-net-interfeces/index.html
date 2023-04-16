@@ -8,11 +8,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>
-          Star5o的博客
+          Mac使用拓展坞有线网卡和无线网卡实现内外网同时访问 - Star5o的博客
         </title>
     
-<link rel="alternate" hreflang="" href="https://www.gnn.ac.cn/en/" />
-
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
@@ -31,7 +29,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="star5o" />
-  <meta name="description" content="Star5o&#39;s Blog; Star5o的博客" />
+  <meta name="description" content="目标是10.49.x.x走拓展坞有线网卡，其余走无线网卡。 查看网卡名称 1 ifconfig 无线网卡名称为：en0，拓展坞有线网卡名称为：en4。 查看只插有线网卡的路由 1 2 3 4 5 6 7 8 9 ❯ route get 10.49.0.1 route to: 10.49.0.1 destination: default mask: default gateway: 192.168.14.254 interface: en4 flags:" />
+
   <meta name="keywords" content="Star5o, star5o" />
 
 
@@ -42,8 +41,8 @@
 <meta name="generator" content="Hugo 0.107.0" />
 
 
-<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/" />
-<link href="/zh-cn/index.xml" rel="alternate" type="application/rss+xml" title="Star5o的博客" />
+<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/" />
+
 
 
 
@@ -68,15 +67,20 @@
 
 
 
-<meta property="og:title" content="Star5o的博客" />
-<meta property="og:description" content="Star5o&#39;s Blog; Star5o的博客" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/" /><meta property="og:site_name" content="Star5o的博客" />
+<meta property="og:title" content="Mac使用拓展坞有线网卡和无线网卡实现内外网同时访问" />
+<meta property="og:description" content="目标是10.49.x.x走拓展坞有线网卡，其余走无线网卡。 查看网卡名称 1 ifconfig 无线网卡名称为：en0，拓展坞有线网卡名称为：en4。 查看只插有线网卡的路由 1 2 3 4 5 6 7 8 9 ❯ route get 10.49.0.1 route to: 10.49.0.1 destination: default mask: default gateway: 192.168.14.254 interface: en4 flags:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-04-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-04-13T00:00:00+00:00" /><meta property="og:site_name" content="Star5o的博客" />
 
-<meta itemprop="name" content="Star5o的博客">
-<meta itemprop="description" content="Star5o&#39;s Blog; Star5o的博客"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Star5o的博客"/>
-<meta name="twitter:description" content="Star5o&#39;s Blog; Star5o的博客"/>
+<meta itemprop="name" content="Mac使用拓展坞有线网卡和无线网卡实现内外网同时访问">
+<meta itemprop="description" content="目标是10.49.x.x走拓展坞有线网卡，其余走无线网卡。 查看网卡名称 1 ifconfig 无线网卡名称为：en0，拓展坞有线网卡名称为：en4。 查看只插有线网卡的路由 1 2 3 4 5 6 7 8 9 ❯ route get 10.49.0.1 route to: 10.49.0.1 destination: default mask: default gateway: 192.168.14.254 interface: en4 flags:"><meta itemprop="datePublished" content="2023-04-13T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-04-13T00:00:00+00:00" />
+<meta itemprop="wordCount" content="132">
+<meta itemprop="keywords" content="Misc,Software," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mac使用拓展坞有线网卡和无线网卡实现内外网同时访问"/>
+<meta name="twitter:description" content="目标是10.49.x.x走拓展坞有线网卡，其余走无线网卡。 查看网卡名称 1 ifconfig 无线网卡名称为：en0，拓展坞有线网卡名称为：en4。 查看只插有线网卡的路由 1 2 3 4 5 6 7 8 9 ❯ route get 10.49.0.1 route to: 10.49.0.1 destination: default mask: default gateway: 192.168.14.254 interface: en4 flags:"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -348,23 +352,15 @@
 
     <div id="mobile-panel">
       <main id="main" class="main bg-llight wallpaper">
+        <div class="content-wrapper">
+    <div id="content" class="content">
+      <article class="post">
         
-<section id="posts" class="posts">
-  
-  
-    
-  
-  
-  
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/">《图神经网络：基础、前沿与应用（图神经网络城堡书）》Part1:引言 第一章：表征学习（Representation Learning）</a>
-    </h1>
-    
+        <header class="post-header">
+          <h1 class="post-title">Mac使用拓展坞有线网卡和无线网卡实现内外网同时访问</h1>
+          
 
-    <div class="post-meta">
+          <div class="post-meta">
   <div class="post-meta-author">
     by
       star5o
@@ -372,252 +368,225 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="2022-11-28">
-      2022-11-28
+    <time datetime="2023-04-13">
+      2023-04-13
     </time>
   </div>
 
   
-    <div class="post-meta-lastmod">
-      (上次更新:
-      2023-03-21)
+
+
+  <div class="post-meta__right">
+    <span class="post-meta-more">
+        约 132 字 -
+        预计阅读 1 分钟
+      </span>
+
+    
+
+
+    
+    
+
+
+    
+    
+  </div>
+</div>
+
+        </header>
+
+        
+        <div class="post-content">
+          <p>目标是<code>10.49.x.x</code>走拓展坞有线网卡，其余走无线网卡。</p>
+<h2 id="查看网卡名称">查看网卡名称</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ifconfig
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>无线网卡名称为：<code>en0</code>，拓展坞有线网卡名称为：<code>en4</code>。</p>
+<h2 id="查看只插有线网卡的路由">查看只插有线网卡的路由</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">❯ route get 10.49.0.1
+</span></span><span class="line"><span class="cl">   route to: 10.49.0.1
+</span></span><span class="line"><span class="cl">destination: default
+</span></span><span class="line"><span class="cl">       mask: default
+</span></span><span class="line"><span class="cl">    gateway: 192.168.14.254
+</span></span><span class="line"><span class="cl">  interface: en4
+</span></span><span class="line"><span class="cl">      flags: &lt;UP,GATEWAY,DONE,STATIC,PRCLONING,GLOBAL&gt;
+</span></span><span class="line"><span class="cl"> recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+</span></span><span class="line"><span class="cl">       <span class="m">0</span>         <span class="m">0</span>         <span class="m">0</span>         <span class="m">0</span>         <span class="m">0</span>         <span class="m">0</span>      <span class="m">1500</span>         <span class="m">0</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="添加路由">添加路由</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo route add -net 10.49.0.0/16 192.168.14.254
+</span></span><span class="line"><span class="cl"><span class="c1"># -interface en4</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+        </div>
+
+        
+        
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">star5o</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2023-04-13
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+  </p>
+</div>
+
+
+
+        
+        
+
+
+        <footer class="post-footer">
+          <div class="post-tags">
+              <a href="https://www.gnn.ac.cn/zh-cn/tags/misc/">Misc</a>
+                <a href="https://www.gnn.ac.cn/zh-cn/tags/software/">Software</a>
+                
+            </div>
+
+
+          
+          <nav class="post-nav">
+            
+            
+              <a class="next" href="/zh-cn/post/2023/04/13/ubuntu-use-dae-for-proxy/">
+                <span class="next-text nav-default">Ubuntu使用dae代理本机流量</span>
+                <span class="prev-text nav-mobile">下一篇</span>
+                
+                <i class="iconfont">
+                  <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+                </i>
+              </a>
+          </nav>
+        </footer>
+      </article>
+
+      
+      
+
+
+      
+      
+
+  
+
+  
+  
+
+  
+  
+    <div class="post">
+  <script src="https://utteranc.es/client.js"
+        repo= "YaKaiLi/YaKaiLi.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+  </script>
+</div>
+
+  
+
+  
+
+  <div class="disqus-comment">
+  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
+    显示 Disqus 评论
+  </div>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_config = function () {
+      this.page.url = "https://www.gnn.ac.cn/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/";
+    };
+    function load_disqus() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'star5o';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+      $('#load_disqus').remove();
+    };
+  </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+  
+</div>
+
+
+    
+
+  
+
+  
+
+
     </div>
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        约 3 字 -
-        预计阅读 1 分钟
-      </span>
 
     
-
-
-    
-    
-
-
-    
-    
-  </div>
-</div>
-
-  </header>
-  
-  <div class="post-content">
-    
-      <div class="post-summary">
-        待阅读
-      </div>
-      <div class="read-more">
-        <a href="/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/" class="read-more-link"
-          >阅读全文</a
-        >
-      </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2022/11/28/graph-based-amd/">基于图的安卓恶意软件检测方法综述</a>
-    </h1>
-    
-
-    <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      star5o
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2022-11-28">
-      2022-11-28
-    </time>
-  </div>
-
-  
-    <div class="post-meta-lastmod">
-      (上次更新:
-      2023-03-21)
+    <nav class="toc" id="toc">
+    <div class="toc-title">文章目录</div>
+    <div class="toc-content custom-scrollbar">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#查看网卡名称">查看网卡名称</a></li>
+    <li><a href="#查看只插有线网卡的路由">查看只插有线网卡的路由</a></li>
+    <li><a href="#添加路由">添加路由</a></li>
+  </ul>
+</nav>
     </div>
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        约 397 字 -
-        预计阅读 1 分钟
-      </span>
-
-    
-
-
-    
-    
-
-
-    
-    
-  </div>
-</div>
-
-  </header>
-  
-  <div class="post-content">
-    
-      <div class="post-summary">
-        此篇文章只总结已开源或能够找到复现源码的工作。 这些方法之间的区别主要是图嵌入方式。 MalScan MamaDroid 阅读主要关注于算法如何实现的，分为四个阶段：调用图提取、序列提取、构建马尔可夫链和特征向量、分类器。 MaMaDRO
-      </div>
-      <div class="read-more">
-        <a href="/zh-cn/post/2022/11/28/graph-based-amd/" class="read-more-link"
-          >阅读全文</a
-        >
-      </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2022/11/27/python3-unicodeencodeerror/">linux-Python3-UnicodeEncodeError: &#39;ascii&#39; codec can&#39;t encode characters in position 0-1: ordinal not in range(128)</a>
-    </h1>
-    
-
-    <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      star5o
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2022-11-27">
-      2022-11-27
-    </time>
-  </div>
-
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        约 299 字 -
-        预计阅读 1 分钟
-      </span>
-
-    
-
-
-    
-    
-
-
-    
-    
-  </div>
-</div>
-
-  </header>
-  
-  <div class="post-content">
-    
-      <div class="post-summary">
-        错误说明 今天在服务器上使用python3执行python文件时报错。 报错所在行语句： 1 print(&#34;读取图片文件耗费时间：%d秒&#34; % time_elapsed) 报错信息： 1 UnicodeEncodeError: &#39;ascii&#39; codec can&#39;t encode characters in position 0-1: ordinal not in range(128) 问题分析 1、
-      </div>
-      <div class="read-more">
-        <a href="/zh-cn/post/2022/11/27/python3-unicodeencodeerror/" class="read-more-link"
-          >阅读全文</a
-        >
-      </div>
-    
-  </div>
-</article>
-
-  
-</section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
-      
-      <li >
-        <a href="/zh-cn/">1</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/2/">2</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/3/">3</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/4/">4</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/5/">5</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/6/">6</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/7/">7</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/8/">8</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/zh-cn/page/9/">9</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/10/">10</a>
-      </li>
-      
-    </ul>
   </nav>
 
-  
-  
 
-
-
-
-
+  </div>
 
       </main>
 

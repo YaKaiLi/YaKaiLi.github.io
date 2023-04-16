@@ -6,10 +6,90 @@
     <description>Recent content on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Wed, 29 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Apr 2023 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://www.gnn.ac.cn/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mac使用拓展坞有线网卡和无线网卡实现内外网同时访问</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/</guid>
+      
+        <description>&lt;p&gt;目标是&lt;code&gt;10.49.x.x&lt;/code&gt;走拓展坞有线网卡，其余走无线网卡。&lt;/p&gt;
+&lt;h2 id=&#34;查看网卡名称&#34;&gt;查看网卡名称&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ifconfig
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;无线网卡名称为：&lt;code&gt;en0&lt;/code&gt;，拓展坞有线网卡名称为：&lt;code&gt;en4&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;查看只插有线网卡的路由&#34;&gt;查看只插有线网卡的路由&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;❯ route get 10.49.0.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   route to: 10.49.0.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;destination: default
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       mask: default
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    gateway: 192.168.14.254
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  interface: en4
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      flags: &amp;lt;UP,GATEWAY,DONE,STATIC,PRCLONING,GLOBAL&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;         &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;         &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;         &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;         &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;         &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;      &lt;span class=&#34;m&#34;&gt;1500&lt;/span&gt;         &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;添加路由&#34;&gt;添加路由&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo route add -net 10.49.0.0/16 192.168.14.254
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# -interface en4&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Ubuntu使用dae代理本机流量</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/04/13/ubuntu-use-dae-for-proxy/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/04/13/ubuntu-use-dae-for-proxy/</guid>
+      
+        <description>&lt;p&gt;&lt;a href=&#34;https://github.com/daeuniverse/dae&#34;&gt;https://github.com/daeuniverse/dae&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;install&#34;&gt;install&lt;/h2&gt;
+&lt;p&gt;from:https://hubmirror.v2raya.org/daeuniverse/dae-installer&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bash &amp;lt;(curl -s https://hubmirror.v2raya.org/raw/daeuniverse/dae-installer/main/installer.sh) install
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
     
     <item>
       <title>Linux安装shellclash</title>
@@ -97,7 +177,8 @@
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/25/build-wechat-chatgpt-bot/</guid>
       
-        <description>&lt;h2 id=&#34;拉docker&#34;&gt;拉docker&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;fuergaosi233wechat-chatgpt方案&#34;&gt;fuergaosi233/wechat-chatgpt方案&lt;/h2&gt;
+&lt;h3 id=&#34;拉docker&#34;&gt;拉docker&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -157,7 +238,18 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker logs -f wechat-chatgpt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;&lt;h2 id=&#34;zhayujiechatgpt-on-wechat方案&#34;&gt;zhayujie/chatgpt-on-wechat方案&lt;/h2&gt;
+&lt;h3 id=&#34;compose本地构建&#34;&gt;compose本地构建&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://ghproxy.com/https://github.com/YaKaiLi/chatgpt-on-wechat.git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;railway部署&#34;&gt;Railway部署&lt;/h3&gt;
+</description>
       
     </item>
     

@@ -6,7 +6,25 @@
     <description>Recent content in Posts on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Wed, 29 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac使用拓展坞有线网卡和无线网卡实现内外网同时访问</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/</guid>
+      <description>目标是10.49.x.x走拓展坞有线网卡，其余走无线网卡。 查看网卡名称 1 ifconfig 无线网卡名称为：en0，拓展坞有线网卡名称为：en4。 查看只插有线网卡的路由 1 2 3 4 5 6 7 8 9 ❯ route get 10.49.0.1 route to: 10.49.0.1 destination: default mask: default gateway: 192.168.14.254 interface: en4 flags:</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu使用dae代理本机流量</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/04/13/ubuntu-use-dae-for-proxy/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/04/13/ubuntu-use-dae-for-proxy/</guid>
+      <description>https://github.com/daeuniverse/dae install from:https://hubmirror.v2raya.org/daeuniverse/dae-installer 1 bash &amp;lt;(curl -s https://hubmirror.v2raya.org/raw/daeuniverse/dae-installer/main/installer.sh) install</description>
+    </item>
+    
     <item>
       <title>Linux安装shellclash</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/29/linux-install-shellclash/</link>
@@ -31,7 +49,7 @@
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/25/build-wechat-chatgpt-bot/</guid>
-      <description>拉docker 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # pull image docker pull holegots/wechat-chatgpt # run container docker run -d --name wechat-chatgpt \ -e OPENAI_API_KEY=&amp;#34;&amp;#34; \ -e MODEL=&amp;#34;gpt-3.5-turbo&amp;#34; \ -e DISABLE_GROUP_MESSAGE=&amp;#34;false&amp;#34; \ -e CHAT_PRIVATE_TRIGGER_KEYWORD=&amp;#34;小助理&amp;#34; \ -v $(pwd)/data:/app/data/wechat-assistant.memory-card.json \ holegots/wechat-chatgpt:latest # # View the QR code to</description>
+      <description>fuergaosi233/wechat-chatgpt方案 拉docker 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # pull image docker pull holegots/wechat-chatgpt # run container docker run -d --name wechat-chatgpt \ -e OPENAI_API_KEY=&amp;#34;&amp;#34; \ -e MODEL=&amp;#34;gpt-3.5-turbo&amp;#34; \ -e DISABLE_GROUP_MESSAGE=&amp;#34;false&amp;#34; \ -e CHAT_PRIVATE_TRIGGER_KEYW</description>
     </item>
     
     <item>
