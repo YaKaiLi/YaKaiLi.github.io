@@ -31,7 +31,7 @@
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/29/linux-install-shellclash/</guid>
-      <description>使用curl安装： 1 2 #jsdelivrCDN源 export url=&amp;#39;https://fastly.jsdelivr.net/gh/juewuy/ShellClash@master&amp;#39; &amp;amp;&amp;amp; sh -c &amp;#34;$(curl -kfsSl $url/install.sh)&amp;#34; &amp;amp;&amp;amp; source /etc/profile &amp;amp;&amp;gt; /dev/null 或者 1 export url=&amp;#39;https://gh.jwsc.eu.org/master&amp;#39; &amp;amp;&amp;amp; bash -c &amp;#34;$(curl -kfsSl $url/install.sh)&amp;#34; &amp;amp;&amp;amp; source /etc/profile &amp;amp;&amp;gt; /dev/null 使用wget安装： 1 2 #Release版本-jsdelivrCDN源 export url=&amp;#39;https://fastly.jsdelivr.net/gh/juewuy/ShellClash@master&amp;#39; &amp;amp;&amp;amp; wget -q --no-check-certificate -O /tmp/install.sh $url/install.sh &amp;amp;&amp;amp; sh /tmp/install.sh &amp;amp;&amp;amp;</description>
+      <description>标准linux设备 使用curl安装： 1 2 #jsdelivrCDN源 export url=&amp;#39;https://fastly.jsdelivr.net/gh/juewuy/ShellClash@master&amp;#39; &amp;amp;&amp;amp; sh -c &amp;#34;$(curl -kfsSl $url/install.sh)&amp;#34; &amp;amp;&amp;amp; source /etc/profile &amp;amp;&amp;gt; /dev/null 或者 1 export url=&amp;#39;https://gh.jwsc.eu.org/master&amp;#39; &amp;amp;&amp;amp; bash -c &amp;#34;$(curl -kfsSl $url/install.sh)&amp;#34; &amp;amp;&amp;amp; source /etc/profile &amp;amp;&amp;gt; /dev/null 使用wget安装： 1 2 #Release版本-jsdelivrCDN源 export url=&amp;#39;https://fastly.jsdelivr.net/gh/juewuy/ShellClash@master&amp;#39; &amp;amp;&amp;amp; wget</description>
     </item>
     
     <item>

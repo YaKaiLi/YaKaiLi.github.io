@@ -13,7 +13,7 @@
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/06/docker-install-alist/</guid>
-      <description>安装 新建配置文件存放目录 1 mkdir ~/software/alist 启动容器 1 docker run -d --restart=always -v ~/software/alist:/opt/alist/data -p 5244:5244 --name=&amp;#34;alist&amp;#34; xhofe/alist:latest 访问ip:5244即可进入alist 输入以下命令查看初始账号密码 1 docker logs alist 配置阿里云盘 进入后点击管理添加挂载的网盘。 点击存储-&amp;gt;添加，驱</description>
+      <description>安装 新建配置文件存放目录 1 mkdir /root/software/alist 启动容器 1 2 docker run -d --restart=always -v /root/software/alist:/opt/alist/data -p 5244:5244 --name=&amp;#34;alist&amp;#34; xhofe/alist:latest # --network=&amp;#34;host&amp;#34; 访问ip:5244即可进入alist 输入以下命令查看初始账号密码 1 docker logs alist 配置阿里云盘 进入后点击管理添加挂载的网盘。 点击存储-&amp;gt;添</description>
     </item>
     
     <item>

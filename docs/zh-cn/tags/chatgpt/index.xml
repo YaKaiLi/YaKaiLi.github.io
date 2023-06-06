@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ChatGPT on Star5o的博客</title>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/chatgpt/</link>
+    <description>Recent content in ChatGPT on Star5o的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Star5o Love Haohao</copyright>
+    <lastBuildDate>Tue, 06 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/chatgpt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>通过docker安装LLM自主代理AgentGPT</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-agentgpt-in-docker/</link>
+      <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-agentgpt-in-docker/</guid>
+      <description>获取Websearch密钥 两种方式都可以。 Google官方 每天100次搜索免费，之后5美元/1000次搜索。 https://developers.google.com/custom-search/v1/overview?hl=zh-cn 第三方 1000次搜索免费，之后0.3美元/1000次搜索。 https://serper.dev/ 下载并配置 1 git clone https://github.com/Dogtiti/AutoGPT-Next-Web.git &amp;amp;&amp;amp; cd AutoGPT-Next-Web 选用A</description>
+    </item>
+    
+  </channel>
+</rss>

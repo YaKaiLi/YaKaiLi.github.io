@@ -8,11 +8,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>
-          Star5o的博客
+          通过docker安装使用LLaMA的LLM自主代理babyagi - Star5o的博客
         </title>
     
-<link rel="alternate" hreflang="" href="https://www.gnn.ac.cn/en/" />
-
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
@@ -31,7 +29,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="star5o" />
-  <meta name="description" content="Star5o&#39;s Blog; Star5o的博客" />
+  <meta name="description" content="编译LLaMa-cpp 参考：https://mikespook.com/2023/03/%E5%9C%A8-ubuntu-2204-%E4%B8%8A%E8%BF%90%E8%A1%8C-llama-" />
+
   <meta name="keywords" content="Star5o, star5o" />
 
 
@@ -42,8 +41,8 @@
 <meta name="generator" content="Hugo 0.107.0" />
 
 
-<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/" />
-<link href="/zh-cn/index.xml" rel="alternate" type="application/rss+xml" title="Star5o的博客" />
+<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-babyagi-in-docker-with-llama/" />
+
 
 
 
@@ -68,15 +67,20 @@
 
 
 
-<meta property="og:title" content="Star5o的博客" />
-<meta property="og:description" content="Star5o&#39;s Blog; Star5o的博客" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/" /><meta property="og:site_name" content="Star5o的博客" />
+<meta property="og:title" content="通过docker安装使用LLaMA的LLM自主代理babyagi" />
+<meta property="og:description" content="编译LLaMa-cpp 参考：https://mikespook.com/2023/03/%E5%9C%A8-ubuntu-2204-%E4%B8%8A%E8%BF%90%E8%A1%8C-llama-" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-babyagi-in-docker-with-llama/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-06-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-06-06T00:00:00+00:00" /><meta property="og:site_name" content="Star5o的博客" />
 
-<meta itemprop="name" content="Star5o的博客">
-<meta itemprop="description" content="Star5o&#39;s Blog; Star5o的博客"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Star5o的博客"/>
-<meta name="twitter:description" content="Star5o&#39;s Blog; Star5o的博客"/>
+<meta itemprop="name" content="通过docker安装使用LLaMA的LLM自主代理babyagi">
+<meta itemprop="description" content="编译LLaMa-cpp 参考：https://mikespook.com/2023/03/%E5%9C%A8-ubuntu-2204-%E4%B8%8A%E8%BF%90%E8%A1%8C-llama-"><meta itemprop="datePublished" content="2023-06-06T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-06-06T00:00:00+00:00" />
+<meta itemprop="wordCount" content="434">
+<meta itemprop="keywords" content="LLMs,LLaMA,Paper," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="通过docker安装使用LLaMA的LLM自主代理babyagi"/>
+<meta name="twitter:description" content="编译LLaMa-cpp 参考：https://mikespook.com/2023/03/%E5%9C%A8-ubuntu-2204-%E4%B8%8A%E8%BF%90%E8%A1%8C-llama-"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -348,23 +352,15 @@
 
     <div id="mobile-panel">
       <main id="main" class="main bg-llight wallpaper">
+        <div class="content-wrapper">
+    <div id="content" class="content">
+      <article class="post">
         
-<section id="posts" class="posts">
-  
-  
-    
-  
-  
-  
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/03/25/build-wechat-chatgpt-bot/">搭建chatgpt微信机器人</a>
-    </h1>
-    
+        <header class="post-header">
+          <h1 class="post-title">通过docker安装使用LLaMA的LLM自主代理babyagi</h1>
+          
 
-    <div class="post-meta">
+          <div class="post-meta">
   <div class="post-meta-author">
     by
       star5o
@@ -372,22 +368,17 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="2023-03-25">
-      2023-03-25
+    <time datetime="2023-06-06">
+      2023-06-06
     </time>
   </div>
 
-  
-    <div class="post-meta-lastmod">
-      (上次更新:
-      2023-04-16)
-    </div>
   
 
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 252 字 -
+        约 434 字 -
         预计阅读 1 分钟
       </span>
 
@@ -403,225 +394,214 @@
   </div>
 </div>
 
-  </header>
-  
-  <div class="post-content">
-    
-      <div class="post-summary">
-        fuergaosi233/wechat-chatgpt方案 拉docker 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # pull image docker pull holegots/wechat-chatgpt # run container docker run -d --name wechat-chatgpt \ -e OPENAI_API_KEY=&#34;&#34; \ -e MODEL=&#34;gpt-3.5-turbo&#34; \ -e DISABLE_GROUP_MESSAGE=&#34;false&#34; \ -e CHAT_PRIVATE_TRIGGER_KEYW
-      </div>
-      <div class="read-more">
-        <a href="/zh-cn/post/2023/03/25/build-wechat-chatgpt-bot/" class="read-more-link"
-          >阅读全文</a
-        >
-      </div>
-    
-  </div>
-</article>
+        </header>
 
-  
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
+        
+        <div class="post-content">
+          <h2 id="编译llama-cpp">编译LLaMa-cpp</h2>
+<p>参考：https://mikespook.com/2023/03/%E5%9C%A8-ubuntu-2204-%E4%B8%8A%E8%BF%90%E8%A1%8C-llama-cpp/</p>
+<h2 id="下载babyagi并配置">下载babyagi并配置</h2>
+<p>参考：https://www.wbolt.com/babyagi.html
+git clone <a href="https://github.com/yoheinakajima/babyagi.git">https://github.com/yoheinakajima/babyagi.git</a> &amp;&amp; cd babyagi</p>
+<p>cp .env.example .env</p>
+<p>输入Pinecone API密钥和Pinecone环境变量。不要在密钥周围加引号。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># Pinecone config
+</span></span><span class="line"><span class="cl"># Uncomment and fill these to switch from local ChromaDB to Pinecone
+</span></span><span class="line"><span class="cl">PINECONE_API_KEY=
+</span></span><span class="line"><span class="cl">PINECONE_ENVIRONMENT=
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># API CONFIG
+</span></span><span class="line"><span class="cl"># OPENAI_API_MODEL can be used instead
+</span></span><span class="line"><span class="cl"># Special values:
+</span></span><span class="line"><span class="cl"># human - use human as intermediary with custom LLMs
+</span></span><span class="line"><span class="cl"># llama - use llama.cpp with Llama, Alpaca, Vicuna, GPT4All, etc
+</span></span><span class="line"><span class="cl">LLM_MODEL=llama# alternatively, gpt-4, text-davinci-003, etc
+</span></span><span class="line"><span class="cl">LLAMA_MODEL_PATH=models/llama-13B/ggml-model.bin # ex. models/llama-13B/ggml-model.bin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">从Pinecone获得一个API密钥
+</span></span><span class="line"><span class="cl">Pinecone是一个用于存储AI数据的矢量数据库。你可以获得一个免费账户，尽管可能有一个等待名单。你可以通过点击API密钥标签，点击复制按钮或 “Create API Key” 来获得API密钥。另外，注意 “Environment” 的位置（例如：us-central1-gcp）。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker-compose up
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+        </div>
+
+        
+        
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">star5o</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2023-06-06
       
-      <a class="post-link" href="/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/">阿里云DCDN全站加速hugo的github pages</a>
-    </h1>
-    
-
-    <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      star5o
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2023-03-22">
-      2023-03-22
-    </time>
-  </div>
-
+    </span>
+  </p>
   
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        约 120 字 -
-        预计阅读 1 分钟
-      </span>
-
-    
-
-
-    
-    
-
-
-    
-    
-  </div>
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+  </p>
 </div>
 
-  </header>
-  
-  <div class="post-content">
-    
-      <div class="post-summary">
-        前言 先前使用腾讯云的CDN小文件加速github pages，更新博客之后总是需要刷新缓存，使用有些不便，因此切换为阿里云DCDN全站加速。 添加域名和IP 配置CNAME 开启HTTPS 购买资源包 至此便完成
-      </div>
-      <div class="read-more">
-        <a href="/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/" class="read-more-link"
-          >阅读全文</a
-        >
-      </div>
-    
-  </div>
-</article>
 
-  
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
+
+        
+        
+
+
+        <footer class="post-footer">
+          <div class="post-tags">
+              <a href="https://www.gnn.ac.cn/zh-cn/tags/llms/">LLMs</a>
+                <a href="https://www.gnn.ac.cn/zh-cn/tags/llama/">LLaMA</a>
+                <a href="https://www.gnn.ac.cn/zh-cn/tags/paper/">Paper</a>
+                
+            </div>
+
+
+          
+          <nav class="post-nav">
+            
+              <a class="prev" href="/zh-cn/post/2023/06/06/install-agentgpt-in-docker/">
+                
+                <i class="iconfont">
+                  <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+                </i>
+                <span class="prev-text nav-default">通过docker安装LLM自主代理AgentGPT</span>
+                <span class="prev-text nav-mobile">上一篇</span>
+              </a>
+            
+              <a class="next" href="/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/">
+                <span class="next-text nav-default">Mac使用拓展坞有线网卡和无线网卡实现内外网同时访问</span>
+                <span class="prev-text nav-mobile">下一篇</span>
+                
+                <i class="iconfont">
+                  <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+                </i>
+              </a>
+          </nav>
+        </footer>
+      </article>
+
       
-      <a class="post-link" href="/zh-cn/post/2023/03/17/deep-graph-generator-survey/">图生成方法综述</a>
-    </h1>
-    
+      
 
-    <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      star5o
-    
-  </div>
 
-  <div class="post-meta-time">
-    <time datetime="2023-03-17">
-      2023-03-17
-    </time>
-  </div>
+      
+      
 
   
-    <div class="post-meta-lastmod">
-      (上次更新:
-      2023-03-23)
+
+  
+  
+
+  
+  
+    <div class="post">
+  <script src="https://utteranc.es/client.js"
+        repo= "YaKaiLi/YaKaiLi.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+  </script>
+</div>
+
+  
+
+  
+
+  <div class="disqus-comment">
+  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
+    显示 Disqus 评论
+  </div>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_config = function () {
+      this.page.url = "https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-babyagi-in-docker-with-llama/";
+    };
+    function load_disqus() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'star5o';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+      $('#load_disqus').remove();
+    };
+  </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+  
+</div>
+
+
+    
+
+  
+
+  
+
+
     </div>
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        约 1434 字 -
-        预计阅读 3 分钟
-      </span>
 
     
-
-
-    
-    
-
-
-    
-    
-  </div>
-</div>
-
-  </header>
-  
-  <div class="post-content">
-    
-      <div class="post-summary">
-        我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数，并且支持添加生成约束条件的图生成方法。因此进行了一系列调研，总结如下。 主要参考了文章《Deep Graph Generators: A Survey》1 基于自回归（Autor
-      </div>
-      <div class="read-more">
-        <a href="/zh-cn/post/2023/03/17/deep-graph-generator-survey/" class="read-more-link"
-          >阅读全文</a
-        >
-      </div>
-    
-  </div>
-</article>
-
-  
-</section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
-      
-      <li >
-        <a href="/zh-cn/">1</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/2/">2</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/zh-cn/page/3/">3</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/4/">4</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/5/">5</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/6/">6</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/7/">7</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/8/">8</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/9/">9</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/10/">10</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/11/">11</a>
-      </li>
-      
-    </ul>
+    <nav class="toc" id="toc">
+    <div class="toc-title">文章目录</div>
+    <div class="toc-content custom-scrollbar">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#编译llama-cpp">编译LLaMa-cpp</a></li>
+    <li><a href="#下载babyagi并配置">下载babyagi并配置</a></li>
+  </ul>
+</nav>
+    </div>
   </nav>
 
-  
-  
 
-
-
-
-
+  </div>
 
       </main>
 

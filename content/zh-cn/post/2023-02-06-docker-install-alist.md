@@ -10,11 +10,12 @@ tags:
 # 安装
 新建配置文件存放目录
 ```shell
-mkdir ~/software/alist
+mkdir /root/software/alist
 ```
 启动容器
 ```shell
-docker run -d --restart=always -v ~/software/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:latest
+docker run -d --restart=always -v /root/software/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:latest
+#  --network="host"
 ```
 
 访问ip:5244即可进入alist
