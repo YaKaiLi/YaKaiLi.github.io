@@ -54,6 +54,7 @@ docker-compose up
 magnet:?xt=urn:btih:b8287ebfa04f879b048d4d4404108cf3e8014352&dn=LLaMA&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce
 ```
 下载完成后，将权重文件放在`babyagi/models/llama-13B`目录下。
+
 ### 编译LLaMa-cpp
 参考：https://mikespook.com/2023/03/%E5%9C%A8-ubuntu-2204-%E4%B8%8A%E8%BF%90%E8%A1%8C-llama-cpp/
 
