@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 07 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/paper/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>通过docker安装LLM自主代理Auto-GPT</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-next-web-in-docker/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-next-web-in-docker/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker/</guid>
       <description>获取Websearch密钥 两种方式都可以。 Google官方 每天100次搜索免费，之后5美元/1000次搜索。 https://developers.google.com/custom-search/v1/overview?hl=zh-cn 第三方 1000次搜索免费，之后0.3美元/1000次搜索。 https://serper.dev/ 下载并配置 1 git clone https://github.com/Dogtiti/AutoGPT-Next-Web.git &amp;amp;&amp;amp; cd AutoGPT-Next-Web 选用A</description>
     </item>
     
@@ -35,11 +35,11 @@
     </item>
     
     <item>
-      <title>通过docker安装使用LLaMA的LLM自主代理babyagi</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-babyagi-in-docker-with-llama/</link>
+      <title>通过docker安装LLM自主代理babyagi</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-babyagi-in-docker/</link>
       <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-babyagi-in-docker-with-llama/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-babyagi-in-docker/</guid>
       <description>获取Pinecone API密钥 Pinecone是一个用于存储AI数据的矢量数据库。通过点击API密钥标签，点击复制按钮或 “Create API Key” 来获得API密钥。另外，注意 “Environment” 的</description>
     </item>
     

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>
-          Mac使用拓展坞有线网卡和无线网卡实现内外网同时访问 - Star5o的博客
+          通过docker安装LLM自主代理Auto-GPT - Star5o的博客
         </title>
     
 
@@ -29,7 +29,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="star5o" />
-  <meta name="description" content="目标是10.49.x.x走拓展坞有线网卡，其余走无线网卡。 查看网卡名称 1 ifconfig 无线网卡名称为：en0，拓展坞有线网卡名称为：en4。 查看只插有线网卡的路由 1 2 3 4 5 6 7 8 9 ❯ route get 10.49.0.1 route to: 10.49.0.1 destination: default mask: default gateway: 192.168.14.254 interface: en4 flags:" />
+  <meta name="description" content="获取Websearch密钥 两种方式都可以。 Google官方 每天100次搜索免费，之后5美元/1000次搜索。 https://developers.google.com/custom-search/v1/overview?hl=zh-cn 第三方 1000次搜索免费，之后0.3美元/1000次搜索。 https://serper.dev/ 下载并配置 1 git clone https://github.com/Dogtiti/AutoGPT-Next-Web.git &amp;amp;&amp;amp; cd AutoGPT-Next-Web 选用A" />
 
   <meta name="keywords" content="Star5o, star5o" />
 
@@ -41,7 +41,7 @@
 <meta name="generator" content="Hugo 0.107.0" />
 
 
-<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/" />
+<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker/" />
 
 
 
@@ -67,20 +67,20 @@
 
 
 
-<meta property="og:title" content="Mac使用拓展坞有线网卡和无线网卡实现内外网同时访问" />
-<meta property="og:description" content="目标是10.49.x.x走拓展坞有线网卡，其余走无线网卡。 查看网卡名称 1 ifconfig 无线网卡名称为：en0，拓展坞有线网卡名称为：en4。 查看只插有线网卡的路由 1 2 3 4 5 6 7 8 9 ❯ route get 10.49.0.1 route to: 10.49.0.1 destination: default mask: default gateway: 192.168.14.254 interface: en4 flags:" />
+<meta property="og:title" content="通过docker安装LLM自主代理Auto-GPT" />
+<meta property="og:description" content="获取Websearch密钥 两种方式都可以。 Google官方 每天100次搜索免费，之后5美元/1000次搜索。 https://developers.google.com/custom-search/v1/overview?hl=zh-cn 第三方 1000次搜索免费，之后0.3美元/1000次搜索。 https://serper.dev/ 下载并配置 1 git clone https://github.com/Dogtiti/AutoGPT-Next-Web.git &amp;&amp; cd AutoGPT-Next-Web 选用A" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2023-04-13T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-04-16T20:15:58+08:00" /><meta property="og:site_name" content="Star5o的博客" />
+<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-06-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-06-07T16:26:45+08:00" /><meta property="og:site_name" content="Star5o的博客" />
 
-<meta itemprop="name" content="Mac使用拓展坞有线网卡和无线网卡实现内外网同时访问">
-<meta itemprop="description" content="目标是10.49.x.x走拓展坞有线网卡，其余走无线网卡。 查看网卡名称 1 ifconfig 无线网卡名称为：en0，拓展坞有线网卡名称为：en4。 查看只插有线网卡的路由 1 2 3 4 5 6 7 8 9 ❯ route get 10.49.0.1 route to: 10.49.0.1 destination: default mask: default gateway: 192.168.14.254 interface: en4 flags:"><meta itemprop="datePublished" content="2023-04-13T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-04-16T20:15:58+08:00" />
-<meta itemprop="wordCount" content="132">
-<meta itemprop="keywords" content="Misc,Software," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Mac使用拓展坞有线网卡和无线网卡实现内外网同时访问"/>
-<meta name="twitter:description" content="目标是10.49.x.x走拓展坞有线网卡，其余走无线网卡。 查看网卡名称 1 ifconfig 无线网卡名称为：en0，拓展坞有线网卡名称为：en4。 查看只插有线网卡的路由 1 2 3 4 5 6 7 8 9 ❯ route get 10.49.0.1 route to: 10.49.0.1 destination: default mask: default gateway: 192.168.14.254 interface: en4 flags:"/>
+<meta itemprop="name" content="通过docker安装LLM自主代理Auto-GPT">
+<meta itemprop="description" content="获取Websearch密钥 两种方式都可以。 Google官方 每天100次搜索免费，之后5美元/1000次搜索。 https://developers.google.com/custom-search/v1/overview?hl=zh-cn 第三方 1000次搜索免费，之后0.3美元/1000次搜索。 https://serper.dev/ 下载并配置 1 git clone https://github.com/Dogtiti/AutoGPT-Next-Web.git &amp;&amp; cd AutoGPT-Next-Web 选用A"><meta itemprop="datePublished" content="2023-06-07T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-06-07T16:26:45+08:00" />
+<meta itemprop="wordCount" content="341">
+<meta itemprop="keywords" content="LLMs,ChatGPT,Paper," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="通过docker安装LLM自主代理Auto-GPT"/>
+<meta name="twitter:description" content="获取Websearch密钥 两种方式都可以。 Google官方 每天100次搜索免费，之后5美元/1000次搜索。 https://developers.google.com/custom-search/v1/overview?hl=zh-cn 第三方 1000次搜索免费，之后0.3美元/1000次搜索。 https://serper.dev/ 下载并配置 1 git clone https://github.com/Dogtiti/AutoGPT-Next-Web.git &amp;&amp; cd AutoGPT-Next-Web 选用A"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -357,7 +357,7 @@
       <article class="post">
         
         <header class="post-header">
-          <h1 class="post-title">Mac使用拓展坞有线网卡和无线网卡实现内外网同时访问</h1>
+          <h1 class="post-title">通过docker安装LLM自主代理Auto-GPT</h1>
           
 
           <div class="post-meta">
@@ -368,22 +368,17 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="2023-04-13">
-      2023-04-13
+    <time datetime="2023-06-07">
+      2023-06-07
     </time>
   </div>
 
-  
-    <div class="post-meta-lastmod">
-      (上次更新:
-      2023-04-16)
-    </div>
   
 
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 132 字 -
+        约 341 字 -
         预计阅读 1 分钟
       </span>
 
@@ -403,54 +398,65 @@
 
         
         <div class="post-content">
-          <p>目标是<code>10.49.x.x</code>走拓展坞有线网卡，其余走无线网卡。</p>
-<h2 id="查看网卡名称">查看网卡名称</h2>
+          <h2 id="获取websearch密钥">获取Websearch密钥</h2>
+<p>两种方式都可以。</p>
+<h3 id="google官方">Google官方</h3>
+<p>每天100次搜索免费，之后5美元/1000次搜索。
+<a href="https://developers.google.com/custom-search/v1/overview?hl=zh-cn">https://developers.google.com/custom-search/v1/overview?hl=zh-cn</a></p>
+<h3 id="第三方">第三方</h3>
+<p>1000次搜索免费，之后0.3美元/1000次搜索。
+<a href="https://serper.dev/">https://serper.dev/</a></p>
+<h2 id="下载并配置">下载并配置</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ifconfig
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone https://github.com/Dogtiti/AutoGPT-Next-Web.git &amp;&amp; cd AutoGPT-Next-Web
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>无线网卡名称为：<code>en0</code>，拓展坞有线网卡名称为：<code>en4</code>。</p>
-<h2 id="查看只插有线网卡的路由">查看只插有线网卡的路由</h2>
+</div><p>选用<code>AutoGPT-Next-Web</code>项目，该项目可自定义<code>API_BASE_URL</code>，国内访问更流程。</p>
+<p>下载完成后，配置.env文件。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">❯ route get 10.49.0.1
-</span></span><span class="line"><span class="cl">   route to: 10.49.0.1
-</span></span><span class="line"><span class="cl">destination: default
-</span></span><span class="line"><span class="cl">       mask: default
-</span></span><span class="line"><span class="cl">    gateway: 192.168.14.254
-</span></span><span class="line"><span class="cl">  interface: en4
-</span></span><span class="line"><span class="cl">      flags: &lt;UP,GATEWAY,DONE,STATIC,PRCLONING,GLOBAL&gt;
-</span></span><span class="line"><span class="cl"> recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
-</span></span><span class="line"><span class="cl">       <span class="m">0</span>         <span class="m">0</span>         <span class="m">0</span>         <span class="m">0</span>         <span class="m">0</span>         <span class="m">0</span>      <span class="m">1500</span>         <span class="m">0</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp .env.example .env
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">vim .env
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="添加路由">添加路由</h2>
-<div class="highlight"><div class="chroma">
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo route add -net 10.49.0.0/16 192.168.14.254
-</span></span><span class="line"><span class="cl"><span class="c1"># -interface en4</span>
+<pre tabindex="0" class="chroma"><code class="language-vim" data-lang="vim"><span class="line"><span class="cl">#不要在密钥周围加引号。<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">OPENAI_API_KEY</span><span class="p">=</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">NEXT_PUBLIC_WEB_SEARCH_ENABLED</span><span class="p">=</span><span class="nx">true</span> # 设置启用Websearch。<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">SERP_API_KEY</span><span class="p">=</span> # <span class="nx">or</span> <span class="nx">GOOGLE_API_KEY</span><span class="p">=</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker-compose -f docker-compose.dev.yml up -d --remove-orphans
 </span></span></code></pre></td></tr></table>
 </div>
-</div>
+</div><p>等待完成后即可访问，默认使用3000端口，地址为：http://localhost:3000。</p>
+<h2 id="问题">问题</h2>
+<p>不知道为什么，部署完成之后不能启用websearch，相关issue中也有人遇到了这个问题，但是没有解决方案。
+遂弃用该项目，改用<code>AgentGPT</code>项目。</p>
+
         </div>
 
         
@@ -463,7 +469,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2023-04-16
+      2023-06-07
       
         
         
@@ -485,8 +491,9 @@
 
         <footer class="post-footer">
           <div class="post-tags">
-              <a href="https://www.gnn.ac.cn/zh-cn/tags/misc/">Misc</a>
-                <a href="https://www.gnn.ac.cn/zh-cn/tags/software/">Software</a>
+              <a href="https://www.gnn.ac.cn/zh-cn/tags/llms/">LLMs</a>
+                <a href="https://www.gnn.ac.cn/zh-cn/tags/chatgpt/">ChatGPT</a>
+                <a href="https://www.gnn.ac.cn/zh-cn/tags/paper/">Paper</a>
                 
             </div>
 
@@ -494,22 +501,9 @@
           
           <nav class="post-nav">
             
-              <a class="prev" href="/zh-cn/post/2023/06/06/install-babyagi-in-docker/">
-                
-                <i class="iconfont">
-                  <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-                </i>
-                <span class="prev-text nav-default">通过docker安装LLM自主代理babyagi</span>
-                <span class="prev-text nav-mobile">上一篇</span>
-              </a>
             
-              <a class="next" href="/zh-cn/post/2023/04/13/ubuntu-use-dae-for-proxy/">
-                <span class="next-text nav-default">Ubuntu使用dae代理本机流量</span>
+              <a class="next" href="/zh-cn/post/2023/06/06/install-agentgpt-in-docker/">
+                <span class="next-text nav-default">通过docker安装LLM自主代理AgentGPT</span>
                 <span class="prev-text nav-mobile">下一篇</span>
                 
                 <i class="iconfont">
@@ -560,7 +554,7 @@
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     var disqus_config = function () {
-      this.page.url = "https://www.gnn.ac.cn/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/";
+      this.page.url = "https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker/";
     };
     function load_disqus() {
       
@@ -598,9 +592,14 @@
     <div class="toc-content custom-scrollbar">
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#查看网卡名称">查看网卡名称</a></li>
-    <li><a href="#查看只插有线网卡的路由">查看只插有线网卡的路由</a></li>
-    <li><a href="#添加路由">添加路由</a></li>
+    <li><a href="#获取websearch密钥">获取Websearch密钥</a>
+      <ul>
+        <li><a href="#google官方">Google官方</a></li>
+        <li><a href="#第三方">第三方</a></li>
+      </ul>
+    </li>
+    <li><a href="#下载并配置">下载并配置</a></li>
+    <li><a href="#问题">问题</a></li>
   </ul>
 </nav>
     </div>

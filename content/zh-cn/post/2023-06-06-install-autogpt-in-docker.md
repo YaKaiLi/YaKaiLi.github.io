@@ -1,7 +1,7 @@
 ---
 title: 通过docker安装LLM自主代理Auto-GPT
 date: '2023-06-07'
-slug: install-autogpt-next-web-in-docker
+slug: install-autogpt-in-docker
 tags:
   - LLMs
   - ChatGPT
