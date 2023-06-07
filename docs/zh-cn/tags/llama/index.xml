@@ -13,7 +13,7 @@
       <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-babyagi-in-docker-with-llama/</guid>
-      <description>编译LLaMa-cpp 参考：https://mikespook.com/2023/03/%E5%9C%A8-ubuntu-2204-%E4%B8%8A%E8%BF%90%E8%A1%8C-llama-</description>
+      <description>获取Pinecone API密钥 Pinecone是一个用于存储AI数据的矢量数据库。通过点击API密钥标签，点击复制按钮或 “Create API Key” 来获得API密钥。另外，注意 “Environment” 的</description>
     </item>
     
   </channel>

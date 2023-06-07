@@ -29,7 +29,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="star5o" />
-  <meta name="description" content="编译LLaMa-cpp 参考：https://mikespook.com/2023/03/%E5%9C%A8-ubuntu-2204-%E4%B8%8A%E8%BF%90%E8%A1%8C-llama-" />
+  <meta name="description" content="获取Pinecone API密钥 Pinecone是一个用于存储AI数据的矢量数据库。通过点击API密钥标签，点击复制按钮或 “Create API Key” 来获得API密钥。另外，注意 “Environment” 的" />
 
   <meta name="keywords" content="Star5o, star5o" />
 
@@ -68,19 +68,19 @@
 
 
 <meta property="og:title" content="通过docker安装使用LLaMA的LLM自主代理babyagi" />
-<meta property="og:description" content="编译LLaMa-cpp 参考：https://mikespook.com/2023/03/%E5%9C%A8-ubuntu-2204-%E4%B8%8A%E8%BF%90%E8%A1%8C-llama-" />
+<meta property="og:description" content="获取Pinecone API密钥 Pinecone是一个用于存储AI数据的矢量数据库。通过点击API密钥标签，点击复制按钮或 “Create API Key” 来获得API密钥。另外，注意 “Environment” 的" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-babyagi-in-docker-with-llama/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-06-06T00:00:00+00:00" />
 <meta property="article:modified_time" content="2023-06-06T20:56:39+08:00" /><meta property="og:site_name" content="Star5o的博客" />
 
 <meta itemprop="name" content="通过docker安装使用LLaMA的LLM自主代理babyagi">
-<meta itemprop="description" content="编译LLaMa-cpp 参考：https://mikespook.com/2023/03/%E5%9C%A8-ubuntu-2204-%E4%B8%8A%E8%BF%90%E8%A1%8C-llama-"><meta itemprop="datePublished" content="2023-06-06T00:00:00+00:00" />
+<meta itemprop="description" content="获取Pinecone API密钥 Pinecone是一个用于存储AI数据的矢量数据库。通过点击API密钥标签，点击复制按钮或 “Create API Key” 来获得API密钥。另外，注意 “Environment” 的"><meta itemprop="datePublished" content="2023-06-06T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-06-06T20:56:39+08:00" />
-<meta itemprop="wordCount" content="434">
+<meta itemprop="wordCount" content="624">
 <meta itemprop="keywords" content="LLMs,LLaMA,Paper," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="通过docker安装使用LLaMA的LLM自主代理babyagi"/>
-<meta name="twitter:description" content="编译LLaMa-cpp 参考：https://mikespook.com/2023/03/%E5%9C%A8-ubuntu-2204-%E4%B8%8A%E8%BF%90%E8%A1%8C-llama-"/>
+<meta name="twitter:description" content="获取Pinecone API密钥 Pinecone是一个用于存储AI数据的矢量数据库。通过点击API密钥标签，点击复制按钮或 “Create API Key” 来获得API密钥。另外，注意 “Environment” 的"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -378,8 +378,8 @@
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 434 字 -
-        预计阅读 1 分钟
+        约 624 字 -
+        预计阅读 2 分钟
       </span>
 
     
@@ -398,9 +398,75 @@
 
         
         <div class="post-content">
-          <h2 id="编译llama-cpp">编译LLaMa-cpp</h2>
+          <h2 id="获取pinecone-api密钥">获取Pinecone API密钥</h2>
+<p>Pinecone是一个用于存储AI数据的矢量数据库。通过点击API密钥标签，点击复制按钮或 “Create API Key” 来获得API密钥。另外，注意 “Environment” 的位置（例如：us-central1-gcp）。</p>
+<h2 id="使用gpt">使用GPT</h2>
+<h3 id="下载babyagi并配置">下载babyagi并配置</h3>
+<h4 id="下载">下载</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/yoheinakajima/babyagi.git <span class="o">&amp;&amp;</span> <span class="nb">cd</span> babyagi
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="配置">配置</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp .env.example .env
+</span></span><span class="line"><span class="cl">vim .env
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="配置密钥">配置密钥</h5>
+<p>输入Pinecone API密钥和Pinecone环境变量。不要在密钥周围加引号。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PINECONE_API_KEY=
+</span></span><span class="line"><span class="cl">PINECONE_ENVIRONMENT=
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">LLM_MODEL=gpt-3.5-turbo # 默认值，不需修改。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="配置目标任务">配置目标任务</h5>
+<p>设置OBJECTIVE和INITIAL_TASK，不要把它们放在引号里，但要使用自然语言。OBJECTIVE应该是你想要完成的事情，INITIAL_TASK应该是第一个开始的任务。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># RUN CONFIG</span>
+</span></span><span class="line"><span class="cl"><span class="nv">OBJECTIVE</span><span class="o">=</span>Solve world hunger
+</span></span><span class="line"><span class="cl"><span class="c1"># For backwards compatibility</span>
+</span></span><span class="line"><span class="cl"><span class="nv">INITIAL_TASK</span><span class="o">=</span>Write some code to make a platformer game
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="运行">运行</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker-compose up
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="使用llama">使用LLaMA</h2>
+<h3 id="编译llama-cpp">编译LLaMa-cpp</h3>
 <p>参考：https://mikespook.com/2023/03/%E5%9C%A8-ubuntu-2204-%E4%B8%8A%E8%BF%90%E8%A1%8C-llama-cpp/</p>
-<h2 id="下载babyagi并配置">下载babyagi并配置</h2>
+<h3 id="配置babyagi">配置babyagi</h3>
 <p>参考：https://www.wbolt.com/babyagi.html
 git clone <a href="https://github.com/yoheinakajima/babyagi.git">https://github.com/yoheinakajima/babyagi.git</a> &amp;&amp; cd babyagi</p>
 <p>cp .env.example .env</p>
@@ -422,9 +488,6 @@ git clone <a href="https://github.com/yoheinakajima/babyagi.git">https://github.
 </span><span class="lnt">13
 </span><span class="lnt">14
 </span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># Pinecone config
@@ -439,9 +502,6 @@ git clone <a href="https://github.com/yoheinakajima/babyagi.git">https://github.
 </span></span><span class="line"><span class="cl"># llama - use llama.cpp with Llama, Alpaca, Vicuna, GPT4All, etc
 </span></span><span class="line"><span class="cl">LLM_MODEL=llama# alternatively, gpt-4, text-davinci-003, etc
 </span></span><span class="line"><span class="cl">LLAMA_MODEL_PATH=models/llama-13B/ggml-model.bin # ex. models/llama-13B/ggml-model.bin
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">从Pinecone获得一个API密钥
-</span></span><span class="line"><span class="cl">Pinecone是一个用于存储AI数据的矢量数据库。你可以获得一个免费账户，尽管可能有一个等待名单。你可以通过点击API密钥标签，点击复制按钮或 “Create API Key” 来获得API密钥。另外，注意 “Environment” 的位置（例如：us-central1-gcp）。
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">docker-compose up
@@ -596,8 +656,29 @@ git clone <a href="https://github.com/yoheinakajima/babyagi.git">https://github.
     <div class="toc-content custom-scrollbar">
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#编译llama-cpp">编译LLaMa-cpp</a></li>
-    <li><a href="#下载babyagi并配置">下载babyagi并配置</a></li>
+    <li><a href="#获取pinecone-api密钥">获取Pinecone API密钥</a></li>
+    <li><a href="#使用gpt">使用GPT</a>
+      <ul>
+        <li><a href="#下载babyagi并配置">下载babyagi并配置</a>
+          <ul>
+            <li><a href="#下载">下载</a></li>
+            <li><a href="#配置">配置</a>
+              <ul>
+                <li><a href="#配置密钥">配置密钥</a></li>
+                <li><a href="#配置目标任务">配置目标任务</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#运行">运行</a></li>
+      </ul>
+    </li>
+    <li><a href="#使用llama">使用LLaMA</a>
+      <ul>
+        <li><a href="#编译llama-cpp">编译LLaMa-cpp</a></li>
+        <li><a href="#配置babyagi">配置babyagi</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
