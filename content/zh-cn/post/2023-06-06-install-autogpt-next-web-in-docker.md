@@ -44,3 +44,7 @@ docker-compose -f docker-compose.dev.yml up -d --remove-orphans
 ```
 
 等待完成后即可访问，默认使用3000端口，地址为：http://localhost:3000。
+
+## 问题
+不知道为什么，部署完成之后不能启用websearch，相关issue中也有人遇到了这个问题，但是没有解决方案。
+遂弃用该项目，改用`AgentGPT`项目。
