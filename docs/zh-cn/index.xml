@@ -18,6 +18,71 @@
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-agentgpt-in-docker/</guid>
       
+        <description>&lt;!-- ## 获取Websearch密钥
+
+两种方式都可以。
+### Google官方
+每天100次搜索免费，之后5美元/1000次搜索。
+https://developers.google.com/custom-search/v1/overview?hl=zh-cn
+
+### 第三方
+1000次搜索免费，之后0.3美元/1000次搜索。
+https://serper.dev/
+
+## 获取生成图像密钥
+## DALL-E
+不需配置，使用openai api即可。
+## Replicate
+https://replicate.com/account/api-tokens --&gt;
+&lt;h2 id=&#34;下载并配置&#34;&gt;下载并配置&lt;/h2&gt;
+&lt;p&gt;下载：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/reworkd/AgentGPT.git &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; AgentGPT
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;切换到0.5版本分支。使用0.5版本，因为0.6版本和master分支部署完执行总会遇到各种各样的问题。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git checkout v.0.5.0-beta
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;然后执行。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./setup.sh --docker
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;之后会提示输入密钥，按照提示输入即可。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Enter your OpenAI Key &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;eg: sk...&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; or press enter to &lt;span class=&#34;k&#34;&gt;continue&lt;/span&gt; with no key:
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;等待完成后即可访问，默认使用3000端口，地址为：http://localhost:3000。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>通过docker安装LLM自主代理AutoGPT-Next-Web</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-autogpt-next-web-in-docker/</link>
+      <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-autogpt-next-web-in-docker/</guid>
+      
         <description>&lt;h2 id=&#34;获取websearch密钥&#34;&gt;获取Websearch密钥&lt;/h2&gt;
 &lt;p&gt;两种方式都可以。&lt;/p&gt;
 &lt;h3 id=&#34;google官方&#34;&gt;Google官方&lt;/h3&gt;

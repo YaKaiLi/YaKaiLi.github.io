@@ -10,42 +10,42 @@
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/llama/</loc>
-    <lastmod>2023-06-06T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-06T20:56:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/llms/</loc>
-    <lastmod>2023-06-06T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-06T20:56:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/paper/</loc>
-    <lastmod>2023-06-06T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-06T20:56:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/post/</loc>
-    <lastmod>2023-06-06T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-06T20:56:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/</loc>
-    <lastmod>2023-06-06T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-06T20:56:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/</loc>
-    <lastmod>2023-06-06T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-06T20:56:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -58,8 +58,15 @@
   </url>
   
   <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-babyagi-in-docker-with-llama/</loc>
+    <loc>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-autogpt-next-web-in-docker/</loc>
     <lastmod>2023-06-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-babyagi-in-docker-with-llama/</loc>
+    <lastmod>2023-06-06T20:56:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -73,14 +80,14 @@
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/misc/</loc>
-    <lastmod>2023-04-16T20:15:58+08:00</lastmod>
+    <lastmod>2023-06-06T20:56:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/software/</loc>
-    <lastmod>2023-04-16T20:15:58+08:00</lastmod>
+    <lastmod>2023-06-06T20:56:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -94,7 +101,7 @@
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/post/2023/03/29/linux-install-shellclash/</loc>
-    <lastmod>2023-03-31T17:06:07+08:00</lastmod>
+    <lastmod>2023-06-06T20:56:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -227,14 +234,14 @@
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/homelab/</loc>
-    <lastmod>2023-02-07T10:53:08+08:00</lastmod>
+    <lastmod>2023-06-06T20:56:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/post/2023/02/06/docker-install-alist/</loc>
-    <lastmod>2023-02-07T10:53:08+08:00</lastmod>
+    <lastmod>2023-06-06T20:56:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

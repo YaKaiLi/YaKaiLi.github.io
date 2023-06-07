@@ -29,7 +29,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="star5o" />
-  <meta name="description" content="获取Websearch密钥 两种方式都可以。 Google官方 每天100次搜索免费，之后5美元/1000次搜索。 https://developers.google.com/custom-search/v1/overview?hl=zh-cn 第三方 1000次搜索免费，之后0.3美元/1000次搜索。 https://serper.dev/ 下载并配置 1 git clone https://github.com/Dogtiti/AutoGPT-Next-Web.git &amp;amp;&amp;amp; cd AutoGPT-Next-Web 选用A" />
+  <meta name="description" content="下载并配置 下载： 1 git clone https://github.com/reworkd/AgentGPT.git &amp;amp;&amp;amp; cd AgentGPT 切换到0.5版本分支。使用0.5版本，因为0.6版本和master分支部署完执行总会遇到各种各样的问题。 1 git checkout v.0.5.0-beta 然后执行。 1 ./setup.sh --docker 之后会提示输入密钥，按照提示输入即可。 1 Enter" />
 
   <meta name="keywords" content="Star5o, star5o" />
 
@@ -68,19 +68,19 @@
 
 
 <meta property="og:title" content="通过docker安装LLM自主代理AgentGPT" />
-<meta property="og:description" content="获取Websearch密钥 两种方式都可以。 Google官方 每天100次搜索免费，之后5美元/1000次搜索。 https://developers.google.com/custom-search/v1/overview?hl=zh-cn 第三方 1000次搜索免费，之后0.3美元/1000次搜索。 https://serper.dev/ 下载并配置 1 git clone https://github.com/Dogtiti/AutoGPT-Next-Web.git &amp;&amp; cd AutoGPT-Next-Web 选用A" />
+<meta property="og:description" content="下载并配置 下载： 1 git clone https://github.com/reworkd/AgentGPT.git &amp;&amp; cd AgentGPT 切换到0.5版本分支。使用0.5版本，因为0.6版本和master分支部署完执行总会遇到各种各样的问题。 1 git checkout v.0.5.0-beta 然后执行。 1 ./setup.sh --docker 之后会提示输入密钥，按照提示输入即可。 1 Enter" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-agentgpt-in-docker/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-06-06T00:00:00+00:00" />
 <meta property="article:modified_time" content="2023-06-06T00:00:00+00:00" /><meta property="og:site_name" content="Star5o的博客" />
 
 <meta itemprop="name" content="通过docker安装LLM自主代理AgentGPT">
-<meta itemprop="description" content="获取Websearch密钥 两种方式都可以。 Google官方 每天100次搜索免费，之后5美元/1000次搜索。 https://developers.google.com/custom-search/v1/overview?hl=zh-cn 第三方 1000次搜索免费，之后0.3美元/1000次搜索。 https://serper.dev/ 下载并配置 1 git clone https://github.com/Dogtiti/AutoGPT-Next-Web.git &amp;&amp; cd AutoGPT-Next-Web 选用A"><meta itemprop="datePublished" content="2023-06-06T00:00:00+00:00" />
+<meta itemprop="description" content="下载并配置 下载： 1 git clone https://github.com/reworkd/AgentGPT.git &amp;&amp; cd AgentGPT 切换到0.5版本分支。使用0.5版本，因为0.6版本和master分支部署完执行总会遇到各种各样的问题。 1 git checkout v.0.5.0-beta 然后执行。 1 ./setup.sh --docker 之后会提示输入密钥，按照提示输入即可。 1 Enter"><meta itemprop="datePublished" content="2023-06-06T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-06-06T00:00:00+00:00" />
-<meta itemprop="wordCount" content="264">
+<meta itemprop="wordCount" content="160">
 <meta itemprop="keywords" content="LLMs,ChatGPT,Paper," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="通过docker安装LLM自主代理AgentGPT"/>
-<meta name="twitter:description" content="获取Websearch密钥 两种方式都可以。 Google官方 每天100次搜索免费，之后5美元/1000次搜索。 https://developers.google.com/custom-search/v1/overview?hl=zh-cn 第三方 1000次搜索免费，之后0.3美元/1000次搜索。 https://serper.dev/ 下载并配置 1 git clone https://github.com/Dogtiti/AutoGPT-Next-Web.git &amp;&amp; cd AutoGPT-Next-Web 选用A"/>
+<meta name="twitter:description" content="下载并配置 下载： 1 git clone https://github.com/reworkd/AgentGPT.git &amp;&amp; cd AgentGPT 切换到0.5版本分支。使用0.5版本，因为0.6版本和master分支部署完执行总会遇到各种各样的问题。 1 git checkout v.0.5.0-beta 然后执行。 1 ./setup.sh --docker 之后会提示输入密钥，按照提示输入即可。 1 Enter"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -378,7 +378,7 @@
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 264 字 -
+        约 160 字 -
         预计阅读 1 分钟
       </span>
 
@@ -398,58 +398,57 @@
 
         
         <div class="post-content">
-          <h2 id="获取websearch密钥">获取Websearch密钥</h2>
-<p>两种方式都可以。</p>
-<h3 id="google官方">Google官方</h3>
-<p>每天100次搜索免费，之后5美元/1000次搜索。
-<a href="https://developers.google.com/custom-search/v1/overview?hl=zh-cn">https://developers.google.com/custom-search/v1/overview?hl=zh-cn</a></p>
-<h3 id="第三方">第三方</h3>
-<p>1000次搜索免费，之后0.3美元/1000次搜索。
-<a href="https://serper.dev/">https://serper.dev/</a></p>
+          <!-- ## 获取Websearch密钥
+
+两种方式都可以。
+### Google官方
+每天100次搜索免费，之后5美元/1000次搜索。
+https://developers.google.com/custom-search/v1/overview?hl=zh-cn
+
+### 第三方
+1000次搜索免费，之后0.3美元/1000次搜索。
+https://serper.dev/
+
+## 获取生成图像密钥
+## DALL-E
+不需配置，使用openai api即可。
+## Replicate
+https://replicate.com/account/api-tokens -->
 <h2 id="下载并配置">下载并配置</h2>
+<p>下载：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone https://github.com/Dogtiti/AutoGPT-Next-Web.git &amp;&amp; cd AutoGPT-Next-Web
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/reworkd/AgentGPT.git <span class="o">&amp;&amp;</span> <span class="nb">cd</span> AgentGPT
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>选用<code>AutoGPT-Next-Web</code>项目，该项目可自定义<code>API_BASE_URL</code>，国内访问更流程。</p>
-<p>下载完成后，配置.env文件。</p>
+</div><p>切换到0.5版本分支。使用0.5版本，因为0.6版本和master分支部署完执行总会遇到各种各样的问题。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp .env.example .env
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">vim .env
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git checkout v.0.5.0-beta
 </span></span></code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-vim" data-lang="vim"><span class="line"><span class="cl">#不要在密钥周围加引号。<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">OPENAI_API_KEY</span><span class="p">=</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">NEXT_PUBLIC_WEB_SEARCH_ENABLED</span><span class="p">=</span><span class="nx">true</span> # 设置启用Websearch。<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">SERP_API_KEY</span><span class="p">=</span> # <span class="nx">or</span> <span class="nx">GOOGLE_API_KEY</span><span class="p">=</span><span class="err">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><p>然后执行</p>
+</div><p>然后执行。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker-compose -f docker-compose.dev.yml up -d --remove-orphans
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./setup.sh --docker
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>之后会提示输入密钥，按照提示输入即可。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Enter your OpenAI Key <span class="o">(</span>eg: sk...<span class="o">)</span> or press enter to <span class="k">continue</span> with no key:
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>等待完成后即可访问，默认使用3000端口，地址为：http://localhost:3000。</p>
@@ -496,8 +495,8 @@
           <nav class="post-nav">
             
             
-              <a class="next" href="/zh-cn/post/2023/06/06/install-babyagi-in-docker-with-llama/">
-                <span class="next-text nav-default">通过docker安装使用LLaMA的LLM自主代理babyagi</span>
+              <a class="next" href="/zh-cn/post/2023/06/06/install-autogpt-next-web-in-docker/">
+                <span class="next-text nav-default">通过docker安装LLM自主代理AutoGPT-Next-Web</span>
                 <span class="prev-text nav-mobile">下一篇</span>
                 
                 <i class="iconfont">
@@ -586,12 +585,6 @@
     <div class="toc-content custom-scrollbar">
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#获取websearch密钥">获取Websearch密钥</a>
-      <ul>
-        <li><a href="#google官方">Google官方</a></li>
-        <li><a href="#第三方">第三方</a></li>
-      </ul>
-    </li>
     <li><a href="#下载并配置">下载并配置</a></li>
   </ul>
 </nav>
