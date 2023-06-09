@@ -1,7 +1,7 @@
 ---
-title: 通过docker安装LLM自主代理Auto-GPT
+title: 通过docker安装使用Openai API的LLM自主代理Auto-GPT
 date: '2023-06-07'
-slug: install-autogpt-in-docker
+slug: install-autogpt-in-docker-with-openai-api
 tags:
   - LLMs
   - ChatGPT

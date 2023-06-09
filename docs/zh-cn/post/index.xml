@@ -8,11 +8,20 @@
     <copyright>Star5o Love Haohao</copyright>
     <lastBuildDate>Wed, 07 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>通过docker安装LLM自主代理Auto-GPT</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker/</link>
+      <title>通过docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/</guid>
+      <description>下载并配置llama.cpp项目 下载llama.cpp项目 1 git clone https://github.com/ggerganov/llama.cpp &amp;amp;&amp;amp; cd llama.cpp 下载LLaMa权重文件 根据脚本https://github.com/Elyah2035/llama-dl使用以下磁力链接下载： 1</description>
+    </item>
+    
+    <item>
+      <title>通过docker安装使用Openai API的LLM自主代理Auto-GPT</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/</guid>
       <description>下载并配置 自行构建镜像和使用官方镜像两种方式都可以。 自行构建镜像 下载 参考官方文档：https://docs.agpt.co/setup/ 1 git clone https://github.com/Significant-Gravitas/Auto-GPT.git &amp;amp;&amp;amp; cd Auto-GPT 切换到0.4.0版本分支（官方文档建议不要使用ma</description>
     </item>
     

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>
-          通过docker安装LLM自主代理AgentGPT - Star5o的博客
+          通过docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT - Star5o的博客
         </title>
     
 
@@ -29,7 +29,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="star5o" />
-  <meta name="description" content="下载并配置 下载： 1 git clone https://github.com/reworkd/AgentGPT.git &amp;amp;&amp;amp; cd AgentGPT 切换到0.5版本分支。使用0.5版本，因为0.6版本和master分支部署完执行总会遇到各种各样的问题。 1 git checkout v.0.5.0-beta 然后执行。 1 ./setup.sh --docker 之后会提示输入密钥，按照提示输入即可。 1 Enter" />
+  <meta name="description" content="下载并配置llama.cpp项目 下载llama.cpp项目 1 git clone https://github.com/ggerganov/llama.cpp &amp;amp;&amp;amp; cd llama.cpp 下载LLaMa权重文件 根据脚本https://github.com/Elyah2035/llama-dl使用以下磁力链接下载： 1" />
 
   <meta name="keywords" content="Star5o, star5o" />
 
@@ -41,7 +41,7 @@
 <meta name="generator" content="Hugo 0.107.0" />
 
 
-<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-agentgpt-in-docker/" />
+<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/" />
 
 
 
@@ -67,20 +67,20 @@
 
 
 
-<meta property="og:title" content="通过docker安装LLM自主代理AgentGPT" />
-<meta property="og:description" content="下载并配置 下载： 1 git clone https://github.com/reworkd/AgentGPT.git &amp;&amp; cd AgentGPT 切换到0.5版本分支。使用0.5版本，因为0.6版本和master分支部署完执行总会遇到各种各样的问题。 1 git checkout v.0.5.0-beta 然后执行。 1 ./setup.sh --docker 之后会提示输入密钥，按照提示输入即可。 1 Enter" />
+<meta property="og:title" content="通过docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT" />
+<meta property="og:description" content="下载并配置llama.cpp项目 下载llama.cpp项目 1 git clone https://github.com/ggerganov/llama.cpp &amp;&amp; cd llama.cpp 下载LLaMa权重文件 根据脚本https://github.com/Elyah2035/llama-dl使用以下磁力链接下载： 1" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-agentgpt-in-docker/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2023-06-06T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-06-07T16:37:58+08:00" /><meta property="og:site_name" content="Star5o的博客" />
+<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-06-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-06-07T00:00:00+00:00" /><meta property="og:site_name" content="Star5o的博客" />
 
-<meta itemprop="name" content="通过docker安装LLM自主代理AgentGPT">
-<meta itemprop="description" content="下载并配置 下载： 1 git clone https://github.com/reworkd/AgentGPT.git &amp;&amp; cd AgentGPT 切换到0.5版本分支。使用0.5版本，因为0.6版本和master分支部署完执行总会遇到各种各样的问题。 1 git checkout v.0.5.0-beta 然后执行。 1 ./setup.sh --docker 之后会提示输入密钥，按照提示输入即可。 1 Enter"><meta itemprop="datePublished" content="2023-06-06T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-06-07T16:37:58+08:00" />
-<meta itemprop="wordCount" content="160">
-<meta itemprop="keywords" content="LLMs,ChatGPT,Paper," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="通过docker安装LLM自主代理AgentGPT"/>
-<meta name="twitter:description" content="下载并配置 下载： 1 git clone https://github.com/reworkd/AgentGPT.git &amp;&amp; cd AgentGPT 切换到0.5版本分支。使用0.5版本，因为0.6版本和master分支部署完执行总会遇到各种各样的问题。 1 git checkout v.0.5.0-beta 然后执行。 1 ./setup.sh --docker 之后会提示输入密钥，按照提示输入即可。 1 Enter"/>
+<meta itemprop="name" content="通过docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT">
+<meta itemprop="description" content="下载并配置llama.cpp项目 下载llama.cpp项目 1 git clone https://github.com/ggerganov/llama.cpp &amp;&amp; cd llama.cpp 下载LLaMa权重文件 根据脚本https://github.com/Elyah2035/llama-dl使用以下磁力链接下载： 1"><meta itemprop="datePublished" content="2023-06-07T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-06-07T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1143">
+<meta itemprop="keywords" content="LLMs,LLaMA,Paper," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="通过docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT"/>
+<meta name="twitter:description" content="下载并配置llama.cpp项目 下载llama.cpp项目 1 git clone https://github.com/ggerganov/llama.cpp &amp;&amp; cd llama.cpp 下载LLaMa权重文件 根据脚本https://github.com/Elyah2035/llama-dl使用以下磁力链接下载： 1"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -357,7 +357,7 @@
       <article class="post">
         
         <header class="post-header">
-          <h1 class="post-title">通过docker安装LLM自主代理AgentGPT</h1>
+          <h1 class="post-title">通过docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</h1>
           
 
           <div class="post-meta">
@@ -368,23 +368,18 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="2023-06-06">
-      2023-06-06
+    <time datetime="2023-06-07">
+      2023-06-07
     </time>
   </div>
 
-  
-    <div class="post-meta-lastmod">
-      (上次更新:
-      2023-06-07)
-    </div>
   
 
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 160 字 -
-        预计阅读 1 分钟
+        约 1143 字 -
+        预计阅读 3 分钟
       </span>
 
     
@@ -403,61 +398,283 @@
 
         
         <div class="post-content">
-          <!-- ## 获取Websearch密钥
-
-两种方式都可以。
-### Google官方
-每天100次搜索免费，之后5美元/1000次搜索。
-https://developers.google.com/custom-search/v1/overview?hl=zh-cn
-
-### 第三方
-1000次搜索免费，之后0.3美元/1000次搜索。
-https://serper.dev/
-
-## 获取生成图像密钥
-## DALL-E
-不需配置，使用openai api即可。
-## Replicate
-https://replicate.com/account/api-tokens -->
-<h2 id="下载并配置">下载并配置</h2>
-<p>下载：</p>
+          <h2 id="下载并配置llamacpp项目">下载并配置llama.cpp项目</h2>
+<h3 id="下载llamacpp项目">下载llama.cpp项目</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/reworkd/AgentGPT.git <span class="o">&amp;&amp;</span> <span class="nb">cd</span> AgentGPT
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/ggerganov/llama.cpp <span class="o">&amp;&amp;</span> <span class="nb">cd</span> llama.cpp
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>切换到0.5版本分支。使用0.5版本，因为0.6版本和master分支部署完执行总会遇到各种各样的问题。</p>
+</div><h3 id="下载llama权重文件">下载LLaMa权重文件</h3>
+<p>根据脚本<code>https://github.com/Elyah2035/llama-dl</code>使用以下磁力链接下载：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git checkout v.0.5.0-beta
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">magnet:?xt=urn:btih:b8287ebfa04f879b048d4d4404108cf3e8014352&amp;dn=LLaMA&amp;tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>然后执行。</p>
+</div><p>这里我只下载了13B的模型。
+下载完成后，将权重文件放在<code>llama.cpp/models/LLaMA</code>目录下。
+如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">in ~/LLMs/llama.cpp on git:master o <span class="o">[</span>21:06:43<span class="o">]</span>
+</span></span><span class="line"><span class="cl">$ ls models/LLaMA
+</span></span><span class="line"><span class="cl">13B  7B  llama.sh  tokenizer.model
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="编译llamacpp">编译llama.cpp</h3>
+<p>在<code>llama.cpp</code>目录下执行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make
+</span></span><span class="line"><span class="cl"><span class="c1"># or make LLAMA_CUBLAS=1 # to enable cuBLAS</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="创建conda虚拟环境并安装依赖包">创建conda虚拟环境并安装依赖包</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">conda create -n llamacpp <span class="nv">python</span><span class="o">=</span>3.10
+</span></span><span class="line"><span class="cl">conda activate llama
+</span></span><span class="line"><span class="cl">pip install -r requirements.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="生成量化版本模型">生成量化版本模型</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 这里可以选择自己需要的模型，我这里选择了13B的模型。</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># convert the 13B model to ggml FP16 format</span>
+</span></span><span class="line"><span class="cl">python convert.py models/LLaMA/13B/
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># quantize the model to 4-bits (using q4_0 method)</span>
+</span></span><span class="line"><span class="cl">./quantize ./models/LLaMA/13B/ggml-model-f16.bin ./models/LLaMA/13B/ggml-model-q4_0.bin q4_0
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="执行测试一下能不能运行">执行测试一下能不能运行</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./setup.sh --docker
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./main -m ./models/LLaMA/13B/ggml-model-q4_0.bin -n <span class="m">128</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>之后会提示输入密钥，按照提示输入即可。</p>
+</div><p>如果能够正常运行，会出现如下提示：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">main: <span class="nv">build</span> <span class="o">=</span> <span class="m">623</span> <span class="o">(</span>590250f<span class="o">)</span>
+</span></span><span class="line"><span class="cl">main: <span class="nv">seed</span>  <span class="o">=</span> <span class="m">1686232798</span>
+</span></span><span class="line"><span class="cl">llama.cpp: loading model from ./models/LLaMA/13B/ggml-model-q4_0.bin
+</span></span><span class="line"><span class="cl">llama_model_load_internal: <span class="nv">format</span>     <span class="o">=</span> ggjt v3 <span class="o">(</span>latest<span class="o">)</span>
+</span></span><span class="line"><span class="cl">llama_model_load_internal: <span class="nv">n_vocab</span>    <span class="o">=</span> <span class="m">32000</span>
+</span></span><span class="line"><span class="cl">llama_model_load_internal: <span class="nv">n_ctx</span>      <span class="o">=</span> <span class="m">512</span>
+</span></span><span class="line"><span class="cl">llama_model_load_internal: <span class="nv">n_embd</span>     <span class="o">=</span> <span class="m">5120</span>
+</span></span><span class="line"><span class="cl">llama_model_load_internal: <span class="nv">n_mult</span>     <span class="o">=</span> <span class="m">256</span>
+</span></span><span class="line"><span class="cl">llama_model_load_internal: <span class="nv">n_head</span>     <span class="o">=</span> <span class="m">40</span>
+</span></span><span class="line"><span class="cl">llama_model_load_internal: <span class="nv">n_layer</span>    <span class="o">=</span> <span class="m">40</span>
+</span></span><span class="line"><span class="cl">llama_model_load_internal: <span class="nv">n_rot</span>      <span class="o">=</span> <span class="m">128</span>
+</span></span><span class="line"><span class="cl">llama_model_load_internal: <span class="nv">ftype</span>      <span class="o">=</span> <span class="m">2</span> <span class="o">(</span>mostly Q4_0<span class="o">)</span>
+</span></span><span class="line"><span class="cl">llama_model_load_internal: <span class="nv">n_ff</span>       <span class="o">=</span> <span class="m">13824</span>
+</span></span><span class="line"><span class="cl">llama_model_load_internal: <span class="nv">n_parts</span>    <span class="o">=</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl">llama_model_load_internal: model <span class="nv">size</span> <span class="o">=</span> 13B
+</span></span><span class="line"><span class="cl">llama_model_load_internal: ggml ctx <span class="nv">size</span> <span class="o">=</span>    0.09 MB
+</span></span><span class="line"><span class="cl">llama_model_load_internal: mem <span class="nv">required</span>  <span class="o">=</span> 2264.17 MB <span class="o">(</span>+ 1608.00 MB per state<span class="o">)</span>
+</span></span><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">llama_init_from_file: kv self <span class="nv">size</span>  <span class="o">=</span>  400.00 MB
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">system_info: <span class="nv">n_threads</span> <span class="o">=</span> <span class="m">6</span> / <span class="m">12</span> <span class="p">|</span> <span class="nv">AVX</span> <span class="o">=</span> <span class="m">1</span> <span class="p">|</span> <span class="nv">AVX2</span> <span class="o">=</span> <span class="m">1</span> <span class="p">|</span> <span class="nv">AVX512</span> <span class="o">=</span> <span class="m">0</span> <span class="p">|</span> <span class="nv">AVX512_VBMI</span> <span class="o">=</span> <span class="m">0</span> <span class="p">|</span> <span class="nv">AVX512_VNNI</span> <span class="o">=</span> <span class="m">0</span> <span class="p">|</span> <span class="nv">FMA</span> <span class="o">=</span> <span class="m">1</span> <span class="p">|</span> <span class="nv">NEON</span> <span class="o">=</span> <span class="m">0</span> <span class="p">|</span> <span class="nv">ARM_FMA</span> <span class="o">=</span> <span class="m">0</span> <span class="p">|</span> <span class="nv">F16C</span> <span class="o">=</span> <span class="m">1</span> <span class="p">|</span> <span class="nv">FP16_VA</span> <span class="o">=</span> <span class="m">0</span> <span class="p">|</span> <span class="nv">WASM_SIMD</span> <span class="o">=</span> <span class="m">0</span> <span class="p">|</span> <span class="nv">BLAS</span> <span class="o">=</span> <span class="m">0</span> <span class="p">|</span> <span class="nv">SSE3</span> <span class="o">=</span> <span class="m">1</span> <span class="p">|</span> <span class="nv">VSX</span> <span class="o">=</span> <span class="m">0</span> <span class="p">|</span>
+</span></span><span class="line"><span class="cl">sampling: <span class="nv">repeat_last_n</span> <span class="o">=</span> 64, <span class="nv">repeat_penalty</span> <span class="o">=</span> 1.100000, <span class="nv">presence_penalty</span> <span class="o">=</span> 0.000000, <span class="nv">frequency_penalty</span> <span class="o">=</span> 0.000000, <span class="nv">top_k</span> <span class="o">=</span> 40, <span class="nv">tfs_z</span> <span class="o">=</span> 1.000000, <span class="nv">top_p</span> <span class="o">=</span> 0.950000, <span class="nv">typical_p</span> <span class="o">=</span> 1.000000, <span class="nv">temp</span> <span class="o">=</span> 0.800000, <span class="nv">mirostat</span> <span class="o">=</span> 0, <span class="nv">mirostat_lr</span> <span class="o">=</span> 0.100000, <span class="nv">mirostat_ent</span> <span class="o">=</span> 5.000000
+</span></span><span class="line"><span class="cl">generate: <span class="nv">n_ctx</span> <span class="o">=</span> 512, <span class="nv">n_batch</span> <span class="o">=</span> 512, <span class="nv">n_predict</span> <span class="o">=</span> 128, <span class="nv">n_keep</span> <span class="o">=</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="m">2019</span> is the year <span class="k">for</span> a new look, and what better way to start than with a fresh haircut? Whether you are looking <span class="k">for</span> your own personalized cut or something a little more modern, we have the right stylist to achieve your desired look.
+</span></span><span class="line"><span class="cl">If you<span class="err">&#39;</span>re looking <span class="k">for</span> a hair style that can really bring out the best in you, look no further than the expertise of our stylists at Fresh Ideas Hair Salon. With over <span class="m">30</span> years of experience, you can be certain we will give you a cut that is just right <span class="k">for</span> your face shape and skin tone. We
+</span></span><span class="line"><span class="cl">llama_print_timings:        load <span class="nb">time</span> <span class="o">=</span> 26628.92 ms
+</span></span><span class="line"><span class="cl">llama_print_timings:      sample <span class="nb">time</span> <span class="o">=</span>    49.99 ms /   <span class="m">128</span> runs   <span class="o">(</span>    0.39 ms per token<span class="o">)</span>
+</span></span><span class="line"><span class="cl">llama_print_timings: prompt <span class="nb">eval</span> <span class="nb">time</span> <span class="o">=</span>   353.32 ms /     <span class="m">2</span> tokens <span class="o">(</span>  176.66 ms per token<span class="o">)</span>
+</span></span><span class="line"><span class="cl">llama_print_timings:        <span class="nb">eval</span> <span class="nb">time</span> <span class="o">=</span> 32074.79 ms /   <span class="m">127</span> runs   <span class="o">(</span>  252.56 ms per token<span class="o">)</span>
+</span></span><span class="line"><span class="cl">llama_print_timings:       total <span class="nb">time</span> <span class="o">=</span> 58777.76 ms
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>至此llama.cpp项目配置完成。</p>
+<h2 id="下载并配置gpt-llamacpp项目">下载并配置gpt-llama.cpp项目</h2>
+<h3 id="下载gpt-llamacpp项目">下载gpt-llama.cpp项目</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Enter your OpenAI Key <span class="o">(</span>eg: sk...<span class="o">)</span> or press enter to <span class="k">continue</span> with no key:
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/keldenl/gpt-llama.cpp.git <span class="o">&amp;&amp;</span> <span class="nb">cd</span> gpt-llama.cpp
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>等待完成后即可访问，默认使用3000端口，地址为：http://localhost:3000。</p>
-
+</div><p>官方建议为如下的目录结构：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">   dir
+</span></span><span class="line"><span class="cl">   ├── llama.cpp
+</span></span><span class="line"><span class="cl">   │   ├── models
+</span></span><span class="line"><span class="cl">   │   │   └── &lt;YOUR_.BIN_MODEL_FILES_HERE&gt;
+</span></span><span class="line"><span class="cl">   │   └── main
+</span></span><span class="line"><span class="cl">   └── gpt-llama.cpp
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="安装依赖">安装依赖</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意node版本应在18.0.0以上，否则会抱错：ReferenceError: ReadableStream is not defined。</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="运行">运行</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">PORT</span><span class="o">=</span><span class="m">8000</span> npm start
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="测试">测试</h3>
+<p>通过官方文档中的方式测试：
+<code>https://github.com/keldenl/gpt-llama.cpp#running-a-gpt-powered-app</code></p>
+<p>修改应用中的<code>BASE_URL</code>为<code>http://192.168.1.115:8000</code>，API密钥为模型路径（相对路径，绝对路径都可）。
+如果配置成功，那么应用会成功回复。</p>
+<h2 id="下载并配置auto-gpt项目">下载并配置Auto-GPT项目</h2>
+<h3 id="下载auto-gpt项目">下载Auto-GPT项目</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/DGdev91/Auto-GPT.git DGdev91-Auto-GPT <span class="c1"># clone DGdev91&#39;s fork</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> DGdev91-Auto-GPT
+</span></span><span class="line"><span class="cl">git checkout b349f2144f4692de7adb9458a8888839f48bd95c <span class="c1"># checkout the PR change</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>DGdev91的PR #2594 <a href="https://github.com/Significant-Gravitas/Auto-GPT/pull/2594">https://github.com/Significant-Gravitas/Auto-GPT/pull/2594</a> 可以使用LLaMa，该项目目前master分支能否正常使用还没有试。</p>
+<h3 id="安装依赖-1">安装依赖</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install --upgrade pip
+</span></span><span class="line"><span class="cl">pip install -r requirements.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="修改配置">修改配置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cp .env.template .env
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">vim .env
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">OPENAI_API_BASE_URL=http://192.168.1.115:8000/v1
+</span></span><span class="line"><span class="cl">EMBED_DIM=5120
+</span></span><span class="line"><span class="cl">#OPENAI_API_KEY= ../llama.cpp/models/vicuna/13B/ggml-vicuna-unfiltered-13b-4bit.bin
+</span></span><span class="line"><span class="cl">OPENAI_API_KEY= /home/star5o/LLMs/llama.cpp/models/LLaMA/13B/ggml-model-q4_0.bin
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="运行-1">运行</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./run.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
         </div>
 
         
@@ -471,9 +688,6 @@ https://replicate.com/account/api-tokens -->
     <span class="item-title">上次更新</span>
     <span class="item-content">
       2023-06-07
-      
-        
-        
       
     </span>
   </p>
@@ -493,7 +707,7 @@ https://replicate.com/account/api-tokens -->
         <footer class="post-footer">
           <div class="post-tags">
               <a href="https://www.gnn.ac.cn/zh-cn/tags/llms/">LLMs</a>
-                <a href="https://www.gnn.ac.cn/zh-cn/tags/chatgpt/">ChatGPT</a>
+                <a href="https://www.gnn.ac.cn/zh-cn/tags/llama/">LLaMA</a>
                 <a href="https://www.gnn.ac.cn/zh-cn/tags/paper/">Paper</a>
                 
             </div>
@@ -502,22 +716,9 @@ https://replicate.com/account/api-tokens -->
           
           <nav class="post-nav">
             
-              <a class="prev" href="/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/">
-                
-                <i class="iconfont">
-                  <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-                </i>
-                <span class="prev-text nav-default">通过docker安装使用Openai API的LLM自主代理Auto-GPT</span>
-                <span class="prev-text nav-mobile">上一篇</span>
-              </a>
             
-              <a class="next" href="/zh-cn/post/2023/06/06/install-autogpt-next-web-in-docker/">
-                <span class="next-text nav-default">通过docker安装LLM自主代理AutoGPT-Next-Web</span>
+              <a class="next" href="/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/">
+                <span class="next-text nav-default">通过docker安装使用Openai API的LLM自主代理Auto-GPT</span>
                 <span class="prev-text nav-mobile">下一篇</span>
                 
                 <i class="iconfont">
@@ -568,7 +769,7 @@ https://replicate.com/account/api-tokens -->
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     var disqus_config = function () {
-      this.page.url = "https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-agentgpt-in-docker/";
+      this.page.url = "https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/";
     };
     function load_disqus() {
       
@@ -606,7 +807,32 @@ https://replicate.com/account/api-tokens -->
     <div class="toc-content custom-scrollbar">
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#下载并配置">下载并配置</a></li>
+    <li><a href="#下载并配置llamacpp项目">下载并配置llama.cpp项目</a>
+      <ul>
+        <li><a href="#下载llamacpp项目">下载llama.cpp项目</a></li>
+        <li><a href="#下载llama权重文件">下载LLaMa权重文件</a></li>
+        <li><a href="#编译llamacpp">编译llama.cpp</a></li>
+        <li><a href="#创建conda虚拟环境并安装依赖包">创建conda虚拟环境并安装依赖包</a></li>
+        <li><a href="#生成量化版本模型">生成量化版本模型</a></li>
+        <li><a href="#执行测试一下能不能运行">执行测试一下能不能运行</a></li>
+      </ul>
+    </li>
+    <li><a href="#下载并配置gpt-llamacpp项目">下载并配置gpt-llama.cpp项目</a>
+      <ul>
+        <li><a href="#下载gpt-llamacpp项目">下载gpt-llama.cpp项目</a></li>
+        <li><a href="#安装依赖">安装依赖</a></li>
+        <li><a href="#运行">运行</a></li>
+        <li><a href="#测试">测试</a></li>
+      </ul>
+    </li>
+    <li><a href="#下载并配置auto-gpt项目">下载并配置Auto-GPT项目</a>
+      <ul>
+        <li><a href="#下载auto-gpt项目">下载Auto-GPT项目</a></li>
+        <li><a href="#安装依赖-1">安装依赖</a></li>
+        <li><a href="#修改配置">修改配置</a></li>
+        <li><a href="#运行-1">运行</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
