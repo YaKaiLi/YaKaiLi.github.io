@@ -14,11 +14,11 @@ tags:
 #### 下载
 参考官方文档：https://docs.agpt.co/setup/
 ```bash
-git clone https://github.com/Significant-Gravitas/Auto-GPT.git && cd Auto-GPT
+git clone https://github.com/Significant-Gravitas/Auto-GPT.git git-Auto-GPT && cd git-Auto-GPT
 ```
 切换到0.4.0版本分支（官方文档建议不要使用`master`分支）。
 ```bash
-git checkout v.0.4.0
+git checkout v0.4.0
 ```
 #### 配置插件
 ```bash

@@ -360,6 +360,65 @@
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/">Homelab Ubuntu 20.04系统安装后自用配置</a>
+    </h1>
+    
+
+    <div class="post-meta">
+  <div class="post-meta-author">
+    by
+      star5o
+    
+  </div>
+
+  <div class="post-meta-time">
+    <time datetime="2023-01-22">
+      2023-01-22
+    </time>
+  </div>
+
+  
+
+
+  <div class="post-meta__right">
+    <span class="post-meta-more">
+        约 1026 字 -
+        预计阅读 3 分钟
+      </span>
+
+    
+
+
+    
+    
+
+
+    
+    
+  </div>
+</div>
+
+  </header>
+  
+  <div class="post-content">
+    
+      <div class="post-summary">
+        换国内源 配置中科大源 1 2 sudo sed -i &#39;s@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g&#39; /etc/apt/sources.list sudo apt update ssh配置 安装ssh 1 2 sudo apt update sudo apt install openssh-server vim 配置密钥 1 2 3 4 5 ssh-keygen cd .ssh cat id_rsa.pub &gt;&gt; authorized_keys chmod 600 authorized_keys chmod 700 ~/.ssh 1 sudo vim /etc/ssh/sshd_config sshd_config文件内修改： 1 2 3 4 5 6 RSAAuthentication yes #开启密钥登陆 PubkeyAuthentication yes
+      </div>
+      <div class="read-more">
+        <a href="/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/" class="read-more-link"
+          >阅读全文</a
+        >
+      </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/zh-cn/post/2022/12/15/git-commit-large-file-error/">commit了一个大文件导致本地仓库无法推送到github的问题解决方法</a>
     </h1>
     
@@ -476,70 +535,6 @@
       </div>
       <div class="read-more">
         <a href="/zh-cn/post/2022/12/15/git-push-error1-1/" class="read-more-link"
-          >阅读全文</a
-        >
-      </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/">《图神经网络：基础、前沿与应用（图神经网络城堡书）》Part1:引言 第一章：表征学习（Representation Learning）</a>
-    </h1>
-    
-
-    <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      star5o
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2022-11-28">
-      2022-11-28
-    </time>
-  </div>
-
-  
-    <div class="post-meta-lastmod">
-      (上次更新:
-      2023-03-21)
-    </div>
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        约 3 字 -
-        预计阅读 1 分钟
-      </span>
-
-    
-
-
-    
-    
-
-
-    
-    
-  </div>
-</div>
-
-  </header>
-  
-  <div class="post-content">
-    
-      <div class="post-summary">
-        待阅读
-      </div>
-      <div class="read-more">
-        <a href="/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/" class="read-more-link"
           >阅读全文</a
         >
       </div>

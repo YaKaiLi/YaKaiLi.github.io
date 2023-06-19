@@ -1,7 +1,7 @@
 ---
-title: 通过docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT
+title: 本地安装使用gpt-llama.cpp的LLM自主代理Auto-GPT
 date: '2023-06-07'
-slug: install-autogpt-in-docker-with-llama.cpp
+slug: install-autogpt-in-local-with-llama.cpp
 tags:
   - LLMs
   - LLaMA
@@ -20,7 +20,7 @@ git clone https://github.com/ggerganov/llama.cpp && cd llama.cpp
 ```
 magnet:?xt=urn:btih:b8287ebfa04f879b048d4d4404108cf3e8014352&dn=LLaMA&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce
 ```
-这里我只下载了13B的模型。
+参考博客：https://mikespook.com/2023/03/%E5%9C%A8-ubuntu-2204-%E4%B8%8A%E8%BF%90%E8%A1%8C-llama-cpp/，这里我只下载了7B和13B的模型。
 下载完成后，将权重文件放在`llama.cpp/models/LLaMA`目录下。
 如下：
 ```bash
@@ -46,7 +46,9 @@ pip install -r requirements.txt
 
 ```bash
 # 这里可以选择自己需要的模型，我这里选择了13B的模型。
+
 # convert the 13B model to ggml FP16 format
+# 首先，将 LLaMA 模型转换为”ggml format“，也就是 Georgi Gerganov machine learning format。
 python convert.py models/LLaMA/13B/
 
 # quantize the model to 4-bits (using q4_0 method)
@@ -123,6 +125,7 @@ PORT=8000 npm start
 
 修改应用中的`BASE_URL`为`http://192.168.1.115:8000`，API密钥为模型路径（相对路径，绝对路径都可）。
 如果配置成功，那么应用会成功回复。
+
 
 ## 下载并配置Auto-GPT项目
 ### 下载Auto-GPT项目

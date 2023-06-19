@@ -8,11 +8,20 @@
     <copyright>Star5o Love Haohao</copyright>
     <lastBuildDate>Wed, 07 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/paper/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>通过docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</title>
+      <title>Docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/</guid>
+      <description>创建容器 1 2 3 4 5 6 7 8 9 10 11 12 docker pull nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 docker run --gpus all -it -d --name autollama -v /home/star5o/LLMs/:/LLMs/ --ipc=host -p 8000:8000 nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 /bin/bash #进入容器 docker exec -it autollama bash cd /LLMs # 更新源 apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub apt update 下载并配置llama.cpp项目 配置llama.cpp项目主要是为了验证模型权重是否能正</description>
+    </item>
+    
+    <item>
+      <title>本地安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</title>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-local-with-llama.cpp/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-local-with-llama.cpp/</guid>
       <description>下载并配置llama.cpp项目 下载llama.cpp项目 1 git clone https://github.com/ggerganov/llama.cpp &amp;amp;&amp;amp; cd llama.cpp 下载LLaMa权重文件 根据脚本https://github.com/Elyah2035/llama-dl使用以下磁力链接下载： 1</description>
     </item>
     
@@ -22,7 +31,7 @@
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/</guid>
-      <description>下载并配置 自行构建镜像和使用官方镜像两种方式都可以。 自行构建镜像 下载 参考官方文档：https://docs.agpt.co/setup/ 1 git clone https://github.com/Significant-Gravitas/Auto-GPT.git &amp;amp;&amp;amp; cd Auto-GPT 切换到0.4.0版本分支（官方文档建议不要使用ma</description>
+      <description>下载并配置 自行构建镜像和使用官方镜像两种方式都可以。 自行构建镜像 下载 参考官方文档：https://docs.agpt.co/setup/ 1 git clone https://github.com/Significant-Gravitas/Auto-GPT.git git-Auto-GPT &amp;amp;&amp;amp; cd git-Auto-GPT 切换到0.4.0版本分支（官方文档建议不要使用m</description>
     </item>
     
     <item>

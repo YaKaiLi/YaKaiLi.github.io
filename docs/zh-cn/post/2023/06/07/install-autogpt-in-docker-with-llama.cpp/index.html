@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>
-          通过docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT - Star5o的博客
+          Docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT - Star5o的博客
         </title>
     
 
@@ -29,7 +29,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="star5o" />
-  <meta name="description" content="下载并配置llama.cpp项目 下载llama.cpp项目 1 git clone https://github.com/ggerganov/llama.cpp &amp;amp;&amp;amp; cd llama.cpp 下载LLaMa权重文件 根据脚本https://github.com/Elyah2035/llama-dl使用以下磁力链接下载： 1" />
+  <meta name="description" content="创建容器 1 2 3 4 5 6 7 8 9 10 11 12 docker pull nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 docker run --gpus all -it -d --name autollama -v /home/star5o/LLMs/:/LLMs/ --ipc=host -p 8000:8000 nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 /bin/bash #进入容器 docker exec -it autollama bash cd /LLMs # 更新源 apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub apt update 下载并配置llama.cpp项目 配置llama.cpp项目主要是为了验证模型权重是否能正" />
 
   <meta name="keywords" content="Star5o, star5o" />
 
@@ -67,20 +67,20 @@
 
 
 
-<meta property="og:title" content="通过docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT" />
-<meta property="og:description" content="下载并配置llama.cpp项目 下载llama.cpp项目 1 git clone https://github.com/ggerganov/llama.cpp &amp;&amp; cd llama.cpp 下载LLaMa权重文件 根据脚本https://github.com/Elyah2035/llama-dl使用以下磁力链接下载： 1" />
+<meta property="og:title" content="Docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT" />
+<meta property="og:description" content="创建容器 1 2 3 4 5 6 7 8 9 10 11 12 docker pull nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 docker run --gpus all -it -d --name autollama -v /home/star5o/LLMs/:/LLMs/ --ipc=host -p 8000:8000 nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 /bin/bash #进入容器 docker exec -it autollama bash cd /LLMs # 更新源 apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub apt update 下载并配置llama.cpp项目 配置llama.cpp项目主要是为了验证模型权重是否能正" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-06-07T00:00:00+00:00" />
 <meta property="article:modified_time" content="2023-06-07T00:00:00+00:00" /><meta property="og:site_name" content="Star5o的博客" />
 
-<meta itemprop="name" content="通过docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT">
-<meta itemprop="description" content="下载并配置llama.cpp项目 下载llama.cpp项目 1 git clone https://github.com/ggerganov/llama.cpp &amp;&amp; cd llama.cpp 下载LLaMa权重文件 根据脚本https://github.com/Elyah2035/llama-dl使用以下磁力链接下载： 1"><meta itemprop="datePublished" content="2023-06-07T00:00:00+00:00" />
+<meta itemprop="name" content="Docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT">
+<meta itemprop="description" content="创建容器 1 2 3 4 5 6 7 8 9 10 11 12 docker pull nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 docker run --gpus all -it -d --name autollama -v /home/star5o/LLMs/:/LLMs/ --ipc=host -p 8000:8000 nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 /bin/bash #进入容器 docker exec -it autollama bash cd /LLMs # 更新源 apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub apt update 下载并配置llama.cpp项目 配置llama.cpp项目主要是为了验证模型权重是否能正"><meta itemprop="datePublished" content="2023-06-07T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-06-07T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1143">
+<meta itemprop="wordCount" content="1620">
 <meta itemprop="keywords" content="LLMs,LLaMA,Paper," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="通过docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT"/>
-<meta name="twitter:description" content="下载并配置llama.cpp项目 下载llama.cpp项目 1 git clone https://github.com/ggerganov/llama.cpp &amp;&amp; cd llama.cpp 下载LLaMa权重文件 根据脚本https://github.com/Elyah2035/llama-dl使用以下磁力链接下载： 1"/>
+<meta name="twitter:title" content="Docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT"/>
+<meta name="twitter:description" content="创建容器 1 2 3 4 5 6 7 8 9 10 11 12 docker pull nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 docker run --gpus all -it -d --name autollama -v /home/star5o/LLMs/:/LLMs/ --ipc=host -p 8000:8000 nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 /bin/bash #进入容器 docker exec -it autollama bash cd /LLMs # 更新源 apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub apt update 下载并配置llama.cpp项目 配置llama.cpp项目主要是为了验证模型权重是否能正"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -357,7 +357,7 @@
       <article class="post">
         
         <header class="post-header">
-          <h1 class="post-title">通过docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</h1>
+          <h1 class="post-title">Docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</h1>
           
 
           <div class="post-meta">
@@ -378,8 +378,8 @@
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 1143 字 -
-        预计阅读 3 分钟
+        约 1620 字 -
+        预计阅读 4 分钟
       </span>
 
     
@@ -398,14 +398,52 @@
 
         
         <div class="post-content">
-          <h2 id="下载并配置llamacpp项目">下载并配置llama.cpp项目</h2>
+          <h2 id="创建容器">创建容器</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker pull nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run --gpus all -it -d --name autollama -v /home/star5o/LLMs/:/LLMs/ --ipc<span class="o">=</span>host -p 8000:8000 nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 /bin/bash
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#进入容器</span>
+</span></span><span class="line"><span class="cl">docker <span class="nb">exec</span> -it autollama bash
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /LLMs
+</span></span><span class="line"><span class="cl"><span class="c1"># 更新源</span>
+</span></span><span class="line"><span class="cl">apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">apt update
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="下载并配置llamacpp项目">下载并配置llama.cpp项目</h2>
+<p>配置llama.cpp项目主要是为了验证模型权重是否能正常使用，如果不需要验证，可以跳过这一步。</p>
 <h3 id="下载llamacpp项目">下载llama.cpp项目</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/ggerganov/llama.cpp <span class="o">&amp;&amp;</span> <span class="nb">cd</span> llama.cpp
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#切换到最新release版本</span>
+</span></span><span class="line"><span class="cl">git checkout master-ffb06a3
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="下载llama权重文件">下载LLaMa权重文件</h3>
@@ -418,7 +456,7 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">magnet:?xt=urn:btih:b8287ebfa04f879b048d4d4404108cf3e8014352&amp;dn=LLaMA&amp;tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>这里我只下载了13B的模型。
+</div><p>参考博客：https://mikespook.com/2023/03/%E5%9C%A8-ubuntu-2204-%E4%B8%8A%E8%BF%90%E8%A1%8C-llama-cpp/，这里我只下载了7B和13B的模型。
 下载完成后，将权重文件放在<code>llama.cpp/models/LLaMA</code>目录下。
 如下：</p>
 <div class="highlight"><div class="chroma">
@@ -433,32 +471,9 @@
 </span></span><span class="line"><span class="cl">13B  7B  llama.sh  tokenizer.model
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="编译llamacpp">编译llama.cpp</h3>
-<p>在<code>llama.cpp</code>目录下执行：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make
-</span></span><span class="line"><span class="cl"><span class="c1"># or make LLAMA_CUBLAS=1 # to enable cuBLAS</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="创建conda虚拟环境并安装依赖包">创建conda虚拟环境并安装依赖包</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">conda create -n llamacpp <span class="nv">python</span><span class="o">=</span>3.10
-</span></span><span class="line"><span class="cl">conda activate llama
-</span></span><span class="line"><span class="cl">pip install -r requirements.txt
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="生成量化版本模型">生成量化版本模型</h3>
+</div><h3 id="下载vicuna权重文件如果使用vicuna的话">下载vicuna权重文件（如果使用vicuna的话）</h3>
+<p>官方包地址：https://huggingface.co/lmsys</p>
+<h3 id="安装依赖包">安装依赖包</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -469,21 +484,72 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 安装python10</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">conda create -n llamacpp <span class="nv">python</span><span class="o">=</span>3.10
+</span></span><span class="line"><span class="cl">conda activate llamacpp
+</span></span><span class="line"><span class="cl">pip install -r requirements.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="编译llamacpp">编译llama.cpp</h3>
+<p>在<code>llama.cpp</code>目录下执行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make
+</span></span><span class="line"><span class="cl"><span class="c1"># or make LLAMA_CUBLAS=1 CUDA_VISIBLE_DEVICES=0 # to enable cuBLAS</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="生成量化版本模型">生成量化版本模型</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 这里可以选择自己需要的模型，我这里选择了13B的模型。</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 首先，将 LLaMA 模型转换为”ggml format“，也就是 Georgi Gerganov machine learning format。</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># convert the 13B model to ggml FP16 format</span>
 </span></span><span class="line"><span class="cl">python convert.py models/LLaMA/13B/
+</span></span><span class="line"><span class="cl"><span class="c1">#如果使用vicuna： python convert.py models/vicuna-13b-delta-v1.1/</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># quantize the model to 4-bits (using q4_0 method)</span>
-</span></span><span class="line"><span class="cl">./quantize ./models/LLaMA/13B/ggml-model-f16.bin ./models/LLaMA/13B/ggml-model-q4_0.bin q4_0
+</span></span><span class="line"><span class="cl">./quantize models/LLaMA/13B/ggml-model-f16.bin models/LLaMA/13B/ggml-model-q4_0.bin q4_0
+</span></span><span class="line"><span class="cl"><span class="c1"># 如果启用cuda的话 CUDA版本需要11.8及12.x以上，同时nvidia-driver也需要更新到525版本以上</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ./quantize models/vicuna-13b-delta-v1.1/ggml-model-f16.bin models/vicuna-13b-delta-v1.1/ggml-model-q4_0.bin q4_0</span>
 </span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"></code></pre></td></tr></table>
 </div>
 </div><h3 id="执行测试一下能不能运行">执行测试一下能不能运行</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./main -m ./models/LLaMA/13B/ggml-model-q4_0.bin -n <span class="m">128</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#调用cuda： ./main -m ./models/LLaMA/13B/ggml-model-q4_0.bin -n 128 -ngl 1</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#使用vicuna： ./main -m ./models/vicuna-13b-delta-v1.1/ggml-model-q4_0.bin -n 128 -ngl 1</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果能够正常运行，会出现如下提示：</p>
@@ -592,9 +658,19 @@
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 安装node</span>
+</span></span><span class="line"><span class="cl">curl -O https://nodejs.org/dist/v18.16.0/node-v18.16.0-linux-x64.tar.xz <span class="o">&amp;&amp;</span> tar xf node-v18.16.0-linux-x64.tar.xz
+</span></span><span class="line"><span class="cl">mv node-v18.16.0-linux-x64/bin/* /usr/bin/ <span class="o">&amp;&amp;</span> mv node-v18.16.0-linux-x64/lib/* /usr/lib/ <span class="o">&amp;&amp;</span> mv node-v18.16.0-linux-x64/include/* /usr/include/
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">npm install
 </span></span><span class="line"><span class="cl"><span class="c1"># 注意node版本应在18.0.0以上，否则会抱错：ReferenceError: ReadableStream is not defined。</span>
 </span></span></code></pre></td></tr></table>
 </div>
@@ -602,9 +678,11 @@
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">PORT</span><span class="o">=</span><span class="m">8000</span> npm start
+</span></span><span class="line"><span class="cl"><span class="c1"># ngl 1</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="测试">测试</h3>
@@ -612,6 +690,10 @@
 <code>https://github.com/keldenl/gpt-llama.cpp#running-a-gpt-powered-app</code></p>
 <p>修改应用中的<code>BASE_URL</code>为<code>http://192.168.1.115:8000</code>，API密钥为模型路径（相对路径，绝对路径都可）。
 如果配置成功，那么应用会成功回复。</p>
+<!-- ../llama.cpp/models/LLaMA/13B/ggml-model-q4_0.bin
+../llama.cpp/models/LLaMA/30B/ggml-model-q4_0.bin
+/LLMs/llama.cpp/models/vicuna-13b-delta-v1.1/ggml-model-q4_0.bin
+../llama.cpp/models/Models/vicuna/13B/ggml-vicuna-13B-1.1-q4_0.bin -->
 <h2 id="下载并配置auto-gpt项目">下载并配置Auto-GPT项目</h2>
 <h3 id="下载auto-gpt项目">下载Auto-GPT项目</h3>
 <div class="highlight"><div class="chroma">
@@ -621,8 +703,8 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/DGdev91/Auto-GPT.git DGdev91-Auto-GPT <span class="c1"># clone DGdev91&#39;s fork</span>
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> DGdev91-Auto-GPT
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/DGdev91/Auto-GPT.git DGdev91-Auto-GPT <span class="o">&amp;&amp;</span> <span class="nb">cd</span> DGdev91-Auto-GPT <span class="c1"># clone DGdev91&#39;s fork</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">git checkout b349f2144f4692de7adb9458a8888839f48bd95c <span class="c1"># checkout the PR change</span>
 </span></span></code></pre></td></tr></table>
 </div>
@@ -659,10 +741,10 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">OPENAI_API_BASE_URL=http://192.168.1.115:8000/v1
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">OPENAI_API_BASE_URL=http://127.0.0.1:8000/v1
 </span></span><span class="line"><span class="cl">EMBED_DIM=5120
-</span></span><span class="line"><span class="cl">#OPENAI_API_KEY= ../llama.cpp/models/vicuna/13B/ggml-vicuna-unfiltered-13b-4bit.bin
-</span></span><span class="line"><span class="cl">OPENAI_API_KEY= /home/star5o/LLMs/llama.cpp/models/LLaMA/13B/ggml-model-q4_0.bin
+</span></span><span class="line"><span class="cl">OPENAI_API_KEY=../llama.cpp/models/LLaMA/13B/ggml-model-q4_0.bin
+</span></span><span class="line"><span class="cl"># OPENAI_API_KEY=../llama.cpp/models/LLaMA/13B/ggml-model-q4_0.bin
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="运行-1">运行</h3>
@@ -717,8 +799,8 @@
           <nav class="post-nav">
             
             
-              <a class="next" href="/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/">
-                <span class="next-text nav-default">通过docker安装使用Openai API的LLM自主代理Auto-GPT</span>
+              <a class="next" href="/zh-cn/post/2023/06/07/install-autogpt-in-local-with-llama.cpp/">
+                <span class="next-text nav-default">本地安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</span>
                 <span class="prev-text nav-mobile">下一篇</span>
                 
                 <i class="iconfont">
@@ -807,12 +889,14 @@
     <div class="toc-content custom-scrollbar">
       <nav id="TableOfContents">
   <ul>
+    <li><a href="#创建容器">创建容器</a></li>
     <li><a href="#下载并配置llamacpp项目">下载并配置llama.cpp项目</a>
       <ul>
         <li><a href="#下载llamacpp项目">下载llama.cpp项目</a></li>
         <li><a href="#下载llama权重文件">下载LLaMa权重文件</a></li>
+        <li><a href="#下载vicuna权重文件如果使用vicuna的话">下载vicuna权重文件（如果使用vicuna的话）</a></li>
+        <li><a href="#安装依赖包">安装依赖包</a></li>
         <li><a href="#编译llamacpp">编译llama.cpp</a></li>
-        <li><a href="#创建conda虚拟环境并安装依赖包">创建conda虚拟环境并安装依赖包</a></li>
         <li><a href="#生成量化版本模型">生成量化版本模型</a></li>
         <li><a href="#执行测试一下能不能运行">执行测试一下能不能运行</a></li>
       </ul>
