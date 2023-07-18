@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>
-          通过docker安装使用Openai API的LLM自主代理Auto-GPT - Star5o的博客
+          一个公钥 - Star5o的博客
         </title>
     
 
@@ -29,7 +29,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="star5o" />
-  <meta name="description" content="下载并配置 自行构建镜像和使用官方镜像两种方式都可以。 自行构建镜像 下载 参考官方文档：https://docs.agpt.co/setup/ 1 git clone https://github.com/Significant-Gravitas/Auto-GPT.git git-Auto-GPT &amp;amp;&amp;amp; cd git-Auto-GPT 切换到0.4.0版本分支（官方文档建议不要使用m" />
+  <meta name="description" content="生成密钥 先通过运行以下代码来生成一个默认 ~/.ssh/id_rsa的密钥： 1 ssh-keygen -t rsa 对于保存密钥的位置，按回车键接受默认位置。一个私钥~/.ssh/id_rsa和公钥 ~/.ssh/id_rsa.pub 将在默认的 SSH 位置 ~/.ssh/ 创建。 将公钥添加" />
 
   <meta name="keywords" content="Star5o, star5o" />
 
@@ -41,7 +41,7 @@
 <meta name="generator" content="Hugo 0.107.0" />
 
 
-<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/" />
+<link rel="canonical" href="https://www.gnn.ac.cn/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/" />
 
 
 
@@ -67,20 +67,20 @@
 
 
 
-<meta property="og:title" content="通过docker安装使用Openai API的LLM自主代理Auto-GPT" />
-<meta property="og:description" content="下载并配置 自行构建镜像和使用官方镜像两种方式都可以。 自行构建镜像 下载 参考官方文档：https://docs.agpt.co/setup/ 1 git clone https://github.com/Significant-Gravitas/Auto-GPT.git git-Auto-GPT &amp;&amp; cd git-Auto-GPT 切换到0.4.0版本分支（官方文档建议不要使用m" />
+<meta property="og:title" content="一个公钥" />
+<meta property="og:description" content="生成密钥 先通过运行以下代码来生成一个默认 ~/.ssh/id_rsa的密钥： 1 ssh-keygen -t rsa 对于保存密钥的位置，按回车键接受默认位置。一个私钥~/.ssh/id_rsa和公钥 ~/.ssh/id_rsa.pub 将在默认的 SSH 位置 ~/.ssh/ 创建。 将公钥添加" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2023-06-07T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-06-19T16:24:37+08:00" /><meta property="og:site_name" content="Star5o的博客" />
+<meta property="og:url" content="https://www.gnn.ac.cn/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-07-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-13T00:00:00+00:00" /><meta property="og:site_name" content="Star5o的博客" />
 
-<meta itemprop="name" content="通过docker安装使用Openai API的LLM自主代理Auto-GPT">
-<meta itemprop="description" content="下载并配置 自行构建镜像和使用官方镜像两种方式都可以。 自行构建镜像 下载 参考官方文档：https://docs.agpt.co/setup/ 1 git clone https://github.com/Significant-Gravitas/Auto-GPT.git git-Auto-GPT &amp;&amp; cd git-Auto-GPT 切换到0.4.0版本分支（官方文档建议不要使用m"><meta itemprop="datePublished" content="2023-06-07T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-06-19T16:24:37+08:00" />
-<meta itemprop="wordCount" content="705">
-<meta itemprop="keywords" content="LLMs,ChatGPT,Paper," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="通过docker安装使用Openai API的LLM自主代理Auto-GPT"/>
-<meta name="twitter:description" content="下载并配置 自行构建镜像和使用官方镜像两种方式都可以。 自行构建镜像 下载 参考官方文档：https://docs.agpt.co/setup/ 1 git clone https://github.com/Significant-Gravitas/Auto-GPT.git git-Auto-GPT &amp;&amp; cd git-Auto-GPT 切换到0.4.0版本分支（官方文档建议不要使用m"/>
+<meta itemprop="name" content="一个公钥">
+<meta itemprop="description" content="生成密钥 先通过运行以下代码来生成一个默认 ~/.ssh/id_rsa的密钥： 1 ssh-keygen -t rsa 对于保存密钥的位置，按回车键接受默认位置。一个私钥~/.ssh/id_rsa和公钥 ~/.ssh/id_rsa.pub 将在默认的 SSH 位置 ~/.ssh/ 创建。 将公钥添加"><meta itemprop="datePublished" content="2023-07-13T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-07-13T00:00:00+00:00" />
+<meta itemprop="wordCount" content="250">
+<meta itemprop="keywords" content="ChatGPT,Paper," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="一个公钥"/>
+<meta name="twitter:description" content="生成密钥 先通过运行以下代码来生成一个默认 ~/.ssh/id_rsa的密钥： 1 ssh-keygen -t rsa 对于保存密钥的位置，按回车键接受默认位置。一个私钥~/.ssh/id_rsa和公钥 ~/.ssh/id_rsa.pub 将在默认的 SSH 位置 ~/.ssh/ 创建。 将公钥添加"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -357,7 +357,7 @@
       <article class="post">
         
         <header class="post-header">
-          <h1 class="post-title">通过docker安装使用Openai API的LLM自主代理Auto-GPT</h1>
+          <h1 class="post-title">一个公钥</h1>
           
 
           <div class="post-meta">
@@ -368,23 +368,18 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="2023-06-07">
-      2023-06-07
+    <time datetime="2023-07-13">
+      2023-07-13
     </time>
   </div>
 
-  
-    <div class="post-meta-lastmod">
-      (上次更新:
-      2023-06-19)
-    </div>
   
 
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 705 字 -
-        预计阅读 2 分钟
+        约 250 字 -
+        预计阅读 1 分钟
       </span>
 
     
@@ -403,253 +398,24 @@
 
         
         <div class="post-content">
-          <h2 id="下载并配置">下载并配置</h2>
-<p>自行构建镜像和使用官方镜像两种方式都可以。</p>
-<h3 id="自行构建镜像">自行构建镜像</h3>
-<h4 id="下载">下载</h4>
-<p>参考官方文档：https://docs.agpt.co/setup/</p>
+          <h2 id="生成密钥">生成密钥</h2>
+<p>先通过运行以下代码来生成一个默认 <code>~/.ssh/id_rsa</code>的密钥：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/Significant-Gravitas/Auto-GPT.git git-Auto-GPT <span class="o">&amp;&amp;</span> <span class="nb">cd</span> git-Auto-GPT
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ssh-keygen -t rsa 
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>切换到0.4.0版本分支（官方文档建议不要使用<code>master</code>分支）。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git checkout v0.4.0
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="配置插件">配置插件</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -L -o ./plugins/Auto-GPT-Plugins.zip https://github.com/Significant-Gravitas/Auto-GPT-Plugins/archive/refs/heads/master.zip
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="配置环境变量">配置环境变量</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp .env.template .env
-</span></span><span class="line"><span class="cl">vim .env
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>配置OpenAI API密钥，不带任何引号或空格。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">OPENAI_API_KEY</span><span class="o">=</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>配置谷歌搜索API，不带任何引号或空格。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">GOOGLE_API_KEY</span><span class="o">=</span>
-</span></span><span class="line"><span class="cl"><span class="nv">CUSTOM_SEARCH_ENGINE_ID</span><span class="o">=</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="运行">运行</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker-compose build auto-gpt
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">docker-compose run --rm auto-gpt
-</span></span><span class="line"><span class="cl"><span class="c1"># or docker-compose run --rm auto-gpt --gpt3only --continuous</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># </span>
-</span></span><span class="line"><span class="cl"> 
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="使用官方镜像">使用官方镜像</h3>
-<h4 id="创建文件夹">创建文件夹</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">mkdir Auto-GPT
-</span></span><span class="line"><span class="cl">cd Auto-GPT
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="创建docker-composeyml">创建docker-compose.yml</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim docker-compose.yml
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;3.9&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">auto-gpt</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">significantgravitas/auto-gpt</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">env_file</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">.env</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">profiles</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;exclude-from-up&#34;</span><span class="p">]</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">./auto_gpt_workspace:/app/autogpt/auto_gpt_workspace</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">./data:/app/data</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c">## allow auto-gpt to write logs to disk</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">./logs:/app/logs</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c">## hot fix missing prompt_settings.yaml</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">./prompt_settings.yaml:/app/prompt_settings.yaml</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c">## uncomment following lines if you want to make use of these files</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c">## you must have them existing in the same folder as this docker-compose.yml</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c">#- type: bind</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c">#  source: ./azure.yaml</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c">#  target: /app/azure.yaml</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c">#- type: bind</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c">#  source: ./ai_settings.yaml</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c">#  target: /app/ai_settings.yaml</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="创建prompt_settingsyaml配置文件">创建prompt_settings.yaml配置文件</h4>
-<p>官方文档里并没有这一步骤，但是我在运行时发现缺少这个文件会报错，所以需要创建这个文件。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim prompt_settings.yaml
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>该文件内容与官方文档中的<code>prompt_settings.yaml</code>内容相同，即如下。</p>
-<p><a href="https://github.com/Significant-Gravitas/Auto-GPT/blob/master/prompt_settings.yaml">https://github.com/Significant-Gravitas/Auto-GPT/blob/master/prompt_settings.yaml</a></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">constraints</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s1">&#39;~4000 word limit for short term memory. Your short term memory is short, so immediately save important information to files.&#39;</span><span class="p">,</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s1">&#39;If you are unsure how you previously did something or want to recall past events, thinking about similar events will help you remember.&#39;</span><span class="p">,</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s1">&#39;No user assistance&#39;</span><span class="p">,</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s1">&#39;Exclusively use the commands listed below e.g. command_name&#39;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">]</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">resources</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s1">&#39;Internet access for searches and information gathering.&#39;</span><span class="p">,</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s1">&#39;Long Term memory management.&#39;</span><span class="p">,</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s1">&#39;GPT-3.5 powered Agents for delegation of simple tasks.&#39;</span><span class="p">,</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s1">&#39;File output.&#39;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">]</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">performance_evaluations</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s1">&#39;Continuously review and analyze your actions to ensure you are performing to the best of your abilities.&#39;</span><span class="p">,</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s1">&#39;Constructively self-criticize your big-picture behavior constantly.&#39;</span><span class="p">,</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s1">&#39;Reflect on past decisions and strategies to refine your approach.&#39;</span><span class="p">,</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s1">&#39;Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.&#39;</span><span class="p">,</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s1">&#39;Write all code to a file.&#39;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">]</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="创建env配置文件">创建.env配置文件</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim .env
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">OPENAI_API_KEY=
-</span></span><span class="line"><span class="cl">GOOGLE_API_KEY=
-</span></span><span class="line"><span class="cl">CUSTOM_SEARCH_ENGINE_ID=
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>执行</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker pull significantgravitas/auto-gpt
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">docker-compose run --rm auto-gpt
-</span></span><span class="line"><span class="cl"><span class="c1"># or docker-compose run --rm auto-gpt --gpt3only --continuous </span>
-</span></span><span class="line"><span class="cl"><span class="c1"># gpt3only为仅使用GPT-3.5，continuous为自动持续运行。</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>
+</div><p>对于保存密钥的位置，按回车键接受默认位置。一个私钥<code>~/.ssh/id_rsa</code>和公钥 <code>~/.ssh/id_rsa.pub</code> 将在默认的 <code>SSH</code> 位置 <code>~/.ssh/</code> 创建。</p>
+<h2 id="将公钥添加到服务器中">将公钥添加到服务器中</h2>
+<p>将<code>~/.ssh/id_rsa.pub</code>的内容复制到服务器的<code>~/.ssh/authorized_keys</code>文件中：</p>
+<p>如此即可免密登陆ssh。</p>
+<h2 id="将公钥添加到git中">将公钥添加到git中</h2>
+<h3 id="github">Github</h3>
+<p>进入<code>https://github.com/settings/keys</code>，将<code>~/.ssh/id_rsa.pub</code>的内容添加进SSH keys中。</p>
+
         </div>
 
         
@@ -662,10 +428,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2023-06-19
-      
-        
-        
+      2023-07-13
       
     </span>
   </p>
@@ -684,8 +447,7 @@
 
         <footer class="post-footer">
           <div class="post-tags">
-              <a href="https://www.gnn.ac.cn/zh-cn/tags/llms/">LLMs</a>
-                <a href="https://www.gnn.ac.cn/zh-cn/tags/chatgpt/">ChatGPT</a>
+              <a href="https://www.gnn.ac.cn/zh-cn/tags/chatgpt/">ChatGPT</a>
                 <a href="https://www.gnn.ac.cn/zh-cn/tags/paper/">Paper</a>
                 
             </div>
@@ -694,7 +456,7 @@
           
           <nav class="post-nav">
             
-              <a class="prev" href="/zh-cn/post/2023/06/07/install-autogpt-in-local-with-llama.cpp/">
+              <a class="prev" href="/zh-cn/post/2023/07/13/build-academic-gpt-in-docker/">
                 
                 <i class="iconfont">
                   <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -704,12 +466,12 @@
 </svg>
 
                 </i>
-                <span class="prev-text nav-default">本地安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</span>
+                <span class="prev-text nav-default">通过docker安装使用GPT学术优化</span>
                 <span class="prev-text nav-mobile">上一篇</span>
               </a>
             
-              <a class="next" href="/zh-cn/post/2023/06/06/install-agentgpt-in-docker/">
-                <span class="next-text nav-default">通过docker安装LLM自主代理AgentGPT</span>
+              <a class="next" href="/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/">
+                <span class="next-text nav-default">Docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</span>
                 <span class="prev-text nav-mobile">下一篇</span>
                 
                 <i class="iconfont">
@@ -760,7 +522,7 @@
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     var disqus_config = function () {
-      this.page.url = "https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/";
+      this.page.url = "https://www.gnn.ac.cn/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/";
     };
     function load_disqus() {
       
@@ -798,24 +560,11 @@
     <div class="toc-content custom-scrollbar">
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#下载并配置">下载并配置</a>
+    <li><a href="#生成密钥">生成密钥</a></li>
+    <li><a href="#将公钥添加到服务器中">将公钥添加到服务器中</a></li>
+    <li><a href="#将公钥添加到git中">将公钥添加到git中</a>
       <ul>
-        <li><a href="#自行构建镜像">自行构建镜像</a>
-          <ul>
-            <li><a href="#下载">下载</a></li>
-            <li><a href="#配置插件">配置插件</a></li>
-            <li><a href="#配置环境变量">配置环境变量</a></li>
-            <li><a href="#运行">运行</a></li>
-          </ul>
-        </li>
-        <li><a href="#使用官方镜像">使用官方镜像</a>
-          <ul>
-            <li><a href="#创建文件夹">创建文件夹</a></li>
-            <li><a href="#创建docker-composeyml">创建docker-compose.yml</a></li>
-            <li><a href="#创建prompt_settingsyaml配置文件">创建prompt_settings.yaml配置文件</a></li>
-            <li><a href="#创建env配置文件">创建.env配置文件</a></li>
-          </ul>
-        </li>
+        <li><a href="#github">Github</a></li>
       </ul>
     </li>
   </ul>

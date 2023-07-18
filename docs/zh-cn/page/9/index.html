@@ -360,6 +360,134 @@
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/zh-cn/post/2023/02/06/docker-install-alist/">通过docker安装alist来挂载网盘</a>
+    </h1>
+    
+
+    <div class="post-meta">
+  <div class="post-meta-author">
+    by
+      star5o
+    
+  </div>
+
+  <div class="post-meta-time">
+    <time datetime="2023-02-06">
+      2023-02-06
+    </time>
+  </div>
+
+  
+    <div class="post-meta-lastmod">
+      (上次更新:
+      2023-06-06)
+    </div>
+  
+
+
+  <div class="post-meta__right">
+    <span class="post-meta-more">
+        约 195 字 -
+        预计阅读 1 分钟
+      </span>
+
+    
+
+
+    
+    
+
+
+    
+    
+  </div>
+</div>
+
+  </header>
+  
+  <div class="post-content">
+    
+      <div class="post-summary">
+        安装 新建配置文件存放目录 1 mkdir /root/software/alist 启动容器 1 2 docker run -d --restart=always -v /root/software/alist:/opt/alist/data -p 5244:5244 --name=&#34;alist&#34; xhofe/alist:latest # --network=&#34;host&#34; 访问ip:5244即可进入alist 输入以下命令查看初始账号密码 1 docker logs alist 配置阿里云盘 进入后点击管理添加挂载的网盘。 点击存储-&gt;添
+      </div>
+      <div class="read-more">
+        <a href="/zh-cn/post/2023/02/06/docker-install-alist/" class="read-more-link"
+          >阅读全文</a
+        >
+      </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/">PicGO 上传图片前自动压缩</a>
+    </h1>
+    
+
+    <div class="post-meta">
+  <div class="post-meta-author">
+    by
+      star5o
+    
+  </div>
+
+  <div class="post-meta-time">
+    <time datetime="2023-01-31">
+      2023-01-31
+    </time>
+  </div>
+
+  
+    <div class="post-meta-lastmod">
+      (上次更新:
+      2023-02-07)
+    </div>
+  
+
+
+  <div class="post-meta__right">
+    <span class="post-meta-more">
+        约 156 字 -
+        预计阅读 1 分钟
+      </span>
+
+    
+
+
+    
+    
+
+
+    
+    
+  </div>
+</div>
+
+  </header>
+  
+  <div class="post-content">
+    
+      <div class="post-summary">
+        安装插件 采用picgo-plugin-compress插件，在PicGo-gui上直接搜索该插件并安装。 配置 点击插件配置选择压缩方式 压缩方式有： tinypng 无损压缩，需要上传到 tinypng imagemin 压缩过程不需要经过网络，但是图
+      </div>
+      <div class="read-more">
+        <a href="/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/" class="read-more-link"
+          >阅读全文</a
+        >
+      </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/">腾讯云CDN加速hugo的github pages</a>
     </h1>
     
@@ -412,129 +540,6 @@
       </div>
       <div class="read-more">
         <a href="/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/" class="read-more-link"
-          >阅读全文</a
-        >
-      </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/01/29/use-chatgpt-in-china/">国内使用ChatGPT</a>
-    </h1>
-    
-
-    <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      star5o
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2023-01-29">
-      2023-01-29
-    </time>
-  </div>
-
-  
-    <div class="post-meta-lastmod">
-      (上次更新:
-      2023-01-30)
-    </div>
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        约 286 字 -
-        预计阅读 1 分钟
-      </span>
-
-    
-
-
-    
-    
-
-
-    
-    
-  </div>
-</div>
-
-  </header>
-  
-  <div class="post-content">
-    
-      <div class="post-summary">
-        OpenAI有地区限制，第一次登陆ChatGPT时使用的香港IP，注册然后登陆进去直接提示OpenAI's services are not available in your country，之后更换使用的IP（包括美国）和邮箱依旧提示。解决方法如下： 首先切
-      </div>
-      <div class="read-more">
-        <a href="/zh-cn/post/2023/01/29/use-chatgpt-in-china/" class="read-more-link"
-          >阅读全文</a
-        >
-      </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/01/22/docker-plex-install/">docker安装plex及设置</a>
-    </h1>
-    
-
-    <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      star5o
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2023-01-22">
-      2023-01-22
-    </time>
-  </div>
-
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        约 482 字 -
-        预计阅读 1 分钟
-      </span>
-
-    
-
-
-    
-    
-
-
-    
-    
-  </div>
-</div>
-
-  </header>
-  
-  <div class="post-content">
-    
-      <div class="post-summary">
-        搭建Plex Server 新建文件夹plex， 创建docker-compose.yml 1 2 mkdir plex &amp;&amp; cd plex touch docker-compose.yml vim docker-compose.yml写入下面的配置 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 version: &#34;2.1&#34; services: plex: image: linuxserver/plex container_name: plex environment: -
-      </div>
-      <div class="read-more">
-        <a href="/zh-cn/post/2023/01/22/docker-plex-install/" class="read-more-link"
           >阅读全文</a
         >
       </div>
@@ -614,6 +619,10 @@
       
       <li >
         <a href="/zh-cn/page/12/">12</a>
+      </li>
+      
+      <li >
+        <a href="/zh-cn/page/13/">13</a>
       </li>
       
     </ul>
