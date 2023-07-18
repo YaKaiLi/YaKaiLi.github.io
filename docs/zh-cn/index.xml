@@ -47,13 +47,14 @@
     </item>
     
     <item>
-      <title>一个公钥</title>
+      <title>一个公钥同时用于ssh和git</title>
       <link>https://www.gnn.ac.cn/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/</guid>
       
-        <description>&lt;h2 id=&#34;生成密钥&#34;&gt;生成密钥&lt;/h2&gt;
+        <description>&lt;p&gt;一个公钥走天下真的很方便。&lt;/p&gt;
+&lt;h2 id=&#34;生成密钥&#34;&gt;生成密钥&lt;/h2&gt;
 &lt;p&gt;先通过运行以下代码来生成一个默认 &lt;code&gt;~/.ssh/id_rsa&lt;/code&gt;的密钥：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -70,6 +71,9 @@
 &lt;h2 id=&#34;将公钥添加到git中&#34;&gt;将公钥添加到git中&lt;/h2&gt;
 &lt;h3 id=&#34;github&#34;&gt;Github&lt;/h3&gt;
 &lt;p&gt;进入&lt;code&gt;https://github.com/settings/keys&lt;/code&gt;，将&lt;code&gt;~/.ssh/id_rsa.pub&lt;/code&gt;的内容添加进SSH keys中。&lt;/p&gt;
+&lt;h3 id=&#34;gitlab&#34;&gt;Gitlab&lt;/h3&gt;
+&lt;p&gt;与Github相同，将&lt;code&gt;~/.ssh/id_rsa.pub&lt;/code&gt;的内容添加进SSH keys中。&lt;/p&gt;
+&lt;p&gt;由此通过ssh的clone和push都可以免密登陆。&lt;/p&gt;
 </description>
       
     </item>

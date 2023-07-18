@@ -1,11 +1,13 @@
 ---
-title: 一个公钥
+title: 一个公钥同时用于ssh和git
 date: '2023-07-13'
 slug: gen-key-for-ssh-and-git
 tags:
   - ChatGPT
   - Paper
 ---
+一个公钥走天下真的很方便。
+
 ## 生成密钥
 先通过运行以下代码来生成一个默认 `~/.ssh/id_rsa`的密钥：
 ```shell
@@ -25,3 +27,8 @@ ssh-keygen -t rsa
 
 进入`https://github.com/settings/keys`，将`~/.ssh/id_rsa.pub`的内容添加进SSH keys中。
 
+### Gitlab
+
+与Github相同，将`~/.ssh/id_rsa.pub`的内容添加进SSH keys中。
+
+由此通过ssh的clone和push都可以免密登陆。
