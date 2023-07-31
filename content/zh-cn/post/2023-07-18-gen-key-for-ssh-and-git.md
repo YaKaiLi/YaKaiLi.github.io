@@ -3,8 +3,8 @@ title: 一个公钥同时用于ssh和git
 date: '2023-07-13'
 slug: gen-key-for-ssh-and-git
 tags:
-  - ChatGPT
-  - Paper
+  - Misc
+  - Homelab
 ---
 一个公钥走天下真的很方便。
 

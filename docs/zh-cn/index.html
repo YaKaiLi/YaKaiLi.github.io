@@ -360,6 +360,65 @@
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/zh-cn/post/2023/07/31/install-vulfocus/">安装vulfocus靶场</a>
+    </h1>
+    
+
+    <div class="post-meta">
+  <div class="post-meta-author">
+    by
+      star5o
+    
+  </div>
+
+  <div class="post-meta-time">
+    <time datetime="2023-07-31">
+      2023-07-31
+    </time>
+  </div>
+
+  
+
+
+  <div class="post-meta__right">
+    <span class="post-meta-more">
+        约 113 字 -
+        预计阅读 1 分钟
+      </span>
+
+    
+
+
+    
+    
+
+
+    
+    
+  </div>
+</div>
+
+  </header>
+  
+  <div class="post-content">
+    
+      <div class="post-summary">
+        docker pull vulfocus/vulfocus:latest docker run -d -p 80:80 -v /var/run/docker.sock:/var/run/docker.sock -e VUL_IP=192.168.1.105 vulfocus/vulfocus #如果端口被占用，则命令执行不成功 #-v /var/run/docker.sock:/var/run/docker.sock 为 docker 交互连接。 #-e DOCKER_URL 为 Docker 连接方式，默认通过 unix://var/run/docker.sock 进行连接，也可以通过 tcp://xxx.xxx.xxx.xxx:2375 进行连接（必须开放 2375 端口）。 #-v /vulfocus-api/db.sqlite3:db.sqlite3 映射数据库为本地文件。 #-e VUL_IP=xxx.xxx.xxx.xxx 为 Docker 服务器 IP ，
+      </div>
+      <div class="read-more">
+        <a href="/zh-cn/post/2023/07/31/install-vulfocus/" class="read-more-link"
+          >阅读全文</a
+        >
+      </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/zh-cn/post/2023/07/13/build-academic-gpt-in-docker/">通过docker安装使用GPT学术优化</a>
     </h1>
     
@@ -476,70 +535,6 @@
       </div>
       <div class="read-more">
         <a href="/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/" class="read-more-link"
-          >阅读全文</a
-        >
-      </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/">Docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</a>
-    </h1>
-    
-
-    <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      star5o
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2023-06-07">
-      2023-06-07
-    </time>
-  </div>
-
-  
-    <div class="post-meta-lastmod">
-      (上次更新:
-      2023-06-19)
-    </div>
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        约 1620 字 -
-        预计阅读 4 分钟
-      </span>
-
-    
-
-
-    
-    
-
-
-    
-    
-  </div>
-</div>
-
-  </header>
-  
-  <div class="post-content">
-    
-      <div class="post-summary">
-        创建容器 1 2 3 4 5 6 7 8 9 10 11 12 docker pull nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 docker run --gpus all -it -d --name autollama -v /home/star5o/LLMs/:/LLMs/ --ipc=host -p 8000:8000 nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 /bin/bash #进入容器 docker exec -it autollama bash cd /LLMs # 更新源 apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub apt update 下载并配置llama.cpp项目 配置llama.cpp项目主要是为了验证模型权重是否能正
-      </div>
-      <div class="read-more">
-        <a href="/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/" class="read-more-link"
           >阅读全文</a
         >
       </div>
