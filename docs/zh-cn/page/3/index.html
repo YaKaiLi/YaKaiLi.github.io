@@ -360,7 +360,7 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/zh-cn/post/2023/06/06/install-agentgpt-in-docker/">通过docker安装LLM自主代理AgentGPT</a>
+      <a class="post-link" href="/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/">Docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</a>
     </h1>
     
 
@@ -372,23 +372,23 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="2023-06-06">
-      2023-06-06
+    <time datetime="2023-06-07">
+      2023-06-07
     </time>
   </div>
 
   
     <div class="post-meta-lastmod">
       (上次更新:
-      2023-06-07)
+      2023-06-19)
     </div>
   
 
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 160 字 -
-        预计阅读 1 分钟
+        约 1620 字 -
+        预计阅读 4 分钟
       </span>
 
     
@@ -408,10 +408,10 @@
   <div class="post-content">
     
       <div class="post-summary">
-        下载并配置 下载： 1 git clone https://github.com/reworkd/AgentGPT.git &amp;&amp; cd AgentGPT 切换到0.5版本分支。使用0.5版本，因为0.6版本和master分支部署完执行总会遇到各种各样的问题。 1 git checkout v.0.5.0-beta 然后执行。 1 ./setup.sh --docker 之后会提示输入密钥，按照提示输入即可。 1 Enter
+        创建容器 1 2 3 4 5 6 7 8 9 10 11 12 docker pull nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 docker run --gpus all -it -d --name autollama -v /home/star5o/LLMs/:/LLMs/ --ipc=host -p 8000:8000 nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 /bin/bash #进入容器 docker exec -it autollama bash cd /LLMs # 更新源 apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub apt update 下载并配置llama.cpp项目 配置llama.cpp项目主要是为了验证模型权重是否能正
       </div>
       <div class="read-more">
-        <a href="/zh-cn/post/2023/06/06/install-agentgpt-in-docker/" class="read-more-link"
+        <a href="/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/" class="read-more-link"
           >阅读全文</a
         >
       </div>
@@ -424,7 +424,7 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/zh-cn/post/2023/06/06/install-autogpt-next-web-in-docker/">通过docker安装LLM自主代理AutoGPT-Next-Web</a>
+      <a class="post-link" href="/zh-cn/post/2023/06/07/install-autogpt-in-local-with-llama.cpp/">本地安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</a>
     </h1>
     
 
@@ -436,23 +436,23 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="2023-06-06">
-      2023-06-06
+    <time datetime="2023-06-07">
+      2023-06-07
     </time>
   </div>
 
   
     <div class="post-meta-lastmod">
       (上次更新:
-      2023-06-07)
+      2023-06-19)
     </div>
   
 
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 341 字 -
-        预计阅读 1 分钟
+        约 1282 字 -
+        预计阅读 3 分钟
       </span>
 
     
@@ -472,10 +472,10 @@
   <div class="post-content">
     
       <div class="post-summary">
-        获取Websearch密钥 两种方式都可以。 Google官方 每天100次搜索免费，之后5美元/1000次搜索。 https://developers.google.com/custom-search/v1/overview?hl=zh-cn 第三方 1000次搜索免费，之后0.3美元/1000次搜索。 https://serper.dev/ 下载并配置 1 git clone https://github.com/Dogtiti/AutoGPT-Next-Web.git &amp;&amp; cd AutoGPT-Next-Web 选用A
+        下载并配置llama.cpp项目 下载llama.cpp项目 1 git clone https://github.com/ggerganov/llama.cpp &amp;&amp; cd llama.cpp 下载LLaMa权重文件 根据脚本https://github.com/Elyah2035/llama-dl使用以下磁力链接下载： 1
       </div>
       <div class="read-more">
-        <a href="/zh-cn/post/2023/06/06/install-autogpt-next-web-in-docker/" class="read-more-link"
+        <a href="/zh-cn/post/2023/06/07/install-autogpt-in-local-with-llama.cpp/" class="read-more-link"
           >阅读全文</a
         >
       </div>
@@ -488,7 +488,7 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/zh-cn/post/2023/06/06/install-babyagi-in-docker/">通过docker安装LLM自主代理babyagi</a>
+      <a class="post-link" href="/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/">通过docker安装使用Openai API的LLM自主代理Auto-GPT</a>
     </h1>
     
 
@@ -500,22 +500,22 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="2023-06-06">
-      2023-06-06
+    <time datetime="2023-06-07">
+      2023-06-07
     </time>
   </div>
 
   
     <div class="post-meta-lastmod">
       (上次更新:
-      2023-06-07)
+      2023-06-19)
     </div>
   
 
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 693 字 -
+        约 705 字 -
         预计阅读 2 分钟
       </span>
 
@@ -536,10 +536,10 @@
   <div class="post-content">
     
       <div class="post-summary">
-        获取Pinecone API密钥 Pinecone是一个用于存储AI数据的矢量数据库。通过点击API密钥标签，点击复制按钮或 “Create API Key” 来获得API密钥。另外，注意 “Environment” 的
+        下载并配置 自行构建镜像和使用官方镜像两种方式都可以。 自行构建镜像 下载 参考官方文档：https://docs.agpt.co/setup/ 1 git clone https://github.com/Significant-Gravitas/Auto-GPT.git git-Auto-GPT &amp;&amp; cd git-Auto-GPT 切换到0.4.0版本分支（官方文档建议不要使用m
       </div>
       <div class="read-more">
-        <a href="/zh-cn/post/2023/06/06/install-babyagi-in-docker/" class="read-more-link"
+        <a href="/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/" class="read-more-link"
           >阅读全文</a
         >
       </div>
@@ -570,65 +570,475 @@
 
   
   
-  <nav class="pagination">
-    <ul>
-      
-      <li >
-        <a href="/zh-cn/">1</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/2/">2</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/zh-cn/page/3/">3</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/4/">4</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/5/">5</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/6/">6</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/7/">7</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/8/">8</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/9/">9</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/10/">10</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/11/">11</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/12/">12</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/13/">13</a>
-      </li>
-      
-    </ul>
-  </nav>
 
-  
+    <nav class="pagination">
+      <ul>
+
+      
+      
+      <li><a href="/zh-cn/">««</a></li>
+      
+
+      
+      
+      <li><a href="/zh-cn/page/2/">«</a></li>
+      
+
+      
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/">
+              1
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/2/">
+              2
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="active">
+            <a href="/zh-cn/page/3/">
+              3
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/4/">
+              4
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/5/">
+              5
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/6/">
+              6
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/7/">
+              7
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/8/">
+              8
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/9/">
+              9
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/10/">
+              10
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/11/">
+              11
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/12/">
+              12
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/13/">
+              13
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+      
+      
+      <li><a href="/zh-cn/page/4/">»</a></li>
+      
+
+      
+      
+      <li><a href="/zh-cn/page/14/">»»</a></li>
+      
+
+      </ul>
+    </nav>
   
 
 

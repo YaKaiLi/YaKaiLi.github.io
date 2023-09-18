@@ -360,7 +360,7 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/zh-cn/post/2023/03/17/deep-graph-generator-survey/">图生成方法综述</a>
+      <a class="post-link" href="/zh-cn/post/2023/03/26/librespeed-linux-server-speedtest/">搭建linux服务器网页测速</a>
     </h1>
     
 
@@ -372,86 +372,17 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="2023-03-17">
-      2023-03-17
+    <time datetime="2023-03-26">
+      2023-03-26
     </time>
   </div>
 
-  
-    <div class="post-meta-lastmod">
-      (上次更新:
-      2023-03-23)
-    </div>
   
 
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 1434 字 -
-        预计阅读 3 分钟
-      </span>
-
-    
-
-
-    
-    
-
-
-    
-    
-  </div>
-</div>
-
-  </header>
-  
-  <div class="post-content">
-    
-      <div class="post-summary">
-        我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数，并且支持添加生成约束条件的图生成方法。因此进行了一系列调研，总结如下。 主要参考了文章《Deep Graph Generators: A Survey》1 基于自回归（Autor
-      </div>
-      <div class="read-more">
-        <a href="/zh-cn/post/2023/03/17/deep-graph-generator-survey/" class="read-more-link"
-          >阅读全文</a
-        >
-      </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/">使用 Cloudflare Workers 解决 OpenAI 的 API 无法访问问题</a>
-    </h1>
-    
-
-    <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      star5o
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2023-03-16">
-      2023-03-16
-    </time>
-  </div>
-
-  
-    <div class="post-meta-lastmod">
-      (上次更新:
-      2023-03-21)
-    </div>
-  
-
-
-  <div class="post-meta__right">
-    <span class="post-meta-more">
-        约 275 字 -
+        约 38 字 -
         预计阅读 1 分钟
       </span>
 
@@ -472,10 +403,10 @@
   <div class="post-content">
     
       <div class="post-summary">
-        参考： https://github.com/noobnooc/noobnooc/discussions/9 主要流程（步骤3和4可省略）： 新建一个 Cloudflare Worker 将 https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6 里的代码粘贴到 Worker 中并部署 给 Worker 绑定一个域名 使用自己的域名代替 api.openai.com 域名托管转到Cloudflare Websites-&gt;Add Site 接下来输入需要转入的域名，点击Add Site 选择free
+        1 2 3 4 5 6 7 8 9 10 docker run -d \ --name=librespeed \ -e PUID=1000 \ -e PGID=1000 \ -e TZ=Etc/UTC \ -e PASSWORD=&#34;password&#34; \ -p 80:80 \ -v ~/librespeed/config:/config \ --restart unless-stopped \ lscr.io/linuxserver/librespeed:latest
       </div>
       <div class="read-more">
-        <a href="/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/" class="read-more-link"
+        <a href="/zh-cn/post/2023/03/26/librespeed-linux-server-speedtest/" class="read-more-link"
           >阅读全文</a
         >
       </div>
@@ -488,7 +419,7 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/">Docker搭建Stable Diffusion Webui</a>
+      <a class="post-link" href="/zh-cn/post/2023/03/25/build-wechat-chatgpt-bot/">搭建chatgpt微信机器人</a>
     </h1>
     
 
@@ -500,22 +431,22 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="2023-03-15">
-      2023-03-15
+    <time datetime="2023-03-25">
+      2023-03-25
     </time>
   </div>
 
   
     <div class="post-meta-lastmod">
       (上次更新:
-      2023-03-21)
+      2023-04-16)
     </div>
   
 
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 142 字 -
+        约 252 字 -
         预计阅读 1 分钟
       </span>
 
@@ -536,10 +467,69 @@
   <div class="post-content">
     
       <div class="post-summary">
-        环境要求 Docker及docker-compose docker-compose安装命令： 1 apt install docker-compose-plugin 搭建 1 2 3 4 5 6 7 git clone https://github.com/AbdBarho/stable-diffusion-webui-docker.git cd stable-diffusion-webui-docker docker compose --profile download up --build # 下载模型文件 docker compose --profile [ui] up --build # 启动服务 ui选择项 invoke: One of the earliest forks, stunning UI Repo
+        fuergaosi233/wechat-chatgpt方案 拉docker 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # pull image docker pull holegots/wechat-chatgpt # run container docker run -d --name wechat-chatgpt \ -e OPENAI_API_KEY=&#34;&#34; \ -e MODEL=&#34;gpt-3.5-turbo&#34; \ -e DISABLE_GROUP_MESSAGE=&#34;false&#34; \ -e CHAT_PRIVATE_TRIGGER_KEYW
       </div>
       <div class="read-more">
-        <a href="/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/" class="read-more-link"
+        <a href="/zh-cn/post/2023/03/25/build-wechat-chatgpt-bot/" class="read-more-link"
+          >阅读全文</a
+        >
+      </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/">阿里云DCDN全站加速hugo的github pages</a>
+    </h1>
+    
+
+    <div class="post-meta">
+  <div class="post-meta-author">
+    by
+      star5o
+    
+  </div>
+
+  <div class="post-meta-time">
+    <time datetime="2023-03-22">
+      2023-03-22
+    </time>
+  </div>
+
+  
+
+
+  <div class="post-meta__right">
+    <span class="post-meta-more">
+        约 120 字 -
+        预计阅读 1 分钟
+      </span>
+
+    
+
+
+    
+    
+
+
+    
+    
+  </div>
+</div>
+
+  </header>
+  
+  <div class="post-content">
+    
+      <div class="post-summary">
+        前言 先前使用腾讯云的CDN小文件加速github pages，更新博客之后总是需要刷新缓存，使用有些不便，因此切换为阿里云DCDN全站加速。 添加域名和IP 配置CNAME 开启HTTPS 购买资源包 至此便完成
+      </div>
+      <div class="read-more">
+        <a href="/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/" class="read-more-link"
           >阅读全文</a
         >
       </div>
@@ -570,65 +560,475 @@
 
   
   
-  <nav class="pagination">
-    <ul>
-      
-      <li >
-        <a href="/zh-cn/">1</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/2/">2</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/3/">3</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/4/">4</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/5/">5</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/zh-cn/page/6/">6</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/7/">7</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/8/">8</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/9/">9</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/10/">10</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/11/">11</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/12/">12</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/13/">13</a>
-      </li>
-      
-    </ul>
-  </nav>
 
-  
+    <nav class="pagination">
+      <ul>
+
+      
+      
+      <li><a href="/zh-cn/">««</a></li>
+      
+
+      
+      
+      <li><a href="/zh-cn/page/5/">«</a></li>
+      
+
+      
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/">
+              1
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/2/">
+              2
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/3/">
+              3
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/4/">
+              4
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/5/">
+              5
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="active">
+            <a href="/zh-cn/page/6/">
+              6
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/7/">
+              7
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/8/">
+              8
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/9/">
+              9
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/10/">
+              10
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/11/">
+              11
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/12/">
+              12
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/13/">
+              13
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+      
+      
+      <li><a href="/zh-cn/page/7/">»</a></li>
+      
+
+      
+      
+      <li><a href="/zh-cn/page/14/">»»</a></li>
+      
+
+      </ul>
+    </nav>
   
 
 

@@ -360,7 +360,7 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/">Macbook（M1）搭建LaTex运行环境</a>
+      <a class="post-link" href="/zh-cn/post/2023/03/15/iterm2-x11-forwarding/">iterm2&#43;xquartz x11转发</a>
     </h1>
     
 
@@ -372,8 +372,8 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="2023-03-07">
-      2023-03-07
+    <time datetime="2023-03-15">
+      2023-03-15
     </time>
   </div>
 
@@ -382,7 +382,7 @@
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 292 字 -
+        约 102 字 -
         预计阅读 1 分钟
       </span>
 
@@ -403,10 +403,10 @@
   <div class="post-content">
     
       <div class="post-summary">
-        MacTex安装 官网下载安装包 通过中科大源下载MacTex：https://mirrors.ustc.edu.cn/CTAN/systems/mac/mactex/MacTeX.pkg 官方网址：htt
+        安装xquartz https://www.xquartz.org/ 在linux服务器端打开X11转发 1 sudo vim /etc/ssh/sshd_config 配置转发参数为yes 1 2 X11Forwarding yes X11DisplayOffset 10 然后重启ssh服务 1 service ssh restart 在Mac本地设置 1 sudo vim /etc/ssh/ssh_config 配置转发参数为yes 1 2 3 4 ForwardAgent yes ForwardX11 yes ForwardX11Trusted yes XAuthLocation /opt/X11/bin/xauth 使用 ssh -X username@host ssh
       </div>
       <div class="read-more">
-        <a href="/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/" class="read-more-link"
+        <a href="/zh-cn/post/2023/03/15/iterm2-x11-forwarding/" class="read-more-link"
           >阅读全文</a
         >
       </div>
@@ -419,7 +419,7 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/zh-cn/post/2023/03/07/build-ccfddl-website/">搭建组内CCFDDL网站</a>
+      <a class="post-link" href="/zh-cn/post/2023/03/15/normal-user-use-root-installed-anaconda/">普通用户使用root用户安装的anaconda</a>
     </h1>
     
 
@@ -431,22 +431,22 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="2023-03-07">
-      2023-03-07
+    <time datetime="2023-03-15">
+      2023-03-15
     </time>
   </div>
 
   
     <div class="post-meta-lastmod">
       (上次更新:
-      2023-03-15)
+      2023-03-17)
     </div>
   
 
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 74 字 -
+        约 122 字 -
         预计阅读 1 分钟
       </span>
 
@@ -467,10 +467,10 @@
   <div class="post-content">
     
       <div class="post-summary">
-        代码来源：https://github.com/ccfddl/ccf-deadlines docker build -t my-vue-app . 部署方案1：vercel容器托管平台。 部署方案2:
+        首先，root用户安装anaconda的时候，需要安装在普通用户可以访问的目录下，比如/usr/local、/opt、/home之类的 其次，普通用户登陆后，需要执行一下conda init 使conda的路径等
       </div>
       <div class="read-more">
-        <a href="/zh-cn/post/2023/03/07/build-ccfddl-website/" class="read-more-link"
+        <a href="/zh-cn/post/2023/03/15/normal-user-use-root-installed-anaconda/" class="read-more-link"
           >阅读全文</a
         >
       </div>
@@ -483,7 +483,7 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/">使用OpenAPI搭建私人Chatgpt</a>
+      <a class="post-link" href="/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/">深度学习可解释性度量方法</a>
     </h1>
     
 
@@ -495,22 +495,22 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="2023-03-02">
-      2023-03-02
+    <time datetime="2023-03-10">
+      2023-03-10
     </time>
   </div>
 
   
     <div class="post-meta-lastmod">
       (上次更新:
-      2023-03-07)
+      2023-03-20)
     </div>
   
 
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 258 字 -
+        约 7 字 -
         预计阅读 1 分钟
       </span>
 
@@ -531,10 +531,10 @@
   <div class="post-content">
     
       <div class="post-summary">
-        方案一 来源于https://github.com/869413421/chatgpt-web 通过docker安装 1 2 3 4 5 6 7 8 9 10 docker run -itd --name chatgpt-web --restart=always \ -e APIKEY=换成你的key \ -e MODEL=gpt-3.5-turbo-0301 \ -e MAX_TOKENS=512 \ -e TEMPREATURE=0.9 \ -e TOP_P=1
+        保真度测试指标
       </div>
       <div class="read-more">
-        <a href="/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/" class="read-more-link"
+        <a href="/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/" class="read-more-link"
           >阅读全文</a
         >
       </div>
@@ -565,65 +565,461 @@
 
   
   
-  <nav class="pagination">
-    <ul>
-      
-      <li >
-        <a href="/zh-cn/">1</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/2/">2</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/3/">3</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/4/">4</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/5/">5</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/6/">6</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/7/">7</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/zh-cn/page/8/">8</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/9/">9</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/10/">10</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/11/">11</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/12/">12</a>
-      </li>
-      
-      <li >
-        <a href="/zh-cn/page/13/">13</a>
-      </li>
-      
-    </ul>
-  </nav>
 
-  
+    <nav class="pagination">
+      <ul>
+
+      
+      
+      <li><a href="/zh-cn/">««</a></li>
+      
+
+      
+      
+      <li><a href="/zh-cn/page/7/">«</a></li>
+      
+
+      
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/2/">
+              2
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/3/">
+              3
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/4/">
+              4
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/5/">
+              5
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/6/">
+              6
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/7/">
+              7
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="active">
+            <a href="/zh-cn/page/8/">
+              8
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/9/">
+              9
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/10/">
+              10
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/11/">
+              11
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/12/">
+              12
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/13/">
+              13
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/zh-cn/page/14/">
+              14
+            </a>
+          </li>
+        
+
+      
+
+      
+      
+      <li><a href="/zh-cn/page/9/">»</a></li>
+      
+
+      
+      
+      <li><a href="/zh-cn/page/14/">»»</a></li>
+      
+
+      </ul>
+    </nav>
   
 
 

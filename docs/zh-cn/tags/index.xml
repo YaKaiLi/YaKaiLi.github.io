@@ -6,13 +6,67 @@
     <description>Recent content in Tags on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Mon, 31 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HGNN</title>
+      <link>https://www.gnn.ac.cn/zh-cn/tags/hgnn/</link>
+      <pubDate>Mon, 18 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/tags/hgnn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Malware</title>
+      <link>https://www.gnn.ac.cn/zh-cn/tags/malware/</link>
+      <pubDate>Mon, 18 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/tags/malware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paper</title>
+      <link>https://www.gnn.ac.cn/zh-cn/tags/paper/</link>
+      <pubDate>Mon, 18 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/tags/paper/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Pentest</title>
       <link>https://www.gnn.ac.cn/zh-cn/tags/pentest/</link>
-      <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 14 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/tags/pentest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CTF</title>
+      <link>https://www.gnn.ac.cn/zh-cn/tags/ctf/</link>
+      <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/tags/ctf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ctfhub</title>
+      <link>https://www.gnn.ac.cn/zh-cn/tags/ctfhub/</link>
+      <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/tags/ctfhub/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writeup</title>
+      <link>https://www.gnn.ac.cn/zh-cn/tags/writeup/</link>
+      <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gnn.ac.cn/zh-cn/tags/writeup/</guid>
       <description></description>
     </item>
     
@@ -40,15 +94,6 @@
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.gnn.ac.cn/zh-cn/tags/misc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Paper</title>
-      <link>https://www.gnn.ac.cn/zh-cn/tags/paper/</link>
-      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.gnn.ac.cn/zh-cn/tags/paper/</guid>
       <description></description>
     </item>
     

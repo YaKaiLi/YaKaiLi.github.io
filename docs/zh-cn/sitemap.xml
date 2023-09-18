@@ -2,28 +2,91 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/tags/pentest/</loc>
-    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <loc>https://www.gnn.ac.cn/zh-cn/post/2023/09/18/hawk-paper-experiment-env/</loc>
+    <lastmod>2023-09-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/hgnn/</loc>
+    <lastmod>2023-09-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/malware/</loc>
+    <lastmod>2023-09-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/paper/</loc>
+    <lastmod>2023-09-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/post/</loc>
-    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/</loc>
-    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/</loc>
+    <lastmod>2023-09-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/post/2023/09/14/install-owasp-benchmark-in-docker/</loc>
+    <lastmod>2023-09-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/pentest/</loc>
+    <lastmod>2023-09-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/ctf/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/ctfhub/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/post/2023/07/31/ctf-ctfhub-web-http-basic/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.gnn.ac.cn/zh-cn/tags/writeup/</loc>
     <lastmod>2023-07-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -31,7 +94,7 @@
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/post/2023/07/31/install-vulfocus/</loc>
-    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-31T16:35:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -45,21 +108,14 @@
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/homelab/</loc>
-    <lastmod>2023-07-18T20:51:55+08:00</lastmod>
+    <lastmod>2023-07-31T16:35:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/tags/misc/</loc>
-    <lastmod>2023-07-18T20:51:55+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.gnn.ac.cn/zh-cn/tags/paper/</loc>
-    <lastmod>2023-07-18T13:25:53+08:00</lastmod>
+    <lastmod>2023-07-31T16:35:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -73,7 +129,7 @@
   
   <url>
     <loc>https://www.gnn.ac.cn/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/</loc>
-    <lastmod>2023-07-18T20:51:55+08:00</lastmod>
+    <lastmod>2023-07-31T16:35:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
