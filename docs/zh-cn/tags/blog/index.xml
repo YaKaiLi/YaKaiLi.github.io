@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Star5o的博客</title>
-    <link>https://www.gnn.ac.cn/zh-cn/tags/blog/</link>
+    <link>https://yakaili.github.io/zh-cn/tags/blog/</link>
     <description>Recent content in Blog on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yakaili.github.io/zh-cn/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>阿里云DCDN全站加速hugo的github pages</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</link>
+      <link>https://yakaili.github.io/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</guid>
+      <guid>https://yakaili.github.io/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</guid>
       <description>前言 先前使用腾讯云的CDN小文件加速github pages，更新博客之后总是需要刷新缓存，使用有些不便，因此切换为阿里云DCDN全站加速。 添加域名和IP 配置CNAME 开启HTTPS 购买资源包 至此便完成</description>
     </item>
     
     <item>
       <title>PicGO 上传图片前自动压缩</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</link>
+      <link>https://yakaili.github.io/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</link>
       <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</guid>
+      <guid>https://yakaili.github.io/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</guid>
       <description>安装插件 采用picgo-plugin-compress插件，在PicGo-gui上直接搜索该插件并安装。 配置 点击插件配置选择压缩方式 压缩方式有： tinypng 无损压缩，需要上传到 tinypng imagemin 压缩过程不需要经过网络，但是图</description>
     </item>
     
     <item>
       <title>腾讯云CDN加速hugo的github pages</title>
-      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</link>
+      <link>https://yakaili.github.io/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</link>
       <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</guid>
+      <guid>https://yakaili.github.io/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</guid>
       <description>前言 通过网站测速发现很多地方访问非常慢，点击查看测速详情。需要对github pages进行CDN加速。 注意：腾讯云加速全球站需要网站备案，选择腾讯云加速主要是因为域名是在腾讯云注册的。 参考：https</description>
     </item>
     

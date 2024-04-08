@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Star5o&#39;s Blog</title>
-    <link>https://www.gnn.ac.cn/en/</link>
+    <link>https://yakaili.github.io/en/</link>
     <description>Recent content on Star5o&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
     <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://www.gnn.ac.cn/en/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://yakaili.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Simple install hugo with Multi-language support</title>
-      <link>https://www.gnn.ac.cn/en/post/2022/11/27/hugo-simple-install/</link>
+      <link>https://yakaili.github.io/en/post/2022/11/27/hugo-simple-install/</link>
       <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.gnn.ac.cn/en/post/2022/11/27/hugo-simple-install/</guid>
+      <guid>https://yakaili.github.io/en/post/2022/11/27/hugo-simple-install/</guid>
       
         <description>&lt;p&gt;just use other&amp;rsquo;s confige
 直接拷贝已有好的配置～&lt;/p&gt;
@@ -122,10 +122,10 @@
     
     <item>
       <title>About</title>
-      <link>https://www.gnn.ac.cn/en/about/</link>
+      <link>https://yakaili.github.io/en/about/</link>
       <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.gnn.ac.cn/en/about/</guid>
+      <guid>https://yakaili.github.io/en/about/</guid>
       
         <description>&lt;p&gt;I am Star5o(李亚凯).&lt;/p&gt;
 </description>
