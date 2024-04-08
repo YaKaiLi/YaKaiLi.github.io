@@ -3,7 +3,7 @@ title: Hawk论文复现环境搭建
 date: '2023-09-18'
 slug: hawk-paper-experiment-env
 tags:
-  - HGNN
+  - Hgnn
   - Malware
   - Paper
 ---

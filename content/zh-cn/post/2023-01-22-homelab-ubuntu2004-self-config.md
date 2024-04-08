@@ -79,8 +79,8 @@ todesk #启动
 
 ## 安装向日葵
 ```shell
-wget https://dl-cdn.oray.com/sunlogin/linux/SunloginClient_11.0.1.44968_amd64.deb
-sudo apt install ./SunloginClient_11.0.1.44968_amd64.deb
+wget https://d.oray.com/sunlogin/linux/SunloginClient_15.2.0.63062_amd64.deb
+sudo apt install ./SunloginClient_15.2.0.63062_amd64.deb
 ```
 
 ## 安装teamviewer
