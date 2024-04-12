@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://yakaili.github.io/sitemap.xml
+Sitemap: https://www.gnn.ac.cn/sitemap.xml

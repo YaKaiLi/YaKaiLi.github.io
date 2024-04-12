@@ -6,7 +6,7 @@
 # https://gohugo.io/getting-started/configuration/
 
 buildFuture = true
-baseURL = "https://yakaili.github.io/"
+baseURL = "https://www.gnn.ac.cn/"
 title = "Star5o's blog"
 enableRobotsTXT = true
 enableEmoji = true

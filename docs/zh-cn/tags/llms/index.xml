@@ -2,62 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LLMs on Star5o的博客</title>
-    <link>https://yakaili.github.io/zh-cn/tags/llms/</link>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/llms/</link>
     <description>Recent content in LLMs on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Wed, 07 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yakaili.github.io/zh-cn/tags/llms/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/llms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/</guid>
       <description>创建容器 1 2 3 4 5 6 7 8 9 10 11 12 docker pull nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 docker run --gpus all -it -d --name autollama -v /home/star5o/LLMs/:/LLMs/ --ipc=host -p 8000:8000 nvidia/cuda:12.1.1-cudnn8-devel-ubuntu20.04 /bin/bash #进入容器 docker exec -it autollama bash cd /LLMs # 更新源 apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub apt update 下载并配置llama.cpp项目 配置llama.cpp项目主要是为了验证模型权重是否能正</description>
     </item>
     
     <item>
       <title>本地安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/06/07/install-autogpt-in-local-with-llama.cpp/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-local-with-llama.cpp/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/06/07/install-autogpt-in-local-with-llama.cpp/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-local-with-llama.cpp/</guid>
       <description>下载并配置llama.cpp项目 下载llama.cpp项目 1 git clone https://github.com/ggerganov/llama.cpp &amp;amp;&amp;amp; cd llama.cpp 下载LLaMa权重文件 根据脚本https://github.com/Elyah2035/llama-dl使用以下磁力链接下载： 1</description>
     </item>
     
     <item>
       <title>通过docker安装使用Openai API的LLM自主代理Auto-GPT</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/</guid>
       <description>下载并配置 自行构建镜像和使用官方镜像两种方式都可以。 自行构建镜像 下载 参考官方文档：https://docs.agpt.co/setup/ 1 git clone https://github.com/Significant-Gravitas/Auto-GPT.git git-Auto-GPT &amp;amp;&amp;amp; cd git-Auto-GPT 切换到0.4.0版本分支（官方文档建议不要使用m</description>
     </item>
     
     <item>
       <title>通过docker安装LLM自主代理AgentGPT</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/06/06/install-agentgpt-in-docker/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-agentgpt-in-docker/</link>
       <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/06/06/install-agentgpt-in-docker/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-agentgpt-in-docker/</guid>
       <description>下载并配置 下载： 1 git clone https://github.com/reworkd/AgentGPT.git &amp;amp;&amp;amp; cd AgentGPT 切换到0.5版本分支。使用0.5版本，因为0.6版本和master分支部署完执行总会遇到各种各样的问题。 1 git checkout v.0.5.0-beta 然后执行。 1 ./setup.sh --docker 之后会提示输入密钥，按照提示输入即可。 1 Enter</description>
     </item>
     
     <item>
       <title>通过docker安装LLM自主代理AutoGPT-Next-Web</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/06/06/install-autogpt-next-web-in-docker/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-autogpt-next-web-in-docker/</link>
       <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/06/06/install-autogpt-next-web-in-docker/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-autogpt-next-web-in-docker/</guid>
       <description>获取Websearch密钥 两种方式都可以。 Google官方 每天100次搜索免费，之后5美元/1000次搜索。 https://developers.google.com/custom-search/v1/overview?hl=zh-cn 第三方 1000次搜索免费，之后0.3美元/1000次搜索。 https://serper.dev/ 下载并配置 1 git clone https://github.com/Dogtiti/AutoGPT-Next-Web.git &amp;amp;&amp;amp; cd AutoGPT-Next-Web 选用A</description>
     </item>
     
     <item>
       <title>通过docker安装LLM自主代理babyagi</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/06/06/install-babyagi-in-docker/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-babyagi-in-docker/</link>
       <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/06/06/install-babyagi-in-docker/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-babyagi-in-docker/</guid>
       <description>获取Pinecone API密钥 Pinecone是一个用于存储AI数据的矢量数据库。通过点击API密钥标签，点击复制按钮或 “Create API Key” 来获得API密钥。另外，注意 “Environment” 的</description>
     </item>
     

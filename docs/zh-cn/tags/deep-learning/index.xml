@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deep learning on Star5o的博客</title>
-    <link>https://yakaili.github.io/zh-cn/tags/deep-learning/</link>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/deep-learning/</link>
     <description>Recent content in Deep learning on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Fri, 17 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yakaili.github.io/zh-cn/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>图生成方法综述</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/17/deep-graph-generator-survey/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/</link>
       <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/17/deep-graph-generator-survey/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/</guid>
       <description>我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数，并且支持添加生成约束条件的图生成方法。因此进行了一系列调研，总结如下。 主要参考了文章《Deep Graph Generators: A Survey》1 基于自回归（Autor</description>
     </item>
     
     <item>
       <title>深度学习可解释性度量方法</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/</link>
       <pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/</guid>
       <description>保真度测试指标</description>
     </item>
     
     <item>
       <title>《Interpreting Machine Learning Models》阅读笔记</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/02/21/interpret-machine-learning-read/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/interpret-machine-learning-read/</link>
       <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/02/21/interpret-machine-learning-read/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/interpret-machine-learning-read/</guid>
       <description>参考：https://ml4.apachecn.org/#/docs/interp-ml-model/01</description>
     </item>
     
     <item>
       <title>《图神经网络：基础、前沿与应用（图神经网络城堡书）》Part1:引言 第一章：表征学习（Representation Learning）</title>
-      <link>https://yakaili.github.io/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/</link>
       <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/</guid>
       <description>待阅读</description>
     </item>
     

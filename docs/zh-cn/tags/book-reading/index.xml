@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Book reading on Star5o的博客</title>
-    <link>https://yakaili.github.io/zh-cn/tags/book-reading/</link>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/book-reading/</link>
     <description>Recent content in Book reading on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Tue, 21 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yakaili.github.io/zh-cn/tags/book-reading/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/book-reading/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《Interpreting Machine Learning Models》阅读笔记</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/02/21/interpret-machine-learning-read/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/interpret-machine-learning-read/</link>
       <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/02/21/interpret-machine-learning-read/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/interpret-machine-learning-read/</guid>
       <description>参考：https://ml4.apachecn.org/#/docs/interp-ml-model/01</description>
     </item>
     

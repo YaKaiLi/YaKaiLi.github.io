@@ -1,57 +1,57 @@
-<?xml-stylesheet type="text/xsl" href="https://yakaili.github.io/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://www.gnn.ac.cn/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://yakaili.github.io/en/tags/misc/</loc>
+    <loc>https://www.gnn.ac.cn/en/tags/misc/</loc>
     <lastmod>2022-11-27T16:49:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yakaili.github.io/en/post/</loc>
+    <loc>https://www.gnn.ac.cn/en/post/</loc>
     <lastmod>2022-11-27T16:49:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yakaili.github.io/en/post/2022/11/27/hugo-simple-install/</loc>
+    <loc>https://www.gnn.ac.cn/en/post/2022/11/27/hugo-simple-install/</loc>
     <lastmod>2022-11-27T16:49:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yakaili.github.io/en/tags/software/</loc>
+    <loc>https://www.gnn.ac.cn/en/tags/software/</loc>
     <lastmod>2022-11-27T16:49:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yakaili.github.io/en/</loc>
+    <loc>https://www.gnn.ac.cn/en/</loc>
     <lastmod>2022-11-27T16:49:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yakaili.github.io/en/tags/</loc>
+    <loc>https://www.gnn.ac.cn/en/tags/</loc>
     <lastmod>2022-11-27T16:49:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yakaili.github.io/en/about/</loc>
+    <loc>https://www.gnn.ac.cn/en/about/</loc>
     <lastmod>2022-11-27T02:42:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yakaili.github.io/en/categories/</loc>
+    <loc>https://www.gnn.ac.cn/en/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -2,242 +2,242 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Misc on Star5o的博客</title>
-    <link>https://yakaili.github.io/zh-cn/tags/misc/</link>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/misc/</link>
     <description>Recent content in Misc on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yakaili.github.io/zh-cn/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一个公钥同时用于ssh和git</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/</guid>
       <description>一个公钥走天下真的很方便。 生成密钥 先通过运行以下代码来生成一个默认 ~/.ssh/id_rsa的密钥： 1 ssh-keygen -t rsa 对于保存密钥的位置，按回车键接受默认位置。一个私钥~/.ssh/id_rsa和公钥 ~/.ssh/id_rsa.pub 将在默认</description>
     </item>
     
     <item>
       <title>Mac使用拓展坞有线网卡和无线网卡实现内外网同时访问</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/</guid>
       <description>目标是10.49.x.x走拓展坞有线网卡，其余走无线网卡。 查看网卡名称 1 ifconfig 无线网卡名称为：en0，拓展坞有线网卡名称为：en4。 查看只插有线网卡的路由 1 2 3 4 5 6 7 8 9 ❯ route get 10.49.0.1 route to: 10.49.0.1 destination: default mask: default gateway: 192.168.14.254 interface: en4 flags:</description>
     </item>
     
     <item>
       <title>Ubuntu使用dae代理本机流量</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/04/13/ubuntu-use-dae-for-proxy/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/04/13/ubuntu-use-dae-for-proxy/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/04/13/ubuntu-use-dae-for-proxy/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/04/13/ubuntu-use-dae-for-proxy/</guid>
       <description>https://github.com/daeuniverse/dae install from:https://hubmirror.v2raya.org/daeuniverse/dae-installer 1 bash &amp;lt;(curl -s https://hubmirror.v2raya.org/raw/daeuniverse/dae-installer/main/installer.sh) install</description>
     </item>
     
     <item>
       <title>Linux安装shellclash</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/29/linux-install-shellclash/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/29/linux-install-shellclash/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/29/linux-install-shellclash/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/29/linux-install-shellclash/</guid>
       <description>标准linux设备 使用curl安装： 1 2 #jsdelivrCDN源 export url=&amp;#39;https://fastly.jsdelivr.net/gh/juewuy/ShellClash@master&amp;#39; &amp;amp;&amp;amp; sh -c &amp;#34;$(curl -kfsSl $url/install.sh)&amp;#34; &amp;amp;&amp;amp; source /etc/profile &amp;amp;&amp;gt; /dev/null 或者 1 export url=&amp;#39;https://gh.jwsc.eu.org/master&amp;#39; &amp;amp;&amp;amp; bash -c &amp;#34;$(curl -kfsSl $url/install.sh)&amp;#34; &amp;amp;&amp;amp; source /etc/profile &amp;amp;&amp;gt; /dev/null 使用wget安装： 1 2 #Release版本-jsdelivrCDN源 export url=&amp;#39;https://fastly.jsdelivr.net/gh/juewuy/ShellClash@master&amp;#39; &amp;amp;&amp;amp; wget</description>
     </item>
     
     <item>
       <title>搭建linux服务器网页测速</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/26/librespeed-linux-server-speedtest/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/26/librespeed-linux-server-speedtest/</link>
       <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/26/librespeed-linux-server-speedtest/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/26/librespeed-linux-server-speedtest/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 docker run -d \ --name=librespeed \ -e PUID=1000 \ -e PGID=1000 \ -e TZ=Etc/UTC \ -e PASSWORD=&amp;#34;password&amp;#34; \ -p 80:80 \ -v ~/librespeed/config:/config \ --restart unless-stopped \ lscr.io/linuxserver/librespeed:latest</description>
     </item>
     
     <item>
       <title>搭建chatgpt微信机器人</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/25/build-wechat-chatgpt-bot/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/25/build-wechat-chatgpt-bot/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/25/build-wechat-chatgpt-bot/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/25/build-wechat-chatgpt-bot/</guid>
       <description>fuergaosi233/wechat-chatgpt方案 拉docker 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # pull image docker pull holegots/wechat-chatgpt # run container docker run -d --name wechat-chatgpt \ -e OPENAI_API_KEY=&amp;#34;&amp;#34; \ -e MODEL=&amp;#34;gpt-3.5-turbo&amp;#34; \ -e DISABLE_GROUP_MESSAGE=&amp;#34;false&amp;#34; \ -e CHAT_PRIVATE_TRIGGER_KEYW</description>
     </item>
     
     <item>
       <title>阿里云DCDN全站加速hugo的github pages</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</guid>
       <description>前言 先前使用腾讯云的CDN小文件加速github pages，更新博客之后总是需要刷新缓存，使用有些不便，因此切换为阿里云DCDN全站加速。 添加域名和IP 配置CNAME 开启HTTPS 购买资源包 至此便完成</description>
     </item>
     
     <item>
       <title>使用 Cloudflare Workers 解决 OpenAI 的 API 无法访问问题</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/</link>
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/</guid>
       <description>参考： https://github.com/noobnooc/noobnooc/discussions/9 主要流程（步骤3和4可省略）： 新建一个 Cloudflare Worker 将 https://gist.github.com/noobnooc/d0407b5fb81cff9d36f981170b99d4e6 里的代码粘贴到 Worker 中并部署 给 Worker 绑定一个域名 使用自己的域名代替 api.openai.com 域名托管转到Cloudflare Websites-&amp;gt;Add Site 接下来输入需要转入的域名，点击Add Site 选择free</description>
     </item>
     
     <item>
       <title>Docker搭建Stable Diffusion Webui</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/</guid>
       <description>环境要求 Docker及docker-compose docker-compose安装命令： 1 apt install docker-compose-plugin 搭建 1 2 3 4 5 6 7 git clone https://github.com/AbdBarho/stable-diffusion-webui-docker.git cd stable-diffusion-webui-docker docker compose --profile download up --build # 下载模型文件 docker compose --profile [ui] up --build # 启动服务 ui选择项 invoke: One of the earliest forks, stunning UI Repo</description>
     </item>
     
     <item>
       <title>iterm2&#43;xquartz x11转发</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/15/iterm2-x11-forwarding/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/iterm2-x11-forwarding/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/15/iterm2-x11-forwarding/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/iterm2-x11-forwarding/</guid>
       <description>安装xquartz https://www.xquartz.org/ 在linux服务器端打开X11转发 1 sudo vim /etc/ssh/sshd_config 配置转发参数为yes 1 2 X11Forwarding yes X11DisplayOffset 10 然后重启ssh服务 1 service ssh restart 在Mac本地设置 1 sudo vim /etc/ssh/ssh_config 配置转发参数为yes 1 2 3 4 ForwardAgent yes ForwardX11 yes ForwardX11Trusted yes XAuthLocation /opt/X11/bin/xauth 使用 ssh -X username@host ssh</description>
     </item>
     
     <item>
       <title>普通用户使用root用户安装的anaconda</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/15/normal-user-use-root-installed-anaconda/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/normal-user-use-root-installed-anaconda/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/15/normal-user-use-root-installed-anaconda/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/normal-user-use-root-installed-anaconda/</guid>
       <description>首先，root用户安装anaconda的时候，需要安装在普通用户可以访问的目录下，比如/usr/local、/opt、/home之类的 其次，普通用户登陆后，需要执行一下conda init 使conda的路径等</description>
     </item>
     
     <item>
       <title>深度学习可解释性度量方法</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/</link>
       <pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/</guid>
       <description>保真度测试指标</description>
     </item>
     
     <item>
       <title>Macbook（M1）搭建LaTex运行环境</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/</guid>
       <description>MacTex安装 官网下载安装包 通过中科大源下载MacTex：https://mirrors.ustc.edu.cn/CTAN/systems/mac/mactex/MacTeX.pkg 官方网址：htt</description>
     </item>
     
     <item>
       <title>搭建组内CCFDDL网站</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/07/build-ccfddl-website/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/07/build-ccfddl-website/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/07/build-ccfddl-website/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/07/build-ccfddl-website/</guid>
       <description>代码来源：https://github.com/ccfddl/ccf-deadlines docker build -t my-vue-app . 部署方案1：vercel容器托管平台。 部署方案2:</description>
     </item>
     
     <item>
       <title>使用OpenAPI搭建私人Chatgpt</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/</link>
       <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/</guid>
       <description>方案一 来源于https://github.com/869413421/chatgpt-web 通过docker安装 1 2 3 4 5 6 7 8 9 10 docker run -itd --name chatgpt-web --restart=always \ -e APIKEY=换成你的key \ -e MODEL=gpt-3.5-turbo-0301 \ -e MAX_TOKENS=512 \ -e TEMPREATURE=0.9 \ -e TOP_P=1</description>
     </item>
     
     <item>
       <title>通过docker安装alist来挂载网盘</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/02/06/docker-install-alist/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/02/06/docker-install-alist/</link>
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/02/06/docker-install-alist/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/06/docker-install-alist/</guid>
       <description>安装 新建配置文件存放目录 1 mkdir /root/software/alist 启动容器 1 2 docker run -d --restart=always -v /root/software/alist:/opt/alist/data -p 5244:5244 --name=&amp;#34;alist&amp;#34; xhofe/alist:latest # --network=&amp;#34;host&amp;#34; 访问ip:5244即可进入alist 输入以下命令查看初始账号密码 1 docker logs alist 配置阿里云盘 进入后点击管理添加挂载的网盘。 点击存储-&amp;gt;添</description>
     </item>
     
     <item>
       <title>PicGO 上传图片前自动压缩</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</link>
       <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</guid>
       <description>安装插件 采用picgo-plugin-compress插件，在PicGo-gui上直接搜索该插件并安装。 配置 点击插件配置选择压缩方式 压缩方式有： tinypng 无损压缩，需要上传到 tinypng imagemin 压缩过程不需要经过网络，但是图</description>
     </item>
     
     <item>
       <title>腾讯云CDN加速hugo的github pages</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</link>
       <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</guid>
       <description>前言 通过网站测速发现很多地方访问非常慢，点击查看测速详情。需要对github pages进行CDN加速。 注意：腾讯云加速全球站需要网站备案，选择腾讯云加速主要是因为域名是在腾讯云注册的。 参考：https</description>
     </item>
     
     <item>
       <title>国内使用ChatGPT</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/01/29/use-chatgpt-in-china/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/29/use-chatgpt-in-china/</link>
       <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/01/29/use-chatgpt-in-china/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/29/use-chatgpt-in-china/</guid>
       <description>OpenAI有地区限制，第一次登陆ChatGPT时使用的香港IP，注册然后登陆进去直接提示OpenAI&#39;s services are not available in your country，之后更换使用的IP（包括美国）和邮箱依旧提示。解决方法如下： 首先切</description>
     </item>
     
     <item>
       <title>docker安装plex及设置</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/01/22/docker-plex-install/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/docker-plex-install/</link>
       <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/01/22/docker-plex-install/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/docker-plex-install/</guid>
       <description>搭建Plex Server 新建文件夹plex， 创建docker-compose.yml 1 2 mkdir plex &amp;amp;&amp;amp; cd plex touch docker-compose.yml vim docker-compose.yml写入下面的配置 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 version: &amp;#34;2.1&amp;#34; services: plex: image: linuxserver/plex container_name: plex environment: -</description>
     </item>
     
     <item>
       <title>Homelab Ubuntu 20.04系统安装后自用配置</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/</link>
       <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/</guid>
       <description>换国内源 配置中科大源 1 2 sudo sed -i &amp;#39;s@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g&amp;#39; /etc/apt/sources.list sudo apt update ssh配置 安装ssh 1 2 sudo apt update sudo apt install openssh-server vim 配置密钥 1 2 3 4 5 ssh-keygen cd .ssh cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys chmod 600 authorized_keys chmod 700 ~/.ssh 1 sudo vim /etc/ssh/sshd_config sshd_config文件内修改： 1 2 3 4 5 6 RSAAuthentication yes #开启密钥登陆 PubkeyAuthentication yes</description>
     </item>
     
     <item>
       <title>commit了一个大文件导致本地仓库无法推送到github的问题解决方法</title>
-      <link>https://yakaili.github.io/zh-cn/post/2022/12/15/git-commit-large-file-error/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/12/15/git-commit-large-file-error/</link>
       <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2022/12/15/git-commit-large-file-error/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/12/15/git-commit-large-file-error/</guid>
       <description>报错 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 枚举对象中: 57, 完成. 对象计数中: 100% (57/57), 完成. 使用 8 个线程进行压缩 压缩对象中: 100% (37/37), 完成. 写入对象中: 28% (11/38) 写入对象中: 100% (38/38), 365.92 MiB | 4.85 MiB/s, 完成. 总共 38（差异 23），复用 0（差异</description>
     </item>
     
     <item>
       <title>git push error 提示 更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支</title>
-      <link>https://yakaili.github.io/zh-cn/post/2022/12/15/git-push-error1-1/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/12/15/git-push-error1-1/</link>
       <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2022/12/15/git-push-error1-1/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/12/15/git-push-error1-1/</guid>
       <description>报错 1 2 3 4 5 ! [rejected] master -&amp;gt; master (non-fast-forward) error: 无法推送一些引用到 &amp;#39;https://github.com/xxx.git&amp;#39; 提示：更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支。 提示：再次推送前，先与远程变更合并（如 &amp;#39;git pull ...&amp;#39;）。详见 提示：&amp;#39;gi</description>
     </item>
     
     <item>
       <title>linux-Python3-UnicodeEncodeError: &#39;ascii&#39; codec can&#39;t encode characters in position 0-1: ordinal not in range(128)</title>
-      <link>https://yakaili.github.io/zh-cn/post/2022/11/27/python3-unicodeencodeerror/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/python3-unicodeencodeerror/</link>
       <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2022/11/27/python3-unicodeencodeerror/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/python3-unicodeencodeerror/</guid>
       <description>错误说明 今天在服务器上使用python3执行python文件时报错。 报错所在行语句： 1 print(&amp;#34;读取图片文件耗费时间：%d秒&amp;#34; % time_elapsed) 报错信息： 1 UnicodeEncodeError: &amp;#39;ascii&amp;#39; codec can&amp;#39;t encode characters in position 0-1: ordinal not in range(128) 问题分析 1、</description>
     </item>
     
     <item>
       <title>Windows10安装redis</title>
-      <link>https://yakaili.github.io/zh-cn/post/2022/11/27/win10-install-redis/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/win10-install-redis/</link>
       <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2022/11/27/win10-install-redis/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/win10-install-redis/</guid>
       <description>下载Redis 1、打开https://github.com/MSOpenTech/redis/releases，选择版本下载msi安装包，编写博客时最新版本为3.2.100。 安装Redis 1、打开ms</description>
     </item>
     
     <item>
       <title>简单安装支持多语言的hugo</title>
-      <link>https://yakaili.github.io/zh-cn/post/2022/11/27/hugo-simple-install/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/hugo-simple-install/</link>
       <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2022/11/27/hugo-simple-install/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/hugo-simple-install/</guid>
       <description>前段时间计划使用hugo搭建一个中英双语的博客网站，遇到了各种各样的坑，心力交瘁。突发奇想，可不可以直接使用他人配置好的Hugo，于是就有了这个博客和这篇文章。 感谢叶寻的博客 本地安装 1 git clone --recurse-submodules https://github.com/CyrusYip/cyrusyip-blog.git 换成自己</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Star5o的博客</title>
-    <link>https://yakaili.github.io/zh-cn/</link>
+    <link>https://www.gnn.ac.cn/zh-cn/</link>
     <description>Recent content on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
     <lastBuildDate>Mon, 18 Sep 2023 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://yakaili.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.gnn.ac.cn/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Aidroid论文复现环境搭建</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/09/18/aidroid-paper-experiment-env/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/09/18/aidroid-paper-experiment-env/</link>
       <pubDate>Mon, 18 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/09/18/aidroid-paper-experiment-env/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/09/18/aidroid-paper-experiment-env/</guid>
       
         <description>&lt;p&gt;&lt;a href=&#34;https://github.com/liangxun/AiDroid/tree/master&#34;&gt;https://github.com/liangxun/AiDroid/tree/master&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;docker run &amp;ndash;gpus all -it -d &amp;ndash;name aidroid -v /home/star5o/dataset:/dataset nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04 /bin/bash&lt;/p&gt;
@@ -28,10 +28,10 @@
     
     <item>
       <title>Hawk论文复现环境搭建</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/09/18/hawk-paper-experiment-env/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/09/18/hawk-paper-experiment-env/</link>
       <pubDate>Mon, 18 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/09/18/hawk-paper-experiment-env/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/09/18/hawk-paper-experiment-env/</guid>
       
         <description>&lt;p&gt;&lt;a href=&#34;https://github.com/RingBDStack/HAWK&#34;&gt;https://github.com/RingBDStack/HAWK&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;docker pull tensorflow/tensorflow:1.12.0-devel-gpu-py3&lt;/p&gt;
@@ -45,10 +45,10 @@
     
     <item>
       <title>Docker安装OWASP基准测试</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/09/14/install-owasp-benchmark-in-docker/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/09/14/install-owasp-benchmark-in-docker/</link>
       <pubDate>Thu, 14 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/09/14/install-owasp-benchmark-in-docker/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/09/14/install-owasp-benchmark-in-docker/</guid>
       
         <description>&lt;p&gt;git clone &lt;a href=&#34;https://github.com/OWASP-Benchmark/BenchmarkJava&#34;&gt;https://github.com/OWASP-Benchmark/BenchmarkJava&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;cd BenchmarkJava/VMs&lt;/p&gt;
@@ -60,10 +60,10 @@
     
     <item>
       <title>CTF入门练习-CTFHUB-HTTP基础</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/07/31/ctf-ctfhub-web-http-basic/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/07/31/ctf-ctfhub-web-http-basic/</link>
       <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/07/31/ctf-ctfhub-web-http-basic/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/07/31/ctf-ctfhub-web-http-basic/</guid>
       
         <description>&lt;p&gt;打开题目给出的网址过后，显示如下内容的网页：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -126,10 +126,10 @@
     
     <item>
       <title>安装vulfocus靶场</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/07/31/install-vulfocus/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/07/31/install-vulfocus/</link>
       <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/07/31/install-vulfocus/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/07/31/install-vulfocus/</guid>
       
         <description>&lt;p&gt;docker pull vulfocus/vulfocus:latest&lt;/p&gt;
 &lt;p&gt;docker run -d -p 80:80 -v /var/run/docker.sock:/var/run/docker.sock  -e VUL_IP=192.168.1.105 vulfocus/vulfocus&lt;/p&gt;
@@ -145,10 +145,10 @@
     
     <item>
       <title>通过docker安装使用GPT学术优化</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/07/13/build-academic-gpt-in-docker/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/07/13/build-academic-gpt-in-docker/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/07/13/build-academic-gpt-in-docker/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/07/13/build-academic-gpt-in-docker/</guid>
       
         <description>&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -180,10 +180,10 @@
     
     <item>
       <title>一个公钥同时用于ssh和git</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/</guid>
       
         <description>&lt;p&gt;一个公钥走天下真的很方便。&lt;/p&gt;
 &lt;h2 id=&#34;生成密钥&#34;&gt;生成密钥&lt;/h2&gt;
@@ -212,10 +212,10 @@
     
     <item>
       <title>Docker安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-llama.cpp/</guid>
       
         <description>&lt;h2 id=&#34;创建容器&#34;&gt;创建容器&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -581,10 +581,10 @@
     
     <item>
       <title>本地安装使用gpt-llama.cpp的LLM自主代理Auto-GPT</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/06/07/install-autogpt-in-local-with-llama.cpp/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-local-with-llama.cpp/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/06/07/install-autogpt-in-local-with-llama.cpp/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-local-with-llama.cpp/</guid>
       
         <description>&lt;h2 id=&#34;下载并配置llamacpp项目&#34;&gt;下载并配置llama.cpp项目&lt;/h2&gt;
 &lt;h3 id=&#34;下载llamacpp项目&#34;&gt;下载llama.cpp项目&lt;/h3&gt;
@@ -872,10 +872,10 @@
     
     <item>
       <title>通过docker安装使用Openai API的LLM自主代理Auto-GPT</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/07/install-autogpt-in-docker-with-openai-api/</guid>
       
         <description>&lt;h2 id=&#34;下载并配置&#34;&gt;下载并配置&lt;/h2&gt;
 &lt;p&gt;自行构建镜像和使用官方镜像两种方式都可以。&lt;/p&gt;
@@ -1129,10 +1129,10 @@
     
     <item>
       <title>通过docker安装LLM自主代理AgentGPT</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/06/06/install-agentgpt-in-docker/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-agentgpt-in-docker/</link>
       <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/06/06/install-agentgpt-in-docker/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-agentgpt-in-docker/</guid>
       
         <description>&lt;!-- ## 获取Websearch密钥
 
@@ -1194,10 +1194,10 @@ https://replicate.com/account/api-tokens --&gt;
     
     <item>
       <title>通过docker安装LLM自主代理AutoGPT-Next-Web</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/06/06/install-autogpt-next-web-in-docker/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-autogpt-next-web-in-docker/</link>
       <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/06/06/install-autogpt-next-web-in-docker/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-autogpt-next-web-in-docker/</guid>
       
         <description>&lt;h2 id=&#34;获取websearch密钥&#34;&gt;获取Websearch密钥&lt;/h2&gt;
 &lt;p&gt;两种方式都可以。&lt;/p&gt;
@@ -1263,10 +1263,10 @@ https://replicate.com/account/api-tokens --&gt;
     
     <item>
       <title>通过docker安装LLM自主代理babyagi</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/06/06/install-babyagi-in-docker/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-babyagi-in-docker/</link>
       <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/06/06/install-babyagi-in-docker/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/06/06/install-babyagi-in-docker/</guid>
       
         <description>&lt;h2 id=&#34;获取pinecone-api密钥&#34;&gt;获取Pinecone API密钥&lt;/h2&gt;
 &lt;p&gt;Pinecone是一个用于存储AI数据的矢量数据库。通过点击API密钥标签，点击复制按钮或 “Create API Key” 来获得API密钥。另外，注意 “Environment” 的位置（例如：us-central1-gcp）。&lt;/p&gt;
@@ -1393,10 +1393,10 @@ https://replicate.com/account/api-tokens --&gt;
     
     <item>
       <title>Mac使用拓展坞有线网卡和无线网卡实现内外网同时访问</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/04/13/mac-use-two-net-interfeces/</guid>
       
         <description>&lt;p&gt;目标是&lt;code&gt;10.49.x.x&lt;/code&gt;走拓展坞有线网卡，其余走无线网卡。&lt;/p&gt;
 &lt;h2 id=&#34;查看网卡名称&#34;&gt;查看网卡名称&lt;/h2&gt;
@@ -1451,10 +1451,10 @@ https://replicate.com/account/api-tokens --&gt;
     
     <item>
       <title>Ubuntu使用dae代理本机流量</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/04/13/ubuntu-use-dae-for-proxy/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/04/13/ubuntu-use-dae-for-proxy/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/04/13/ubuntu-use-dae-for-proxy/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/04/13/ubuntu-use-dae-for-proxy/</guid>
       
         <description>&lt;p&gt;&lt;a href=&#34;https://github.com/daeuniverse/dae&#34;&gt;https://github.com/daeuniverse/dae&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;install&#34;&gt;install&lt;/h2&gt;
@@ -1473,10 +1473,10 @@ https://replicate.com/account/api-tokens --&gt;
     
     <item>
       <title>Linux安装shellclash</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/29/linux-install-shellclash/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/29/linux-install-shellclash/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/29/linux-install-shellclash/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/29/linux-install-shellclash/</guid>
       
         <description>&lt;h2 id=&#34;标准linux设备&#34;&gt;标准linux设备&lt;/h2&gt;
 &lt;h3 id=&#34;使用curl安装&#34;&gt;使用curl安装：&lt;/h3&gt;
@@ -1539,10 +1539,10 @@ https://replicate.com/account/api-tokens --&gt;
     
     <item>
       <title>搭建linux服务器网页测速</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/26/librespeed-linux-server-speedtest/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/26/librespeed-linux-server-speedtest/</link>
       <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/26/librespeed-linux-server-speedtest/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/26/librespeed-linux-server-speedtest/</guid>
       
         <description>&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1576,10 +1576,10 @@ https://replicate.com/account/api-tokens --&gt;
     
     <item>
       <title>搭建chatgpt微信机器人</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/25/build-wechat-chatgpt-bot/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/25/build-wechat-chatgpt-bot/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/25/build-wechat-chatgpt-bot/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/25/build-wechat-chatgpt-bot/</guid>
       
         <description>&lt;h2 id=&#34;fuergaosi233wechat-chatgpt方案&#34;&gt;fuergaosi233/wechat-chatgpt方案&lt;/h2&gt;
 &lt;h3 id=&#34;拉docker&#34;&gt;拉docker&lt;/h3&gt;
@@ -1659,10 +1659,10 @@ https://replicate.com/account/api-tokens --&gt;
     
     <item>
       <title>阿里云DCDN全站加速hugo的github pages</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/22/aliyun-dcdn-speeds-up-gitpages-speed/</guid>
       
         <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;先前使用腾讯云的CDN小文件加速github pages，更新博客之后总是需要刷新缓存，使用有些不便，因此切换为阿里云DCDN全站加速。&lt;/p&gt;
@@ -1683,10 +1683,10 @@ https://replicate.com/account/api-tokens --&gt;
     
     <item>
       <title>图生成方法综述</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/17/deep-graph-generator-survey/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/</link>
       <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/17/deep-graph-generator-survey/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/17/deep-graph-generator-survey/</guid>
       
         <description>&lt;p&gt;我想寻找一个能够生成多维节点特征，且特征向量中每一位都是整数，并且支持添加生成约束条件的图生成方法。因此进行了一系列调研，总结如下。&lt;/p&gt;
 &lt;p&gt;主要参考了文章《Deep Graph Generators: A Survey》&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
@@ -2228,10 +2228,10 @@ https://replicate.com/account/api-tokens --&gt;
     
     <item>
       <title>使用 Cloudflare Workers 解决 OpenAI 的 API 无法访问问题</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/</link>
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/16/use-cloudflare-workers-for-openai-api-in-china/</guid>
       
         <description>&lt;p&gt;参考：
 &lt;a href=&#34;https://github.com/noobnooc/noobnooc/discussions/9&#34;&gt;https://github.com/noobnooc/noobnooc/discussions/9&lt;/a&gt;&lt;/p&gt;
@@ -2327,10 +2327,10 @@ Websites-&amp;gt;Add Site
     
     <item>
       <title>Docker搭建Stable Diffusion Webui</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/docker-build-stable-diffusion-webui/</guid>
       
         <description>&lt;h2 id=&#34;环境要求&#34;&gt;环境要求&lt;/h2&gt;
 &lt;p&gt;Docker及docker-compose&lt;/p&gt;
@@ -2378,10 +2378,10 @@ Websites-&amp;gt;Add Site
     
     <item>
       <title>iterm2&#43;xquartz x11转发</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/15/iterm2-x11-forwarding/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/iterm2-x11-forwarding/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/15/iterm2-x11-forwarding/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/iterm2-x11-forwarding/</guid>
       
         <description>&lt;h2 id=&#34;安装xquartz&#34;&gt;安装xquartz&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.xquartz.org/&#34;&gt;https://www.xquartz.org/&lt;/a&gt;&lt;/p&gt;
@@ -2447,10 +2447,10 @@ ssh -X nickname&lt;/p&gt;
     
     <item>
       <title>普通用户使用root用户安装的anaconda</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/15/normal-user-use-root-installed-anaconda/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/normal-user-use-root-installed-anaconda/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/15/normal-user-use-root-installed-anaconda/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/15/normal-user-use-root-installed-anaconda/</guid>
       
         <description>&lt;p&gt;首先，root用户安装anaconda的时候，需要安装在普通用户可以访问的目录下，比如/usr/local、/opt、/home之类的&lt;/p&gt;
 &lt;p&gt;其次，普通用户登陆后，需要执行一下conda init 使conda的路径等系统环境变量信息写入当前用户的bashrc下&lt;/p&gt;
@@ -2460,10 +2460,10 @@ ssh -X nickname&lt;/p&gt;
     
     <item>
       <title>深度学习可解释性度量方法</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/</link>
       <pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/10/deep-learning-interpret-evaluation-metrics/</guid>
       
         <description>&lt;p&gt;保真度测试指标&lt;/p&gt;
 </description>
@@ -2472,10 +2472,10 @@ ssh -X nickname&lt;/p&gt;
     
     <item>
       <title>Macbook（M1）搭建LaTex运行环境</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/07/build-latex-env-in-m1-macbook/</guid>
       
         <description>&lt;h1 id=&#34;mactex安装&#34;&gt;MacTex安装&lt;/h1&gt;
 &lt;h2 id=&#34;官网下载安装包&#34;&gt;官网下载安装包&lt;/h2&gt;
@@ -2513,10 +2513,10 @@ ssh -X nickname&lt;/p&gt;
     
     <item>
       <title>搭建组内CCFDDL网站</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/07/build-ccfddl-website/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/07/build-ccfddl-website/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/07/build-ccfddl-website/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/07/build-ccfddl-website/</guid>
       
         <description>&lt;p&gt;代码来源：https://github.com/ccfddl/ccf-deadlines&lt;/p&gt;
 &lt;p&gt;docker build -t my-vue-app .&lt;/p&gt;
@@ -2528,10 +2528,10 @@ ssh -X nickname&lt;/p&gt;
     
     <item>
       <title>使用OpenAPI搭建私人Chatgpt</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/</link>
       <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/03/02/build-personal-chatgpt-based-gpt3.5api/</guid>
       
         <description>&lt;h1 id=&#34;方案一&#34;&gt;方案一&lt;/h1&gt;
 &lt;p&gt;来源于https://github.com/869413421/chatgpt-web&lt;/p&gt;
@@ -2603,10 +2603,10 @@ ssh -X nickname&lt;/p&gt;
     
     <item>
       <title>《Interpreting Machine Learning Models》阅读笔记</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/02/21/interpret-machine-learning-read/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/interpret-machine-learning-read/</link>
       <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/02/21/interpret-machine-learning-read/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/21/interpret-machine-learning-read/</guid>
       
         <description>&lt;p&gt;参考：https://ml4.apachecn.org/#/docs/interp-ml-model/01&lt;/p&gt;
 </description>
@@ -2615,10 +2615,10 @@ ssh -X nickname&lt;/p&gt;
     
     <item>
       <title>通过docker安装alist来挂载网盘</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/02/06/docker-install-alist/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/02/06/docker-install-alist/</link>
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/02/06/docker-install-alist/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/06/docker-install-alist/</guid>
       
         <description>&lt;h1 id=&#34;安装&#34;&gt;安装&lt;/h1&gt;
 &lt;p&gt;新建配置文件存放目录&lt;/p&gt;
@@ -2668,10 +2668,10 @@ ssh -X nickname&lt;/p&gt;
     
     <item>
       <title>PicGO 上传图片前自动压缩</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</link>
       <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/picgo-automatically-compresses-pictures/</guid>
       
         <description>&lt;h1 id=&#34;安装插件&#34;&gt;安装插件&lt;/h1&gt;
 &lt;p&gt;采用picgo-plugin-compress插件，在PicGo-gui上直接搜索该插件并安装。
@@ -2694,10 +2694,10 @@ ssh -X nickname&lt;/p&gt;
     
     <item>
       <title>腾讯云CDN加速hugo的github pages</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</link>
       <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/31/tencent-cdn-speeds-up-gitpages-speed/</guid>
       
         <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;通过网站测速发现很多地方访问非常慢，&lt;a href=&#34;https://www.17ce.com/site/http/20230131_836e6700a11111ed9608d9f7b39b2ff3:1.html&#34;&gt;点击查看&lt;/a&gt;测速详情。需要对github pages进行CDN加速。
@@ -2760,10 +2760,10 @@ ps：比腾讯云体验好多了QAQ，腾讯云试了好几次，每次都是验
     
     <item>
       <title>国内使用ChatGPT</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/01/29/use-chatgpt-in-china/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/29/use-chatgpt-in-china/</link>
       <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/01/29/use-chatgpt-in-china/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/29/use-chatgpt-in-china/</guid>
       
         <description>&lt;p&gt;OpenAI有地区限制，第一次登陆&lt;code&gt;ChatGPT&lt;/code&gt;时使用的香港IP，注册然后登陆进去直接提示&lt;code&gt;OpenAI&#39;s services are not available in your country&lt;/code&gt;，之后更换使用的IP（包括美国）和邮箱依旧提示。解决方法如下：&lt;/p&gt;
 &lt;p&gt;首先切换到美国IP。然后在&lt;code&gt;OpenAI&#39;s services are not available in your country&lt;/code&gt;提示页按F12打开开发者工具，到【应用-存储-本地存储空间】页把&lt;code&gt;@@authOspajs&lt;/code&gt;开头的这个密钥删除，再刷新页面，没有 &lt;code&gt;OpenAI&#39;s services are not available in your country&lt;/code&gt;提示了。&lt;/p&gt;
@@ -2776,10 +2776,10 @@ ps：比腾讯云体验好多了QAQ，腾讯云试了好几次，每次都是验
     
     <item>
       <title>docker安装plex及设置</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/01/22/docker-plex-install/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/docker-plex-install/</link>
       <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/01/22/docker-plex-install/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/docker-plex-install/</guid>
       
         <description>&lt;h1 id=&#34;搭建plex-server&#34;&gt;搭建Plex Server&lt;/h1&gt;
 &lt;p&gt;新建文件夹&lt;code&gt;plex&lt;/code&gt;， 创建&lt;code&gt;docker-compose.yml&lt;/code&gt;&lt;/p&gt;
@@ -2871,10 +2871,10 @@ ps：比腾讯云体验好多了QAQ，腾讯云试了好几次，每次都是验
     
     <item>
       <title>Homelab Ubuntu 20.04系统安装后自用配置</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/</link>
       <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/</guid>
       
         <description>&lt;h1 id=&#34;换国内源&#34;&gt;换国内源&lt;/h1&gt;
 &lt;p&gt;配置中科大源&lt;/p&gt;
@@ -3216,10 +3216,10 @@ ps：比腾讯云体验好多了QAQ，腾讯云试了好几次，每次都是验
     
     <item>
       <title>commit了一个大文件导致本地仓库无法推送到github的问题解决方法</title>
-      <link>https://yakaili.github.io/zh-cn/post/2022/12/15/git-commit-large-file-error/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/12/15/git-commit-large-file-error/</link>
       <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2022/12/15/git-commit-large-file-error/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/12/15/git-commit-large-file-error/</guid>
       
         <description>&lt;h1 id=&#34;报错&#34;&gt;报错&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3322,10 +3322,10 @@ ps：比腾讯云体验好多了QAQ，腾讯云试了好几次，每次都是验
     
     <item>
       <title>git push error 提示 更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支</title>
-      <link>https://yakaili.github.io/zh-cn/post/2022/12/15/git-push-error1-1/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/12/15/git-push-error1-1/</link>
       <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2022/12/15/git-push-error1-1/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/12/15/git-push-error1-1/</guid>
       
         <description>&lt;h1 id=&#34;报错&#34;&gt;报错&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3362,10 +3362,10 @@ ps：比腾讯云体验好多了QAQ，腾讯云试了好几次，每次都是验
     
     <item>
       <title>《图神经网络：基础、前沿与应用（图神经网络城堡书）》Part1:引言 第一章：表征学习（Representation Learning）</title>
-      <link>https://yakaili.github.io/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/</link>
       <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/gnn-ffa-read-part1-chapter1/</guid>
       
         <description>&lt;p&gt;待阅读&lt;/p&gt;
 </description>
@@ -3374,10 +3374,10 @@ ps：比腾讯云体验好多了QAQ，腾讯云试了好几次，每次都是验
     
     <item>
       <title>基于图的安卓恶意软件检测方法综述</title>
-      <link>https://yakaili.github.io/zh-cn/post/2022/11/28/graph-based-amd/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/graph-based-amd/</link>
       <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2022/11/28/graph-based-amd/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/28/graph-based-amd/</guid>
       
         <description>&lt;p&gt;此篇文章只总结已开源或能够找到复现源码的工作。&lt;/p&gt;
 &lt;p&gt;这些方法之间的区别主要是图嵌入方式。&lt;/p&gt;
@@ -3400,10 +3400,10 @@ ps：比腾讯云体验好多了QAQ，腾讯云试了好几次，每次都是验
     
     <item>
       <title>linux-Python3-UnicodeEncodeError: &#39;ascii&#39; codec can&#39;t encode characters in position 0-1: ordinal not in range(128)</title>
-      <link>https://yakaili.github.io/zh-cn/post/2022/11/27/python3-unicodeencodeerror/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/python3-unicodeencodeerror/</link>
       <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2022/11/27/python3-unicodeencodeerror/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/python3-unicodeencodeerror/</guid>
       
         <description>&lt;h3 id=&#34;错误说明&#34;&gt;错误说明&lt;/h3&gt;
 &lt;p&gt;今天在服务器上使用python3执行python文件时报错。
@@ -3471,10 +3471,10 @@ ps：比腾讯云体验好多了QAQ，腾讯云试了好几次，每次都是验
     
     <item>
       <title>Windows10安装redis</title>
-      <link>https://yakaili.github.io/zh-cn/post/2022/11/27/win10-install-redis/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/win10-install-redis/</link>
       <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2022/11/27/win10-install-redis/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/win10-install-redis/</guid>
       
         <description>&lt;h3 id=&#34;下载redis&#34;&gt;下载Redis&lt;/h3&gt;
 &lt;p&gt;1、打开&lt;a&gt;&lt;a href=&#34;https://github.com/MSOpenTech/redis/releases&#34;&gt;https://github.com/MSOpenTech/redis/releases&lt;/a&gt;&lt;/a&gt;，选择版本下载msi安装包，编写博客时最新版本为3.2.100。&lt;/p&gt;
@@ -3502,10 +3502,10 @@ ps：比腾讯云体验好多了QAQ，腾讯云试了好几次，每次都是验
     
     <item>
       <title>简单安装支持多语言的hugo</title>
-      <link>https://yakaili.github.io/zh-cn/post/2022/11/27/hugo-simple-install/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/hugo-simple-install/</link>
       <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2022/11/27/hugo-simple-install/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2022/11/27/hugo-simple-install/</guid>
       
         <description>&lt;p&gt;前段时间计划使用hugo搭建一个中英双语的博客网站，遇到了各种各样的坑，心力交瘁。突发奇想，可不可以直接使用他人配置好的Hugo，于是就有了这个博客和这篇文章。&lt;/p&gt;
 &lt;p&gt;感谢&lt;a href=&#34;https://github.com/CyrusYip/cyrusyip-blog&#34;&gt;叶寻的博客&lt;/a&gt;&lt;/p&gt;
@@ -3615,10 +3615,10 @@ ps：比腾讯云体验好多了QAQ，腾讯云试了好几次，每次都是验
     
     <item>
       <title>订阅</title>
-      <link>https://yakaili.github.io/zh-cn/subscribe/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/subscribe/</link>
       <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/subscribe/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/subscribe/</guid>
       
         <description>&lt;p&gt;欢迎使用 RSS 阅读器&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;订阅更新，本站的 RSS 链接是 &lt;a href=&#34;https://www.gnn.ac.cn/zh-cn/index.xml&#34;&gt;https://www.gnn.ac.cn/zh-cn/index.xml&lt;/a&gt;。有时候我会更新旧文，推荐在阅读器点击文章链接，跳转到本站阅读最新版本。&lt;/p&gt;
 &lt;p&gt;如果你不知道怎么使用 RSS，可以看一下&lt;a href=&#34;https://zhuanlan.zhihu.com/p/349349861&#34;&gt;这篇文章&lt;/a&gt;。&lt;/p&gt;
@@ -3636,10 +3636,10 @@ ps：比腾讯云体验好多了QAQ，腾讯云试了好几次，每次都是验
     
     <item>
       <title>关于</title>
-      <link>https://yakaili.github.io/zh-cn/about/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/about/</link>
       <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/about/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/about/</guid>
       
         <description>&lt;blockquote&gt;
 &lt;p&gt;Do few things and do them well.&lt;/p&gt;

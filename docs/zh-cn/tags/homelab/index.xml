@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homelab on Star5o的博客</title>
-    <link>https://yakaili.github.io/zh-cn/tags/homelab/</link>
+    <link>https://www.gnn.ac.cn/zh-cn/tags/homelab/</link>
     <description>Recent content in Homelab on Star5o的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Star5o Love Haohao</copyright>
-    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yakaili.github.io/zh-cn/tags/homelab/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gnn.ac.cn/zh-cn/tags/homelab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一个公钥同时用于ssh和git</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/07/13/gen-key-for-ssh-and-git/</guid>
       <description>一个公钥走天下真的很方便。 生成密钥 先通过运行以下代码来生成一个默认 ~/.ssh/id_rsa的密钥： 1 ssh-keygen -t rsa 对于保存密钥的位置，按回车键接受默认位置。一个私钥~/.ssh/id_rsa和公钥 ~/.ssh/id_rsa.pub 将在默认</description>
     </item>
     
     <item>
       <title>通过docker安装alist来挂载网盘</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/02/06/docker-install-alist/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/02/06/docker-install-alist/</link>
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/02/06/docker-install-alist/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/02/06/docker-install-alist/</guid>
       <description>安装 新建配置文件存放目录 1 mkdir /root/software/alist 启动容器 1 2 docker run -d --restart=always -v /root/software/alist:/opt/alist/data -p 5244:5244 --name=&amp;#34;alist&amp;#34; xhofe/alist:latest # --network=&amp;#34;host&amp;#34; 访问ip:5244即可进入alist 输入以下命令查看初始账号密码 1 docker logs alist 配置阿里云盘 进入后点击管理添加挂载的网盘。 点击存储-&amp;gt;添</description>
     </item>
     
     <item>
       <title>docker安装plex及设置</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/01/22/docker-plex-install/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/docker-plex-install/</link>
       <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/01/22/docker-plex-install/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/docker-plex-install/</guid>
       <description>搭建Plex Server 新建文件夹plex， 创建docker-compose.yml 1 2 mkdir plex &amp;amp;&amp;amp; cd plex touch docker-compose.yml vim docker-compose.yml写入下面的配置 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 version: &amp;#34;2.1&amp;#34; services: plex: image: linuxserver/plex container_name: plex environment: -</description>
     </item>
     
     <item>
       <title>Homelab Ubuntu 20.04系统安装后自用配置</title>
-      <link>https://yakaili.github.io/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/</link>
+      <link>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/</link>
       <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://yakaili.github.io/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/</guid>
+      <guid>https://www.gnn.ac.cn/zh-cn/post/2023/01/22/homelab-ubuntu2004-self-config/</guid>
       <description>换国内源 配置中科大源 1 2 sudo sed -i &amp;#39;s@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g&amp;#39; /etc/apt/sources.list sudo apt update ssh配置 安装ssh 1 2 sudo apt update sudo apt install openssh-server vim 配置密钥 1 2 3 4 5 ssh-keygen cd .ssh cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys chmod 600 authorized_keys chmod 700 ~/.ssh 1 sudo vim /etc/ssh/sshd_config sshd_config文件内修改： 1 2 3 4 5 6 RSAAuthentication yes #开启密钥登陆 PubkeyAuthentication yes</description>
     </item>
     
