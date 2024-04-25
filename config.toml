@@ -21,7 +21,7 @@ disqusShortname = "star5o"      # disqus_shortname
 copyright = "Star5o Love Haohao"            # default: author.name ↓        # 默认为下面配置的author.name ↓
 enableGitInfo = true      # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 summaryLength = 100
-# googleAnalytics = "G-9YR4FEGTDL"
+googleAnalytics = "G-9YR4FEGTDL"
 
 # Highlight options. See https://gohugo.io/content-management/syntax-highlighting/
 pygmentsCodeFences = true # Enable syntax highlighting with GitHub flavoured code fences
